@@ -1,31 +1,35 @@
 @font-face {
-  font-family: 'ezramedium';
-  src: url('../assets/ezra_medium-webfont.woff2') format('woff2'),
-      url('../assets/ezra_medium-webfont.woff') format('woff');
+  font-family: "ezramedium";
+  src:
+    url("../assets/ezra_medium-webfont.woff2") format("woff2"),
+    url("../assets/ezra_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ezramedium_italic';
-  src: url('../assets/ezra_mediumitalic-webfont.woff2') format('woff2'),
-       url('../assets/ezra_mediumitalic-webfont.woff') format('woff');
+  font-family: "ezramedium_italic";
+  src:
+    url("../assets/ezra_mediumitalic-webfont.woff2") format("woff2"),
+    url("../assets/ezra_mediumitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ezraitalic';
-  src: url('../assets/ezra_italic-webfont.woff2') format('woff2'),
-       url('../assets/ezra_italic-webfont.woff') format('woff');
+  font-family: "ezraitalic";
+  src:
+    url("../assets/ezra_italic-webfont.woff2") format("woff2"),
+    url("../assets/ezra_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ezraregular';
-  src: url('../assets/ezra_regular-webfont.woff2') format('woff2'),
-      url('../assets/ezra_regular-webfont.woff') format('woff');
+  font-family: "ezraregular";
+  src:
+    url("../assets/ezra_regular-webfont.woff2") format("woff2"),
+    url("../assets/ezra_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

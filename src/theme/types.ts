@@ -36,15 +36,18 @@ export interface Typography {
 
 export interface Radii {
   none: string;
-  md: string;
+  medium: string;
+  large: string;
   full: string;
 }
+
 export interface Breakpoints {
   sm: string;
   md: string;
   lg: string;
   xlg: string;
 }
+
 export interface Spaces {
   xxxSmall: string;
   xxSmall: string;

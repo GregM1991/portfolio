@@ -1,4 +1,17 @@
 const palette = {
+  blue: "#b4f0f0",
+  indigo: "#280f91",
+  purple: "#7d2ae8",
+  pink: "#ffa5f0",
+  red: "#ff5055",
+  orange: "#f15852",
+  yellow: "#ffd200",
+  green: "#28c878",
+  teal: "#20c997",
+  cyan: "#00c4cc",
+  white: "#fff",
+  gray: "#6c757d",
+  "gray-dark": "#293039",
   primary: "#7d2ae8",
   secondary: "#280f91",
   light: "#e9ecef",
@@ -28,27 +41,34 @@ const typography = {
 
 const radii = {
   none: "0",
-  md: "6px",
+  medium: "6px",
+  large: "1rem",
   full: "9999px",
 };
 
 const breakpoints = {
-  sm: "768px",
-  md: "1024px",
-  lg: "1280px",
-  xlg: "1440px",
+  xs: "0",
+  sm: "576px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
+
+
+  
+  xxl: "1400px",
+  xxxl: "1600px",
 };
 
 const spaces = {
   xxxSmall: "clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem)",
-  xxSmall: "clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem)",
-  xSmall: "clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem)",
-  small: "clamp(1.44rem, calc(1.39rem + 0.22vw), 1.55rem)",
+  xxSmall: ".5rem",
+  xSmall: ".625rem",
+  small: "1rem",
   medium: "clamp(1.69rem, calc(1.62rem + 0.33vw), 1.88rem)",
-  large: "clamp(2.3rem, calc(2.2rem + 0.43vw), 2.4rem)",
-  xLarge: "clamp(3.38rem, calc(3.24rem + 0.65vw), 3.75rem)",
+  large: "1.5rem",
+  xLarge: "2rem",
   xxLarge: "clamp(4.50rem, calc(4.33rem + 0.87vw), 5.00rem)",
-  xxxLarge: "clamp(6.75rem, calc(6.49rem + 1.30vw), 7.50rem)",
+  xxxLarge: "10rem",
 };
 
 export const theme = {
