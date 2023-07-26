@@ -1,7 +1,6 @@
 import { createContext, useContext, useLayoutEffect, useRef } from "react";
 import { toVarNames, toVars } from "@/utils";
-import { theme } from "./theme";
-import { Theme } from "./types";
+import { theme, Theme } from "@/app/theme";
 
 interface ThemeProviderProps {
   children: React.ReactNode;
