@@ -7,7 +7,7 @@ export interface Theme {
   spaces: Spaces;
 }
 
-interface Steps {
+type Steps = {
   minus2: string;
   minus1: string;
   zero: string;
@@ -16,9 +16,28 @@ interface Steps {
   three: string;
   four: string;
   five: string;
+};
+
+export interface Typography {
+  heading: string;
+  body: string;
+  steps: Steps;
 }
 
 export interface Palette {
+  blue: string;
+  indigo: string;
+  purple: string;
+  pink: string;
+  red: string;
+  orange: string;
+  yellow: string;
+  green: string;
+  teal: string;
+  cyan: string;
+  white: string;
+  gray: string;
+  "gray-dark": string;
   primary: string;
   secondary: string;
   light: string;
@@ -27,11 +46,6 @@ export interface Palette {
 export interface Shadows {
   small: string;
   medium: string;
-}
-export interface Typography {
-  heading: string;
-  body: string;
-  steps: Steps;
 }
 
 export interface Radii {
@@ -42,10 +56,13 @@ export interface Radii {
 }
 
 export interface Breakpoints {
+  xs: string;
   sm: string;
   md: string;
   lg: string;
-  xlg: string;
+  xl: string;
+  xxl: string;
+  xxxl: string;
 }
 
 export interface Spaces {
