@@ -1,6 +1,14 @@
-import { Theme } from './types'
+import {
+	Breakpoints,
+	Palette,
+	Radii,
+	Shadows,
+	Spaces,
+	Theme,
+	Typography,
+} from './types'
 
-const palette = {
+const palette: Palette = {
 	blue: '#b4f0f0',
 	indigo: '#280f91',
 	purple: '#7d2ae8',
@@ -13,6 +21,7 @@ const palette = {
 	cyan: '#00c4cc',
 	white: '#fff',
 	gray: '#6c757d',
+	'gray-light': '#f8f9f9',
 	'gray-dark': '#293039',
 	primary: '#7d2ae8',
 	secondary: '#280f91',
@@ -20,13 +29,13 @@ const palette = {
 	dark: '#0e1318',
 }
 
-const shadows = {
+const shadows: Shadows = {
 	small: '0.5px 1px 1px hsl(0deg, 0%, 50%,)',
 	medium:
 		'1px 2px 2px hsl(0deg, 0%, 50% / 0.333), 2px 4px 4px hsl(0deg, 0%, 50% / 0.333), 3px 6px 6px hsl(0deg, 0%, 50% / 0.333)',
 }
 
-const typography = {
+const typography: Typography = {
 	heading: 'ezramedium, sans-serif',
 	body: 'sans-serif',
 	steps: {
@@ -44,14 +53,14 @@ const typography = {
 	},
 }
 
-const radii = {
+const radii: Radii = {
 	none: '0',
 	medium: '6px',
 	large: '1rem',
 	full: '9999px',
 }
 
-const breakpoints = {
+const breakpoints: Breakpoints = {
 	xs: '0',
 	sm: '576px',
 	md: '768px',
@@ -61,7 +70,7 @@ const breakpoints = {
 	xxxl: '1600px',
 }
 
-const spaces = {
+const spaces: Spaces = {
 	xxxSmall: '.5rem',
 	xxSmall: '.625rem',
 	xSmall: '.9375rem',

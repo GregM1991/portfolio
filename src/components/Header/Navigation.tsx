@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Logo from '@/components/Logo'
 
-function Navigation() {
+function Header() {
 	return (
 		<nav>
 			<Logo />
@@ -9,4 +9,4 @@ function Navigation() {
 	)
 }
 
-export default Navigation
+export default Header

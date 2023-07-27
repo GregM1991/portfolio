@@ -1,68 +1,64 @@
-export interface Theme {
-  palette: Palette;
-  shadows: Shadows;
-  typography: Typography;
-  radii: Radii;
-  breakpoints: Breakpoints;
-  spaces: Spaces;
+export interface Palette {
+	blue: string
+	indigo: string
+	purple: string
+	pink: string
+	red: string
+	orange: string
+	yellow: string
+	green: string
+	teal: string
+	cyan: string
+	white: string
+	gray: string
+	'gray-light': string
+	'gray-dark': string
+	primary: string
+	secondary: string
+	light: string
+	dark: string
 }
 
 type Steps = {
-  minus2: string;
-  minus1: string;
-  zero: string;
-  one: string;
-  two: string;
-  three: string;
-  four: string;
-  five: string;
-};
+	minus2: string
+	minus1: string
+	zero: string
+	one: string
+	two: string
+	three: string
+	four: string
+	five: string
+	six: string
+	seven: string
+	eight: string
+}
 
 export interface Typography {
-  heading: string;
-  body: string;
-  steps: Steps;
+	heading: string
+	body: string
+	steps: Steps
 }
 
-export interface Palette {
-  blue: string;
-  indigo: string;
-  purple: string;
-  pink: string;
-  red: string;
-  orange: string;
-  yellow: string;
-  green: string;
-  teal: string;
-  cyan: string;
-  white: string;
-  gray: string;
-  "gray-dark": string;
-  primary: string;
-  secondary: string;
-  light: string;
-  dark: string;
-}
 export interface Shadows {
-  small: string;
-  medium: string;
+	small: string
+	medium: string
 }
 
 export interface Radii {
-  none: string;
-  medium: string;
-  large: string;
-  full: string;
+	none: string
+	medium: string
+	large: string
+	full: string
 }
 
 export interface Breakpoints {
-  xs: string;
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
-  xxl: string;
-  xxxl: string;
+	xs: string
+	sm: string
+	md: string
+	lg: string
+	xl: string
+	xxl: string
+	xxxl: string
 }
 
 export interface Spaces {
@@ -76,4 +72,13 @@ export interface Spaces {
 	xxLarge: string
 	xxxLarge: string
 	xxxxLarge: string
+}
+
+export interface Theme {
+	palette: Palette
+	shadows: Shadows
+	typography: Typography
+	radii: Radii
+	breakpoints: Breakpoints
+	spaces: Spaces
 }

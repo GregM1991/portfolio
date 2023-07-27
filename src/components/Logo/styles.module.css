@@ -1,0 +1,7 @@
+.logo {
+  display: grid;
+	place-items: center;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: var(--font-family-primary);
+}

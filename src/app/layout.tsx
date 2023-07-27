@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { ThemeProvider, theme } from '@/theme'
 import { toVarNames, toVars } from '@/utils'
-import Navigation from '@/components/Navigation'
-import './styles.css'
+import Header from '@/components/Header'
+import './global.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",
@@ -21,7 +21,7 @@ export default function RootLayout({
 		<ThemeProvider>
 			<html lang="en" style={{ ...cssVars }}>
 				<body>
-					<Navigation />
+					<Header />
 					{children}
 				</body>
 			</html>
