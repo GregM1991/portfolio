@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import { ThemeProvider, theme } from '@/theme'
-import { toVarNames, toVars } from '@/utils'
 import Header from '@/components/Header'
+import { CSS_VARS } from '@/constants/cssVariables'
+
 import './global.css'
 
 export const metadata: Metadata = {
@@ -9,22 +9,17 @@ export const metadata: Metadata = {
 	description: 'A place to show the world what I got 💪🏻',
 }
 
-export const devVars = toVarNames(theme)
-export const cssVars = toVars(theme)
-
 export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode
 }) {
 	return (
-		<ThemeProvider>
-			<html lang="en" style={{ ...cssVars }}>
-				<body>
-					<Header />
-					{children}
-				</body>
-			</html>
-		</ThemeProvider>
+		<html lang="en" style={{ ...CSS_VARS }}>
+			<body>
+				<Header />
+				{children}
+			</body>
+		</html>
 	)
 }
