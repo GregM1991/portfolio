@@ -1,4 +1,3 @@
-// import { createContext, useContext, useLayoutEffect, useRef } from 'react'
 'use client'
 import { createContext, useContext } from 'react'
 import { theme } from './theme'
