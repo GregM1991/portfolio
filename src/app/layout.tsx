@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import { ThemeProvider, theme } from '@/app/theme'
+import { ThemeProvider, theme } from '@/theme'
 import { toVarNames, toVars } from '@/utils'
+import Navigation from '@/components/Navigation'
 import './styles.css'
 
 export const metadata: Metadata = {
@@ -19,7 +20,10 @@ export default function RootLayout({
 	return (
 		<ThemeProvider>
 			<html lang="en" style={{ ...cssVars }}>
-				<body style={{ background: devVars.palette.blue }}>{children}</body>
+				<body>
+					<Navigation />
+					{children}
+				</body>
 			</html>
 		</ThemeProvider>
 	)
