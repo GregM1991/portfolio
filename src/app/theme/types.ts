@@ -66,13 +66,14 @@ export interface Breakpoints {
 }
 
 export interface Spaces {
-  xxxSmall: string;
-  xxSmall: string;
-  xSmall: string;
-  small: string;
-  medium: string;
-  large: string;
-  xLarge: string;
-  xxLarge: string;
-  xxxLarge: string;
+	xxxSmall: string
+	xxSmall: string
+	xSmall: string
+	small: string
+	medium: string
+	large: string
+	xLarge: string
+	xxLarge: string
+	xxxLarge: string
+	xxxxLarge: string
 }

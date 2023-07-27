@@ -1,5 +1,11 @@
-import Image from "next/image";
+import { devVars } from './layout'
 
 export default function Home() {
-  return <main>hullo</main>;
+	return (
+		<main>
+			<h1 style={{ fontSize: devVars.typography.steps.four }}>
+				{devVars.palette.dark}
+			</h1>
+		</main>
+	)
 }
