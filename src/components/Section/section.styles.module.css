@@ -1,0 +1,4 @@
+.section {
+  padding: var(--spaces-xxxxxxLarge) 0;
+  background-color: var(--background-color);
+}
