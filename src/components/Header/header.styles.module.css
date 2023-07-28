@@ -1,5 +1,20 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  padding: var(--spaces-medium) var(--spaces-xSmall);
+  align-items: center;
+  gap: calc(var(--spaces-small) * 2);
+  padding: var(--spaces-medium) var(--spaces-xLarge);
+}
+
+.nav {
+  display: flex;
+  gap: var(--spaces-small);
+}
+
+.navLink {
+  font-size: var(--typography-steps-minus1);
+  color: var(--palette-gray-dark);
+}
+
+.navLink:hover {
+  color: var(--palette-purple);
 }

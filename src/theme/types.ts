@@ -79,6 +79,7 @@ export interface Spaces {
 	xxxLarge: string
 	xxxxLarge: string
 	xxxxxLarge: string
+	xxxxxxLarge: string
 }
 
 export interface Theme {

@@ -84,11 +84,12 @@ const spaces: Spaces = {
 	small: '1rem',
 	medium: '1.25rem',
 	large: '1.5rem',
-	xLarge: '2rem',
-	xxLarge: '3rem',
-	xxxLarge: '5rem',
-	xxxxLarge: '7rem',
-	xxxxxLarge: '10rem',
+	xLarge: '1.875rem',
+	xxLarge: '2rem',
+	xxxLarge: '3rem',
+	xxxxLarge: '5rem',
+	xxxxxLarge: '7rem',
+	xxxxxxLarge: '10rem',
 }
 
 export const theme: Theme = {
