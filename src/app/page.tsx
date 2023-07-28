@@ -1,11 +1,12 @@
-import { devVars } from './layout'
+import Link from 'next/link'
 
 export default function Home() {
 	return (
 		<main>
-			<h1 style={{ fontSize: devVars.typography.steps.four }}>
-				{devVars.palette.dark}
-			</h1>
+			<div>
+				Greg Life
+				<a id="greg-life">#</a>
+			</div>
 		</main>
 	)
 }

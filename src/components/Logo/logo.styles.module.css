@@ -1,0 +1,11 @@
+.logo {
+	/* display: inline-block; */
+	font-weight: 700;
+  font-size: var(--typography-steps-five);
+	line-height: var(--typography-steps-five);
+	cursor: pointer;
+	font-family: var(--font-family-primary);
+	background: linear-gradient(0.25turn, var(--gradients-brandGradient));
+	background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
