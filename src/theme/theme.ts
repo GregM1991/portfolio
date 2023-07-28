@@ -1,3 +1,9 @@
+/* This theme object is sub-optimal as I need to change these in two places 
+(here and in the variables css module), I created this with styled-components in 
+mind but it seems styled-components don't play well with server components due 
+to js run times. I'll rethink this when I have some more time, but for now am 
+going for speed */
+
 import {
 	Breakpoints,
 	Palette,
@@ -14,7 +20,9 @@ const palette: Palette = {
 	indigo: '#280f91',
 	purple: '#7d2ae8',
 	pink: '#ffa5f0',
+	'light-pink': '#ffe6ff',
 	red: '#ff5055',
+	'dark-red': '#6e0f2d',
 	orange: '#f15852',
 	yellow: '#ffd200',
 	green: '#28c878',

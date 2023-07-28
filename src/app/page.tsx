@@ -24,17 +24,35 @@ export default function Home() {
 					aliquid.
 				</Typography>
 			</Section>
-			<Section bgColor="orange">
-				Greg&apos;s values
-				<a id="gregs-values">#</a>
+			<Section bgColor="red">
+				<Typography type="h2" color="white" variant="h2Rich">
+					Greg&apos;s values <a id="gregs-values" />
+				</Typography>
+				<Typography color="white">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
+					minus porro ad. Praesentium accusamus error nam facilis explicabo
+					aliquid.
+				</Typography>
 			</Section>
-			<Section bgColor="pink">
-				A place for projects
-				<a id="projects">#</a>
+			<Section bgColor="light-pink">
+				<Typography type="h2" color="dark-red" variant="h2Rich">
+					A place for projects <a id="projects" />
+				</Typography>
+				<Typography color="dark-red">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
+					minus porro ad. Praesentium accusamus error nam facilis explicabo
+					aliquid.
+				</Typography>
 			</Section>
 			<Section bgColor="green">
-				Sustainability
-				<a id="sustainability">#</a>
+				<Typography type="h2" variant="h2Rich">
+					Sustainability <a id="sustainability" />
+				</Typography>
+				<Typography>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
+					minus porro ad. Praesentium accusamus error nam facilis explicabo
+					aliquid.
+				</Typography>
 			</Section>
 		</main>
 	)

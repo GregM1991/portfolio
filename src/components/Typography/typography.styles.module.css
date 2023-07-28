@@ -10,27 +10,7 @@
 	letter-spacing: -0.2rem;
 }
 
-.h2 {
-  composes: color;
-}
-
-.h3 {
-  composes: color;
-}
-
-.h4 {
-  composes: color;
-}
-
-.h5 {
-  composes: color;
-}
-
-.h6 {
-  composes: color;
-}
-
-.span {
+.h2, .h3, .h4, .h5, .h6, .span, .p {
   composes: color;
 }
 
