@@ -17,6 +17,11 @@ export interface Palette {
 	secondary: string
 	light: string
 	dark: string
+	blendBlue: string
+}
+
+export interface Gradients {
+	brandGradient: string
 }
 
 type Steps = {
@@ -31,6 +36,7 @@ type Steps = {
 	six: string
 	seven: string
 	eight: string
+	nine: string
 }
 
 export interface Typography {
@@ -72,10 +78,12 @@ export interface Spaces {
 	xxLarge: string
 	xxxLarge: string
 	xxxxLarge: string
+	xxxxxLarge: string
 }
 
 export interface Theme {
 	palette: Palette
+	gradients: Gradients
 	shadows: Shadows
 	typography: Typography
 	radii: Radii

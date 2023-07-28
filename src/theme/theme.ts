@@ -1,6 +1,7 @@
 import {
 	Breakpoints,
 	Palette,
+	Gradients,
 	Radii,
 	Shadows,
 	Spaces,
@@ -27,6 +28,11 @@ const palette: Palette = {
 	secondary: '#280f91',
 	light: '#e9ecef',
 	dark: '#0e1318',
+	blendBlue: '#5a32fa',
+}
+
+const gradients: Gradients = {
+	brandGradient: `${palette.cyan}, ${palette.blendBlue}, ${palette.purple}`,
 }
 
 const shadows: Shadows = {
@@ -43,13 +49,14 @@ const typography: Typography = {
 		minus1: '.9375rem',
 		zero: '1rem',
 		one: '1.0625rem',
-		two: '1.5rem',
-		three: '1.75rem',
-		four: '3rem',
-		five: '4rem',
-		six: '5.5625rem',
-		seven: '6rem',
-		eight: '9rem',
+		two: '1.25rem',
+		three: '1.5rem',
+		four: '1.75rem',
+		five: '3rem',
+		six: '4rem',
+		seven: '5.5625rem',
+		eight: '6rem',
+		nine: '9rem',
 	},
 }
 
@@ -75,16 +82,18 @@ const spaces: Spaces = {
 	xxSmall: '.625rem',
 	xSmall: '.9375rem',
 	small: '1rem',
-	medium: '1.5rem',
-	large: '2rem',
-	xLarge: '3rem',
-	xxLarge: '5rem',
-	xxxLarge: '7rem',
-	xxxxLarge: '10rem',
+	medium: '1.25rem',
+	large: '1.5rem',
+	xLarge: '2rem',
+	xxLarge: '3rem',
+	xxxLarge: '5rem',
+	xxxxLarge: '7rem',
+	xxxxxLarge: '10rem',
 }
 
 export const theme: Theme = {
 	palette,
+	gradients,
 	shadows,
 	typography,
 	radii,
