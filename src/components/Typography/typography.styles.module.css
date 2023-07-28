@@ -4,7 +4,7 @@
 
 .h1 {
 	composes: color;
-	font-size: var(--typography-steps-eight);
+	font-size: var(--typography-hero-text-header);
 	line-height: 1.1;
 	font-weight: 700;
 	letter-spacing: -0.2rem;
@@ -36,12 +36,18 @@
 
 .p {
   composes: color;
+  font-size: var(--typography-body);
+
 }
 
 .pLead {
-	font-size: var(--typography-steps-three);
+	font-size: var(--typography-body-lead);
 }
 
 .h1Lead {
   font-size: var(--typography-steps-)
+}
+
+.h2Rich {
+  font-size: var(--typography-rich-header-text)
 }

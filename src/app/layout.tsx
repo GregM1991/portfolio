@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 
 import './global.css'
-import './variables.css'
+import '@/utils/variables.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",

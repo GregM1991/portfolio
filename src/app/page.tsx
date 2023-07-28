@@ -15,7 +15,7 @@ export default function Home() {
 				</Typography>
 			</Section>
 			<Section bgColor="indigo">
-				<Typography type="h1" color="white">
+				<Typography type="h2" color="white" variant="h2Rich">
 					My contribution <a id="my-contribution" />
 				</Typography>
 				<Typography color="white">

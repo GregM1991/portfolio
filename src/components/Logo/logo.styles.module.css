@@ -1,6 +1,6 @@
 .logo {
 	font-weight: 700;
-  font-size: var(--typography-steps-five);
+  font-size: 2.3rem;
 	line-height: var(--typography-steps-five);
 	cursor: pointer;
 	font-family: var(--font-family-primary);

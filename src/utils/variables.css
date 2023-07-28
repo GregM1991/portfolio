@@ -23,20 +23,6 @@
 	--shadows-medium: 1px 2px 2px hsl(0deg, 0%, 50% / 0.333),
 		2px 4px 4px hsl(0deg, 0%, 50% / 0.333),
 		3px 6px 6px hsl(0deg, 0%, 50% / 0.333);
-	--typography-heading: ezramedium, sans-serif;
-	--typography-body: sans-serif;
-	--typography-steps-minus2: 0.85rem;
-	--typography-steps-minus1: 0.9375rem;
-	--typography-steps-zero: 1rem;
-	--typography-steps-one: 1.0625rem;
-	--typography-steps-two: 1rem;
-	--typography-steps-three: 1.25rem;
-	--typography-steps-four: 1.25rem;
-	--typography-steps-five: 3rem;
-	--typography-steps-six: 4rem;
-	--typography-steps-seven: 5.5625rem;
-	--typography-steps-eight: 6rem;
-	--typography-steps-nine: 9rem;
 	--radii-none: 0;
 	--radii-medium: 6px;
 	--radii-large: 1rem;
@@ -48,6 +34,21 @@
 	--breakpoints-xl: 1200px;
 	--breakpoints-xxl: 1400px;
 	--breakpoints-xxxl: 1600px;
+	--typography-heading-font-family: ezramedium, sans-serif;
+	--typography-body-font-family: sans-serif;
+	/* smol screens */
+	--typography-body: 1rem;
+	--typography-hero-text-header: 2.5rem;
+	--typography-body-lead: 1.25rem;
+	--typography-rich-header-text: 1.75rem;
+	--typography-section-program-heading: 2.5625rem;
+	--typography-section-program-item-header: 1.25rem;
+	--typography-canva-life: 3.5rem;
+	--typography-blockquote-lead: 1.5rem;
+	--typography-blockquote-footer: 1rem;
+	/* --typography-cta-banner-header: 3.125rem;
+	--typography-cta-banner-body: 1.0625rem; */
+	--typography-small: 80%;
 	--spaces-xxxSmall: 0.5rem;
 	--spaces-xxSmall: 0.625rem;
 	--spaces-xSmall: 0.9375rem;
@@ -62,11 +63,19 @@
 	--spaces-xxxxxxLarge: 10rem;
 }
 
+/* medium - large screens */
 @media (min-width: 992px) {
   :root {
-    --typography-steps-two: 1.25rem;
-    --typography-steps-three: 1.5rem;
-    --typography-steps-four: 1.75rem;
-
+		--typography-body: 1.25rem;
+		--typography-body-lead: 1.125rem;
+		--typography-hero-text-header: 4rem;
+		--typography-rich-header-text: 4rem;
+		--typography-section-program-heading: 2.5625rem;
+		--typography-section-program-item-header: 1.75rem;
+		--typography-canva-life: 6rem;
+		--typography-blockquote-lead: 2.25rem;
+		--typography-blockquote-footer: 1.0625rem;
+		/* --typography-cta-banner-header: 5.5625rem;
+		--typography-cta-banner-body: 1.5rem; Should probs just put this in a cta banner */
   }
 }
