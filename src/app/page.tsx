@@ -1,15 +1,28 @@
 import Section from '@/components/Section'
+import Typography from '@/components/Typography/Typography'
 
 export default function Home() {
 	return (
 		<main>
 			<Section>
-				Greg Life
-				<a id="greg-life">#</a>
+				<Typography type="h1">
+					Greg life <a id="greg-life" />
+				</Typography>
+				<Typography variant="pLead">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
+					minus porro ad. Praesentium accusamus error nam facilis explicabo
+					aliquid.
+				</Typography>
 			</Section>
 			<Section bgColor="indigo">
-				My contribution
-				<a id="my-contribution">#</a>
+				<Typography type="h1" color="white">
+					My contribution <a id="my-contribution" />
+				</Typography>
+				<Typography color="white">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
+					minus porro ad. Praesentium accusamus error nam facilis explicabo
+					aliquid.
+				</Typography>
 			</Section>
 			<Section bgColor="orange">
 				Greg&apos;s values

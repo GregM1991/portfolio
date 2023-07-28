@@ -1,0 +1,43 @@
+.color {
+	color: var(--color);
+}
+
+.h1 {
+	composes: color;
+	font-size: var(--typography-steps-eight);
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: -0.2rem;
+}
+
+.h2 {
+  composes: color;
+}
+
+.h3 {
+  composes: color;
+}
+
+.h4 {
+  composes: color;
+}
+
+.h5 {
+  composes: color;
+}
+
+.h6 {
+  composes: color;
+}
+
+.span {
+  composes: color;
+}
+
+.p {
+  composes: color;
+}
+
+.pLead {
+	font-size: var(--typography-steps-three);
+}
