@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import { CSS_VARS } from '@/constants/cssVariables'
 
 import './global.css'
+import './variables.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",
@@ -15,7 +15,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en" style={{ ...CSS_VARS }}>
+		<html lang="en">
 			<body>
 				<Header />
 				{children}

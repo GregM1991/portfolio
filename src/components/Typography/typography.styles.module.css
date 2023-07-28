@@ -41,3 +41,7 @@
 .pLead {
 	font-size: var(--typography-steps-three);
 }
+
+.h1Lead {
+  font-size: var(--typography-steps-)
+}
