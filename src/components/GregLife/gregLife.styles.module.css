@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.type {
+  padding-top: 200px;
+  max-width: 50%;
+}

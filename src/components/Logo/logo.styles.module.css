@@ -1,7 +1,6 @@
 .logo {
 	font-weight: 700;
   font-size: 2.3rem;
-	line-height: var(--typography-steps-five);
 	cursor: pointer;
 	font-family: var(--font-family-primary);
 	background: linear-gradient(0.25turn, var(--gradients-brandGradient));

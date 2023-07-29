@@ -2,3 +2,8 @@
   padding: var(--spaces-xxxxxxLarge) 0;
   background-color: var(--background-color);
 }
+
+.hero {
+  padding-top: 0;
+  margin-top: 3rem;
+}

@@ -1,9 +1,9 @@
 import * as React from 'react'
-import Logo from '@/components/Logo'
+import { Logo } from '@/components'
 import styles from './header.styles.module.css'
 import Link from 'next/link'
 
-function Header() {
+export function Header() {
 	return (
 		<header>
 			<div className={styles.header}>
@@ -23,5 +23,3 @@ function Header() {
 		</header>
 	)
 }
-
-export default Header

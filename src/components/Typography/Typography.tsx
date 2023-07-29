@@ -10,7 +10,7 @@ interface TypographyProps {
 	children: React.ReactNode
 }
 
-function Typography({
+export function Typography({
 	type = 'p',
 	variant,
 	color = 'dark',
@@ -30,5 +30,3 @@ function Typography({
 		</Component>
 	)
 }
-
-export default Typography

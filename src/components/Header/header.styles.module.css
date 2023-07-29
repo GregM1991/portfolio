@@ -11,8 +11,9 @@
 }
 
 .navLink {
-  font-size: var(--typography-steps-minus1);
+  font-size: 0.9375rem;
   color: var(--palette-gray-dark);
+  letter-spacing: .005rem;
 }
 
 .navLink:hover {

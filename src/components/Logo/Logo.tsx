@@ -9,7 +9,7 @@ const arvo = Arvo({
 	subsets: ['latin'],
 })
 
-function Logo() {
+export function Logo() {
 	const style = {
 		'--font-family-primary': arvo.style.fontFamily,
 	} as React.CSSProperties
@@ -20,5 +20,3 @@ function Logo() {
 		</Link>
 	)
 }
-
-export default Logo
