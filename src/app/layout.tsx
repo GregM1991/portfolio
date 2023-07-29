@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 
 import './global.css'
 import '@/utils/variables.css'
+import '@/utils/fonts.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",

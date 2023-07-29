@@ -1,5 +1,6 @@
 import Section from '@/components/Section'
 import Typography from '@/components/Typography/Typography'
+import Image from '@/components/Image'
 
 export default function Home() {
 	return (
@@ -13,6 +14,8 @@ export default function Home() {
 					minus porro ad. Praesentium accusamus error nam facilis explicabo
 					aliquid.
 				</Typography>
+				<Image alt="My first image" src="" />
+				{/* TODO: change this to something useful */}
 			</Section>
 			<Section bgColor="indigo">
 				<Typography type="h2" color="white" variant="h2Rich">
