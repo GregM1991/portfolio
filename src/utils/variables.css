@@ -77,7 +77,20 @@
 		--typography-canva-life: 6rem;
 		--typography-blockquote-lead: 2.25rem;
 		--typography-blockquote-footer: 1.0625rem;
-		/* --typography-cta-banner-header: 5.5625rem;
-		--typography-cta-banner-body: 1.5rem; Should probs just put this in a cta banner */
   }
+}
+
+/* medium - xlarge screens */
+@media (min-width: 1200px) {
+  :root {
+		--typography-body: 1.25rem;
+		--typography-body-lead: 1.5rem;
+		--typography-hero-text-header: 6rem;
+		--typography-rich-header-text: 4rem;
+		--typography-section-program-heading: 5.625rem;
+		--typography-section-program-item-header: 1.75rem;
+		--typography-canva-life: 6rem;
+		--typography-blockquote-lead: 2.25rem;
+		--typography-blockquote-footer: 1.0625rem;
+	}
 }

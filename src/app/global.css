@@ -61,7 +61,6 @@ blockquote,
 dl,
 dd {
 	margin: 0;
-
 }
 
 h1,
@@ -72,6 +71,7 @@ h5,
 h6 {
 	font-family: ezramedium;
 	margin-bottom: var(--spaces-small);
+	letter-spacing: -0.03rem;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -94,7 +94,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	color: var(--palette-dark);
 	font-size: var(--typography-body);
-  
+  letter-spacing: .06rem;
 }
 
 /* A elements that don't have a class get default styles */

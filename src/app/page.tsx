@@ -25,7 +25,7 @@ export default function Home() {
 				</Typography>
 			</Section>
 			<Section bgColor="red">
-				<Typography type="h2" color="white" variant="h2Rich">
+				<Typography type="h2" color="white" variant="programHeader">
 					Greg&apos;s values <a id="gregs-values" />
 				</Typography>
 				<Typography color="white">

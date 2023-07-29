@@ -17,11 +17,11 @@
 .p {
   composes: color;
   font-size: var(--typography-body);
-
 }
 
 .pLead {
 	font-size: var(--typography-body-lead);
+  letter-spacing: 0.03rem;
 }
 
 .h1Lead {
@@ -30,4 +30,8 @@
 
 .h2Rich {
   font-size: var(--typography-rich-header-text)
+}
+
+.programHeader {
+  font-size: var(--typography-section-program-heading);
 }
