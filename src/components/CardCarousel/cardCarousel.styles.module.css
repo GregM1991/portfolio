@@ -1,0 +1,59 @@
+.wrapper {
+  max-width: 50%;
+  margin-top: 50px;
+}
+
+.carouselContainer {
+  overflow: hidden;
+}
+
+.innerContainer {
+  margin-right: 120px;
+}
+
+.carouselSlider {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  transform: var(--carousel-transform);
+  width: 600%;
+
+  transition: 0.3s ease-in-out;
+}
+
+.card {
+  width: 16.6667%;
+  border-radius: var(--radii-large);
+  background-color: var(--palette-light-pink);
+  padding: 30px 30px 3rem;
+}
+
+.valueBodyText {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.buttonWrapper {
+  display: flex; 
+  margin-top: 2rem;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: var(--radii-full);
+  background: var(--palette-white);
+  margin: 0 8px; 
+  width: 48px;
+  height: 48px;
+  border: none;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button > svg {
+  transform: scale(2)
+}

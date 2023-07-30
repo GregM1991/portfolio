@@ -7,6 +7,7 @@ interface TypographyProps {
 	type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 	variant?: 'pLead' | 'h1Lead' | 'h2Rich' | 'programHeader'
 	color?: keyof Palette
+	className?: string
 	children: React.ReactNode
 }
 
@@ -14,6 +15,7 @@ export function Typography({
 	type = 'p',
 	variant,
 	color = 'dark',
+	className,
 	children,
 }: TypographyProps) {
 	const additiveStyles = {
@@ -23,7 +25,9 @@ export function Typography({
 
 	return (
 		<Component
-			className={`${styles[type]} ${variant ? styles[variant] : null}`}
+			className={`${styles[type]} ${variant ? styles[variant] : null} ${
+				className ? className : null
+			}`}
 			style={additiveStyles}
 		>
 			{children}
