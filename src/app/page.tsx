@@ -1,19 +1,10 @@
-import { Section, Typography, GregLife } from '@/components'
+import { Section, Typography, GregLife, MyContribution } from '@/components'
 
 export default function Home() {
 	return (
 		<main>
 			<GregLife />
-			<Section bgColor="indigo" ariaLabel="My contribution">
-				<Typography type="h2" color="white" variant="h2Rich">
-					My contribution <a id="my-contribution" />
-				</Typography>
-				<Typography color="white">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
-					minus porro ad. Praesentium accusamus error nam facilis explicabo
-					aliquid.
-				</Typography>
-			</Section>
+			<MyContribution />
 			<Section bgColor="red" ariaLabel="My values">
 				<Typography type="h2" color="white" variant="programHeader">
 					Greg&apos;s values <a id="gregs-values" />
