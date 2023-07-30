@@ -3,7 +3,9 @@ export interface Palette {
 	indigo: string
 	purple: string
 	pink: string
+	'light-pink': string
 	red: string
+	'dark-red': string
 	orange: string
 	yellow: string
 	green: string

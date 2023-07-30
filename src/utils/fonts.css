@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'ezramedium';
+	src:
+		url('../assets/fonts/ezra_medium-webfont.woff2') format('woff2'),
+		url('../assets/fonts/ezra_medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ezramedium_italic';
+	src:
+		url('../assets/fonts/ezra_mediumitalic-webfont.woff2') format('woff2'),
+		url('../assets/fonts/ezra_mediumitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ezraitalic';
+	src:
+		url('../assets/fonts/ezra_italic-webfont.woff2') format('woff2'),
+		url('../assets/fonts/ezra_italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ezraregular';
+	src:
+		url('../assets/fonts/ezra_regular-webfont.woff2') format('woff2'),
+		url('../assets/fonts/ezra_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

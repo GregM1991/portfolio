@@ -1,0 +1,37 @@
+.color {
+	color: var(--color);
+}
+
+.h1 {
+	composes: color;
+	font-size: var(--typography-hero-text-header);
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: -0.2rem;
+}
+
+.h2, .h3, .h4, .h5, .h6, .span, .p {
+  composes: color;
+}
+
+.p {
+  composes: color;
+  font-size: var(--typography-body);
+}
+
+.pLead {
+	font-size: var(--typography-body-lead);
+  letter-spacing: 0.03rem;
+}
+
+.h1Lead {
+  font-size: var(--typography-steps-)
+}
+
+.h2Rich {
+  font-size: var(--typography-rich-header-text)
+}
+
+.programHeader {
+  font-size: var(--typography-section-program-heading);
+}

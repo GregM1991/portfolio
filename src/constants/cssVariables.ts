@@ -1,4 +1,5 @@
 import { theme } from '@/theme'
-import { toVars } from '@/utils'
+import { toVarNames } from '@/utils'
 
-export const CSS_VARS = toVars(theme)
+export const DEV_VARS = toVarNames(theme)
+

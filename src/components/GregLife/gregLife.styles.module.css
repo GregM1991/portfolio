@@ -1,0 +1,27 @@
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	max-width: 1140px;
+	margin: auto;
+}
+
+.imageWrapper {
+  position: relative;
+  padding: 0 15px;
+}
+
+.type {
+	padding-top: 200px;
+	max-width: 50%;
+}
+
+.cuddleCats {
+	position: absolute;
+  left: -190px;
+  object-position: 50% 25%;
+}
+
+.canvaRooftop {
+  margin-top: 100px;
+}
