@@ -1,16 +1,38 @@
 import { Typography } from '@/components'
+import Image, { StaticImageData } from 'next/image'
+import styles from './project.styles.module.css'
 
-export function Project() {
+interface ProjectProps {
+	title: string
+	copy: string
+	imageSrc: StaticImageData
+	imageAltText: string
+	layout?: 'left' | 'right'
+}
+
+export function Project({
+	title,
+	copy,
+	imageSrc,
+	imageAltText,
+	layout = 'left',
+}: ProjectProps) {
 	return (
-		<div>
-			<Typography type="h2" color="dark-red" variant="h2Rich">
-				A place for projects <a id="projects" />
-			</Typography>
-			<Typography color="dark-red">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
-				minus porro ad. Praesentium accusamus error nam facilis explicabo
-				aliquid.
-			</Typography>
+		<div className={`${styles.wrapper} ${styles[layout]}`}>
+			<div className={styles.textWrapper}>
+				<Typography type="h3" color="dark-red">
+					{title}
+				</Typography>
+				<Typography color="dark-red">{copy}</Typography>
+			</div>
+			<div className={styles.imageWrapper}>
+				<Image
+					src={imageSrc}
+					alt={imageAltText}
+					height={430}
+					className={styles.img}
+				/>
+			</div>
 		</div>
 	)
 }

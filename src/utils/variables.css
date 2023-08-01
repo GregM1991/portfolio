@@ -63,6 +63,7 @@
 	--spaces-xxxxLarge: 5rem;
 	--spaces-xxxxxLarge: 7rem;
 	--spaces-xxxxxxLarge: 10rem;
+	--padding-calc-value: 24px;
 }
 
 /* medium - large screens */
@@ -77,6 +78,7 @@
 		--typography-canva-life: 6rem;
 		--typography-blockquote-lead: 2.25rem;
 		--typography-blockquote-footer: 1.0625rem;
+		--padding-calc-value: calc(((100% - 930px)/2));
   }
 }
 
@@ -86,5 +88,12 @@
 		--typography-body-lead: 1.5rem;
 		--typography-hero-text-header: 6rem;
 		--typography-section-program-heading: 5.625rem;
+		--padding-calc-value: calc(((100% - 1110px)/2));
+	}
+}
+
+@media (min-width: 1400px) {
+  :root {
+		--padding-calc-value: calc(((100% - 1290px)/2));
 	}
 }

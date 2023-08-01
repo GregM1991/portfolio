@@ -1,0 +1,7 @@
+.wrapper > div:first-of-type {
+  padding-top: 0;
+}
+
+.header {
+  padding-left: var(--padding-calc-value)
+}
