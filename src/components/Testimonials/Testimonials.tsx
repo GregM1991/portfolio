@@ -3,43 +3,46 @@ import { useState } from 'react'
 import { Section, Testimonial } from '@/components'
 import styles from './testimonials.styles.module.css'
 import testimonialImage from '@/assets/images/greg-and-cat-in-barossa.jpg'
+import testimonialImage2 from '@/assets/images/greg-driving-mario-kart.jpg'
+import testimonialImage3 from '@/assets/images/greg-in-sun-with-silly-hat.jpg'
+import testimonialImage4 from '@/assets/images/greg-on-couch-with-laptop-and-rosie.jpg'
 
 const TESTIMONIALS = [
 	{
 		img: testimonialImage,
 		imgAltText: 'Testimonial will go here',
-		leadText: 'Lorem ipsum dolor sit amet.',
+		leadText: 'Testimonial will go here',
 		bodyText:
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
 		name: 'John Smith',
 		role: 'King of the shits',
 	},
 	{
-		img: testimonialImage,
-		imgAltText: 'Testimonial will go here',
-		leadText: 'Lorem ipsum dolor sit amet.',
+		img: testimonialImage2,
+		imgAltText: 'This is the second testimonial',
+		leadText: 'This is the second testimonial',
 		bodyText:
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
 		name: 'Smith John',
-		role: 'King of the shits',
+		role: 'Shit of the kings',
 	},
 	{
-		img: testimonialImage,
-		imgAltText: 'Testimonial will go here',
-		leadText: 'Lorem ipsum dolor sit amet.',
+		img: testimonialImage3,
+		imgAltText: 'This is the third testimonial',
+		leadText: 'This is the third testimonial',
 		bodyText:
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'John Smith',
-		role: 'King of the shits',
+		name: 'Pantaloons mcgee',
+		role: 'Clown',
 	},
 	{
-		img: testimonialImage,
-		imgAltText: 'Testimonial will go here',
-		leadText: 'Lorem ipsum dolor sit amet.',
+		img: testimonialImage4,
+		imgAltText: 'And the Fourth!',
+		leadText: 'And the Fourth!',
 		bodyText:
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'John Smith',
-		role: 'King of the shits',
+		name: 'Bob Saget',
+		role: 'Renowned Wild Man',
 	},
 ]
 
@@ -63,10 +66,30 @@ export function Testimonials() {
 				/>
 			</div>
 			<div className={styles.buttonsWrapper}>
-				<button className={styles.button} />
-				<button className={styles.button} />
-				<button className={styles.button} />
-				<button className={styles.button} />
+				<button
+					className={`${styles.button} ${
+						currentTestimonial === 0 ? styles.active : null
+					}`}
+					onClick={() => setCurrentTestimonial(0)}
+				/>
+				<button
+					className={`${styles.button} ${
+						currentTestimonial === 1 ? styles.active : null
+					}`}
+					onClick={() => setCurrentTestimonial(1)}
+				/>
+				<button
+					className={`${styles.button} ${
+						currentTestimonial === 2 ? styles.active : null
+					}`}
+					onClick={() => setCurrentTestimonial(2)}
+				/>
+				<button
+					className={`${styles.button} ${
+						currentTestimonial === 3 ? styles.active : null
+					}`}
+					onClick={() => setCurrentTestimonial(3)}
+				/>
 			</div>
 		</Section>
 	)
