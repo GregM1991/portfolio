@@ -1,6 +1,20 @@
 .wrapper {
+  padding: 10rem 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockQuoteWrapper  {
   display: flex;
   flex-direction: row-reverse;
-  gap: 100px;
-  padding: 10rem 6%;
+}
+
+.button {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin: 5px 4px;
 }
