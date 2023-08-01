@@ -15,12 +15,6 @@ const PROJECTS = [
 		imageSrc: projectImage,
 		imageAltText: 'eQ8 image alt text goes here',
 	},
-	{
-		title: 'eQ8',
-		copy: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quaerat aut harum. Quas eos unde atque aliquam ea distinctio, aperiam modi quos in sit officia a? A voluptas expedita ab.',
-		imageSrc: projectImage,
-		imageAltText: 'eQ8 image alt text goes here',
-	},
 ]
 
 export function MyProjects() {
