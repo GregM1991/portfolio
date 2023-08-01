@@ -35,3 +35,11 @@
 .programHeader {
   font-size: var(--typography-section-program-heading);
 }
+
+.blockquoteLead {
+  font-size: var(--typography-blockquote-lead);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-bottom: 1rem;
+}

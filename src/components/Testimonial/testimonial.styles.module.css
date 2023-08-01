@@ -1,0 +1,27 @@
+
+.imageWrapper {
+  height: 500px;
+  aspect-ratio: 7/9;
+  padding: 0 15px;
+}
+
+.img {
+  height: 100%;
+}
+
+.blockquote {
+  padding: 40px 0 0 96px;
+  letter-spacing: -0.01em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  font-size: var(--typography-blockquote-footer);
+  font-style: normal;
+}
+
+.cite {
+  font-style: normal;
+}

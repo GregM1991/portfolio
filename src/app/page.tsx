@@ -5,6 +5,7 @@ import {
 	MyContribution,
 	GregsValues,
 	MyProjects,
+	Testimonials,
 } from '@/components'
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
 					aliquid.
 				</Typography>
 			</Section>
+			<Testimonials />
 		</main>
 	)
 }

@@ -26,7 +26,7 @@ export function CardCarousel() {
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>
-						{/* accept children here? */}
+						{/* map through values here */}
 						<div className={styles.card}>
 							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
 							<Typography className={styles.valueBodyText}>

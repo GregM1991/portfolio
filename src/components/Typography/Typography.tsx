@@ -5,7 +5,7 @@ import { Palette } from '@/theme'
 
 interface TypographyProps {
 	type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-	variant?: 'pLead' | 'h1Lead' | 'h2Rich' | 'programHeader'
+	variant?: 'pLead' | 'h1Lead' | 'h2Rich' | 'programHeader' | 'blockquoteLead'
 	color?: keyof Palette
 	className?: string
 	children: React.ReactNode
