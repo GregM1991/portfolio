@@ -1,6 +1,5 @@
 import {
-	Section,
-	Typography,
+	GregLifeMural,
 	GregLife,
 	MyContribution,
 	GregsValues,
@@ -15,16 +14,7 @@ export default function Home() {
 			<MyContribution />
 			<GregsValues />
 			<MyProjects />
-			<Section bgColor="green" ariaLabel="My sustainability">
-				<Typography type="h2" variant="h2Rich">
-					Sustainability <a id="sustainability" />
-				</Typography>
-				<Typography>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
-					minus porro ad. Praesentium accusamus error nam facilis explicabo
-					aliquid.
-				</Typography>
-			</Section>
+			<GregLifeMural />
 			<Testimonials />
 		</main>
 	)
