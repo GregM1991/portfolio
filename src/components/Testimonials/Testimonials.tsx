@@ -6,6 +6,7 @@ import testimonialImage from '@/assets/images/greg-and-cat-in-barossa.jpg'
 import testimonialImage2 from '@/assets/images/greg-driving-mario-kart.jpg'
 import testimonialImage3 from '@/assets/images/greg-in-sun-with-silly-hat.jpg'
 import testimonialImage4 from '@/assets/images/greg-on-couch-with-laptop-and-rosie.jpg'
+import { TestimonialPositionButtons } from './TestimonialPositionButtons'
 
 const TESTIMONIALS = [
 	{
@@ -65,32 +66,10 @@ export function Testimonials() {
 					role={TESTIMONIALS[currentTestimonial].role}
 				/>
 			</div>
-			<div className={styles.buttonsWrapper}>
-				<button
-					className={`${styles.button} ${
-						currentTestimonial === 0 ? styles.active : null
-					}`}
-					onClick={() => setCurrentTestimonial(0)}
-				/>
-				<button
-					className={`${styles.button} ${
-						currentTestimonial === 1 ? styles.active : null
-					}`}
-					onClick={() => setCurrentTestimonial(1)}
-				/>
-				<button
-					className={`${styles.button} ${
-						currentTestimonial === 2 ? styles.active : null
-					}`}
-					onClick={() => setCurrentTestimonial(2)}
-				/>
-				<button
-					className={`${styles.button} ${
-						currentTestimonial === 3 ? styles.active : null
-					}`}
-					onClick={() => setCurrentTestimonial(3)}
-				/>
-			</div>
+			<TestimonialPositionButtons
+				currentTestimonial={currentTestimonial}
+				setCurrentTestimonial={setCurrentTestimonial}
+			/>
 		</Section>
 	)
 }

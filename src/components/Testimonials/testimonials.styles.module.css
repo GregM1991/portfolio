@@ -1,5 +1,6 @@
 .wrapper {
-  padding: 10rem 6%;
+  position: relative;
+  padding: 10rem var(--padding-calc-value);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,4 +22,35 @@
 
 .active {
   background: var(--palette-primary);
+}
+
+.arrowButton {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  cursor: pointer;
+  border-radius: var(--radii-full);
+  background: var(--palette-white);
+  margin: 0 8px; 
+  width: 48px;
+  height: 48px;
+  border: none;
+  top: calc(50% - 24px);
+  border: 1px solid var(--palette-light);
+}
+
+.arrowButton:disabled {
+  opacity: 0.5;
+}
+
+.arrowButton > svg {
+  transform: scale(2)
+}
+
+.btnRight {
+  right: calc(var(--padding-calc-value) / 2);
+}
+
+.btnLeft {
+  left: calc(var(--padding-calc-value) / 2);;
 }

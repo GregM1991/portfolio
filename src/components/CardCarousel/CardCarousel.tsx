@@ -26,7 +26,7 @@ export function CardCarousel() {
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>
-						{/* map through values here */}
+						{/* TODO: map through values here */}
 						<div className={styles.card}>
 							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
 							<Typography className={styles.valueBodyText}>
@@ -79,6 +79,7 @@ export function CardCarousel() {
 				</div>
 			</div>
 			<div className={styles.buttonWrapper}>
+				{/* TODO: extract this button as it will be used in Testimonials */}
 				<button
 					disabled={transformValue >= 0}
 					className={styles.button}
