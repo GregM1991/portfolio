@@ -1,14 +1,16 @@
 .wrapper {
-  position: relative;
-  padding: 10rem var(--padding-calc-value);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding: 10rem var(--padding-calc-value);
 }
 
 .blockQuoteWrapper  {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
+  gap: 120px;
 }
 
 .button {

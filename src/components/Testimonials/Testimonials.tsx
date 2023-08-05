@@ -12,11 +12,12 @@ const TESTIMONIALS = [
 	{
 		img: testimonialImage,
 		imgAltText: 'Testimonial will go here',
-		leadText: 'Testimonial will go here',
+		leadText:
+			'Our time working together at Office-Hub was a ball, Greg brought a great vibe to the small team',
 		bodyText:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'John Smith',
-		role: 'King of the shits',
+			"If you're looking for a Software Engineer comfortable across the full stack (with a penchant for frontend), I can't recommend Greg highly enough. He's a dream to work with - very creative and has a great eye for detail.",
+		name: 'Andy Muprhy (He/Him)',
+		role: 'Snr Software Engineer, Domain',
 	},
 	{
 		img: testimonialImage2,
