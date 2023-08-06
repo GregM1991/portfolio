@@ -45,11 +45,11 @@
 	--typography-rich-header-text: 1.75rem;
 	--typography-section-program-heading: 2.5625rem;
 	--typography-section-program-item-header: 1.25rem;
-	--typography-canva-life: 3.5rem;
+	--typography-greg-life: 3.5rem;
 	--typography-blockquote-lead: 1.5rem;
 	--typography-blockquote-footer: 1rem;
-	/* --typography-cta-banner-header: 3.125rem;
-	--typography-cta-banner-body: 1.0625rem; */
+	--typography-cta-banner-header: 3.125rem;
+	--typography-cta-banner-body: 1.0625rem;
 	--typography-small: 80%;
 	--spaces-xxxSmall: 0.5rem;
 	--spaces-xxSmall: 0.625rem;
@@ -75,7 +75,7 @@
 		--typography-rich-header-text: 4rem;
 		--typography-section-program-heading: 2.5625rem;
 		--typography-section-program-item-header: 1.75rem;
-		--typography-canva-life: 6rem;
+		--typography-greg-life: 6rem;
 		--typography-blockquote-lead: 2.25rem;
 		--typography-blockquote-footer: 1.0625rem;
 		--padding-calc-value: calc(((100% - 930px)/2));

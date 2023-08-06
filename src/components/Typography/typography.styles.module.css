@@ -24,6 +24,7 @@
   letter-spacing: 0.03rem;
 }
 
+/* TODO: what've I done here... */
 .h1Lead {
   font-size: var(--typography-steps-)
 }

@@ -5,6 +5,7 @@ import { Palette } from '@/theme'
 
 interface TypographyProps {
 	type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+	styledAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 	variant?: 'pLead' | 'h1Lead' | 'h2Rich' | 'programHeader' | 'blockquoteLead'
 	color?: keyof Palette
 	className?: string
@@ -13,6 +14,7 @@ interface TypographyProps {
 
 export function Typography({
 	type = 'p',
+	styledAs,
 	variant,
 	color = 'dark',
 	className,
@@ -25,9 +27,9 @@ export function Typography({
 
 	return (
 		<Component
-			className={`${styles[type]} ${variant ? styles[variant] : null} ${
-				className ? className : null
-			}`}
+			className={`${styles[styledAs || type]} ${
+				variant ? styles[variant] : null
+			} ${className ? className : null}`}
 			style={additiveStyles}
 		>
 			{children}
