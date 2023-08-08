@@ -21,12 +21,13 @@ const TESTIMONIALS = [
 	},
 	{
 		img: testimonialImage2,
-		imgAltText: 'This is the second testimonial',
-		leadText: 'This is the second testimonial',
+		imgAltText: 'Karin smiling on a beach in front of a white beach shack',
+		leadText:
+			'Working with Greg made me feel like we were the Dynamic Duo of the design and engineering world.',
 		bodyText:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'Smith John',
-		role: 'Shit of the kings',
+			"When it comes to frontend development, Greg's skils are off the charts, and effortlessly brings my design ideas to life with a touch of humor that made every day at work an enjoyable experience. His exceptional communication skills foster a productive collaboration between design and engineering",
+		name: 'Karin Uli (She/ Her)',
+		role: 'Snr Product Designer, Faethm by Pearson',
 	},
 	{
 		img: testimonialImage3,
