@@ -77,7 +77,9 @@
 		--typography-section-program-item-header: 1.75rem;
 		--typography-greg-life: 6rem;
 		--typography-blockquote-lead: 2.25rem;
-		--typography-blockquote-footer: 1.0625rem;
+		--typography-blockquote-footer: 1.5rem;
+		--typography-cta-banner-header: 5.625rem;
+		--typography-cta-banner-body: 1.5rem;
 		--padding-calc-value: calc(((100% - 930px)/2));
   }
 }

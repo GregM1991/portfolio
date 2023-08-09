@@ -31,12 +31,13 @@ const TESTIMONIALS = [
 	},
 	{
 		img: testimonialImage3,
-		imgAltText: 'This is the third testimonial',
-		leadText: 'This is the third testimonial',
+		imgAltText: 'Aaron kneeling in the Australian bush, smiling with a hat on.',
+		leadText:
+			'I am confident when I say he is the perfect blend of charm, banter and pixel-perfect artistry.',
 		bodyText:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'Pantaloons mcgee',
-		role: 'Clown',
+			"If you're looking for the deal of the century; a skilled engineer with the keen eye of a diligent designer, look no further than this one!",
+		name: 'Aaron Lewis (He/Him)',
+		role: 'Full-Stack Enigneer, eQ8',
 	},
 	{
 		img: testimonialImage4,

@@ -3,10 +3,20 @@ import styles from './typography.styles.module.css'
 import { DEV_VARS } from '@/constants/cssVariables'
 import { Palette } from '@/theme'
 
+type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+type Variant =
+	| 'pLead'
+	| 'h1Lead'
+	| 'h2Rich'
+	| 'programHeader'
+	| 'blockquoteLead'
+	| 'ctaLead'
+	| 'ctaBody'
+
 interface TypographyProps {
-	type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-	styledAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-	variant?: 'pLead' | 'h1Lead' | 'h2Rich' | 'programHeader' | 'blockquoteLead'
+	type?: ElementType
+	styledAs?: ElementType
+	variant?: Variant
 	color?: keyof Palette
 	className?: string
 	children: React.ReactNode

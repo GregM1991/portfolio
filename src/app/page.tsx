@@ -5,6 +5,7 @@ import {
 	GregsValues,
 	MyProjects,
 	Testimonials,
+	BeInspired,
 } from '@/components'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 			<MyProjects />
 			<GregLifeMural />
 			<Testimonials />
+			<BeInspired />
 		</main>
 	)
 }

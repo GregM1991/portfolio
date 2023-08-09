@@ -24,7 +24,7 @@
   letter-spacing: 0.03rem;
 }
 
-/* TODO: what've I done here... */
+/* TODO: what've I done here... this font-size doesn't lead anywhere 👀*/
 .h1Lead {
   font-size: var(--typography-steps-)
 }
@@ -43,4 +43,13 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   padding-bottom: 1rem;
+}
+
+.ctaLead {
+  font-size: var(--typography-cta-banner-header)
+}
+
+.ctaBody {
+  font-size: var(--typography-cta-banner-body);
+  letter-spacing: -0.01rem;
 }
