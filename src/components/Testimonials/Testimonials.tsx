@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { Section, Testimonial } from '@/components'
 import styles from './testimonials.styles.module.css'
 import testimonialImage from '@/assets/images/greg-and-cat-in-barossa.jpg'
-import testimonialImage2 from '@/assets/images/greg-driving-mario-kart.jpg'
-import testimonialImage3 from '@/assets/images/greg-in-sun-with-silly-hat.jpg'
+import karin from '@/assets/images/karin.jpg'
+import aaron from '@/assets/images/aaron.jpg'
 import testimonialImage4 from '@/assets/images/greg-on-couch-with-laptop-and-rosie.jpg'
 import { TestimonialPositionButtons } from './TestimonialPositionButtons'
 
@@ -20,7 +20,7 @@ const TESTIMONIALS = [
 		role: 'Snr Software Engineer, Domain',
 	},
 	{
-		img: testimonialImage2,
+		img: karin,
 		imgAltText: 'Karin smiling on a beach in front of a white beach shack',
 		leadText:
 			'Working with Greg made me feel like we were the Dynamic Duo of the design and engineering world.',
@@ -30,7 +30,7 @@ const TESTIMONIALS = [
 		role: 'Snr Product Designer, Faethm by Pearson',
 	},
 	{
-		img: testimonialImage3,
+		img: aaron,
 		imgAltText: 'Aaron kneeling in the Australian bush, smiling with a hat on.',
 		leadText:
 			'I am confident when I say he is the perfect blend of charm, banter and pixel-perfect artistry.',
