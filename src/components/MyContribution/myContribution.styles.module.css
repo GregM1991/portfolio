@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  align-items: center;
 }
 
 .imageWrapper {
@@ -17,4 +18,8 @@
 .textWrapper {
   padding-left: 112px;
   padding-right: calc(((100% - 1110px)/2));
+}
+
+.textWrapper p {
+  margin-bottom: 1rem;
 }

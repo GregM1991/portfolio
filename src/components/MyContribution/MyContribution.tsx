@@ -18,11 +18,19 @@ export function MyContribution() {
 						My contribution <a id="my-contribution" />
 					</Typography>
 					<Typography color="white">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-						labore minus porro ad. Praesentium accusamus error nam facilis
-						explicabo aliquid. Lorem ipsum dolor, sit amet consectetur
-						adipisicing elit. Quas labore minus porro ad. Praesentium accusamus
-						error nam facilis explicabo aliquid.
+						With three years of Software Engineering as well as years Graphic
+						Design knowledge under my belt, I can walk the turmultuous line
+						between engineering and design. I love the frontend side as it
+						allows me to still dip my toes in the creative side of building
+						software.
+					</Typography>
+					<Typography color="white">
+						I&apos;ve kicked off my time as a developer traversing both ends of
+						the technology stack as I beleive it would make me a far better
+						frontend engineer than sticking purely with the front side of the
+						stack. Knowing how the frontend interacts with your backend is
+						important to me as I believe it helps with the structruing and
+						architectural needs of the frontend.
 					</Typography>
 				</div>
 			</div>

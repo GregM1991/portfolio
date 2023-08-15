@@ -16,6 +16,10 @@
 	max-width: 50%;
 }
 
+.type h1 {
+	position: relative;
+}
+
 .cuddleCats {
 	position: absolute;
   left: -190px;
@@ -24,4 +28,17 @@
 
 .canvaRooftop {
   margin-top: 100px;
+}
+
+.doodleContainer {
+	width: 194px;
+	height: 123px;
+	position: absolute;
+	top: -100px;
+	left: -36px;
+}
+
+.doodle {
+	max-width: 100%;
+	max-height: 100%;
 }
