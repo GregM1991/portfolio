@@ -2,7 +2,8 @@
 import React from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
 import styles from './cardCarousel.styles.module.css'
-import { Typography } from '@/components'
+import { values } from '@/constants/values'
+import { Card } from './Card'
 
 export function CardCarousel() {
 	const [transformValue, setTransformValue] = React.useState(0)
@@ -26,55 +27,9 @@ export function CardCarousel() {
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>
-						{/* TODO: map through values here */}
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui
-							</Typography>
-						</div>
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui
-							</Typography>
-						</div>
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui
-							</Typography>
-						</div>
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui
-							</Typography>
-						</div>
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui perspiciatis debitis qui
-							</Typography>
-						</div>
-						<div className={styles.card}>
-							<Typography type="h3">Hello, I&apos;m a carousel item</Typography>
-							<Typography className={styles.valueBodyText}>
-								Lorem, ipsuma dolor sit amet consectetur adipisicing elit.
-								Repellat nemo blanditiis minima perspiciatis debitis qui
-								perspiciatis debitis qui
-							</Typography>
-						</div>
+						{values.map(value => (
+							<Card title={value.title} body={value.body} key={value.title} />
+						))}
 					</div>
 				</div>
 			</div>

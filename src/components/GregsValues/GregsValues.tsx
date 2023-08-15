@@ -9,9 +9,10 @@ export function GregsValues() {
 					Greg&apos;s values <a id="gregs-values" />
 				</Typography>
 				<Typography color="white">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas labore
-					minus porro ad. Praesentium accusamus error nam facilis explicabo
-					aliquid. error nam facilis explicabo aliquid.
+					I&apos;m a bit torn about what to throw down here, between writing
+					down what my values are, or explaining how they align with
+					Canva&apos;s values. I feel as though they align so well however,
+					I&apos;m going to try and explain how.
 				</Typography>
 			</div>
 			<CardCarousel />
