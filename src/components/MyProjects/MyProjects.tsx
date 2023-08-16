@@ -30,7 +30,7 @@ export function MyProjects() {
 				variant="h2Rich"
 				className={styles.header}
 			>
-				A place for <br /> projects <a id="projects" />
+				<a id="projects" className="anchor" />A place for <br /> projects{' '}
 			</Typography>
 			{PROJECTS.map((project, i) => {
 				const { title, copy, imageSrc, imageAltText } = project

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Header() {
 	return (
-		<header>
+		<header className={styles.wrapper}>
 			<div className={styles.header}>
 				<Logo />
 				<nav className={styles.nav}>
@@ -17,6 +17,15 @@ export function Header() {
 					</Link>
 					<Link className={styles.navLink} href="/#gregs-values">
 						Greg&apos;s values
+					</Link>
+					<Link className={styles.navLink} href="/#projects">
+						A place for projects
+					</Link>
+					<Link className={styles.navLink} href="/#greg-life-mural">
+						#GregLife
+					</Link>
+					<Link className={styles.navLink} href="/#testimonials">
+						Testimonials
 					</Link>
 				</nav>
 			</div>

@@ -63,7 +63,7 @@
 	--spaces-xxxxLarge: 5rem;
 	--spaces-xxxxxLarge: 7rem;
 	--spaces-xxxxxxLarge: 10rem;
-	--padding-calc-value: 24px;
+	--padding-calc-value: calc(((100% - 690px)/2));;
 }
 
 /* medium - large screens */

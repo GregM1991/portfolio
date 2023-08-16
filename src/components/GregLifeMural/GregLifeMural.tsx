@@ -8,25 +8,28 @@ import { Typography } from '..'
 /* TODO: rename these classNames for the love of god */
 export function GregLifeMural() {
 	return (
-		<div className={styles.wrapper}>
-			<Image
-				src={babyLaptop}
-				alt="Greg and wife Cat holding baby laptop toy"
-				className={styles.mainImg}
-			/>
-			<Image
-				src={barossa}
-				alt="Greg and wife Cat in barossa valley"
-				className={styles.secondImg}
-			/>
-			<Image
-				src={gesture}
-				alt="Greg making a silly gesture with his hands"
-				className={styles.thirdImg}
-			/>
-			<Typography type="span" color="white" className={styles.text}>
-				#GregLife
-			</Typography>
-		</div>
+		<>
+			<a id="greg-life-mural" className="anchor" />
+			<div className={styles.wrapper}>
+				<Image
+					src={babyLaptop}
+					alt="Greg and wife Cat holding baby laptop toy"
+					className={styles.mainImg}
+				/>
+				<Image
+					src={barossa}
+					alt="Greg and wife Cat in barossa valley"
+					className={styles.secondImg}
+				/>
+				<Image
+					src={gesture}
+					alt="Greg making a silly gesture with his hands"
+					className={styles.thirdImg}
+				/>
+				<Typography type="span" color="white" className={styles.text}>
+					#GregLife
+				</Typography>
+			</div>
+		</>
 	)
 }

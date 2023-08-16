@@ -1,9 +1,10 @@
+'use client'
 import * as React from 'react'
 import { Typography, Image, Section } from '@/components'
 import canvaRooftop from '@/assets/images/greg-at-canva-peace-sign.jpg'
 import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
 import doodle from '@/assets/svg/purple-heading-doodle.svg'
-
+import { motion } from 'framer-motion'
 import styles from './gregLife.styles.module.css'
 
 export function GregLife() {
@@ -14,7 +15,12 @@ export function GregLife() {
 			className={styles.wrapper}
 		>
 			{/* TODO: change this to something useful */}
-			<div className={styles.imageWrapper}>
+			<motion.div
+				className={styles.imageWrapper}
+				initial={{ x: -65, y: 65, opacity: 0 }}
+				animate={{ x: 0, y: 0, opacity: 1 }}
+				transition={{ type: 'spring', stiffness: 100, damping: 25 }}
+			>
 				<Image
 					alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
 					src={cuddleCats}
@@ -29,10 +35,11 @@ export function GregLife() {
 					height={500}
 					className={styles.canvaRooftop}
 				/>
-			</div>
+			</motion.div>
 			<div className={styles.type}>
 				<Typography type="h1">
-					Greg life <a id="greg-life" />
+					<a id="greg-life" className="anchor" />
+					Greg life
 					<span className={styles.doodleContainer}>
 						<Image src={doodle} alt="Doodle" className={styles.doodle} />
 					</span>

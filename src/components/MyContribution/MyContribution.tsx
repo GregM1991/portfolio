@@ -15,7 +15,8 @@ export function MyContribution() {
 				</div>
 				<div className={styles.textWrapper}>
 					<Typography type="h2" color="white" variant="h2Rich">
-						My contribution <a id="my-contribution" />
+						<a id="my-contribution" className="anchor" />
+						My contribution
 					</Typography>
 					<Typography color="white">
 						With three years of Software Engineering as well as years Graphic

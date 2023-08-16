@@ -111,3 +111,8 @@ h6 {
 		scroll-behavior: auto !important;
 	}
 }
+
+.anchor {
+	position: relative;
+	top: -95px;
+}

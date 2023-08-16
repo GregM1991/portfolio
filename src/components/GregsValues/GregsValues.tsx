@@ -6,7 +6,8 @@ export function GregsValues() {
 		<Section bgColor="red" ariaLabel="My values" className={styles.wrapper}>
 			<div className={styles.textWrapper}>
 				<Typography type="h2" color="white" variant="programHeader">
-					Greg&apos;s values <a id="gregs-values" />
+					<a id="gregs-values" className="anchor" />
+					Greg&apos;s values
 				</Typography>
 				<Typography color="white">
 					I&apos;m a bit torn about what to throw down here, between writing
