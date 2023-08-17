@@ -112,7 +112,15 @@ h6 {
 	}
 }
 
+/* TODO: export these via css modules */
 .anchor {
 	position: relative;
 	top: -95px;
+}
+
+.container {
+	max-width: var(--container-width);
+	padding-left: var(--spaces-xSmall);
+	padding-right: var(--spaces-xSmall);
+	margin: auto;
 }

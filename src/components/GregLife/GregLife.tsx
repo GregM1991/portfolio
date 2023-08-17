@@ -12,9 +12,8 @@ export function GregLife() {
 		<Section
 			variant="hero"
 			ariaLabel="An opening welcome from Greg to visitors of his portfolio site"
-			className={styles.wrapper}
+			className={`${styles.wrapper} container`}
 		>
-			{/* TODO: change this to something useful */}
 			<motion.div
 				className={styles.imageWrapper}
 				initial={{ x: -65, y: 65, opacity: 0 }}

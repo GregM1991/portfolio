@@ -29,28 +29,9 @@
 	--radii-medium: 6px;
 	--radii-large: 1rem;
 	--radii-full: 9999px;
-	--breakpoints-xs: 0;
-	--breakpoints-sm: 576px;
-	--breakpoints-md: 768px;
-	--breakpoints-lg: 992px;
-	--breakpoints-xl: 1200px;
-	--breakpoints-xxl: 1400px;
-	--breakpoints-xxxl: 1600px;
 	--typography-heading-font-family: ezramedium, sans-serif;
 	--typography-body-font-family: sans-serif;
 	/* smol screens */
-	--typography-body: 1rem;
-	--typography-hero-text-header: 2.5rem;
-	--typography-body-lead: 1.25rem;
-	--typography-rich-header-text: 1.75rem;
-	--typography-section-program-heading: 2.5625rem;
-	--typography-section-program-item-header: 1.25rem;
-	--typography-greg-life: 3.5rem;
-	--typography-blockquote-lead: 1.5rem;
-	--typography-blockquote-footer: 1rem;
-	--typography-cta-banner-header: 3.125rem;
-	--typography-cta-banner-body: 1.0625rem;
-	--typography-small: 80%;
 	--spaces-xxxSmall: 0.5rem;
 	--spaces-xxSmall: 0.625rem;
 	--spaces-xSmall: 0.9375rem;
@@ -63,6 +44,18 @@
 	--spaces-xxxxLarge: 5rem;
 	--spaces-xxxxxLarge: 7rem;
 	--spaces-xxxxxxLarge: 10rem;
+	--typography-body: 1rem;
+	--typography-hero-text-header: 2.5rem;
+	--typography-body-lead: 1.25rem;
+	--typography-rich-header-text: 1.75rem;
+	--typography-section-program-heading: 2.5625rem;
+	--typography-section-program-item-header: 1.25rem;
+	--typography-greg-life: 3.5rem;
+	--typography-blockquote-lead: 1.5rem;
+	--typography-blockquote-footer: 1rem;
+	--typography-cta-banner-header: 3.125rem;
+	--typography-cta-banner-body: 1.0625rem;
+	--typography-small: 80%;
 	--padding-calc-value: calc(((100% - 690px)/2));;
 }
 
@@ -81,6 +74,7 @@
 		--typography-cta-banner-header: 5.625rem;
 		--typography-cta-banner-body: 1.5rem;
 		--padding-calc-value: calc(((100% - 930px)/2));
+		--container-width: 960px;
   }
 }
 
@@ -91,6 +85,7 @@
 		--typography-hero-text-header: 6rem;
 		--typography-section-program-heading: 5.625rem;
 		--padding-calc-value: calc(((100% - 1110px)/2));
+		--container-width: 1140px;
 	}
 }
 

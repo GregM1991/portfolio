@@ -11,7 +11,7 @@ export function Testimonials() {
 	return (
 		<Section
 			ariaLabel="Testimonials about Greg as a person/developer"
-			className={styles.wrapper}
+			className={`${styles.wrapper} container`}
 		>
 			<a id="testimonials" className="anchor" />
 			<div className={styles.blockQuoteWrapper}>

@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 10rem var(--padding-calc-value);
 }
 
 .blockQuoteWrapper  {
@@ -39,6 +38,12 @@
   border: none;
   top: calc(50% - 24px);
   border: 1px solid var(--palette-light);
+}
+
+@media (max-width: 1199px) {
+  .arrowButton {
+    display: none;
+  }
 }
 
 .arrowButton:disabled {
