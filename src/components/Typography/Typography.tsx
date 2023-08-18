@@ -38,8 +38,8 @@ export function Typography({
 	return (
 		<Component
 			className={`${styles[styledAs || type]} ${
-				variant ? styles[variant] : null
-			} ${className ? className : null}`}
+				variant ? styles[variant] : ''
+			} ${className ? className : ''}`}
 			style={additiveStyles}
 		>
 			{children}

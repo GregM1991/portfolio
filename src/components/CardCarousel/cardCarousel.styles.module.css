@@ -28,6 +28,10 @@
   padding: 30px 30px 3rem;
 }
 
+.card:hover {
+  background-color: var(--palette-pink)
+}
+
 .valueBodyText {
   font-size: 1rem;
   letter-spacing: 0.5px;

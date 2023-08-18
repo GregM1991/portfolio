@@ -1,12 +1,13 @@
-import testimonialImage from '@/assets/images/greg-and-cat-in-barossa.jpg'
+import andy from '@/assets/images/andy.png'
 import karin from '@/assets/images/karin.jpg'
 import aaron from '@/assets/images/aaron.jpg'
 import testimonialImage4 from '@/assets/images/greg-on-couch-with-laptop-and-rosie.jpg'
 
 export const TESTIMONIALS = [
 	{
-		img: testimonialImage,
-		imgAltText: 'Testimonial will go here',
+		img: andy,
+		imgAltText:
+			'Andy smiling at the camera in a north face jacket with trees in the background',
 		leadText:
 			'Our time working together at Office-Hub was a ball, Greg brought a great vibe to the small team',
 		bodyText:

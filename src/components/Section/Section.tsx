@@ -1,6 +1,6 @@
+import styles from './section.styles.module.css'
 import { Palette } from '@/theme'
 import { DEV_VARS } from '@/constants/cssVariables'
-import styles from './section.styles.module.css'
 
 interface SectionChildren {
 	bgColor?: keyof Palette
@@ -25,8 +25,8 @@ export function Section({
 		<section
 			aria-label={ariaLabel}
 			style={additiveStyles}
-			className={`${styles.section} ${styles[bgColor]} ${
-				variant ? styles[variant] : null
+			className={`${styles.section} ${
+				variant ? styles[variant] : ''
 			} ${className}`}
 		>
 			{children}

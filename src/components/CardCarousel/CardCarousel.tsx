@@ -7,7 +7,6 @@ import { Card } from './Card'
 
 export function CardCarousel() {
 	const [transformValue, setTransformValue] = React.useState(0)
-	console.log(transformValue)
 	const style = {
 		'--carousel-transform': `translateX(${transformValue}%)`,
 	} as React.CSSProperties

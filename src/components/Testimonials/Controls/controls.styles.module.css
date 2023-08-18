@@ -1,0 +1,38 @@
+.arrowButton {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  cursor: pointer;
+  border-radius: var(--radii-full);
+  background: var(--palette-white);
+  margin: 0 8px; 
+  width: 48px;
+  height: 48px;
+  border: none;
+  top: calc(50% - 24px);
+  border: 1px solid var(--palette-light);
+  transform: translateY(-50%)
+}
+
+@media (max-width: 1199px) {
+  .arrowButton {
+    display: none;
+  }
+}
+
+.arrowButton:disabled {
+  opacity: 0.5;
+}
+
+.arrowButton > svg {
+  transform: scale(2)
+}
+
+
+.btnRight {
+  right: 0;
+}
+
+.btnLeft {
+  left: 0;
+}
