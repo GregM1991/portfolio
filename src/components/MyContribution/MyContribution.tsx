@@ -1,4 +1,5 @@
-import { Section, Typography, Image } from '@/components'
+import { Section, Typography } from '@/components'
+import Image from 'next/image'
 import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import styles from './myContribution.styles.module.css'
 

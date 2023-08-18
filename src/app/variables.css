@@ -92,5 +92,12 @@
 @media (min-width: 1400px) {
   :root {
 		--padding-calc-value: calc(((100% - 1290px)/2));
+		--container-width: 1320px;
+	}
+}
+
+@media (min-width: 1600px) {
+  :root {
+		--container-width: 1440px;
 	}
 }

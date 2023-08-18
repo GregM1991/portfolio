@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Header } from '@/components'
 
 import './global.css'
-import '@/utils/variables.css'
-import '@/utils/fonts.css'
+import './variables.css'
+import './fonts.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",

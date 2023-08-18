@@ -1,12 +1,17 @@
 'use client'
-import * as React from 'react'
-import { Typography, Image, Section } from '@/components'
+import { motion } from 'framer-motion'
+import { Typography, Section } from '@/components'
+import Image from 'next/image'
+import styles from './gregLife.styles.module.css'
 import canvaRooftop from '@/assets/images/greg-at-canva-peace-sign.jpg'
 import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
-import doodle from '@/assets/svg/purple-heading-doodle.svg'
-import { motion } from 'framer-motion'
-import styles from './gregLife.styles.module.css'
+import purpleDoodle from '@/assets/svg/purple-heading-doodle.svg'
+import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
 
+const IMAGE_CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
+const IMAGE_DURATION = 1.5
+
+// TODO: This is getting a touch yuck.. I wonder if we could split the motion imgs out into its own component?
 export function GregLife() {
 	return (
 		<Section
@@ -14,33 +19,63 @@ export function GregLife() {
 			ariaLabel="An opening welcome from Greg to visitors of his portfolio site"
 			className={`${styles.wrapper} container`}
 		>
-			<motion.div
-				className={styles.imageWrapper}
-				initial={{ x: -65, y: 65, opacity: 0 }}
-				animate={{ x: 0, y: 0, opacity: 1 }}
-				transition={{ type: 'spring', stiffness: 100, damping: 25 }}
-			>
-				<Image
-					alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
-					src={cuddleCats}
-					width={190}
-					height={190}
+			<div className={styles.imageWrapper}>
+				<motion.div
 					className={styles.cuddleCats}
-				/>
-				<Image
-					alt="My first image"
-					src={canvaRooftop}
-					width={500}
-					height={500}
+					initial={{ x: -65, y: 65, opacity: 0 }}
+					animate={{ x: 0, y: 0, opacity: 1 }}
+					transition={{
+						ease: IMAGE_CUBIC_BEZIER,
+						duration: IMAGE_DURATION,
+					}}
+				>
+					<Image
+						alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
+						src={cuddleCats}
+					/>
+				</motion.div>
+				<motion.div
 					className={styles.canvaRooftop}
-				/>
-			</motion.div>
+					initial={{ x: -65, y: 65, opacity: 0 }}
+					animate={{ x: 0, y: 0, opacity: 1 }}
+					transition={{
+						ease: IMAGE_CUBIC_BEZIER,
+						duration: IMAGE_DURATION,
+						delay: 0.25,
+					}}
+				>
+					<Image
+						alt="Greg sitting on the sunny Canva rooftop eating a cookie giving the peace sign"
+						src={canvaRooftop}
+					/>
+				</motion.div>
+				<motion.span
+					className={styles.yellowDoodleContainer}
+					animate={{ opacity: 1, scale: 1 }}
+					initial={{ opacity: 0, scale: 0.5 }}
+					transition={{
+						ease: IMAGE_CUBIC_BEZIER,
+						duration: 0.5,
+						delay: 1.5,
+					}}
+				>
+					<Image
+						src={yellowDoodle}
+						alt="Doodle"
+						className={styles.yellowDoodle}
+					/>
+				</motion.span>
+			</div>
 			<div className={styles.type}>
 				<Typography type="h1">
 					<a id="greg-life" className="anchor" />
 					Greg life
-					<span className={styles.doodleContainer}>
-						<Image src={doodle} alt="Doodle" className={styles.doodle} />
+					<span className={styles.purpleDoodleContainer}>
+						<Image
+							src={purpleDoodle}
+							alt="Doodle"
+							className={styles.purpleDoodle}
+						/>
 					</span>
 				</Typography>
 				<Typography variant="pLead">

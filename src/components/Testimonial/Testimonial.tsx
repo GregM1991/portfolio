@@ -1,4 +1,5 @@
-import { Image, Typography } from '@/components'
+import { Typography } from '@/components'
+import Image from 'next/image'
 import styles from './testimonial.styles.module.css'
 import { StaticImageData } from 'next/image'
 

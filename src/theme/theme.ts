@@ -1,4 +1,4 @@
-/* This theme object is sub-optimal as I need to change these in two places 
+/* TODO: This theme object is sub-optimal as I need to change these in two places 
 (here and in the variables css module), I created this with styled-components in 
 mind but it seems styled-components don't play well with server components due 
 to js run times. I'll rethink this when I have some more time, but for now am 

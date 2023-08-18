@@ -79,6 +79,10 @@ picture {
 	border-radius: 1rem;
 }
 
+img {
+	object-fit: cover;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,

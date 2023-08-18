@@ -21,14 +21,28 @@
 .cuddleCats {
 	position: absolute;
   left: -190px;
-  object-position: 50% 25%;
+}
+
+.cuddleCats img {
+	object-position: 50% 25%;
+	width: 190px;
+	height: 190px;
 }
 
 .canvaRooftop {
   margin-top: 100px;
+	margin-bottom: 3rem;
 }
 
-.doodleContainer {
+.canvaRooftop img {
+	height: auto;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	width: 500px;
+	height: 500px;
+}
+
+.purpleDoodleContainer {
 	width: 194px;
 	height: 123px;
 	position: absolute;
@@ -36,12 +50,30 @@
 	left: -36px;
 }
 
-.doodle {
+.purpleDoodle {
+	height: 100%;
+	width: auto;
 	max-width: 100%;
-	max-height: 100%;
+}
+
+.yellowDoodleContainer {
+	width: 297px;
+	height: 68px;
+	position: absolute;
+	bottom: 0;
+	right: -45px;
+}
+
+.yellowDoodle {
+	composes: purpleDoodle
 }
 
 @media (min-width: 1200px) {
+	.imageWrapper {
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
+	}
+
 	.type {
 		padding-top: 200px;
 	}
