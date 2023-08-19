@@ -11,7 +11,8 @@ import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
 const IMAGE_CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
 const IMAGE_DURATION = 1.5
 
-// TODO: This is getting a touch yuck.. I wonder if we could split the motion imgs out into its own component?
+const AnimatedImage = motion(Image)
+
 export function GregLife() {
 	return (
 		<Section
@@ -20,21 +21,20 @@ export function GregLife() {
 			className={`${styles.wrapper} container`}
 		>
 			<div className={styles.imageWrapper}>
-				<motion.div
-					className={styles.cuddleCats}
+				<AnimatedImage
+					alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
+					src={cuddleCats}
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
 					transition={{
 						ease: IMAGE_CUBIC_BEZIER,
 						duration: IMAGE_DURATION,
 					}}
-				>
-					<Image
-						alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
-						src={cuddleCats}
-					/>
-				</motion.div>
-				<motion.div
+					className={styles.cuddleCats}
+				/>
+				<AnimatedImage
+					alt="Greg sitting on the sunny Canva rooftop eating a cookie giving the peace sign"
+					src={canvaRooftop}
 					className={styles.canvaRooftop}
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
@@ -43,14 +43,11 @@ export function GregLife() {
 						duration: IMAGE_DURATION,
 						delay: 0.25,
 					}}
-				>
-					<Image
-						alt="Greg sitting on the sunny Canva rooftop eating a cookie giving the peace sign"
-						src={canvaRooftop}
-					/>
-				</motion.div>
-				<motion.span
-					className={styles.yellowDoodleContainer}
+				/>
+
+				<AnimatedImage
+					src={yellowDoodle}
+					alt="Yellow doodle"
 					animate={{ opacity: 1, scale: 1 }}
 					initial={{ opacity: 0, scale: 0.5 }}
 					transition={{
@@ -58,25 +55,25 @@ export function GregLife() {
 						duration: 0.5,
 						delay: 1.5,
 					}}
-				>
-					<Image
-						src={yellowDoodle}
-						alt="Doodle"
-						className={styles.yellowDoodle}
-					/>
-				</motion.span>
+					className={styles.yellowDoodle}
+				/>
 			</div>
 			<div className={styles.type}>
 				<Typography type="h1">
 					<a id="greg-life" className="anchor" />
 					Greg life
-					<span className={styles.purpleDoodleContainer}>
-						<Image
-							src={purpleDoodle}
-							alt="Doodle"
-							className={styles.purpleDoodle}
-						/>
-					</span>
+					<AnimatedImage
+						src={purpleDoodle}
+						alt="Purple doodle"
+						animate={{ opacity: 1, scale: 1 }}
+						initial={{ opacity: 0, scale: 0.5 }}
+						transition={{
+							ease: IMAGE_CUBIC_BEZIER,
+							duration: 0.5,
+							delay: 1.5,
+						}}
+						className={styles.purpleDoodle}
+					/>
 				</Typography>
 				<Typography variant="pLead">
 					Sometimes the chance comes along to be part of something truly

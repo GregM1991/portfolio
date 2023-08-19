@@ -1,17 +1,16 @@
 .wrapper {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	flex-direction: row-reverse;
 }
 
 .imageWrapper {
   position: relative;
-  padding: 0 15px;
+  padding-left: 15px;
 }
 
 .type {
 	padding-top: 100px;
-	max-width: 50%;
 }
 
 .type h1 {
@@ -20,29 +19,21 @@
 
 .cuddleCats {
 	position: absolute;
-  left: -190px;
-}
-
-.cuddleCats img {
-	object-position: 50% 25%;
-	width: 190px;
-	height: 190px;
+  left: -110px;
+	object-position: 50% 15%;
+	width: 102px;
+	height: 102px;
 }
 
 .canvaRooftop {
-  margin-top: 100px;
+  margin-top: 50px;
 	margin-bottom: 3rem;
-}
-
-.canvaRooftop img {
 	height: auto;
 	width: 100%;
 	aspect-ratio: 1 / 1;
-	width: 500px;
-	height: 500px;
 }
 
-.purpleDoodleContainer {
+.purpleDoodle {
 	width: 194px;
 	height: 123px;
 	position: absolute;
@@ -50,22 +41,36 @@
 	left: -36px;
 }
 
-.purpleDoodle {
-	height: 100%;
-	width: auto;
-	max-width: 100%;
-}
-
-.yellowDoodleContainer {
-	width: 297px;
-	height: 68px;
+.yellowDoodle {
+	width: 243px;
+	height: auto;
 	position: absolute;
 	bottom: 0;
-	right: -45px;
+	right: 0;
 }
 
-.yellowDoodle {
-	composes: purpleDoodle
+@media (min-width: 768px) {
+	.cuddleCats {
+		width: 150px;
+		height: 150px;
+		right: 440px;
+	}
+}
+
+@media (min-width: 992px) {
+	.wrapper {
+		flex-direction: row-reverse;
+	}
+
+	.type {
+		max-width: 50%;
+	}
+
+	.cuddleCats {
+		width: 102px;
+		height: 102px;
+		left: -110px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -73,8 +78,34 @@
 		flex: 0 0 41.66667%;
 		max-width: 41.66667%;
 	}
-
+	
 	.type {
 		padding-top: 200px;
+	}
+	
+	.canvaRooftop {
+		margin-top: 100px;
+	}
+
+	.cuddleCats {
+		width: 190px;
+		height: 190px;
+		left: -190px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.purpleDoodle {
+		width: 215px;
+		height: 137px;
+		top: -125px;
+	}
+}
+
+
+@media (min-width: 1600px) {
+	.purpleDoodle {
+		top: -74px;
+		left: -128px;
 	}
 }
