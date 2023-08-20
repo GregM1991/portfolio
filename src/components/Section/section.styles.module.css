@@ -1,10 +1,12 @@
 .section {
-  padding-top: var(--spaces-xxxxxxLarge);
-  padding-bottom: var(--spaces-xxxxxxLarge);
+  padding-top: var(--spaces-xxxxLarge);
+  padding-bottom: var(--spaces-xxxxLarge);
   background-color: var(--background-color);
 }
 
 .hero {
   padding-top: 0;
+  padding-bottom: 0;
   margin-top: 3rem;
+  margin-bottom: 7.5rem;
 }
