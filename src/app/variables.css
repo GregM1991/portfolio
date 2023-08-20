@@ -31,7 +31,9 @@
 	--radii-full: 9999px;
 	--typography-heading-font-family: ezramedium, sans-serif;
 	--typography-body-font-family: sans-serif;
-	/* smol screens */
+	/* small screens */
+	/* this is not scalable (below), if we need to add another size, we have to go everywhere
+	   where the sizes are used in the css and change them to their new set */
 	--spaces-xxxSmall: 0.5rem;
 	--spaces-xxSmall: 0.625rem;
 	--spaces-xSmall: 0.9375rem;
@@ -41,7 +43,7 @@
 	--spaces-xLarge: 1.875rem;
 	--spaces-xxLarge: 2rem;
 	--spaces-xxxLarge: 3rem;
-	--spaces-xxxxLarge: 5rem;
+	--spaces-xxxxLarge: 4rem;
 	--spaces-xxxxxLarge: 7rem;
 	--spaces-xxxxxxLarge: 10rem;
 	--typography-body: 1rem;
@@ -56,7 +58,23 @@
 	--typography-cta-banner-header: 3.125rem;
 	--typography-cta-banner-body: 1.0625rem;
 	--typography-small: 80%;
-	--padding-calc-value: calc(((100% - 690px)/2));;
+	--padding-calc-value: calc(((100% - 690px)/2));
+	--container-padding: 1.5rem;
+}
+
+/* xSmall - small screens */
+@media (min-width: 576px) {
+  :root {
+		--container-width: 540px;
+		--container-padding: 0.9375rem;
+  }
+}
+
+/* small - medium screens */
+@media (min-width: 768px) {
+  :root {
+		--container-width: 720px;
+  }
 }
 
 /* medium - large screens */
@@ -78,7 +96,7 @@
   }
 }
 
-/* medium - xlarge screens */
+/* large - xlarge screens */
 @media (min-width: 1200px) {
   :root {
 		--typography-body-lead: 1.5rem;
