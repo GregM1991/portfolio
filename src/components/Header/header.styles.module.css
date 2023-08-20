@@ -15,6 +15,11 @@
 .nav {
   display: flex;
   gap: var(--spaces-small);
+  padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
 }
 
 .navLink {
@@ -25,4 +30,35 @@
 
 .navLink:hover {
   color: var(--palette-purple);
+}
+
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}
+
+.hambLine {
+  background: var(--palette-white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hambLine::before,
+.hambLine::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hambLine::before{
+    top: 5px;
+}
+.hambLine::after{
+    top: -5px;
 }
