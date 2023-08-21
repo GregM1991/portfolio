@@ -1,29 +1,40 @@
-.wrapper {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background: var(--palette-white)
-}
-
 .header {
   display: flex;
   align-items: center;
-  gap: calc(var(--spaces-small) * 2);
-  padding: var(--spaces-medium) var(--spaces-xLarge);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--palette-white);
+  padding: var(--spaces-xxxxSmall) var(--spaces-large);  
 }
 
 .nav {
-  display: flex;
-  gap: var(--spaces-small);
-  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  max-height: 0;
+  background-color: var(--palette-white);
+  transition: max-height .5s ease-out;
+}
+
+.nav ul {
+  margin: 0;
+  padding-top: 90px;
 }
 
 .nav li {
   list-style-type: none;
+  padding: 0.5rem 0;
 }
 
 .navLink {
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
+  font-family: var(--typography-heading-font-family);
   color: var(--palette-gray-dark);
   letter-spacing: .005rem;
 }
@@ -32,33 +43,65 @@
   color: var(--palette-purple);
 }
 
-.hamb{
+.sideMenu {
+  display: none;
+}
+
+.hambContainer {
+  position: relative;
+  z-index: 1;
+  height: 50px;
   cursor: pointer;
+}
+
+.hamb{
+  position: relative;
+  top: 50%;
   float: right;
-  padding: 40px 20px;
+  cursor: pointer;
 }
 
 .hambLine {
-  background: var(--palette-white);
+  position: relative;
+  background: var(--palette-dark);
   display: block;
   height: 2px;
-  position: relative;
-  width: 24px;
+  width: 22px;
 }
 
 .hambLine::before,
 .hambLine::after{
-    background: var(--white);
+    position: absolute;
+    background: var(--palette-dark);
     content: '';
     display: block;
     height: 100%;
-    position: absolute;
     transition: all .2s ease-out;
     width: 100%;
 }
+
 .hambLine::before{
-    top: 5px;
+    top: 6px;
 }
+
 .hambLine::after{
-    top: -5px;
+    top: -6px;
+}
+
+.sideMenu:checked ~ .nav {
+  max-height: 100%;
+}
+
+.sideMenu:checked ~ .hambContainer .hamb .hambLine {
+  background: transparent;
+}
+
+.sideMenu:checked ~ .hambContainer .hamb .hambLine::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.sideMenu:checked ~ .hambContainer .hamb .hambLine::after {
+  transform: rotate(45deg);
+  top: 0;
 }
