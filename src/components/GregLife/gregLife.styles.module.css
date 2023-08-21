@@ -10,7 +10,7 @@
 	flex-direction: column;
 	align-items: flex-end;
   position: relative;
-  padding-left: 15px;
+  padding-left: var(--spaces-xSmall);
 }
 
 .type h1 {
@@ -53,14 +53,12 @@
 		margin-top: var(--spaces-xxxLarge);
 	}
 
-	.type {
-		padding-top: 100px;
+	.imageWrapper {
+		padding-right: var(--spaces-xSmall);
 	}
 
-	.imageWrapper {
-		display: revert;
-		flex-direction: revert;
-		align-items: revert;
+	.type {
+		padding-top: 100px;
 	}
 
 	.cuddleCats {
@@ -72,7 +70,7 @@
 
 	.canvaRooftop {
 		margin-top: 50px;
-		width: 100%;
+		width: 400px;
 	}
 }
 
@@ -93,6 +91,11 @@
 		width: 102px;
 		height: 102px;
 		left: -110px;
+	}
+
+	.canvaRooftop {
+		margin-top: 50px;
+		width: 100%;
 	}
 
 	.purpleDoodle {
