@@ -2,9 +2,62 @@
   display: flex;
   flex-direction: column;
   padding-left: var(--spaces-large);
-  /* padding-left: var(--padding-calc-value); */
 }
 
 .textWrapper {
-  padding-right: 80px;
+  padding-right: var(--spaces-large);
+}
+
+.header {
+  position: relative;
+  padding-right: 5rem;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url("../../assets/svg/program-doodle.svg") no-repeat;
+  background-size: auto;
+  background-size: 120px 120px;
+  transform: rotate(100deg);
+}
+
+.body {
+  padding-right: 90px;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: revert;
+    padding-left: var(--padding-calc-value);
+  }
+
+  .textWrapper {
+    padding-right: 5rem;
+  }
+
+  .body {
+    padding-right: 0;
+  }
+
+  .header::before {
+    top: -90px;
+    right: -150px;
+    width: 150px;
+    height: 150px;
+    transform: rotate(0);
+    background-size: 150px 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-right: 0;
+  }
 }
