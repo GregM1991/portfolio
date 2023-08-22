@@ -1,10 +1,11 @@
 .wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .imageWrapper {
-  max-width: 42%;
+  padding-right: var(--spaces-large);
+  max-width: 100%;
 }
 
 .playingPool {
@@ -13,13 +14,41 @@
   border-radius: 0 1rem 1rem 0;
   aspect-ratio: 10 / 7;
   object-position: 0 45%;
+  transform: translateY(18px);
 }
 
 .textWrapper {
-  padding-left: 112px;
-  padding-right: var(--padding-calc-value);
+  position: relative;
+  padding: 0 var(--spaces-large);
+  line-height: 1.4;
+  z-index: 1;
 }
 
 .textWrapper p {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: revert;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    padding-right: 0;
+    max-width: 42%;
+  }
+
+  .textWrapper {
+    position: revert;
+    line-height: revert;
+    padding: 0 var(--padding-calc-value) 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textWrapper {
+    padding-left: 112px;
+  }
 }

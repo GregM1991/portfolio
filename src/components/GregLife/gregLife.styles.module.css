@@ -109,9 +109,8 @@
 
 @media (min-width: 1200px) {
 	.imageWrapper {
-		flex: 0 0 600px;
-		max-width: 600px;
-		padding-right: 0;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
 	}
 	
 	.type {
@@ -120,25 +119,38 @@
 	
 	.canvaRooftop {
 		margin-top: 100px;
-		width: 560px;
-		height: 560px;
+		aspect-ratio: 1 / 1;
 	}
 
 	.cuddleCats {
 		width: 190px;
 		height: 190px;
-		left: -175px;
+		left: -190px;
 	}
 }
 
 @media (min-width: 1400px) {
+	.imageWrapper {
+		flex: 0 0 600px;
+		max-width: 600px;
+		padding-right: 0;
+	}
+
+	.cuddleCats {
+		left: -175px;
+	}
+
+	.canvaRooftop {
+		width: 560px;
+		height: 560px;
+	}
+
 	.purpleDoodle {
 		width: 215px;
 		height: 137px;
 		top: -125px;
 	}
 }
-
 
 @media (min-width: 1600px) {
 	.purpleDoodle {

@@ -10,3 +10,17 @@
   margin-top: 3rem;
   margin-bottom: 7.5rem;
 }
+
+@media(min-width: 992px) {
+  .section {
+    padding-top: var(--spaces-xxxxxxLarge);
+    padding-bottom: var(--spaces-xxxxxxLarge);
+  }
+
+  .hero {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 3rem;
+    margin-bottom: 7.5rem;
+  }
+}
