@@ -105,3 +105,36 @@
   transform: rotate(45deg);
   top: 0;
 }
+
+@media (min-width: 992px) {
+  .header {
+    justify-content: revert;
+    padding: var(--spaces-medium) var(--spaces-xSmall)
+  }
+
+  .nav {
+    position: relative;
+    max-height: none;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: var(--spaces-small);
+    padding-top: 0;
+  }
+
+  .nav li {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .navLink {
+    font-size: 0.875rem;
+    font-family: var(--typography-body-font-family);
+    letter-spacing: 0.4px;
+  }
+
+  .hambContainer {
+    display: none;
+  }
+}
