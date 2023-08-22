@@ -1,5 +1,4 @@
 .wrapper {
-  max-width: 50%;
   margin-top: 50px;
 }
 
@@ -8,13 +7,13 @@
 }
 
 .innerContainer {
-  margin-right: 120px;
+  margin-right: 70px;
 }
 
 .carouselSlider {
   display: flex;
   align-items: stretch;
-  gap: 1rem;
+  /* gap: 10px; */
   transform: var(--carousel-transform);
   width: 600%;
 
@@ -25,7 +24,8 @@
   width: 16.6667%;
   border-radius: var(--radii-large);
   background-color: var(--palette-light-pink);
-  padding: 30px 30px 3rem;
+  padding: 1rem;
+  margin-right: 10px;
 }
 
 .card:hover {
@@ -39,7 +39,9 @@
 
 .buttonWrapper {
   display: flex; 
-  margin-top: 2rem;
+  justify-content: center;
+  margin-top: var(--spaces-large);
+  padding-right: var(--spaces-large);
 }
 
 .button {
@@ -61,3 +63,21 @@
 .button > svg {
   transform: scale(2)
 }
+
+/* 
+  .wrapper {
+    max-width: 50%;
+  }
+
+  .card {
+    padding: 30px 30px 3rem;
+  }
+
+  .innerContainer {
+  margin-right: 110px;
+}
+
+.buttonWrapper {
+  margin-top: 2rem;
+}
+*/

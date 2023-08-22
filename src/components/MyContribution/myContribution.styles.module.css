@@ -40,6 +40,10 @@
     max-width: 42%;
   }
 
+  .playingPool {
+    transform: translateY(0);
+  }
+
   .textWrapper {
     position: revert;
     line-height: revert;

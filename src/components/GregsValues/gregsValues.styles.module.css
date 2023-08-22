@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
-  padding-left: var(--padding-calc-value);
+  flex-direction: column;
+  padding-left: var(--spaces-large);
+  /* padding-left: var(--padding-calc-value); */
 }
 
 .textWrapper {
