@@ -6,7 +6,6 @@ import Link from 'next/link'
 
 export function Header() {
 	const [isChecked, setIsChecked] = useState(false)
-	console.log(isChecked)
 	return (
 		<header className={styles.header}>
 			<Logo />

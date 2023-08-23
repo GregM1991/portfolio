@@ -112,6 +112,7 @@
   :root {
 		--padding-calc-value: calc(((100% - 1290px)/2));
 		--container-width: 1320px;
+		--typography-greg-life: 9rem;
 	}
 }
 
