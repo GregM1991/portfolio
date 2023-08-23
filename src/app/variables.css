@@ -87,9 +87,9 @@
 		--typography-rich-header-text: 4rem;
 		--typography-section-program-heading: 2.5625rem;
 		--typography-section-program-item-header: 1.75rem;
-		--typography-greg-life: 6rem;
 		--typography-blockquote-lead: 2.25rem;
-		--typography-blockquote-footer: 1.5rem;
+		--typography-blockquote-footer: 1.0625rem;
+		--typography-greg-life: 6rem;
 		--typography-cta-banner-header: 5.625rem;
 		--typography-cta-banner-body: 1.5rem;
 		--padding-calc-value: calc(((100% - 930px)/2));
@@ -113,6 +113,7 @@
 		--padding-calc-value: calc(((100% - 1290px)/2));
 		--container-width: 1320px;
 		--typography-greg-life: 9rem;
+		--typography-blockquote-lead: 3rem;
 	}
 }
 

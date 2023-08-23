@@ -1,9 +1,23 @@
 .imageWrapper {
+  position: relative;
   height: auto;
-  max-width: 33.3%;
-  flex: 0 0 33.3%;
-  aspect-ratio: 7/9;
+  max-width: 83.3%;
+  flex: 0 0 83.3%;
+  aspect-ratio: 34/46;
   padding: 0 15px;
+  margin-bottom: var(--spaces-large);
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -40px;
+  width: 100px;
+  height: 77px;
+  background: url("../../assets/svg/testimonial-doodle.svg") no-repeat;
+  background-size: contain;
+  pointer-events: none;
 }
 
 .img {
@@ -14,6 +28,9 @@
   flex: 0 0 58.3%;
   max-width: 0 0 58.3%;
   letter-spacing: 0.03em;
+  padding-top: 3.25rem;
+  background: url("../../assets/svg/quote.svg") no-repeat top left;
+  background-size: 50px 40px;
 }
 
 .footer {
@@ -29,13 +46,47 @@
   font-weight: 500;
 }
 
-/* .imageWrapper {
-  height: auto;
-  max-width: 33.3%;
-  flex: 0 0 33.3%;
-  aspect-ratio: 7/9;
-  padding: 0 15px;
+@media (min-width: 768px) {
+  .imageWrapper {
+    max-width: 50%;
+    flex: 0 0 50%;
+    aspect-ratio: 7/9;
+    margin-bottom: 0;
+    padding: 0 0 0 15px;
+  }
+
+  .blockquote {
+    padding: 52px var(--spaces-xSmall) 0;
+    max-width: 0 0 50%;
+    flex: 0 0 50%;
+    letter-spacing: -0.01em;
+  }
 }
+
+@media (min-width: 992px) {
+  .imageWrapper {
+    max-width: 33.3%;
+    flex: 0 0 33.333%;
+  }
+
+  .blockquote {
+    flex: 0 0 58.3%;
+    max-width: 58.3%;
+    padding: 40px 0 0 96px;
+    background-size: 80px 69px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .imageWrapper::after {
+    top: -90px;
+    right: -90px;
+    width: 176px;
+    height: 134px;
+  }
+}
+
+/*
 
 .img {
   height: 100%;
