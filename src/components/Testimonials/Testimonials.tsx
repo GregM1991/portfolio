@@ -2,9 +2,9 @@
 import styles from './testimonials.styles.module.css'
 import { useState } from 'react'
 import { Section, Testimonial } from '@/components'
-import { Pagination } from './Pagination/Pagination'
+import { Pagination } from './pagination/Pagination'
 import { TESTIMONIALS } from '@/constants/testimonials'
-import { Controls } from './Controls/Controls'
+import { Controls } from './controls/Controls'
 
 export function Testimonials() {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0)

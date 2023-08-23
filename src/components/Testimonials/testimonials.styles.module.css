@@ -10,7 +10,24 @@
 
 .blockQuoteWrapper  {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
   gap: 120px;
 }
+
+/* .wrapper {
+  position: relative;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockQuoteWrapper  {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 120px;
+} */
