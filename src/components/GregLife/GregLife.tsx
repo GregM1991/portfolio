@@ -9,9 +9,7 @@ import canvaRooftop from '@/assets/images/greg-at-canva-peace-sign.jpg'
 import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
 import purpleDoodle from '@/assets/svg/purple-heading-doodle.svg'
 import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
-
-const IMAGE_CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
-const IMAGE_DURATION = 1.5
+import { CUBIC_BEZIER, DURATION } from '@/constants/animation'
 
 export function GregLife() {
 	return (
@@ -27,8 +25,8 @@ export function GregLife() {
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
 					transition={{
-						ease: IMAGE_CUBIC_BEZIER,
-						duration: IMAGE_DURATION,
+						ease: CUBIC_BEZIER,
+						duration: DURATION,
 					}}
 					className={styles.cuddleCats}
 				/>
@@ -39,19 +37,18 @@ export function GregLife() {
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
 					transition={{
-						ease: IMAGE_CUBIC_BEZIER,
-						duration: IMAGE_DURATION,
+						ease: CUBIC_BEZIER,
+						duration: DURATION,
 						delay: 0.25,
 					}}
 				/>
-
 				<AnimatedImage
 					src={yellowDoodle}
 					alt="Yellow doodle"
 					animate={{ opacity: 1, scale: 1 }}
 					initial={{ opacity: 0, scale: 0.5 }}
 					transition={{
-						ease: IMAGE_CUBIC_BEZIER,
+						ease: CUBIC_BEZIER,
 						duration: 0.5,
 						delay: 1.5,
 					}}
@@ -63,7 +60,7 @@ export function GregLife() {
 					type="h1"
 					animate={{ opacity: 1 }}
 					transition={{
-						ease: IMAGE_CUBIC_BEZIER,
+						ease: CUBIC_BEZIER,
 						duration: 1,
 					}}
 				>
@@ -75,7 +72,7 @@ export function GregLife() {
 						animate={{ opacity: 1, scale: 1 }}
 						initial={{ opacity: 0, scale: 0.5 }}
 						transition={{
-							ease: IMAGE_CUBIC_BEZIER,
+							ease: CUBIC_BEZIER,
 							duration: 0.5,
 							delay: 1.5,
 						}}

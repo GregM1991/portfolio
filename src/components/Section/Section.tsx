@@ -1,8 +1,9 @@
+import { forwardRef } from 'react'
 import styles from './section.styles.module.css'
 import { Palette } from '@/theme'
 import { DEV_VARS } from '@/constants/cssVariables'
 
-interface SectionChildren {
+interface SectionProps {
 	bgColor?: keyof Palette
 	children: React.ReactNode
 	ariaLabel: string
@@ -10,19 +11,17 @@ interface SectionChildren {
 	className?: string
 }
 
-export function Section({
-	children,
-	ariaLabel,
-	bgColor = 'white',
-	variant,
-	className = '',
-}: SectionChildren) {
+export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
+	{ children, ariaLabel, bgColor = 'white', variant, className = '' },
+	ref,
+) {
 	const additiveStyles = {
 		'--background-color': DEV_VARS.palette[bgColor],
 	} as React.CSSProperties
 
 	return (
 		<section
+			ref={ref}
 			aria-label={ariaLabel}
 			style={additiveStyles}
 			className={`${styles.section} ${
@@ -32,4 +31,4 @@ export function Section({
 			{children}
 		</section>
 	)
-}
+})

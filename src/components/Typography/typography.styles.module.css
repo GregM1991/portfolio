@@ -24,11 +24,6 @@
   letter-spacing: 0.03rem;
 }
 
-/* TODO: what've I done here... this font-size doesn't lead anywhere 👀*/
-.h1Lead {
-  /* font-size: var(--typography-steps-) */
-}
-
 .h2Rich {
   font-size: var(--typography-rich-header-text)
 }

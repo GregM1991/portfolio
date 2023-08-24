@@ -1,19 +1,57 @@
-import { Section, Typography } from '@/components'
+'use client'
+import { useRef } from 'react'
 import Image from 'next/image'
+import { useScroll, motion, useTransform, useSpring } from 'framer-motion'
+import { AnimatedSection, Typography } from '@/components'
 import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import styles from './myContribution.styles.module.css'
+import { CUBIC_BEZIER, DURATION } from '@/constants/animation'
 
 export function MyContribution() {
+	const wrapperRef = useRef(null)
+
+	const { scrollYProgress } = useScroll({
+		target: wrapperRef,
+		offset: ['start end', 'end start'],
+	})
+	const yScrollPercent = useSpring(scrollYProgress, {
+		stiffness: 30,
+		damping: 10,
+		mass: 1.5,
+	})
+	const translateY = useTransform(yScrollPercent, [0, 1], ['0%', '-25%'])
+
 	return (
-		<Section bgColor="indigo" ariaLabel="My contribution">
+		<AnimatedSection
+			ref={wrapperRef}
+			bgColor="indigo"
+			ariaLabel="My contribution"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true }}
+			transition={{
+				ease: CUBIC_BEZIER,
+				duration: DURATION,
+			}}
+		>
 			<div className={styles.wrapper}>
-				<div className={styles.imageWrapper}>
+				<motion.div
+					className={styles.imageWrapper}
+					style={{ translateY }}
+					viewport={{ once: true }}
+					whileInView={{ opacity: 1 }}
+					initial={{ opacity: 0 }}
+					transition={{
+						ease: CUBIC_BEZIER,
+						duration: DURATION,
+					}}
+				>
 					<Image
 						src={playingPool}
 						alt="Greg playing pool, leaning over the table to take a shot."
 						className={styles.playingPool}
 					/>
-				</div>
+				</motion.div>
 				<div className={styles.textWrapper}>
 					<Typography type="h2" color="white" variant="h2Rich">
 						<a id="my-contribution" className="anchor" />
@@ -36,6 +74,6 @@ export function MyContribution() {
 					</Typography>
 				</div>
 			</div>
-		</Section>
+		</AnimatedSection>
 	)
 }

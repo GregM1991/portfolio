@@ -7,15 +7,16 @@
 .imageWrapper {
   padding-right: var(--spaces-large);
   max-width: 100%;
+  opacity: var(--wrapper-opacity);
 }
 
 .playingPool {
+  margin-top: 50px;
   width: 100%;
   height: auto;
   border-radius: 0 1rem 1rem 0;
   aspect-ratio: 10 / 7;
   object-position: 0 45%;
-  transform: translateY(18px);
 }
 
 .textWrapper {

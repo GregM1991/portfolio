@@ -13,6 +13,7 @@ export default function Home() {
 		<main>
 			{/* TODO: I should probably reformat all the images into web optimised */}
 			{/* TODO: Fix padding at min-width: 576px for containing divs */}
+			{/* TODO: I need to revise how I've done the first pass of animations, they're pretty ugly atm (the code) */}
 			<GregLife />
 			<MyContribution />
 			<GregsValues />
