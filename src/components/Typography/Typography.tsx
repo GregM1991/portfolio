@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { forwardRef } from 'react'
 import styles from './typography.styles.module.css'
 import { DEV_VARS } from '@/constants/cssVariables'
 import { Palette } from '@/theme'
@@ -6,7 +6,6 @@ import { Palette } from '@/theme'
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 type Variant =
 	| 'pLead'
-	| 'h1Lead'
 	| 'h2Rich'
 	| 'programHeader'
 	| 'blockquoteLead'
@@ -22,14 +21,13 @@ interface TypographyProps {
 	children: React.ReactNode
 }
 
-export function Typography({
-	type = 'p',
-	styledAs,
-	variant,
-	color = 'dark',
-	className,
-	children,
-}: TypographyProps) {
+export const Typography = forwardRef<
+	HTMLHeadingElement & HTMLSpanElement,
+	TypographyProps
+>(function Typography(
+	{ type = 'p', styledAs, variant, color = 'dark', className, children },
+	ref,
+) {
 	const additiveStyles = {
 		'--color': DEV_VARS.palette[color],
 	} as React.CSSProperties
@@ -41,8 +39,9 @@ export function Typography({
 				variant ? styles[variant] : ''
 			} ${className ? className : ''}`}
 			style={additiveStyles}
+			ref={ref}
 		>
 			{children}
 		</Component>
 	)
-}
+})

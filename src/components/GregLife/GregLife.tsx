@@ -1,7 +1,9 @@
-'use client'
-import { motion } from 'framer-motion'
-import { Typography, Section } from '@/components'
-import Image from 'next/image'
+import {
+	Typography,
+	AnimatedTypography,
+	AnimatedImage,
+	Section,
+} from '@/components'
 import styles from './gregLife.styles.module.css'
 import canvaRooftop from '@/assets/images/greg-at-canva-peace-sign.jpg'
 import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
@@ -10,8 +12,6 @@ import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
 
 const IMAGE_CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
 const IMAGE_DURATION = 1.5
-
-const AnimatedImage = motion(Image)
 
 export function GregLife() {
 	return (
@@ -59,7 +59,14 @@ export function GregLife() {
 				/>
 			</div>
 			<div className={styles.type}>
-				<Typography type="h1">
+				<AnimatedTypography
+					type="h1"
+					animate={{ opacity: 1 }}
+					transition={{
+						ease: IMAGE_CUBIC_BEZIER,
+						duration: 1,
+					}}
+				>
 					<a id="greg-life" className="anchor" />
 					Greg life
 					<AnimatedImage
@@ -74,7 +81,7 @@ export function GregLife() {
 						}}
 						className={styles.purpleDoodle}
 					/>
-				</Typography>
+				</AnimatedTypography>
 				<Typography variant="pLead">
 					Sometimes the chance comes along to be part of something truly
 					special. With a cheeky smile and passion for the industry, I offer
