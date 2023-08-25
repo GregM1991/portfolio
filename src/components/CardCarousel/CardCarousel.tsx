@@ -4,6 +4,8 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
 import styles from './cardCarousel.styles.module.css'
 import { values } from '@/constants/values'
 import { Card } from './Card'
+import { motion } from 'framer-motion'
+import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
 
 export function CardCarousel() {
 	const [transformValue, setTransformValue] = React.useState(0)
@@ -22,7 +24,7 @@ export function CardCarousel() {
 	}
 
 	return (
-		<div className={styles.wrapper}>
+		<motion.div className={styles.wrapper} {...FADE_UP_IN_ANIMATION_CONFIG}>
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>
@@ -49,6 +51,6 @@ export function CardCarousel() {
 					<ChevronRightIcon />
 				</button>
 			</div>
-		</div>
+		</motion.div>
 	)
 }

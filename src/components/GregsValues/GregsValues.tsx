@@ -1,4 +1,9 @@
-import { AnimatedSection, Typography, CardCarousel } from '@/components'
+import {
+	AnimatedSection,
+	AnimatedTypography,
+	Typography,
+	CardCarousel,
+} from '@/components'
 import styles from './gregsValues.styles.module.css'
 import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
 
@@ -11,15 +16,16 @@ export function GregsValues() {
 			{...FADE_IN_ANIMATION_CONFIG}
 		>
 			<div className={styles.textWrapper}>
-				<Typography
+				<AnimatedTypography
 					type="h2"
 					color="white"
 					variant="programHeader"
 					className={styles.header}
+					{...FADE_IN_ANIMATION_CONFIG}
 				>
 					<a id="gregs-values" className="anchor" />
 					Greg&apos;s values
-				</Typography>
+				</AnimatedTypography>
 				<Typography color="white" className={styles.body}>
 					I&apos;m a bit torn about what to throw down here, between writing
 					down what my values are, or explaining how they align with

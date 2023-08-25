@@ -9,10 +9,18 @@ interface SectionProps {
 	ariaLabel: string
 	variant?: 'hero'
 	className?: string
+	initAnimatedConfig?: React.CSSProperties
 }
 
 export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
-	{ children, ariaLabel, bgColor = 'white', variant, className = '' },
+	{
+		children,
+		ariaLabel,
+		bgColor = 'white',
+		variant,
+		className = '',
+		initAnimatedConfig = {},
+	},
 	ref,
 ) {
 	const additiveStyles = {
@@ -23,7 +31,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
 		<section
 			ref={ref}
 			aria-label={ariaLabel}
-			style={additiveStyles}
+			style={{ ...additiveStyles, ...initAnimatedConfig }}
 			className={`${styles.section} ${
 				variant ? styles[variant] : ''
 			} ${className}`}

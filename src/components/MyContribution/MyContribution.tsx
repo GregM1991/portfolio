@@ -4,12 +4,8 @@ import Image from 'next/image'
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion'
 import { AnimatedSection, Typography } from '@/components'
 import playingPool from '@/assets/images/greg-playing-pool.jpg'
+import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
 import styles from './myContribution.styles.module.css'
-import {
-	CUBIC_BEZIER,
-	DURATION,
-	FADE_IN_ANIMATION_CONFIG,
-} from '@/constants/animation'
 
 export function MyContribution() {
 	const wrapperRef = useRef(null)
@@ -30,13 +26,14 @@ export function MyContribution() {
 			ref={wrapperRef}
 			bgColor="indigo"
 			ariaLabel="My contribution"
+			initAnimatedConfig={{ opacity: 0 }}
 			{...FADE_IN_ANIMATION_CONFIG}
 		>
 			<div className={styles.wrapper}>
 				<motion.div
 					className={styles.imageWrapper}
-					style={{ translateY }}
 					{...FADE_IN_ANIMATION_CONFIG}
+					style={{ translateY }}
 				>
 					<Image
 						src={playingPool}
