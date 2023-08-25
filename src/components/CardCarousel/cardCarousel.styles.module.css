@@ -1,5 +1,6 @@
 .wrapper {
   margin-top: 50px;
+  opacity: 0;
 }
 
 .carouselContainer {
@@ -13,7 +14,6 @@
 .carouselSlider {
   display: flex;
   align-items: stretch;
-  /* gap: 10px; */
   transform: var(--carousel-transform);
   width: 600%;
 

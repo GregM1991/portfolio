@@ -24,7 +24,7 @@ export function CardCarousel() {
 	}
 
 	return (
-		<motion.div className={styles.wrapper} {...FADE_UP_IN_ANIMATION_CONFIG}>
+		<motion.div {...FADE_UP_IN_ANIMATION_CONFIG} className={styles.wrapper}>
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>

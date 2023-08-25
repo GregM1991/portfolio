@@ -13,6 +13,7 @@ export function GregsValues() {
 			bgColor="red"
 			ariaLabel="My values"
 			className={styles.wrapper}
+			initAnimatedConfig={{ opacity: 0 }}
 			{...FADE_IN_ANIMATION_CONFIG}
 		>
 			<div className={styles.textWrapper}>
