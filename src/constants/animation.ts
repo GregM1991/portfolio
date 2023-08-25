@@ -15,3 +15,9 @@ export const FADE_UP_IN_ANIMATION_CONFIG = {
 	initial: { translateY: 50 },
 	whileInView: { translateY: 0, ...FADE_IN_ANIMATION_CONFIG.whileInView },
 }
+
+export const FADE_RIGHT_IN_ANIMATION_CONFIG = {
+	...FADE_IN_ANIMATION_CONFIG,
+	initial: { translateX: -50 },
+	whileInView: { translateX: 0, ...FADE_IN_ANIMATION_CONFIG.whileInView },
+}
