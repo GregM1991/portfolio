@@ -5,7 +5,11 @@ import { useScroll, motion, useTransform, useSpring } from 'framer-motion'
 import { AnimatedSection, Typography } from '@/components'
 import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import styles from './myContribution.styles.module.css'
-import { CUBIC_BEZIER, DURATION } from '@/constants/animation'
+import {
+	CUBIC_BEZIER,
+	DURATION,
+	FADE_IN_ANIMATION_CONFIG,
+} from '@/constants/animation'
 
 export function MyContribution() {
 	const wrapperRef = useRef(null)
@@ -26,25 +30,13 @@ export function MyContribution() {
 			ref={wrapperRef}
 			bgColor="indigo"
 			ariaLabel="My contribution"
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			viewport={{ once: true }}
-			transition={{
-				ease: CUBIC_BEZIER,
-				duration: DURATION,
-			}}
+			{...FADE_IN_ANIMATION_CONFIG}
 		>
 			<div className={styles.wrapper}>
 				<motion.div
 					className={styles.imageWrapper}
 					style={{ translateY }}
-					viewport={{ once: true }}
-					whileInView={{ opacity: 1 }}
-					initial={{ opacity: 0 }}
-					transition={{
-						ease: CUBIC_BEZIER,
-						duration: DURATION,
-					}}
+					{...FADE_IN_ANIMATION_CONFIG}
 				>
 					<Image
 						src={playingPool}

@@ -1,9 +1,15 @@
-import { Section, Typography, CardCarousel } from '@/components'
+import { AnimatedSection, Typography, CardCarousel } from '@/components'
 import styles from './gregsValues.styles.module.css'
+import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
 
 export function GregsValues() {
 	return (
-		<Section bgColor="red" ariaLabel="My values" className={styles.wrapper}>
+		<AnimatedSection
+			bgColor="red"
+			ariaLabel="My values"
+			className={styles.wrapper}
+			{...FADE_IN_ANIMATION_CONFIG}
+		>
 			<div className={styles.textWrapper}>
 				<Typography
 					type="h2"
@@ -22,6 +28,6 @@ export function GregsValues() {
 				</Typography>
 			</div>
 			<CardCarousel />
-		</Section>
+		</AnimatedSection>
 	)
 }
