@@ -1,3 +1,11 @@
+.blockQuoteWrapper {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spaces-xxxLarge);
+}
+
 .imageWrapper {
   position: relative;
   height: auto;
@@ -47,6 +55,10 @@
 }
 
 @media (min-width: 768px) {
+  .blockQuoteWrapper  {
+    flex-direction: row-reverse;
+  }
+
   .imageWrapper {
     max-width: 50%;
     flex: 0 0 50%;
@@ -64,6 +76,10 @@
 }
 
 @media (min-width: 992px) {
+  .blockQuoteWrapper  {
+    justify-content: space-between;
+  }
+  
   .imageWrapper {
     max-width: 33.3%;
     flex: 0 0 33.333%;

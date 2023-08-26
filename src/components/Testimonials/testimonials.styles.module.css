@@ -7,40 +7,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 35px;
+  opacity: 0;
 }
 
-.blockQuoteWrapper  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: var(--spaces-xxxLarge);
+.gridWrapper {
+  display: grid;
 }
-
-@media (min-width: 768px) {
-  .blockQuoteWrapper  {
-    flex-direction: row-reverse;
-  }
-}
-
-@media (min-width: 992px) {
-  .blockQuoteWrapper  {
-    justify-content: space-between;
-  }
-}
-
-/* .wrapper {
-  position: relative;
-}
-
-.contentWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.blockQuoteWrapper  {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 120px;
-} */

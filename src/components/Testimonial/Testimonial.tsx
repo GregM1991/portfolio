@@ -1,7 +1,9 @@
+'use client'
+import { useEffect } from 'react'
 import { Typography } from '@/components'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
+import { motion } from 'framer-motion'
 import styles from './testimonial.styles.module.css'
-import { StaticImageData } from 'next/image'
 
 interface TestimonialProps {
 	img: StaticImageData
@@ -20,8 +22,18 @@ export function Testimonial({
 	name,
 	role,
 }: TestimonialProps) {
+	useEffect(() => {
+		console.log('mount')
+		return () => console.log('unmount')
+	}, [])
 	return (
-		<>
+		<motion.div
+			className={styles.blockQuoteWrapper}
+			transition={{ duration: 0.15 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			<div className={styles.imageWrapper}>
 				<Image
 					src={img}
@@ -39,6 +51,6 @@ export function Testimonial({
 					<small>{role}</small>
 				</footer>
 			</blockquote>
-		</>
+		</motion.div>
 	)
 }
