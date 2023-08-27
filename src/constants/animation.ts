@@ -1,6 +1,7 @@
 export const CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
 export const DURATION = 1.5
 
+// TODO: Do I replace how I'm currently doing this with framer variants?
 export const FADE_IN_ANIMATION_CONFIG = {
 	whileInView: { opacity: 1 },
 	viewport: { once: true },
