@@ -10,8 +10,7 @@
   position: relative;
   height: auto;
   max-width: 83.3%;
-  flex: 0 0 83.3%;
-  aspect-ratio: 34/46;
+  aspect-ratio: 4.5 / 6;
   padding: 0 15px;
   margin-bottom: var(--spaces-large);
 }
@@ -33,7 +32,6 @@
 }
 
 .blockquote {
-  flex: 0 0 58.3%;
   max-width: 0 0 58.3%;
   letter-spacing: 0.03em;
   padding-top: 3.25rem;

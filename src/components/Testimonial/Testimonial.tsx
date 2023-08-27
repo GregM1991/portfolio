@@ -1,5 +1,4 @@
 'use client'
-import { useEffect } from 'react'
 import { Typography } from '@/components'
 import Image, { StaticImageData } from 'next/image'
 import { motion } from 'framer-motion'
@@ -22,10 +21,6 @@ export function Testimonial({
 	name,
 	role,
 }: TestimonialProps) {
-	useEffect(() => {
-		console.log('mount')
-		return () => console.log('unmount')
-	}, [])
 	return (
 		<motion.div
 			className={styles.blockQuoteWrapper}
