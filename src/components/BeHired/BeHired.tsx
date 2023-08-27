@@ -3,8 +3,11 @@ import { AnimatedSection, Typography, Button } from '@/components'
 import styles from './beHired.styles.module.css'
 import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-const BE_HIRED = 'Be hired'
+const BE = 'Be '
+const HIRED = 'hired?'
+
 const sentence = {
 	hidden: { opacity: 1 },
 	visible: {
@@ -27,7 +30,7 @@ const letter = {
 }
 
 export function BeHired() {
-	console.log(BE_HIRED)
+	const [leadWrapperTrigger, setLeadWrapperTrigger] = useState(false)
 	return (
 		<AnimatedSection
 			bgColor="indigo"
@@ -45,24 +48,36 @@ export function BeHired() {
 						initial="hidden"
 						whileInView="visible"
 						className={styles.leadWrapper}
+						onAnimationComplete={() => setLeadWrapperTrigger(true)}
 					>
-						{BE_HIRED.split('').map((char, index) => (
+						{BE.split('').map((char, index) => (
 							<motion.span key={`${char}-${index}`} variants={letter}>
 								{char === ' ' ? '\u00A0' : char}
 							</motion.span>
 						))}
+						<em
+							className={`${styles.lead} ${
+								leadWrapperTrigger ? styles.leadWithBorder : ''
+							}`}
+						>
+							{HIRED.split('').map((char, index) => (
+								<motion.span key={`${char}-${index}`} variants={letter}>
+									{char === ' ' ? '\u00A0' : char}
+								</motion.span>
+							))}
+						</em>
 						<motion.span
 							className={styles.textCursor}
-							transition={{ repeat: 1, duration: 1 }}
+							transition={{
+								duration: 2,
+							}}
 							initial={{ opacity: 0 }}
-							whileInView={{ opacity: [0, 1, 0, 1] }}
+							whileInView={{
+								opacity: [1, 0, 1, 0, 1, 0],
+							}}
 							viewport={{ once: true, amount: 'all' }}
 						/>
 					</motion.span>
-					{/* The span that will appear after the animation is complete */}
-					{/* <span className={styles.leadWrapper}>
-						Be <em className={styles.lead}>hired?</em>
-					</span> */}
 				</Typography>
 				<Typography
 					color="white"

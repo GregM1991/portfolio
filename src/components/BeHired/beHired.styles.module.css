@@ -21,9 +21,14 @@
 .lead {
   position: relative;
   border: 15px solid transparent;
-  border-image: url("../../assets/svg/border-box.svg") 15 round;
+  border-image: none 15 round;
   font-style: inherit;
   display: inline-block;
+  line-height: 1.1;
+}
+
+.leadWithBorder {
+  border-image: url("../../assets/svg/border-box.svg") 15 round;
 }
 
 .textCursor {
