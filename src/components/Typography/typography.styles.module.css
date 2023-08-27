@@ -48,3 +48,8 @@
   font-size: var(--typography-cta-banner-body);
   letter-spacing: -0.01rem;
 }
+
+.acknowledgementBody {
+  font-size: 0.9375rem;
+  letter-spacing: 0
+}

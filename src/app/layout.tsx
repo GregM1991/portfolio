@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components'
+import { Header, Footer } from '@/components'
 
 import './global.css'
 import './variables.css'
@@ -20,6 +20,7 @@ export default function RootLayout({
 			<body>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	)

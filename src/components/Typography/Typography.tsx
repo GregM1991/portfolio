@@ -4,6 +4,7 @@ import { DEV_VARS } from '@/constants/cssVariables'
 import { Palette } from '@/theme'
 
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+// It occurs to me that these are not general variants, they are class specific
 type Variant =
 	| 'pLead'
 	| 'h2Rich'
@@ -11,6 +12,7 @@ type Variant =
 	| 'blockquoteLead'
 	| 'ctaLead'
 	| 'ctaBody'
+	| 'acknowledgementBody'
 
 interface TypographyProps {
 	type?: ElementType
