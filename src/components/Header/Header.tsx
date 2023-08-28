@@ -1,8 +1,9 @@
 'use client'
 import { useState } from 'react'
 import { Logo } from '@/components'
-import styles from './header.styles.module.css'
+import { LINKS } from '@/constants/links'
 import Link from 'next/link'
+import styles from './header.styles.module.css'
 
 export function Header() {
 	const [isChecked, setIsChecked] = useState(false)
@@ -26,37 +27,17 @@ export function Header() {
 				</label>
 			</div>
 			<nav className={styles.nav}>
-				<ul className={styles.menu}>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#greg-life">
-							Greg life
-						</Link>
-					</li>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#my-contribution">
-							My contribution
-						</Link>
-					</li>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#gregs-values">
-							Greg&apos;s values
-						</Link>
-					</li>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#projects">
-							A place for projects
-						</Link>
-					</li>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#greg-life-mural">
-							#GregLife
-						</Link>
-					</li>
-					<li onClick={() => setIsChecked(checked => !checked)}>
-						<Link className={styles.navLink} href="/#testimonials">
-							Testimonials
-						</Link>
-					</li>
+				<ul role="list" className={styles.menu}>
+					{LINKS.map(link => (
+						<li
+							key={link.href}
+							onClick={() => setIsChecked(checked => !checked)}
+						>
+							<Link className={styles.navLink} href={link.href}>
+								{link.linkText}
+							</Link>
+						</li>
+					))}
 				</ul>
 			</nav>
 		</header>

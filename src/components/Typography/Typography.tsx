@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
-import styles from './typography.styles.module.css'
 import { DEV_VARS } from '@/constants/cssVariables'
 import { Palette } from '@/theme'
+import styles from './typography.styles.module.css'
 
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 // It occurs to me that these are not general variants, they are class specific
@@ -27,11 +27,11 @@ export const Typography = forwardRef<
 	HTMLHeadingElement & HTMLSpanElement,
 	TypographyProps
 >(function Typography(
-	{ type = 'p', styledAs, variant, color = 'dark', className, children },
+	{ type = 'p', styledAs, variant, color, className, children },
 	ref,
 ) {
 	const additiveStyles = {
-		'--color': DEV_VARS.palette[color],
+		'--color': color ? DEV_VARS.palette[color] : 'inherit',
 	} as React.CSSProperties
 	const Component = type
 
