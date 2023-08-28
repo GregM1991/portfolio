@@ -1,7 +1,56 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10rem 0;
+}
+
+.textWrapper {
+
+}
+
+.left {
+  padding-left: var(--padding-calc-value);
+  border-radius: 0 var(--radii-large) var(radii-large);
+}
+
+.imageWrapper {
+  width: calc(100% + var(--spaces-large));
+  margin-left: calc(var(--spaces-large) * -1);
+  margin-top: var(--spaces-xxLarge);
+}
+
+.img {
+  aspect-ratio: 7/5;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left .img {
+  border-radius: 0 var(--radii-large) var(--radii-large) 0;
+}
+
+.right {
+  flex-direction: row-reverse;
+  padding-right: var(--padding-calc-value);
+}
+
+.right .img {
+  border-radius: 0 var(--radii-large) var(--radii-large) 0;
+}
+
+.right .textWrapper {
+  padding-left: 60px;
+}
+
+/* .imageWrapper {
+  max-width: 42%;
+  flex: 0 0 42%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .textWrapper {
@@ -39,4 +88,4 @@
 .imageWrapper {
   max-width: 42%;
   flex: 0 0 42%;
-}
+} */
