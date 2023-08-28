@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  gap: var(--spaces-small);
+  color: var(--palette-white);
+  margin: 0;
+}
+
+.tooltipTrigger:hover {
+  opacity: 0.8;
+}
+
+.tooltipContent {
+  background-color: var(--palette-white);
+  color: var(--palette-indigo);
+  padding: var(--spaces-xxxSmall);
+  border-radius: var(--radii-medium);
+  font-size: 0.75rem;
+  letter-spacing: 0.2px;
+}

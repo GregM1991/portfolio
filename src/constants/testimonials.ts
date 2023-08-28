@@ -1,7 +1,7 @@
 import andy from '@/assets/images/andy.png'
 import karin from '@/assets/images/karin.jpg'
 import aaron from '@/assets/images/aaron.jpg'
-import testimonialImage4 from '@/assets/images/greg-on-couch-with-laptop-and-rosie.jpg'
+import hina from '@/assets/images/hina.jpg'
 
 export const TESTIMONIALS = [
 	{
@@ -36,12 +36,13 @@ export const TESTIMONIALS = [
 		role: 'Full-Stack Enigneer, eQ8',
 	},
 	{
-		img: testimonialImage4,
+		img: hina,
 		imgAltText: 'And the Fourth!',
-		leadText: 'And the Fourth!',
+		leadText:
+			"I really admire Greg's impressive skills and remarkable attention to detail as a Frontend engineer.",
 		bodyText:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laboriosam explicabo numquam deserunt est adipisci ducimus? Maiores itaque consectetur similique!',
-		name: 'Bob Saget',
-		role: 'Renowned Wild Man',
+			'His ability to transform designs into captivating user experiences is truly commendable. Moreover, his collaborative spirit and teamwork greatly contribute to a harmonious and efficient development process. His techincal brilliance and team-orientated mindset is a rarity that any organisation would be fortunate to have',
+		name: 'Hina Shahid',
+		role: 'Snr Full-Stack Engineer, eq8',
 	},
 ]

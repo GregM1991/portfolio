@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Logo } from '@/components'
-import { LINKS } from '@/constants/links'
+import { NAV_LINKS } from '@/constants/links'
 import Link from 'next/link'
 import styles from './header.styles.module.css'
 
@@ -28,7 +28,7 @@ export function Header() {
 			</div>
 			<nav className={styles.nav}>
 				<ul role="list" className={styles.menu}>
-					{LINKS.map(link => (
+					{NAV_LINKS.map(link => (
 						<li
 							key={link.href}
 							onClick={() => setIsChecked(checked => !checked)}

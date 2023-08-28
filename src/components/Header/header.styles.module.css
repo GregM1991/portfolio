@@ -127,6 +127,7 @@
     display: flex;
     gap: var(--spaces-small);
     padding-top: 0;
+    padding-left: var(--spaces-xLarge)
   }
 
   .nav li {
