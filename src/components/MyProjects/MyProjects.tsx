@@ -20,31 +20,29 @@ const PROJECTS = [
 export function MyProjects() {
 	return (
 		<Section bgColor="light-pink" ariaLabel="My projects">
-			<div className="container">
-				<Typography
-					type="h2"
-					color="dark-red"
-					variant="h2Rich"
-					className={styles.header}
-				>
-					<a id="projects" className="anchor" />A place for <br /> projects{' '}
-				</Typography>
-				<div className={styles.projectWrapper}>
-					{PROJECTS.map((project, i) => {
-						const { title, copy, imageSrc, imageAltText } = project
-						// TODO: will need to find a better key replacement
-						return (
-							<Project
-								key={title}
-								title={title}
-								copy={copy}
-								imageSrc={imageSrc}
-								imageAltText={imageAltText}
-								layout={(i + 1) % 2 === 0 ? 'right' : 'left'}
-							/>
-						)
-					})}
-				</div>
+			<Typography
+				type="h2"
+				color="dark-red"
+				variant="h2Rich"
+				className={styles.header}
+			>
+				<a id="projects" className="anchor" />A place for <br /> projects{' '}
+			</Typography>
+			<div className={styles.projectWrapper}>
+				{PROJECTS.map((project, i) => {
+					const { title, copy, imageSrc, imageAltText } = project
+					// TODO: will need to find a better key replacement
+					return (
+						<Project
+							key={title}
+							title={title}
+							copy={copy}
+							imageSrc={imageSrc}
+							imageAltText={imageAltText}
+							layout={(i + 1) % 2 === 0 ? 'right' : 'left'}
+						/>
+					)
+				})}
 			</div>
 		</Section>
 	)

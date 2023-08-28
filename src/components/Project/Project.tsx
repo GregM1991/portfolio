@@ -1,5 +1,5 @@
-import { Typography } from '@/components'
-import Image, { StaticImageData } from 'next/image'
+import { AnimatedImage, Typography } from '@/components'
+import { StaticImageData } from 'next/image'
 import styles from './project.styles.module.css'
 
 interface ProjectProps {
@@ -26,7 +26,7 @@ export function Project({
 				<Typography color="dark-red">{copy}</Typography>
 			</div>
 			<div className={styles.imageWrapper}>
-				<Image
+				<AnimatedImage
 					src={imageSrc}
 					alt={imageAltText}
 					height={430}
