@@ -1,11 +1,12 @@
 'use client'
 import React from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
-import styles from './cardCarousel.styles.module.css'
 import { values } from '@/constants/values'
-import { Card } from './Card'
-import { motion } from 'framer-motion'
 import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { Card } from './Card'
+import { FAB } from '@/components'
+import { motion } from 'framer-motion'
+import styles from './cardCarousel.styles.module.css'
 
 export function CardCarousel() {
 	const [transformValue, setTransformValue] = React.useState(0)
@@ -35,21 +36,20 @@ export function CardCarousel() {
 				</div>
 			</div>
 			<div className={styles.buttonWrapper}>
-				{/* TODO: extract this button as it will be used in Testimonials */}
-				<button
+				<FAB
+					icon={<ChevronLeftIcon />}
+					ariaLabel="left arrow icon"
 					disabled={transformValue >= 0}
 					className={styles.button}
 					onClick={onClickLeft}
-				>
-					<ChevronLeftIcon />
-				</button>
-				<button
+				/>
+				<FAB
+					icon={<ChevronRightIcon />}
+					ariaLabel="right arrow icon"
 					disabled={transformValue < -80}
 					className={styles.button}
 					onClick={onClickRight}
-				>
-					<ChevronRightIcon />
-				</button>
+				/>
 			</div>
 		</motion.div>
 	)

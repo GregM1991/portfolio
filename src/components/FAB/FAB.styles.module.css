@@ -1,0 +1,19 @@
+.FAB {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: var(--radii-full);
+  background: var(--palette-white);
+  margin: 0 8px; 
+  width: 48px;
+  height: 48px;
+  border: none;
+}
+
+.FAB > svg {
+  transform: scale(2)
+}
+
+.FAB:disabled {
+  opacity: 0.5
+}

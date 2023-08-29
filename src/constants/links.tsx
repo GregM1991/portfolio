@@ -41,7 +41,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
 	{
 		linkTooltipText: 'linkedIn',
-		href: '"https://www.linkedin.com/in/greg-martin-76688678/"',
+		href: 'https://www.linkedin.com/in/greg-martin-76688678/',
 		icon: <LinkedInLogoIcon height={ICON_SIZE} width={ICON_SIZE} />,
 	},
 	{

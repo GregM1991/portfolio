@@ -3,10 +3,10 @@ import { useRef } from 'react'
 import { AnimatedImage, Typography } from '@/components'
 import { Projects, Project as ProjectType } from '@/types/projects'
 import { Project } from './Project'
-import { useWindowSize } from '@uidotdev/usehooks'
 import { useScroll, useSpring, useTransform } from 'framer-motion'
 import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
 import styles from './job.styles.module.css'
+import { useIsMobile } from '@/shared/hooks/useIsMobile'
 
 interface JobProps extends Projects {
 	layout?: 'left' | 'right'
@@ -20,12 +20,7 @@ export function Job({
 	imageAltText,
 	layout = 'left',
 }: JobProps) {
-	const { width } = useWindowSize()
-	let isMobile = false
-	if (width !== null && width < 992) {
-		isMobile = true
-	}
-
+	const isMobile = useIsMobile()
 	const wrapperRef = useRef(null)
 
 	const { scrollYProgress } = useScroll({

@@ -6,18 +6,14 @@ import {
 	FADE_IN_ANIMATION_CONFIG,
 	FADE_RIGHT_IN_ANIMATION_CONFIG,
 } from '@/constants/animation'
-import { useWindowSize } from '@uidotdev/usehooks'
 import babyLaptop from '@/assets/images/greg-and-cat-with-baby-laptop.jpg'
 import barossa from '@/assets/images/greg-and-cat-in-barossa.jpg'
 import gesture from '@/assets/images/greg-making-a-gesture.jpg'
 import styles from './gregLifeMural.styles.module.css'
+import { useIsMobile } from '@/shared/hooks/useIsMobile'
 
 export function GregLifeMural() {
-	const { width } = useWindowSize()
-	let isMobile = false
-	if (width !== null && width < 992) {
-		isMobile = true
-	}
+	const isMobile = useIsMobile()
 	const wrapperRef = useRef(null)
 
 	const { scrollYProgress } = useScroll({

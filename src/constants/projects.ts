@@ -1,7 +1,9 @@
-import projectImage from '@/assets/images/delicious-black-nectar-of-the-gods.jpg'
+import faethmKbbq from '@/assets/images/faethm-kbbq-2.jpg'
+import eq8Pub from '@/assets/images/eq8-pub.jpg'
 import { Projects } from '@/types/projects'
 
 // TODO: Change the alt text of the images
+// TODO: Change images to shots of the gang
 export const JOBS: Projects[] = [
 	{
 		title: 'eQ8',
@@ -43,8 +45,9 @@ export const JOBS: Projects[] = [
 				],
 			},
 		],
-		imageSrc: projectImage,
-		imageAltText: 'eQ8 image alt text goes here',
+		imageSrc: eq8Pub,
+		imageAltText:
+			'Greg, Annisa and Aaron smiling and having a beer in the sunshine',
 	},
 	{
 		title: 'Faethm',
@@ -90,7 +93,8 @@ export const JOBS: Projects[] = [
 				],
 			},
 		],
-		imageSrc: projectImage,
-		imageAltText: 'Faethm image alt text goes here',
+		imageSrc: faethmKbbq,
+		imageAltText:
+			'Faethm team at Korean BBQ eating and drinking and smiling at the camera',
 	},
 ]

@@ -3,11 +3,13 @@ import { useRef } from 'react'
 import Image from 'next/image'
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion'
 import { AnimatedSection, Typography } from '@/components'
-import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import styles from './myContribution.styles.module.css'
+import { useIsMobile } from '@/shared/hooks/useIsMobile'
 
 export function MyContribution() {
+	const isMobile = useIsMobile()
 	const wrapperRef = useRef(null)
 
 	const { scrollYProgress } = useScroll({
@@ -19,7 +21,11 @@ export function MyContribution() {
 		damping: 10,
 		mass: 1.5,
 	})
-	const translateY = useTransform(yScrollPercent, [0, 1], ['0%', '-25%'])
+	const translateY = useTransform(
+		yScrollPercent,
+		[0, 1],
+		['0%', isMobile ? '0%' : '-25%'],
+	)
 
 	return (
 		<AnimatedSection
