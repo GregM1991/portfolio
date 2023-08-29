@@ -6,11 +6,11 @@ import {
 	FADE_IN_ANIMATION_CONFIG,
 	FADE_RIGHT_IN_ANIMATION_CONFIG,
 } from '@/constants/animation'
-import babyLaptop from '@/assets/images/greg-and-cat-with-baby-laptop.jpg'
-import barossa from '@/assets/images/greg-and-cat-in-barossa.jpg'
+import standing from '@/assets/images/greg-standing-on-clifftop-in-tasmania.jpg'
+import lights from '@/assets/images/greg-silhouette-in-lights.jpg'
 import gesture from '@/assets/images/greg-making-a-gesture.jpg'
-import styles from './gregLifeMural.styles.module.css'
 import { useIsMobile } from '@/shared/hooks/useIsMobile'
+import styles from './gregLifeMural.styles.module.css'
 
 export function GregLifeMural() {
 	const isMobile = useIsMobile()
@@ -44,16 +44,16 @@ export function GregLifeMural() {
 				ref={wrapperRef}
 			>
 				<AnimatedImage
-					src={babyLaptop}
-					alt="Greg and wife Cat holding baby laptop toy"
-					className={styles.babyLaptop}
+					src={standing}
+					alt="Greg standing on a clifftop in Tasmania looking off into the distance"
+					className={styles.standing}
 					{...FADE_IN_ANIMATION_CONFIG}
 					style={{ translateY: translateY }}
 				/>
 				<AnimatedImage
-					src={barossa}
-					alt="Greg and wife Cat in barossa valley"
-					className={styles.barossa}
+					src={lights}
+					alt="Greg walking through Japanese light show, bare foot and silhouetted"
+					className={styles.lights}
 					{...FADE_IN_ANIMATION_CONFIG}
 					style={{ translateY: translateYNDouble }}
 				/>
