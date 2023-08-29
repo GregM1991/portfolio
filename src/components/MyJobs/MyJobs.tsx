@@ -1,10 +1,16 @@
-import { Section, Job, Typography } from '@/components'
+import { AnimatedSection, Job, Typography } from '@/components'
 import styles from './myJobs.styles.module.css'
 import { JOBS } from '@/constants/projects'
+import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
 
 export function MyJobs() {
 	return (
-		<Section bgColor="light-pink" ariaLabel="My projects">
+		<AnimatedSection
+			bgColor="light-pink"
+			ariaLabel="My projects"
+			initAnimatedConfig={{ opacity: 0 }}
+			{...FADE_IN_ANIMATION_CONFIG}
+		>
 			<Typography
 				type="h2"
 				color="dark-red"
@@ -14,11 +20,12 @@ export function MyJobs() {
 				<a id="projects" className="anchor" />A place for <br /> projects{' '}
 			</Typography>
 			<div className={styles.projectWrapper}>
-				{JOBS.map((project, i) => {
-					const { title, jobDescription, jobProjects, imageSrc, imageAltText } =
-						project
-					// TODO: will need to find a better key replacement
-					return (
+				{JOBS.map(
+					(
+						{ title, jobDescription, jobProjects, imageSrc, imageAltText },
+						i,
+					) => (
+						// TODO: will need to find a better key replacement
 						<Job
 							key={title}
 							title={title}
@@ -28,9 +35,9 @@ export function MyJobs() {
 							imageAltText={imageAltText}
 							layout={(i + 1) % 2 === 0 ? 'right' : 'left'}
 						/>
-					)
-				})}
+					),
+				)}
 			</div>
-		</Section>
+		</AnimatedSection>
 	)
 }

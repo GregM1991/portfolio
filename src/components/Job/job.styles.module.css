@@ -20,6 +20,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: 0 var(--radii-large) var(--radii-large) 0;
+  opacity: 0;
 }
 
 @media (min-width: 992px) {
