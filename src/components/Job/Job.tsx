@@ -1,29 +1,29 @@
 import { AnimatedImage, Typography } from '@/components'
-import { StaticImageData } from 'next/image'
-import styles from './project.styles.module.css'
+import styles from './job.styles.module.css'
+import { Projects } from '@/constants/projects'
 
-interface ProjectProps {
-	title: string
-	copy: string
-	imageSrc: StaticImageData
-	imageAltText: string
+interface JobProps extends Projects {
 	layout?: 'left' | 'right'
 }
 
-export function Project({
+export function Job({
 	title,
-	copy,
+	jobDescription,
+	jobProjects,
 	imageSrc,
 	imageAltText,
 	layout = 'left',
-}: ProjectProps) {
+}: JobProps) {
 	return (
 		<div className={`${styles.wrapper} ${styles[layout]}`}>
 			<div className={styles.textWrapper}>
 				<Typography type="h3" color="dark-red">
 					{title}
 				</Typography>
-				<Typography color="dark-red">{copy}</Typography>
+				<Typography color="dark-red">{jobDescription}</Typography>
+				{jobProjects.map(project => (
+					<></>
+				))}
 			</div>
 			<div className={styles.imageWrapper}>
 				<AnimatedImage

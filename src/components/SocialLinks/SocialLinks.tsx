@@ -12,7 +12,8 @@ export function SocialLinks() {
 					<li key={link.linkTooltipText}>
 						<Link
 							target="_blank"
-							href="https://www.linkedin.com/in/greg-martin-76688678/"
+							href={link.href}
+							{...(link.attributes ? link.attributes : {})}
 						>
 							<Tooltip.Root>
 								<Tooltip.Trigger asChild className={styles.tooltipTrigger}>

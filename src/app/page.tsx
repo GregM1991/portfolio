@@ -3,7 +3,7 @@ import {
 	GregLife,
 	MyContribution,
 	GregsValues,
-	MyProjects,
+	MyJobs,
 	Testimonials,
 	BeHired,
 } from '@/components'
@@ -18,7 +18,7 @@ export default function Home() {
 			<GregLife />
 			<MyContribution />
 			<GregsValues />
-			<MyProjects />
+			<MyJobs />
 			<GregLifeMural />
 			<Testimonials />
 			<BeHired />
