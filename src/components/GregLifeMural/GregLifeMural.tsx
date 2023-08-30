@@ -2,10 +2,7 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { AnimatedTypography, AnimatedImage } from '@/components'
-import {
-	FADE_IN_ANIMATION_CONFIG,
-	FADE_RIGHT_IN_ANIMATION_CONFIG,
-} from '@/constants/animation'
+import { fadeInVariants, fadeInRightVariants } from '@/constants/animation'
 import standing from '@/assets/images/greg-standing-on-clifftop-in-tasmania.jpg'
 import lights from '@/assets/images/greg-silhouette-in-lights.jpg'
 import gesture from '@/assets/images/greg-making-a-gesture.jpg'
@@ -40,7 +37,9 @@ export function GregLifeMural() {
 			<a id="greg-life-mural" className="anchor" />
 			<motion.div
 				className={styles.wrapper}
-				{...FADE_IN_ANIMATION_CONFIG}
+				variants={fadeInVariants}
+				initial="hidden"
+				whileInView="visible"
 				ref={wrapperRef}
 			>
 				<AnimatedImage
@@ -48,7 +47,8 @@ export function GregLifeMural() {
 					alt="Greg standing on a clifftop in Tasmania looking off into the distance"
 					className={styles.standing}
 					sizes="(max-width: 992px) 100vw, 58vw"
-					{...FADE_IN_ANIMATION_CONFIG}
+					initial="hidden"
+					whileInView="visible"
 					style={{ translateY: translateY }}
 				/>
 				<AnimatedImage
@@ -56,7 +56,8 @@ export function GregLifeMural() {
 					alt="Greg walking through Japanese light show, bare foot and silhouetted"
 					className={styles.lights}
 					sizes="(max-width: 992px) 50vw, 500px"
-					{...FADE_IN_ANIMATION_CONFIG}
+					initial="hidden"
+					whileInView="visible"
 					style={{ translateY: translateYNDouble }}
 				/>
 				<AnimatedImage
@@ -64,14 +65,17 @@ export function GregLifeMural() {
 					alt="Greg making a silly gesture with his hands"
 					className={styles.gesture}
 					sizes="(max-width: 992px) 50vw, 290px"
-					{...FADE_IN_ANIMATION_CONFIG}
+					initial="hidden"
+					whileInView="visible"
 					style={{ translateY: trasnlateYOpposite }}
 				/>
 				<AnimatedTypography
 					type="span"
 					color="white"
+					variants={fadeInRightVariants}
+					initial="hidden"
+					whileInView="visible"
 					className={styles.text}
-					{...FADE_RIGHT_IN_ANIMATION_CONFIG}
 				>
 					#GregLife
 				</AnimatedTypography>

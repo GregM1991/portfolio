@@ -1,24 +1,20 @@
 export const CUBIC_BEZIER = [0.29, 0.13, 0.3, 1]
 export const DURATION = 1.5
+const transition = { ease: CUBIC_BEZIER, duration: DURATION }
+const hidden = { opacity: 0 }
+const visible = { opacity: 1, transition }
 
-// TODO: Do I replace how I'm currently doing this with framer variants?
-export const FADE_IN_ANIMATION_CONFIG = {
-	whileInView: { opacity: 1 },
-	viewport: { once: true },
-	transition: {
-		ease: CUBIC_BEZIER,
-		duration: DURATION,
-	},
+export const fadeInVariants = {
+	hidden,
+	visible,
 }
 
-export const FADE_UP_IN_ANIMATION_CONFIG = {
-	...FADE_IN_ANIMATION_CONFIG,
-	initial: { translateY: 50 },
-	whileInView: { translateY: 0, ...FADE_IN_ANIMATION_CONFIG.whileInView },
+export const fadeInRightVariants = {
+	hidden: { ...hidden, translateX: -50 },
+	visisble: { ...visible, translateX: 0 },
 }
 
-export const FADE_RIGHT_IN_ANIMATION_CONFIG = {
-	...FADE_IN_ANIMATION_CONFIG,
-	initial: { translateX: -50 },
-	whileInView: { translateX: 0, ...FADE_IN_ANIMATION_CONFIG.whileInView },
+export const fadeInUpVariants = {
+	hidden: { ...hidden, translateY: 50 },
+	visible: { ...visible, translateY: 0 },
 }

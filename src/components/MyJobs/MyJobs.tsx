@@ -1,7 +1,7 @@
 import { AnimatedSection, Job, Typography } from '@/components'
 import styles from './myJobs.styles.module.css'
 import { JOBS } from '@/constants/projects'
-import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInVariants } from '@/constants/animation'
 
 export function MyJobs() {
 	return (
@@ -9,7 +9,10 @@ export function MyJobs() {
 			bgColor="light-pink"
 			ariaLabel="My projects"
 			initAnimatedConfig={{ opacity: 0 }}
-			{...FADE_IN_ANIMATION_CONFIG}
+			variants={fadeInVariants}
+			viewport={{ once: true }}
+			initial="hidden"
+			whileInView="visible"
 		>
 			<Typography
 				type="h2"

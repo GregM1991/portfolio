@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import Image from 'next/image'
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion'
 import { AnimatedSection, Typography } from '@/components'
-import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInVariants } from '@/constants/animation'
 import playingPool from '@/assets/images/greg-playing-pool.jpg'
 import styles from './myContribution.styles.module.css'
 import { useIsMobile } from '@/shared/hooks/useIsMobile'
@@ -32,14 +32,20 @@ export function MyContribution() {
 			ref={wrapperRef}
 			bgColor="indigo"
 			ariaLabel="My contribution"
+			variants={fadeInVariants}
+			viewport={{ once: true }}
 			initAnimatedConfig={{ opacity: 0 }}
-			{...FADE_IN_ANIMATION_CONFIG}
+			initial="hidden"
+			whileInView="visible"
 		>
 			<div className={styles.wrapper}>
 				<motion.div
 					className={styles.imageWrapper}
-					{...FADE_IN_ANIMATION_CONFIG}
-					style={{ translateY }}
+					variants={fadeInVariants}
+					viewport={{ once: true }}
+					initial="hidden"
+					whileInView="visible"
+					style={{ translateY: isMobile ? '17px' : translateY }}
 				>
 					<Image
 						src={playingPool}

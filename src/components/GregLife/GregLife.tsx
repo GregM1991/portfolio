@@ -34,6 +34,7 @@ export function GregLife() {
 				<AnimatedImage
 					alt="Greg sitting on the sunny Canva rooftop eating a cookie giving the peace sign"
 					src={canvaRooftop}
+					priority
 					className={styles.canvaRooftop}
 					sizes="(max-width: 768px) 270px, (max-width: 992px) 400px, (max-width: 1400px) 42vw, 600px"
 					initial={{ x: -65, y: 65, opacity: 0 }}

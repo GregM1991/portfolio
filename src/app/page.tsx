@@ -1,26 +1,48 @@
-import {
-	GregLifeMural,
-	GregLife,
-	MyContribution,
-	GregsValues,
-	MyJobs,
-	Testimonials,
-	BeHired,
-} from '@/components'
+'use client'
+import dynamic from 'next/dynamic'
+import { GregLife, MyContribution } from '@/components'
+const DynamicGregsValues = dynamic(
+	() => import('../components').then(mod => mod.GregsValues),
+	{
+		loading: () => <p>Loading...</p>,
+	},
+)
+const DynamicGregLifeMural = dynamic(
+	() => import('../components').then(mod => mod.GregLifeMural),
+	{
+		loading: () => <p>Loading...</p>,
+	},
+)
+const DynamicMyJobs = dynamic(
+	() => import('../components').then(mod => mod.MyJobs),
+	{
+		loading: () => <p>Loading...</p>,
+	},
+)
+const DynamicTestimonials = dynamic(
+	() => import('../components').then(mod => mod.Testimonials),
+	{
+		loading: () => <p>Loading...</p>,
+	},
+)
+const DynamicBeHired = dynamic(
+	() => import('../components').then(mod => mod.BeHired),
+	{
+		loading: () => <p>Loading...</p>,
+	},
+)
 
 export default function Home() {
 	return (
 		<main>
-			{/* TODO: Fix padding at min-width: 576px for containing divs */}
-			{/* TODO: I need to revise how I've done the first pass of animations, they're pretty ugly atm (the code) */}
 			{/* TODO: A few properties like letter-spacing are riddled throughout the css */}
 			<GregLife />
 			<MyContribution />
-			<GregsValues />
-			<MyJobs />
-			<GregLifeMural />
-			<Testimonials />
-			<BeHired />
+			<DynamicGregsValues />
+			<DynamicMyJobs />
+			<DynamicGregLifeMural />
+			<DynamicTestimonials />
+			<DynamicBeHired />
 		</main>
 	)
 }

@@ -5,7 +5,7 @@ import {
 	CardCarousel,
 } from '@/components'
 import styles from './gregsValues.styles.module.css'
-import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInVariants } from '@/constants/animation'
 
 export function GregsValues() {
 	return (
@@ -14,7 +14,10 @@ export function GregsValues() {
 			ariaLabel="My values"
 			className={styles.wrapper}
 			initAnimatedConfig={{ opacity: 0 }}
-			{...FADE_IN_ANIMATION_CONFIG}
+			variants={fadeInVariants}
+			viewport={{ once: true }}
+			initial="hidden"
+			whileInView="visible"
 		>
 			<div className={styles.textWrapper}>
 				<AnimatedTypography
@@ -22,7 +25,10 @@ export function GregsValues() {
 					color="white"
 					variant="programHeader"
 					className={styles.header}
-					{...FADE_IN_ANIMATION_CONFIG}
+					variants={fadeInVariants}
+					viewport={{ once: true }}
+					initial="hidden"
+					whileInView="visible"
 				>
 					<a id="gregs-values" className="anchor" />
 					Greg&apos;s values

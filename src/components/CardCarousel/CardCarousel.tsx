@@ -2,7 +2,7 @@
 import React from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
 import { values } from '@/constants/values'
-import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInUpVariants } from '@/constants/animation'
 import { Card } from './Card'
 import { FAB } from '@/components'
 import { motion } from 'framer-motion'
@@ -25,7 +25,13 @@ export function CardCarousel() {
 	}
 
 	return (
-		<motion.div {...FADE_UP_IN_ANIMATION_CONFIG} className={styles.wrapper}>
+		<motion.div
+			variants={fadeInUpVariants}
+			viewport={{ once: true }}
+			initial="hidden"
+			whileInView="visible"
+			className={styles.wrapper}
+		>
 			<div className={styles.carouselContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>

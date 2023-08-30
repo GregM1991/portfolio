@@ -4,7 +4,7 @@ import { AnimatedImage, Typography } from '@/components'
 import { Projects, Project as ProjectType } from '@/types/projects'
 import { Project } from './Project'
 import { useScroll, useSpring, useTransform } from 'framer-motion'
-import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInUpVariants } from '@/constants/animation'
 import styles from './job.styles.module.css'
 import { useIsMobile } from '@/shared/hooks/useIsMobile'
 
@@ -60,7 +60,10 @@ export function Job({
 					height={430}
 					sizes="(max-width: 992px) 100vw, 42vw"
 					className={styles.img}
-					{...FADE_UP_IN_ANIMATION_CONFIG}
+					variants={fadeInUpVariants}
+					viewport={{ once: true }}
+					initial="hidden"
+					whileInView="visible"
 					style={{ translateY }}
 				/>
 			</div>

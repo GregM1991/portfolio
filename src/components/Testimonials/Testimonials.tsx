@@ -6,7 +6,7 @@ import { Pagination } from './pagination/Pagination'
 import { TESTIMONIALS } from '@/constants/testimonials'
 import { Controls } from './controls/Controls'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FADE_UP_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInUpVariants } from '@/constants/animation'
 
 export function Testimonials() {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -18,7 +18,10 @@ export function Testimonials() {
 		>
 			<motion.div
 				className={`${styles.contentWrapper} container`}
-				{...FADE_UP_IN_ANIMATION_CONFIG}
+				variants={fadeInUpVariants}
+				viewport={{ once: true }}
+				initial="hidden"
+				whileInView="visible"
 			>
 				<a id="testimonials" className="anchor" />
 				<div className={styles.gridWrapper}>

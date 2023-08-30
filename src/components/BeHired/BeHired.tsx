@@ -1,6 +1,6 @@
 'use client'
 import { AnimatedSection, Typography, Button } from '@/components'
-import { FADE_IN_ANIMATION_CONFIG } from '@/constants/animation'
+import { fadeInVariants } from '@/constants/animation'
 import styles from './beHired.styles.module.css'
 import Typewriter from './Typewriter'
 
@@ -10,8 +10,11 @@ export function BeHired() {
 			bgColor="indigo"
 			ariaLabel="Be inspired"
 			className={styles.wrapper}
+			variants={fadeInVariants}
+			viewport={{ once: true }}
+			initial="hidden"
+			whileInView="visible"
 			initAnimatedConfig={{ opacity: 0 }}
-			{...FADE_IN_ANIMATION_CONFIG}
 		>
 			<div className={`${styles.content} container`}>
 				<Typewriter />
