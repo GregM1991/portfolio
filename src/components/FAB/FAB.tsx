@@ -18,9 +18,9 @@ export function FAB({
 	return (
 		<button
 			aria-label={ariaLabel}
-			disabled={disabled}
+			aria-disabled={disabled}
 			onClick={onClick}
-			className={`${styles.FAB} ${className}`}
+			className={`${styles.FAB} ${disabled && styles.disabled} ${className}`}
 		>
 			{icon}
 		</button>

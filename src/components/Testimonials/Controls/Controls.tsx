@@ -20,18 +20,20 @@ export function Controls({
 	return (
 		<>
 			<FAB
-				icon={<ChevronRightIcon />}
-				ariaLabel="arrow right button"
-				disabled={currentTestimonial === 3}
-				className={`${styles.arrowButton} ${styles.btnRight}`}
-				onClick={onClickRight}
-			/>
-			<FAB
 				icon={<ChevronLeftIcon />}
 				ariaLabel="arrow left button"
 				disabled={currentTestimonial === 0}
 				className={`${styles.arrowButton} ${styles.btnLeft}`}
 				onClick={onClickLeft}
+				tab-index={0}
+			/>
+			<FAB
+				icon={<ChevronRightIcon />}
+				ariaLabel="arrow right button"
+				disabled={currentTestimonial === 3}
+				className={`${styles.arrowButton} ${styles.btnRight}`}
+				onClick={onClickRight}
+				tab-index={0}
 			/>
 		</>
 	)

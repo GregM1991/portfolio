@@ -34,15 +34,15 @@ export function Testimonials() {
 						/>
 					</AnimatePresence>
 				</div>
+				<Controls
+					currentTestimonial={currentTestimonial}
+					setCurrentTestimonial={setCurrentTestimonial}
+				/>
 				<Pagination
 					currentTestimonial={currentTestimonial}
 					setCurrentTestimonial={setCurrentTestimonial}
 				/>
 			</motion.div>
-			<Controls
-				currentTestimonial={currentTestimonial}
-				setCurrentTestimonial={setCurrentTestimonial}
-			/>
 		</Section>
 	)
 }

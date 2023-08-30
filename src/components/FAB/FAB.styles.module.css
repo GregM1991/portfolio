@@ -14,6 +14,6 @@
   transform: scale(2)
 }
 
-.FAB:disabled {
+.disabled {
   opacity: 0.5
 }
