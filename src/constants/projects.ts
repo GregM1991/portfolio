@@ -6,6 +6,7 @@ import { Projects } from '@/types/projects'
 // TODO: Change images to shots of the gang
 export const JOBS: Projects[] = [
 	{
+		key: 1,
 		title: 'eQ8',
 		jobDescription:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quaerat aut harum. Quas eos unde atque aliquam ea distinctio, aperiam modi quos in sit officia a? A voluptas expedita ab.',
@@ -50,6 +51,7 @@ export const JOBS: Projects[] = [
 			'Greg, Annisa and Aaron smiling and having a beer in the sunshine',
 	},
 	{
+		key: 2,
 		title: 'Faethm',
 		jobDescription: '',
 		jobProjects: [

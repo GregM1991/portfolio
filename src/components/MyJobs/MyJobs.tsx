@@ -25,12 +25,11 @@ export function MyJobs() {
 			<div className={styles.projectWrapper}>
 				{JOBS.map(
 					(
-						{ title, jobDescription, jobProjects, imageSrc, imageAltText },
+						{ key, title, jobDescription, jobProjects, imageSrc, imageAltText },
 						i,
 					) => (
-						// TODO: will need to find a better key replacement
 						<Job
-							key={title}
+							key={key}
 							title={title}
 							jobDescription={jobDescription}
 							jobProjects={jobProjects}

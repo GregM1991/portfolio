@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 import { DEV_VARS } from '@/constants/cssVariables'
-import { Palette } from '@/theme'
+import { Palette } from '@/types/palette'
 import styles from './typography.styles.module.css'
 
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
@@ -31,7 +31,7 @@ export const Typography = forwardRef<
 	ref,
 ) {
 	const additiveStyles = {
-		'--color': color ? DEV_VARS.palette[color] : 'inherit',
+		'--color': color ? DEV_VARS[color] : 'inherit',
 	} as React.CSSProperties
 	const Component = type
 

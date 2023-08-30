@@ -11,6 +11,7 @@ export interface Project {
 }
 
 export interface Projects {
+	key: number
 	title: string
 	jobDescription: string
 	jobProjects: Project[]

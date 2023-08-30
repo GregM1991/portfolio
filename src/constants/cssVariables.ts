@@ -1,5 +1,4 @@
-import { theme } from '@/theme'
+import { palette } from '@/theme/theme'
 import { toVarNames } from '@/utils'
 
-export const DEV_VARS = toVarNames(theme)
-
+export const DEV_VARS = toVarNames(palette)

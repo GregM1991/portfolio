@@ -5,7 +5,7 @@
 }
 
 .primary {
-  background-color: var(--palette-primary);
+  background-color: var(--palette-purple);
   color: var(--palette-white);
   padding: 0.5rem 1.5rem;
   font-size: 0.9375rem;
