@@ -1,8 +1,14 @@
 'use client'
-import { AnimatedSection, Typography, Button } from '@/components'
+import {
+	AnimatedSection,
+	Typography,
+	Button,
+	ContactMeModal,
+} from '@/components'
 import { fadeInVariants } from '@/constants/animation'
 import styles from './beHired.styles.module.css'
 import Typewriter from './Typewriter'
+import { ModalBody } from './ModalBody'
 
 export function BeHired() {
 	return (
@@ -30,9 +36,15 @@ export function BeHired() {
 					interest enough to warrant getting in touch. If not, you can reach me
 					below anyway, just in case you&apos;re keen for a chat.
 				</Typography>
-				<Button variant="secondary" className={styles.button}>
-					Contact now
-				</Button>
+				<ContactMeModal
+					title="My deets"
+					description={<ModalBody />}
+					trigger={
+						<Button variant="secondary" className={styles.button}>
+							Contact now
+						</Button>
+					}
+				/>
 			</div>
 		</AnimatedSection>
 	)

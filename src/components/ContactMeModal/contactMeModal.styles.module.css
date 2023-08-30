@@ -1,0 +1,28 @@
+.overlay {
+  background: var(--palette-dark);
+  position: fixed;
+  inset: 0;
+  opacity: 0.35;
+  z-index: 2
+}
+
+.content {
+  background-color: var(--palette-white);
+  border-radius: var(--radii-large);
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 450px;
+  max-height: 85vh;
+  padding: var(--spaces-large);
+  z-index: 3
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}

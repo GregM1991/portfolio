@@ -2,10 +2,10 @@ import styles from './FAB.styles.module.css'
 
 interface FABProps {
 	icon: React.ReactNode
-	disabled: boolean
-	className: string
+	disabled?: boolean
+	className?: string
 	ariaLabel: string
-	onClick: () => void
+	onClick?: () => void
 }
 
 export function FAB({

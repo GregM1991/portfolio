@@ -11,7 +11,7 @@ export const fadeInVariants = {
 
 export const fadeInRightVariants = {
 	hidden: { ...hidden, translateX: -50 },
-	visisble: { ...visible, translateX: 0 },
+	visible: { ...visible, translateX: 0 },
 }
 
 export const fadeInUpVariants = {

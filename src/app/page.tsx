@@ -35,7 +35,6 @@ const DynamicBeHired = dynamic(
 export default function Home() {
 	return (
 		<main>
-			{/* TODO: A few properties like letter-spacing are riddled throughout the css */}
 			{/* TODO: contact button */}
 			{/* TODO: password protect */}
 			<GregLife />

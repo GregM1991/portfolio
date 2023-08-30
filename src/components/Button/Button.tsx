@@ -1,3 +1,5 @@
+import { forwardRef } from 'react'
+import { DialogTriggerProps } from '@radix-ui/react-dialog'
 import styles from './button.styles.module.css'
 
 interface ButtonProps {
@@ -6,14 +8,17 @@ interface ButtonProps {
 	children: React.ReactNode
 }
 
-export function Button({
-	variant = 'primary',
-	className,
-	children,
-}: ButtonProps) {
+export const Button = forwardRef<
+	HTMLButtonElement,
+	ButtonProps & DialogTriggerProps & React.RefAttributes<HTMLButtonElement>
+>(function Button({ variant = 'primary', className, children, ...rest }, ref) {
 	return (
-		<button className={`${styles.wrapper} ${styles[variant]} ${className}`}>
+		<button
+			ref={ref}
+			className={`${styles.wrapper} ${styles[variant]} ${className}`}
+			{...rest}
+		>
 			{children}
 		</button>
 	)
-}
+})

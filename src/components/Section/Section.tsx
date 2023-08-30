@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 import styles from './section.styles.module.css'
 import { Palette } from '@/types/palette'
-import { DEV_VARS } from '@/constants/cssVariables'
+import { palette } from '@/theme/theme'
 
 interface SectionProps {
 	bgColor?: keyof Palette
@@ -24,7 +24,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
 	ref,
 ) {
 	const additiveStyles = {
-		'--background-color': DEV_VARS[bgColor],
+		'--background-color': palette[bgColor],
 	} as React.CSSProperties
 
 	return (
