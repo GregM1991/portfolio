@@ -1,44 +1,31 @@
 'use client'
 import { useState } from 'react'
-import { Logo } from '@/components'
+import { Button, ContactMeTrigger, Logo } from '@/components'
 import { NAV_LINKS } from '@/constants/links'
 import Link from 'next/link'
 import styles from './header.styles.module.css'
+import { HamburgerButton } from './HamburgerButton'
 
 export function Header() {
 	const [isChecked, setIsChecked] = useState(false)
+
+	const handleClick = () => setIsChecked(checked => !checked)
+
 	return (
 		<header className={styles.header}>
 			<Logo />
-			{/* TODO: Might be best to extract this input out to tidy things up */}
-			<input
-				className={styles.sideMenu}
-				checked={isChecked}
-				onChange={event => event.target.checked}
-				type="checkbox"
-				id="side-menu"
-			/>
-			<div
-				className={styles.hambContainer}
-				onClick={() => setIsChecked(checked => !checked)}
-			>
-				<label className={styles.hamb} htmlFor="side-menu">
-					<span className={styles.hambLine}></span>
-				</label>
-			</div>
+			<HamburgerButton isChecked={isChecked} handleClick={handleClick} />
 			<nav className={styles.nav}>
 				<ul role="list" className={styles.menu}>
 					{NAV_LINKS.map(link => (
-						<li
-							key={link.href}
-							onClick={() => setIsChecked(checked => !checked)}
-						>
+						<li key={link.href} onClick={handleClick}>
 							<Link className={styles.navLink} href={link.href}>
 								{link.linkText}
 							</Link>
 						</li>
 					))}
 				</ul>
+				<ContactMeTrigger trigger={<Button>Contact me</Button>} />
 			</nav>
 		</header>
 	)

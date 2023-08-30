@@ -3,12 +3,11 @@ import {
 	AnimatedSection,
 	Typography,
 	Button,
-	ContactMeModal,
+	ContactMeTrigger,
 } from '@/components'
 import { fadeInVariants } from '@/constants/animation'
-import styles from './beHired.styles.module.css'
 import Typewriter from './Typewriter'
-import { ModalBody } from './ModalBody'
+import styles from './beHired.styles.module.css'
 
 export function BeHired() {
 	return (
@@ -36,9 +35,7 @@ export function BeHired() {
 					interest enough to warrant getting in touch. If not, you can reach me
 					below anyway, just in case you&apos;re keen for a chat.
 				</Typography>
-				<ContactMeModal
-					title="My deets"
-					description={<ModalBody />}
+				<ContactMeTrigger
 					trigger={
 						<Button variant="secondary" className={styles.button}>
 							Contact now

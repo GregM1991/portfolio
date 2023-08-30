@@ -35,7 +35,6 @@ const DynamicBeHired = dynamic(
 export default function Home() {
 	return (
 		<main>
-			{/* TODO: contact button */}
 			{/* TODO: password protect */}
 			<GregLife />
 			<MyContribution />

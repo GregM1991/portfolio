@@ -26,3 +26,9 @@
   top: 5px;
   right: 5px;
 }
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .3px;
+}

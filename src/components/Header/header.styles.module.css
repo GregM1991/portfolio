@@ -11,15 +11,20 @@
 }
 
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   max-height: 0;
   background-color: var(--palette-white);
   transition: max-height .5s ease-out;
+  padding-right: var(--spaces-xSmall)
 }
 
 .nav ul {
