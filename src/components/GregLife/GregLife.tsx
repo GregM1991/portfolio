@@ -22,6 +22,7 @@ export function GregLife() {
 				<AnimatedImage
 					alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
 					src={cuddleCats}
+					sizes="(max-width: 768px) 102px, (max-width: 1200px) 150px, 190px"
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
 					transition={{
@@ -34,6 +35,7 @@ export function GregLife() {
 					alt="Greg sitting on the sunny Canva rooftop eating a cookie giving the peace sign"
 					src={canvaRooftop}
 					className={styles.canvaRooftop}
+					sizes="(max-width: 768px) 270px, (max-width: 992px) 400px, (max-width: 1400px) 42vw, 600px"
 					initial={{ x: -65, y: 65, opacity: 0 }}
 					animate={{ x: 0, y: 0, opacity: 1 }}
 					transition={{
