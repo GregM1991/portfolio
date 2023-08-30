@@ -9,8 +9,8 @@
 .imageWrapper {
   position: relative;
   height: auto;
+  width: 100%;
   max-width: 83.3%;
-  aspect-ratio: 4.5 / 6;
   padding: 0 15px;
   margin-bottom: var(--spaces-large);
 }
@@ -29,6 +29,8 @@
 
 .img {
   height: 100%;
+  width: 100%;
+  aspect-ratio: 4.2 / 5.6;
 }
 
 .blockquote {

@@ -47,6 +47,7 @@ export function GregLifeMural() {
 					src={standing}
 					alt="Greg standing on a clifftop in Tasmania looking off into the distance"
 					className={styles.standing}
+					sizes="(max-width: 992px) 100vw, 58vw"
 					{...FADE_IN_ANIMATION_CONFIG}
 					style={{ translateY: translateY }}
 				/>
@@ -54,6 +55,7 @@ export function GregLifeMural() {
 					src={lights}
 					alt="Greg walking through Japanese light show, bare foot and silhouetted"
 					className={styles.lights}
+					sizes="(max-width: 992px) 50vw, 500px"
 					{...FADE_IN_ANIMATION_CONFIG}
 					style={{ translateY: translateYNDouble }}
 				/>
@@ -61,6 +63,7 @@ export function GregLifeMural() {
 					src={gesture}
 					alt="Greg making a silly gesture with his hands"
 					className={styles.gesture}
+					sizes="(max-width: 992px) 50vw, 290px"
 					{...FADE_IN_ANIMATION_CONFIG}
 					style={{ translateY: trasnlateYOpposite }}
 				/>

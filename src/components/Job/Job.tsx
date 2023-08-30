@@ -58,6 +58,7 @@ export function Job({
 					src={imageSrc}
 					alt={imageAltText}
 					height={430}
+					sizes="(max-width: 992px) 100vw, 42vw"
 					className={styles.img}
 					{...FADE_UP_IN_ANIMATION_CONFIG}
 					style={{ translateY }}

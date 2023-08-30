@@ -44,6 +44,7 @@ export function MyContribution() {
 					<Image
 						src={playingPool}
 						alt="Greg playing pool, leaning over the table to take a shot."
+						sizes="(max-width: 992px) 100vw, 42vw"
 						className={styles.playingPool}
 					/>
 				</motion.div>

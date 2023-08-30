@@ -34,8 +34,7 @@ export function Testimonial({
 					src={img}
 					alt={imgAltText}
 					className={styles.img}
-					width={450}
-					height={600}
+					sizes="(max-width: 992px) 50vw, 34vw"
 				/>
 			</div>
 			<blockquote className={styles.blockquote}>
