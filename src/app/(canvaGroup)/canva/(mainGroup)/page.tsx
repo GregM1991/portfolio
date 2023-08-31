@@ -3,31 +3,31 @@ import dynamic from 'next/dynamic'
 import { GregLife, MyContribution } from '@/components'
 
 const DynamicGregsValues = dynamic(
-	() => import('../../../components').then(mod => mod.GregsValues),
+	() => import('../../../../components').then(mod => mod.GregsValues),
 	{
 		loading: () => <p>Loading...</p>,
 	},
 )
 const DynamicGregLifeMural = dynamic(
-	() => import('../../../components').then(mod => mod.GregLifeMural),
+	() => import('../../../../components').then(mod => mod.GregLifeMural),
 	{
 		loading: () => <p>Loading...</p>,
 	},
 )
 const DynamicMyJobs = dynamic(
-	() => import('../../../components').then(mod => mod.MyJobs),
+	() => import('../../../../components').then(mod => mod.MyJobs),
 	{
 		loading: () => <p>Loading...</p>,
 	},
 )
 const DynamicTestimonials = dynamic(
-	() => import('../../../components').then(mod => mod.Testimonials),
+	() => import('../../../../components').then(mod => mod.Testimonials),
 	{
 		loading: () => <p>Loading...</p>,
 	},
 )
 const DynamicBeHired = dynamic(
-	() => import('../../../components').then(mod => mod.BeHired),
+	() => import('../../../../components').then(mod => mod.BeHired),
 	{
 		loading: () => <p>Loading...</p>,
 	},
