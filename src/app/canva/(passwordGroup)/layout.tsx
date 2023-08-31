@@ -1,6 +1,6 @@
-import '../global.css'
-import '../variables.css'
-import '../fonts.css'
+import '@/app/global.css'
+import '@/app/variables.css'
+import '@/app/fonts.css'
 
 interface PassowrdProtectLayoutProps {
 	children: React.ReactNode

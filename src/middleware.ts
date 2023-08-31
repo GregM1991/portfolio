@@ -4,10 +4,11 @@ const isPasswordEnabled = !!process.env.CANVA_PASSWORD
 
 export async function middleware(req: NextRequest) {
 	const isLoggedIn = req.cookies.has('login')
-	const isPathPasswordProtect =
-		req.nextUrl.pathname.startsWith('/passwordProtect')
+	const isPathPasswordProtect = req.nextUrl.pathname.startsWith(
+		'/canva/passwordProtect',
+	)
 	if (isPasswordEnabled && !isLoggedIn && !isPathPasswordProtect) {
-		const redirectURL = new URL('/passwordProtect', req.url)
+		const redirectURL = new URL('/canva/passwordProtect', req.url)
 		return NextResponse.redirect(redirectURL)
 	}
 	return NextResponse.next()

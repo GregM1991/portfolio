@@ -11,7 +11,7 @@ export async function checkPassword(formData: FormData) {
 			httpOnly: true,
 			sameSite: 'strict',
 		})
-		redirect('/')
+		redirect('/canva')
 	} else {
 		return { message: 'Invalid password' }
 	}
