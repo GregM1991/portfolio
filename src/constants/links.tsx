@@ -9,32 +9,32 @@ const ICON_SIZE = '25'
 export const NAV_LINKS = [
 	{
 		linkText: 'Greg Life',
-		href: '/#greg-life',
+		href: '/canva/#greg-life',
 	},
 
 	{
 		linkText: 'My contribution',
-		href: '/#my-contribution',
+		href: '/canva/#my-contribution',
 	},
 	{
 		linkText: "Greg's values",
-		href: '/#gregs-values',
+		href: '/canva/#gregs-values',
 	},
 	{
 		linkText: 'A place for projects',
-		href: '/#projects',
+		href: '/canva/#projects',
 	},
 	{
 		linkText: '#GregLife',
-		href: '/#greg-life-mural',
+		href: '/canva/#greg-life-mural',
 	},
 	{
 		linkText: 'Testimonials',
-		href: '/#testimonials',
+		href: '/canva/#testimonials',
 	},
 	{
 		linkText: 'Be hired?',
-		href: '/#be-hired',
+		href: '/canva/#be-hired',
 	},
 ]
 
