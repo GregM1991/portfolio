@@ -57,7 +57,7 @@ export function ContactMeContent({ title, description }: ContactMeModalProps) {
 export const ModalBody = () => (
 	<div className={styles.modalContainer}>
 		<Typography type="span">
-			📧 Email: <Link href="mailto:gregm31@live.com">gregm31@live.com</Link>
+			📧 Email: <a href="mailto:gregm31@live.com">gregm31@live.com</a>
 		</Typography>
 		<Typography type="span">📱 Phone: +61 407 670 950</Typography>
 	</div>
