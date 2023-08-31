@@ -21,7 +21,6 @@ export const values = [
 	},
 	{
 		title: 'Make Complex Things Simple',
-		// TODO: Work on making below better written? Re-write it?
 		body: "I find over the course of my time as an Engineer this value is really something I've tried to work towards. It's quite easy to over-engineer something that only need a light touch, so to stop at the beginning and think what the simplest and most effective path from A to B is, can be so effective in the end product.",
 	},
 ]

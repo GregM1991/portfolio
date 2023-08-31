@@ -2,8 +2,6 @@ import faethmKbbq from '@/assets/images/faethm-kbbq-2.jpg'
 import eq8Pub from '@/assets/images/eq8-pub.jpg'
 import { Projects } from '@/types/projects'
 
-// TODO: Change the alt text of the images
-// TODO: Change images to shots of the gang
 export const JOBS: Projects[] = [
 	{
 		key: 1,

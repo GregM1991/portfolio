@@ -22,6 +22,7 @@ export function Job({
 }: JobProps) {
 	const isMobile = useIsMobile()
 	const wrapperRef = useRef(null)
+	const transformTo = isMobile ? ['17px', '17px'] : ['0%', '-25%']
 
 	const { scrollYProgress } = useScroll({
 		target: wrapperRef,
@@ -32,11 +33,7 @@ export function Job({
 		damping: 10,
 		mass: 1.5,
 	})
-	const translateY = useTransform(
-		yScrollPercent,
-		[0, 1],
-		['0%', isMobile ? '0%' : '-25%'],
-	)
+	const translateY = useTransform(yScrollPercent, [0, 1], transformTo)
 
 	return (
 		<div ref={wrapperRef} className={`${styles.wrapper} ${styles[layout]}`}>

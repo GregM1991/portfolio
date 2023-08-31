@@ -36,7 +36,6 @@ const DynamicBeHired = dynamic(
 export default function Home() {
 	return (
 		<main>
-			{/* TODO: password protect */}
 			<GregLife />
 			<MyContribution />
 			<DynamicGregsValues />

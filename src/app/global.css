@@ -101,7 +101,6 @@ h6 {
 	line-height: 1.25;
 }
 
-/* TODO: export these via css modules */
 .anchor {
 	position: relative;
 	top: -95px;

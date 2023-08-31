@@ -37,7 +37,7 @@ export const TESTIMONIALS = [
 	},
 	{
 		img: hina,
-		imgAltText: 'And the Fourth!',
+		imgAltText: 'Hina looking at the camera and smiling',
 		leadText:
 			"I really admire Greg's impressive skills and remarkable attention to detail as a Frontend engineer.",
 		bodyText:

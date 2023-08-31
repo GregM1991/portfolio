@@ -8,7 +8,6 @@ export function Project({ title, points }: Project) {
 			<Typography type="h4" className={styles.h4}>
 				{title}
 			</Typography>
-			{/* TODO: Check the gaps on mobile between jobs */}
 			<ul className={styles.ul}>
 				{points.map(({ key, copy }) => (
 					<li key={key} className={styles.li}>

@@ -1,12 +1,12 @@
 'use client'
-import styles from './testimonials.styles.module.css'
 import { useState } from 'react'
 import { Section, Testimonial } from '@/components'
-import { Pagination } from './pagination/Pagination'
+import { Pagination } from './Pagination/Pagination'
+import { Controls } from './Controls/Controls'
 import { TESTIMONIALS } from '@/constants/testimonials'
-import { Controls } from './controls/Controls'
 import { AnimatePresence, motion } from 'framer-motion'
 import { fadeInUpVariants } from '@/constants/animation'
+import styles from './testimonials.styles.module.css'
 
 export function Testimonials() {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0)
