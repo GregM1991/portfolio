@@ -150,4 +150,8 @@
   .hambContainer {
     display: none;
   }
+
+  .button {
+    margin: 0;
+  }
 }
