@@ -25,7 +25,9 @@ export function Header() {
 						</li>
 					))}
 				</ul>
-				<ContactMeTrigger trigger={<Button>Contact me</Button>} />
+				<ContactMeTrigger
+					trigger={<Button aria-controls="radix-:R1mj9:">Contact me</Button>}
+				/>
 			</nav>
 		</header>
 	)

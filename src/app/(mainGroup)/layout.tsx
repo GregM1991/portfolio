@@ -7,9 +7,9 @@ import {
 	ModalBody,
 } from '@/components'
 
-import './global.css'
-import './variables.css'
-import './fonts.css'
+import '../global.css'
+import '../variables.css'
+import '../fonts.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",

@@ -37,7 +37,11 @@ export function BeHired() {
 				</Typography>
 				<ContactMeTrigger
 					trigger={
-						<Button variant="secondary" className={styles.button}>
+						<Button
+							aria-controls="radix-:R1mj9:"
+							variant="secondary"
+							className={styles.button}
+						>
 							Contact now
 						</Button>
 					}
