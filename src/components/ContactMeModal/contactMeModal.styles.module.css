@@ -1,5 +1,5 @@
 .overlay {
-  background: var(--palette-dark);
+  background: var(--palette-red);
   position: fixed;
   inset: 0;
   opacity: 0.35;
@@ -9,7 +9,7 @@
 .content {
   background-color: var(--palette-white);
   border-radius: var(--radii-large);
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: hsl(1 100% 7% / 35%) 0px 10px 38px -10px, hsl(1 100% 7% / 20%) 0px 10px 20px -15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -18,17 +18,23 @@
   max-width: 450px;
   max-height: 85vh;
   padding: var(--spaces-large);
-  z-index: 3
+  z-index: 3;
+  isolation: isolate;
 }
 
 .close {
   position: absolute;
+  background-color: var(--palette-light-pink);
   top: 5px;
-  right: 5px;
+  right: 0;
 }
 
 .modalContainer {
   display: flex;
   flex-direction: column;
   letter-spacing: .3px;
+}
+
+.modalContainer > ul {
+  padding-top: 5px;
 }

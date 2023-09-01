@@ -1,11 +1,12 @@
 .wrapper {
   display: flex;
   gap: var(--spaces-small);
-  color: var(--palette-white);
+  color: inherit;
   margin: 0;
+  padding: 0;
 }
 
-.tooltipTrigger:hover {
+.iconLink:hover {
   opacity: 0.8;
 }
 

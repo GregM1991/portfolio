@@ -2,12 +2,12 @@ export const values = [
 	{
 		key: crypto.randomUUID(),
 		title: 'Be a Good Human',
-		body: 'This is just generally something I try to strive for, not only in my personal or professional life, but in all aspects of how I live. Knowing this is a value of the company I work for, and knowing they hire for people who are like-minded is a big deal to me.',
+		body: 'I guess I’ll let you be the judge of whether I’m a good human, but compassion, thoughtfulness and acceptance are principles I feel very strongly about. The world is a melting pot of different experiences, and I believe when we’re comfortable to bring our life experiences to work, it only makes for a stronger and more effective team.',
 	},
 	{
 		key: crypto.randomUUID(),
 		title: 'Be a Force for Good',
-		body: 'This kinda runs on from the last one, having a healthy dose of respect for the people and places around me ignites a want, and need to leave things better than where I found them. Joining Canva, with what you do at the Canva Foundation, the 1% pledge and nonprofit product donations would allow me to execute on this value much more often.',
+		body: 'My healthy dose of respect for the people and places around me ignites a desire to leave things better than I found them. I admire all that the Canva Foundation is trying to achieve, the simple but groundbreaking 2-step plan and the commitment to Pledge 1%. I would love to have more opportunities to volunteer, and Canva’s Force For Good leave would allow me to execute on this value to a much greater degree.',
 	},
 	{
 		key: crypto.randomUUID(),
@@ -17,16 +17,16 @@ export const values = [
 	{
 		key: crypto.randomUUID(),
 		title: 'Empower Others',
-		body: "I've find this value to really have a hampster wheel effect on improvement. I cherish people who take the time to not only listen, but also to teach. The world is a metling pot of different experiences, and knowing a bit about my craft allows me to know I know I have so much more to learn. I love sharing my knowledge, especially as I think teaching is one of the best way to solidify that knowledge.",
+		body: "I've found this value to have a real hamster wheel effect on development. I cherish people who not only take the time to listen, but also to teach and set their team up for their own successes. The more I learn about my craft the more I realise how much I have to learn. Still, I love sharing my knowledge and leading more junior devs, especially as I find teaching to be one of the best ways to solidify my expertise.",
 	},
 	{
 		key: crypto.randomUUID(),
 		title: 'Pursue Excellence',
-		body: 'Having two older brother drilled a healthy sense of competition into me from as far back as I can remember. I think this has a big part to play in my pursuit of excellence. I enjoy learning, and honing what I pick up, and take a great sense of pride in my achievements (however big or small).',
+		body: "I've found this value to have a real hamster wheel effect on development. I cherish people who not only take the time to listen, but also to teach and set their team up for their own successes. The more I learn about my craft the more I realise how much I have to learn. Still, I love sharing my knowledge and leading more junior devs, especially as I find teaching to be one of the best ways to solidify my expertise.",
 	},
 	{
 		key: crypto.randomUUID(),
 		title: 'Make Complex Things Simple',
-		body: "I find over the course of my time as an Engineer this value is really something I've tried to work towards. It's quite easy to over-engineer something that only need a light touch, so to stop at the beginning and think what the simplest and most effective path from A to B is, can be so effective in the end product.",
+		body: "Over the course of my career this value has evolved into somewhat of a North Star for me. It's quite easy to over-engineer something that only needed a light touch, so it’s important to take time the beginning of a project to assess the most efficient path from A to B - I find this so valuable to achieving the best possible final product.",
 	},
 ]

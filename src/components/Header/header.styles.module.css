@@ -26,7 +26,7 @@
   transition: max-height .5s ease-out;
 }
 
-.nav ul {
+.nav > ul {
   padding-left: var(--spaces-large);
   padding-top: 90px;
 }
@@ -129,7 +129,7 @@
     padding-right: var(--spaces-xSmall)
   }
 
-  .nav ul {
+  .nav > ul {
     display: flex;
     gap: var(--spaces-small);
     padding-top: 0;

@@ -1,5 +1,7 @@
+import { Link } from '@/types/links'
 import {
 	FileIcon,
+	GitHubLogoIcon,
 	InstagramLogoIcon,
 	LinkedInLogoIcon,
 } from '@radix-ui/react-icons'
@@ -45,7 +47,16 @@ export const NAV_LINKS = [
 	},
 ]
 
-export const SOCIAL_LINKS = [
+export const SOCIAL_LINKS: Link[] = [
+	{
+		key: crypto.randomUUID(),
+		linkTooltipText: 'GitHub',
+		href: 'https://github.com/GregM1991',
+		icon: (
+			<GitHubLogoIcon aria-hidden="true" height={ICON_SIZE} width={ICON_SIZE} />
+		),
+		screenReader: 'Navigate to Gregs Linked-in page',
+	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'linkedIn',

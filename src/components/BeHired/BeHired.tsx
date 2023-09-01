@@ -30,12 +30,12 @@ export function BeHired() {
 					variant="ctaBody"
 					className={styles.breakoutLine}
 				>
-					Take your time to think it over.
+					Don’t take too long to think it over!
 				</Typography>
 				<Typography color="white" variant="ctaBody">
-					Hopefully I&apos;ve sold you on the Greg Life, and piqued your
-					interest enough to warrant getting in touch. If not, you can reach me
-					below anyway, just in case you&apos;re keen for a chat.
+					Hopefully I&apos;ve sold you on the Greg Life and piqued your interest
+					enough to warrant getting in touch. Reach me below, I&apos;m always
+					keen for a chat.
 				</Typography>
 				<ContactMeModal
 					trigger={

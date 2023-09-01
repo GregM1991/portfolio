@@ -39,6 +39,7 @@
   align-items: center;
   gap: var(--spaces-xLarge);
   padding-top: var(--spaces-xLarge);
+  color: var(--palette-white)
 }
 
 .copywrite {

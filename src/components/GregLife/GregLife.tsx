@@ -84,10 +84,12 @@ export function GregLife() {
 				</AnimatedTypography>
 				<Typography variant="pLead">
 					Sometimes the chance comes along to be part of something truly
-					special. With a cheeky smile and passion for the industry, I offer
-					both dedication and willingness to eat up all there is to learn. I
-					want to be empowered by the best workers and the best workplace, which
-					of course, is Canva.
+					special. With a cheeky smile and a huge passion for the industry, I
+					offer a willingness and dedication to eat up all there is to learn. I
+					want to be empowered by the best workers at the best workplace, which
+					of course, is Canva. I hope my eagerness is shown through my building
+					this personlised portfolio, of which the code can be found on my
+					github (link in the footer).
 				</Typography>
 			</div>
 		</Section>
