@@ -19,7 +19,7 @@ export function GregsValues() {
 			initial="hidden"
 			whileInView="visible"
 		>
-			<a id="gregs-values" className="anchor" />
+			<span id="gregs-values" className="anchor" />
 			<div className={styles.textWrapper}>
 				<AnimatedTypography
 					type="h2"

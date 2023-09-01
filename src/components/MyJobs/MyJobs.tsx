@@ -14,7 +14,7 @@ export function MyJobs() {
 			initial="hidden"
 			whileInView="visible"
 		>
-			<a id="projects" className="anchor" />
+			<span id="projects" className="anchor" />
 			<Typography
 				type="h2"
 				color="dark-red"

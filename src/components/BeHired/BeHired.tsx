@@ -8,7 +8,6 @@ import {
 import { fadeInVariants } from '@/constants/animation'
 import Typewriter from './Typewriter'
 import styles from './beHired.styles.module.css'
-import Link from 'next/link'
 
 export function BeHired() {
 	return (
@@ -22,8 +21,8 @@ export function BeHired() {
 			whileInView="visible"
 			initAnimatedConfig={{ opacity: 0 }}
 		>
-			<a id="greg-life" className="anchor" />
-			<div className={`${styles.content} container`}>
+			<span id="be-hired" className="anchor" />
+			<div id="be-hired" className={`${styles.content} container`}>
 				<Typewriter />
 				<Typography
 					color="white"

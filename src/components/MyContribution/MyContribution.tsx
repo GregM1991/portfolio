@@ -38,7 +38,7 @@ export function MyContribution() {
 			initial="hidden"
 			whileInView="visible"
 		>
-			<a id="my-contribution" className="anchor" />
+			<span id="my-contribution" className="anchor" />
 			<div className={styles.wrapper}>
 				<motion.div
 					className={styles.imageWrapper}

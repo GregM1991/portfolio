@@ -40,7 +40,7 @@ export function GregLifeMural() {
 			whileInView="visible"
 			ref={wrapperRef}
 		>
-			<a id="greg-life-mural" className="anchor" />
+			<span id="greg-life-mural" className="anchor" />
 			<AnimatedImage
 				src={standing}
 				alt="Greg standing on a clifftop in Tasmania looking off into the distance"

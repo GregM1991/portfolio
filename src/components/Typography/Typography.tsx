@@ -38,7 +38,6 @@ export const Typography = forwardRef<
 	const styledAsCSS = styledAs ? styles[styledAs] : ''
 	const variantCSS = variant ? styles[variant] : ''
 	const classNameCSS = className ? className : ''
-	console.log({ type, styledAs, styledAsCSS })
 
 	return (
 		<Component

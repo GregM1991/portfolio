@@ -16,6 +16,7 @@ export function Testimonials() {
 			ariaLabel="Testimonials about Greg as a person/developer"
 			className={`${styles.wrapper}`}
 		>
+			<span id="testimonials" className="anchor" />
 			<motion.div
 				className={`${styles.contentWrapper} container`}
 				variants={fadeInUpVariants}
@@ -23,7 +24,6 @@ export function Testimonials() {
 				initial="hidden"
 				whileInView="visible"
 			>
-				<a id="testimonials" className="anchor" />
 				<div className={styles.gridWrapper}>
 					<AnimatePresence>
 						<Testimonial
