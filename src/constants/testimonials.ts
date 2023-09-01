@@ -2,8 +2,9 @@ import andy from '@/assets/images/andy.png'
 import karin from '@/assets/images/karin.jpg'
 import aaron from '@/assets/images/aaron.jpg'
 import hina from '@/assets/images/hina.jpg'
+import { Testimonial } from '@/types/testimonial'
 
-export const TESTIMONIALS = [
+export const TESTIMONIALS: Testimonial[] = [
 	{
 		key: crypto.randomUUID(),
 		img: karin,

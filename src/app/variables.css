@@ -17,7 +17,6 @@
 	--radii-full: 9999px;
 	--typography-heading-font-family: ezramedium, sans-serif;
 	--typography-body-font-family: sans-serif;
-	/* small screens */
 	/* this is not scalable (below), if we need to add another size, we have to go everywhere
 	   where the sizes are used in the css and change them to their new set */
 	--spaces-xxxxSmall: 0.25rem;
@@ -94,6 +93,7 @@
 	}
 }
 
+/* xlarge - xxlarge screens */
 @media (min-width: 1400px) {
   :root {
 		--padding-calc-value: calc(((100% - 1290px)/2));
@@ -103,6 +103,7 @@
 	}
 }
 
+/* xxlarge - xxxlarge screens */
 @media (min-width: 1600px) {
   :root {
 		--container-width: 1440px;

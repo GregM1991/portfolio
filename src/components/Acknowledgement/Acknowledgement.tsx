@@ -13,10 +13,10 @@ export function Acknowledgement() {
 					variant="acknowledgementBody"
 					className={styles.body}
 				>
-					I would like to begin by acknowledging the Gadigal people, the
+					I would like to acknowledge the Gadigal people of the Eora Nation, the
 					traditional custodians of the land on which I live and work. I pay my
-					respects to their Elders past, present, and emerging, and acknowledge
-					that their sovereignty was never ceded. I recognize the continuing
+					respects to their elders past, present, and emerging, and acknowledge
+					that their sovereignty was never ceded. I recognise the continuing
 					connection of the Gadigal people to this land, its waterways, and
 					community.
 				</Typography>
@@ -25,10 +25,10 @@ export function Acknowledgement() {
 					variant="acknowledgementBody"
 					className={styles.body}
 				>
-					As a software developer, I am privileged to live and work on Gadigal
-					land, and I am committed to honoring and respecting the enduring
-					culture and contributions of the Gadigal people and all Aboriginal and
-					Torres Strait Islander peoples.
+					I am privileged to live and work on Gadigal land, and I am committed
+					to honoring and respecting the enduring culture and contributions of
+					the Gadigal people and all Aboriginal and Torres Strait Islander
+					peoples.
 				</Typography>
 			</div>
 		</div>

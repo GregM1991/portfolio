@@ -14,7 +14,7 @@ export function BeHired() {
 	return (
 		<AnimatedSection
 			bgColor="indigo"
-			ariaLabel="Be inspired"
+			ariaLabel="A section posing a question for Greg to be hired"
 			className={styles.wrapper}
 			variants={fadeInVariants}
 			viewport={{ once: true }}
@@ -30,7 +30,7 @@ export function BeHired() {
 					variant="ctaBody"
 					className={styles.breakoutLine}
 				>
-					Don’t take too long to think it over!
+					Don&apos;t take too long to think it over!
 				</Typography>
 				<Typography color="white" variant="ctaBody">
 					Hopefully I&apos;ve sold you on the Greg Life and piqued your interest

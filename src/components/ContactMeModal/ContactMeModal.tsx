@@ -20,7 +20,7 @@ export function ContactMeModal({
 				<Dialog.Overlay className={styles.overlay} />
 				<Dialog.Content className={styles.content}>
 					<Dialog.Title>
-						<Typography type="span" styledAs="h4" color="dark-red">
+						<Typography type="span" styledAs="h4" color="indigo">
 							Get in touch
 						</Typography>
 					</Dialog.Title>

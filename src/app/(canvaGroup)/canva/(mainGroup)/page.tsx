@@ -33,8 +33,6 @@ const DynamicBeHired = dynamic(
 	},
 )
 
-// TODO: swipe gestures on values and testimonials
-// TODO: Add mention of canva portfolio and add github link
 export default function Home() {
 	return (
 		<main>

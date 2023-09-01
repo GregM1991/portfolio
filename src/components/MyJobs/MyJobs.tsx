@@ -23,24 +23,18 @@ export function MyJobs() {
 			>
 				A place for <br /> projects{' '}
 			</Typography>
-			{/* TODO: Add overview section */}
 			<div className={styles.projectWrapper}>
-				{JOBS.map(
-					(
-						{ key, title, jobDescription, jobProjects, imageSrc, imageAltText },
-						i,
-					) => (
-						<Job
-							key={key}
-							title={title}
-							jobDescription={jobDescription}
-							jobProjects={jobProjects}
-							imageSrc={imageSrc}
-							imageAltText={imageAltText}
-							layout={(i + 1) % 2 === 0 ? 'right' : 'left'}
-						/>
-					),
-				)}
+				{JOBS.map((job, i) => (
+					<Job
+						key={job.key}
+						title={job.title}
+						jobDescription={job.jobDescription}
+						jobProjects={job.jobProjects}
+						imageSrc={job.imageSrc}
+						imageAltText={job.imageAltText}
+						layout={(i + 1) % 2 === 0 ? 'right' : 'left'}
+					/>
+				))}
 			</div>
 		</AnimatedSection>
 	)

@@ -34,10 +34,10 @@ export function GregsValues() {
 					Greg&apos;s values
 				</AnimatedTypography>
 				<Typography color="white" className={styles.body}>
-					One of the many reasons I’m so keen on Canva is how well the company
-					values align with mine. I’ve found it hugely motivating learning about
-					how Canva stands behind this code of ethics and lives them in
-					everything they do.
+					One of the many reasons I&apos;m so keen on Canva is how well the
+					company values align with mine. I&apos;ve found it hugely motivating
+					learning about how Canva stands behind this code of ethics and lives
+					them in everything they do.
 				</Typography>
 			</div>
 			<CardCarousel />
