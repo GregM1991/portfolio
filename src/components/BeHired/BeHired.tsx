@@ -3,11 +3,12 @@ import {
 	AnimatedSection,
 	Typography,
 	Button,
-	ContactMeTrigger,
+	ContactMeModal,
 } from '@/components'
 import { fadeInVariants } from '@/constants/animation'
 import Typewriter from './Typewriter'
 import styles from './beHired.styles.module.css'
+import Link from 'next/link'
 
 export function BeHired() {
 	return (
@@ -21,6 +22,7 @@ export function BeHired() {
 			whileInView="visible"
 			initAnimatedConfig={{ opacity: 0 }}
 		>
+			<a id="greg-life" className="anchor" />
 			<div className={`${styles.content} container`}>
 				<Typewriter />
 				<Typography
@@ -35,7 +37,7 @@ export function BeHired() {
 					interest enough to warrant getting in touch. If not, you can reach me
 					below anyway, just in case you&apos;re keen for a chat.
 				</Typography>
-				<ContactMeTrigger
+				<ContactMeModal
 					trigger={
 						<Button
 							aria-controls="radix-:R1mj9:"

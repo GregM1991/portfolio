@@ -14,7 +14,7 @@ export const JOBS: Projects[] = [
 				points: [
 					{
 						key: 1,
-						copy: 'Building out new designs in React/Typescript with Zustand, from c# Razer pages',
+						copy: 'Building out new designs in React/Typescript with Zustand, from C# Razor pages',
 					},
 					{
 						key: 2,

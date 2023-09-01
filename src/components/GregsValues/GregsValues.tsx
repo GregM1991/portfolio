@@ -19,6 +19,7 @@ export function GregsValues() {
 			initial="hidden"
 			whileInView="visible"
 		>
+			<a id="gregs-values" className="anchor" />
 			<div className={styles.textWrapper}>
 				<AnimatedTypography
 					type="h2"
@@ -30,7 +31,6 @@ export function GregsValues() {
 					initial="hidden"
 					whileInView="visible"
 				>
-					<a id="gregs-values" className="anchor" />
 					Greg&apos;s values
 				</AnimatedTypography>
 				<Typography color="white" className={styles.body}>

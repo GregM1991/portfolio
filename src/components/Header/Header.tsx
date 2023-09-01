@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Button, ContactMeTrigger, Logo } from '@/components'
+import { Button, ContactMeModal, Logo } from '@/components'
 import { NAV_LINKS } from '@/constants/links'
 import Link from 'next/link'
 import styles from './header.styles.module.css'
@@ -25,7 +25,7 @@ export function Header() {
 						</li>
 					))}
 				</ul>
-				<ContactMeTrigger
+				<ContactMeModal
 					trigger={
 						<Button aria-controls="radix-:R1mj9:" className={styles.button}>
 							Contact me

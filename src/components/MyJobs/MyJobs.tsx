@@ -14,13 +14,14 @@ export function MyJobs() {
 			initial="hidden"
 			whileInView="visible"
 		>
+			<a id="projects" className="anchor" />
 			<Typography
 				type="h2"
 				color="dark-red"
 				variant="h2Rich"
 				className={styles.header}
 			>
-				<a id="projects" className="anchor" />A place for <br /> projects{' '}
+				A place for <br /> projects{' '}
 			</Typography>
 			<div className={styles.projectWrapper}>
 				{JOBS.map(

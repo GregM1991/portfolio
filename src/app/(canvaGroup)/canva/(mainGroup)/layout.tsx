@@ -1,11 +1,5 @@
 import type { Metadata } from 'next'
-import {
-	Header,
-	Footer,
-	ContactMeRoot,
-	ContactMeContent,
-	ModalBody,
-} from '@/components'
+import { Header, Footer } from '@/components'
 
 import '@/app/global.css'
 import '@/app/variables.css'
@@ -24,12 +18,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<ContactMeRoot>
-					<Header />
-					{children}
-					<Footer />
-					<ContactMeContent title="My deets" description={<ModalBody />} />
-				</ContactMeRoot>
+				<Header />
+				{children}
+				<Footer />
 			</body>
 		</html>
 	)

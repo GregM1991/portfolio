@@ -38,6 +38,7 @@ export function MyContribution() {
 			initial="hidden"
 			whileInView="visible"
 		>
+			<a id="my-contribution" className="anchor" />
 			<div className={styles.wrapper}>
 				<motion.div
 					className={styles.imageWrapper}
@@ -56,7 +57,6 @@ export function MyContribution() {
 				</motion.div>
 				<div className={styles.textWrapper}>
 					<Typography type="h2" color="white" variant="h2Rich">
-						<a id="my-contribution" className="anchor" />
 						My contribution
 					</Typography>
 					<Typography color="white">

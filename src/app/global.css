@@ -103,7 +103,7 @@ h6 {
 
 .anchor {
 	position: relative;
-	top: -95px;
+	top: calc(var(--spaces-xxxxLarge) * 1);
 }
 
 .container {
@@ -111,6 +111,13 @@ h6 {
 	padding-left: var(--container-padding);
 	padding-right: var(--container-padding);
 	margin: auto;
+}
+
+
+@media(min-width: 992px) {
+	.anchor {
+		top: calc((var(--spaces-xxxxxxLarge) * -1) - 110px);
+	}
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

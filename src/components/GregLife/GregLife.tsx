@@ -18,6 +18,7 @@ export function GregLife() {
 			ariaLabel="An opening welcome from Greg to visitors of his portfolio site"
 			className={`${styles.wrapper} container`}
 		>
+			<a id="greg-life" className="anchor" />
 			<div className={styles.imageWrapper}>
 				<AnimatedImage
 					alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
@@ -67,7 +68,6 @@ export function GregLife() {
 						duration: 1,
 					}}
 				>
-					<a id="greg-life" className="anchor" />
 					Greg life
 					<AnimatedImage
 						src={purpleDoodle}

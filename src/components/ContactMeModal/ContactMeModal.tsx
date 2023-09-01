@@ -7,41 +7,32 @@ import { FAB, Typography } from '@/components'
 import styles from './contactMeModal.styles.module.css'
 
 interface ContactMeModalProps {
-	title: string
-	description: string | React.ReactNode
+	trigger: React.ReactNode
 }
 
-const DialogOpenContext = createContext<boolean>(false)
-
-export function ContactMeRoot({ children, ...props }: Dialog.DialogProps) {
-	const [isOpen, setOpen] = useState<boolean>(false)
-
+export function ContactMeModal({
+	children,
+	trigger,
+	...props
+}: ContactMeModalProps & Dialog.DialogProps) {
 	return (
-		<DialogOpenContext.Provider value={isOpen}>
-			<Dialog.Root onOpenChange={setOpen} {...props}>
-				{children}
-			</Dialog.Root>
-		</DialogOpenContext.Provider>
-	)
-}
-
-export function ContactMeTrigger({ trigger }: { trigger: React.ReactNode }) {
-	return <Dialog.Trigger asChild>{trigger}</Dialog.Trigger>
-}
-
-export function ContactMeContent({ title, description }: ContactMeModalProps) {
-	const isOpen = useContext(DialogOpenContext)
-	if (!isOpen) return null
-	return (
-		<>
+		<Dialog.Root {...props}>
+			<Dialog.Trigger asChild>{trigger}</Dialog.Trigger>
 			<Dialog.Overlay className={styles.overlay} />
 			<Dialog.Content className={styles.content}>
 				<Dialog.Title>
 					<Typography type="span" styledAs="h4">
-						{title}
+						Enter password
 					</Typography>
 				</Dialog.Title>
-				<Dialog.Description>{description}</Dialog.Description>
+				<Dialog.Description>
+					<div className={styles.modalContainer}>
+						<Typography type="span">
+							📧 Email: <a href="mailto:gregm31@live.com">gregm31@live.com</a>
+						</Typography>
+						<Typography type="span">📱 Phone: +61 407 670 950</Typography>
+					</div>
+				</Dialog.Description>
 				<Dialog.Close asChild>
 					<FAB
 						icon={<Cross2Icon />}
@@ -50,15 +41,6 @@ export function ContactMeContent({ title, description }: ContactMeModalProps) {
 					/>
 				</Dialog.Close>
 			</Dialog.Content>
-		</>
+		</Dialog.Root>
 	)
 }
-
-export const ModalBody = () => (
-	<div className={styles.modalContainer}>
-		<Typography type="span">
-			📧 Email: <a href="mailto:gregm31@live.com">gregm31@live.com</a>
-		</Typography>
-		<Typography type="span">📱 Phone: +61 407 670 950</Typography>
-	</div>
-)
