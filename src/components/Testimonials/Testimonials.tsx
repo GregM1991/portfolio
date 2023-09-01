@@ -26,9 +26,8 @@ export function Testimonials() {
 				<a id="testimonials" className="anchor" />
 				<div className={styles.gridWrapper}>
 					<AnimatePresence>
-						{/* TODO: Karins first */}
 						<Testimonial
-							key={TESTIMONIALS[currentTestimonial].name}
+							key={TESTIMONIALS[currentTestimonial].key}
 							img={TESTIMONIALS[currentTestimonial].img}
 							imgAltText={TESTIMONIALS[currentTestimonial].imgAltText}
 							leadText={TESTIMONIALS[currentTestimonial].leadText}

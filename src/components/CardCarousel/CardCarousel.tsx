@@ -36,7 +36,7 @@ export function CardCarousel() {
 				<div className={styles.innerContainer}>
 					<div className={styles.carouselSlider} style={style}>
 						{values.map(value => (
-							<Card title={value.title} body={value.body} key={value.title} />
+							<Card title={value.title} body={value.body} key={value.key} />
 						))}
 					</div>
 				</div>

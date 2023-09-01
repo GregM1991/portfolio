@@ -18,7 +18,7 @@ export function Header() {
 			<nav className={styles.nav}>
 				<ul role="list" className={styles.menu}>
 					{NAV_LINKS.map(link => (
-						<li key={link.href} onClick={handleClick}>
+						<li key={link.key} onClick={handleClick}>
 							<Link className={styles.navLink} href={link.href}>
 								{link.linkText}
 							</Link>

@@ -4,42 +4,44 @@ import { Projects } from '@/types/projects'
 
 export const JOBS: Projects[] = [
 	{
-		key: 1,
-		title: 'eQ8',
+		key: crypto.randomUUID(),
+		title: 'eQ8 | Full-Stack Engineer',
 		jobDescription:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quaerat aut harum. Quas eos unde atque aliquam ea distinctio, aperiam modi quos in sit officia a? A voluptas expedita ab.',
+			"Eq8 is a Strategic Workforce Planning SaaS platform. I had a great time working at eQ8, the team we had there are a great bunch of people and we were never too short on a good tmie. The platform's backend was built using C# and the .NET framework, with Azure Functions utilized for serverless computing, gRPC used for API communication, and both SQL and noSQL databases. The front end was built using C# Razor pages, but we were in the process of transitioning our front-ends to use React with Typescript.",
 		jobProjects: [
 			{
+				key: crypto.randomUUID(),
 				title: 'Refactor of old Demand Configuration',
 				points: [
 					{
-						key: 1,
-						copy: 'Building out new designs in React/Typescript with Zustand, from C# Razor pages',
+						key: crypto.randomUUID(),
+						copy: 'Built out new designs in React/Typescript with Zustand, from C# Razor pages',
 					},
 					{
-						key: 2,
-						copy: 'Assisted in refinement of UI/UX in ongoing discussions as new UI/UX was designed',
+						key: crypto.randomUUID(),
+						copy: 'EQ8 was quite fast paced, so the designs for the page were evolving as we were building it out. I assisted in feedback of these designs as well as building them',
 					},
 					{
-						key: 3,
-						copy: 'Helped build out gRPC APIs for crud operations on driver associations',
+						key: crypto.randomUUID(),
+						copy: 'Helped build out gRPC APIs for CRUD operations on driver associations',
 					},
 				],
 			},
 			{
+				key: crypto.randomUUID(),
 				title: 'Global Supply Upload',
 				points: [
 					{
-						key: 1,
-						copy: 'Allowed for clients to upload a global supply, allowing them to create subsets of this data for different plans',
+						key: crypto.randomUUID(),
+						copy: 'Allowed for clients to upload a global supply, giving them the power to create subsets of this data for different plans',
 					},
 					{
-						key: 2,
-						copy: 'Built out greenfields design for the page that allowed users to split the global dataset using filters',
+						key: crypto.randomUUID(),
+						copy: 'Built out greenfields designs for the page that allowed users to split the global dataset using filters',
 					},
 					{
-						key: 3,
-						copy: 'Assisted on creation of APIs to segment and store data in the backend',
+						key: crypto.randomUUID(),
+						copy: 'Assisted on the design and creation of APIs to segment and store data in the back end',
 					},
 				],
 			},
@@ -49,47 +51,46 @@ export const JOBS: Projects[] = [
 			'Greg, Annisa and Aaron smiling and having a beer in the sunshine',
 	},
 	{
-		key: 2,
-		title: 'Faethm',
-		jobDescription: '',
+		key: crypto.randomUUID(),
+		title: 'Faethm | Full-Stack Engineer',
+		jobDescription:
+			"Faethm was a workforce analytics and strategic workforce planning SaaS platform (lots of HR tech I know 😅). Once again I was surrounded by fantastic people, especially the design team. We had a great working relationship (see Karin's testimonial below). The back end was built with Node JS, with AWS Lamdas for serverless computing, gRPC (with some GraphQL) used for APIs and both SQL and noSQL databases. ",
 		jobProjects: [
 			{
+				key: crypto.randomUUID(),
 				title: 'In-house Identity to Auth0',
 				points: [
 					{
-						key: 1,
-						copy: 'Followed invite model rather then sign up, users were created on invite - users were only deleted if inactive for 12 months',
+						key: crypto.randomUUID(),
+						copy: "Implemented an 'invite-only' model instead of a standard sign-up process, where user accounts were created upon invitation and automatically deleted after 12 months of inactivity",
 					},
 					{
-						key: 2,
-						copy: 'User profile was had name/email which was global - but roles were specific to each org',
+						key: crypto.randomUUID(),
+						copy: 'User profile was set globally with a name and email. Roles were specific to each organisation',
 					},
 					{
-						key: 3,
-						copy: 'Created set of APIs for our frontend login & user management app to use auth0',
-					},
-					{
-						key: 4,
-						copy: 'All Auth0 Infrastructure Terraform (roles/applications/user database/login page) Terraformed',
+						key: crypto.randomUUID(),
+						copy: 'Created a set of APIs for our front end login & user management app to use auth0',
 					},
 				],
 			},
 			{
+				key: crypto.randomUUID(),
 				title: 'SWP - Supply & Demand Model',
 				points: [
 					{
-						key: 1,
-						copy: 'Navigate users through a form to explain what the impact of different technologies was on their a role in their workforce',
+						key: crypto.randomUUID(),
+						copy: 'Navigate users through a multi-page form to explain what the impact of different technologies would be on their role in the workforce',
 					},
 					{
-						key: 2,
-						copy: 'End graph would show whether they need more or less of role',
+						key: crypto.randomUUID(),
+						copy: 'Implemented a graph to indicate the need to increase/decrease the number of individuals in a particular role',
 					},
 					{
-						key: 3,
-						copy: '3 sections: Description of their scenario, selection of technologies adopted and selection of workforce impact (retirement or retention)',
+						key: crypto.randomUUID(),
+						copy: '3 sections (pages): Description of their scenario, selection of technologies adopted and selection of workforce impact (retirement or retention)',
 					},
-					{ key: 4, copy: 'REST APIs based on resource' },
+					{ key: crypto.randomUUID(), copy: 'REST APIs based on resource' },
 				],
 			},
 		],

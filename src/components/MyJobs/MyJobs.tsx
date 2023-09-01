@@ -23,6 +23,7 @@ export function MyJobs() {
 			>
 				A place for <br /> projects{' '}
 			</Typography>
+			{/* TODO: Add overview section */}
 			<div className={styles.projectWrapper}>
 				{JOBS.map(
 					(

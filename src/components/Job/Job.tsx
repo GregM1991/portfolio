@@ -44,7 +44,7 @@ export function Job({
 				<Typography color="dark-red">{jobDescription}</Typography>
 				{jobProjects.map((project: ProjectType) => (
 					<Project
-						key={project.title}
+						key={project.key}
 						title={project.title}
 						points={project.points}
 					/>

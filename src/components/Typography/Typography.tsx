@@ -34,12 +34,15 @@ export const Typography = forwardRef<
 		'--color': color ? palette[color] : 'inherit',
 	} as React.CSSProperties
 	const Component = type
+	const typeCSS = styles[type]
+	const styledAsCSS = styledAs ? styles[styledAs] : ''
+	const variantCSS = variant ? styles[variant] : ''
+	const classNameCSS = className ? className : ''
+	console.log({ type, styledAs, styledAsCSS })
 
 	return (
 		<Component
-			className={`${styles[styledAs || type]} ${
-				variant ? styles[variant] : ''
-			} ${className ? className : ''}`}
+			className={`${typeCSS} ${styledAsCSS} ${variantCSS} ${classNameCSS}`}
 			style={additiveStyles}
 			ref={ref}
 		>

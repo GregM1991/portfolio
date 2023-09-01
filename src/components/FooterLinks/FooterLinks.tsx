@@ -12,7 +12,7 @@ export function FooterLinks() {
 				</Typography>
 				<ul role="list">
 					{NAV_LINKS.map(link => (
-						<li key={link.href} className={styles.link}>
+						<li key={link.key} className={styles.link}>
 							<Link href={link.href}>{link.linkText}</Link>
 						</li>
 					))}

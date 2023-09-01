@@ -10,7 +10,7 @@ export function SocialLinks() {
 		<Tooltip.Provider delayDuration={0}>
 			<ul role="list" className={styles.wrapper}>
 				{SOCIAL_LINKS.map(link => (
-					<li key={link.linkTooltipText}>
+					<li key={link.key}>
 						<Tooltip.Root>
 							<Tooltip.Trigger asChild className={styles.tooltipTrigger}>
 								<Link

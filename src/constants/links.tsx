@@ -8,31 +8,38 @@ const ICON_SIZE = '25'
 
 export const NAV_LINKS = [
 	{
+		key: crypto.randomUUID(),
 		linkText: 'Greg Life',
 		href: '/canva/#greg-life',
 	},
 
 	{
+		key: crypto.randomUUID(),
 		linkText: 'My contribution',
 		href: '/canva/#my-contribution',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkText: "Greg's values",
 		href: '/canva/#gregs-values',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkText: 'A place for projects',
 		href: '/canva/#projects',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkText: '#GregLife',
 		href: '/canva/#greg-life-mural',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkText: 'Testimonials',
 		href: '/canva/#testimonials',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkText: 'Be hired?',
 		href: '/canva/#be-hired',
 	},
@@ -40,6 +47,7 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
 	{
+		key: crypto.randomUUID(),
 		linkTooltipText: 'linkedIn',
 		href: 'https://www.linkedin.com/in/greg-martin-76688678/',
 		icon: (
@@ -52,6 +60,7 @@ export const SOCIAL_LINKS = [
 		screenReader: 'Navigate to Gregs Linked-in page',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkTooltipText: 'Instagram',
 		href: 'https://www.instagram.com/grillustration_/',
 		icon: (
@@ -64,6 +73,7 @@ export const SOCIAL_LINKS = [
 		screenReader: 'Navigate to Gregs Instagram page',
 	},
 	{
+		key: crypto.randomUUID(),
 		linkTooltipText: 'Resume',
 		href: '/Greg_Martin_Resume_2023.pdf',
 		icon: <FileIcon aria-hidden="true" height={ICON_SIZE} width={ICON_SIZE} />,
