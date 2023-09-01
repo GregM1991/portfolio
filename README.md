@@ -40,7 +40,7 @@ So that's about it for the reasons, let's get into some details.
 ### Things I've learnt
 - CSS Modules: 
   - **TLDR: Had a blast, lost out on some DX, would use preprocessor next time** 
-  - I love handling CSS, I often find that css frameworks can cause issues after they've been used for a long time, and they often-times lead to [div soup](https://www.chillybin.co/would-you-like-another-bowl-of-div-soup/). So when I realised I couldn't use styled-components (reasonably) I gave css-modules a go. I missed out on (or need to learn more about with css-modules) was theming, and the ability to build and reference objects that hold my styles. I also missed my nesting styles and queries, so time-permitting I'll bring in Sass.
+  - I love handling CSS, I often find that CSS frameworks can cause issues after they've been used for a long time, and they often-times lead to [div soup](https://www.chillybin.co/would-you-like-another-bowl-of-div-soup/). So when I realised I couldn't use styled-components (reasonably) I gave css-modules a go. What I missed out on (or need to learn more about css-modules) was theming, and the ability to build and reference objects that hold my styles. I also missed my nesting styles and queries, so time-permitting I'll bring in Sass.
 - It's difficult to set up a theme without a design system doc to go off of. I spent a fair amount of time just auditing the canva-life page, figuring out what spacing was used and where, how large the type was etc.
 
 ### Things I'd do with more time
@@ -49,7 +49,7 @@ So that's about it for the reasons, let's get into some details.
 - Use a CSS preprocessor (Sass most likely)
 - There are a few components, like the Modal and Typography, that could be more generic. 
 - My values and testimonials sections aren't currently swipeable on mobile, and it'd be nice to have that.
-- Explore more server-component patters, like having server components compose client components
+- Explore more server-component patterns, like having server components compose client components
 
 ```Typescript
 function ServerComponent({children}) {
