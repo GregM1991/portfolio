@@ -48,6 +48,14 @@
 	right: -15px;
 }
 
+.link {
+	color: var(--palette-purple);
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
 @media (min-width: 768px) {
 	.imageWrapper {
 		padding-right: var(--spaces-xSmall);

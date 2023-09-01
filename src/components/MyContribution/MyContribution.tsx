@@ -62,16 +62,16 @@ export function MyContribution() {
 					<Typography color="white">
 						With three years of Software Engineering under my belt, plus a past
 						life spent as a Graphic Designer, I can walk the turmultuous line
-						between engineering and design. I love the front end as it still
-						allows me to dip my toes into the creative side of building
-						software.
+						between engineering and design.s
 					</Typography>
 					<Typography color="white">
 						I kicked off my career as a full-stack developer traversing both
 						ends of the technology spectrum and I believe this has hugely
 						improved my scope of technical understanding. Knowledge of how the
-						front and back end interact with each other is key to defining your
-						structural and architectural needs.
+						front and backend interact with each other is of course key to
+						defining your structural and architectural needs. But my heart is
+						truly with the frontend as it allows me express my creative side and
+						build beautiful, articulate software.
 					</Typography>
 				</div>
 			</div>

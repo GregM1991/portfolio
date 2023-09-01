@@ -7,7 +7,7 @@ export const JOBS: Projects[] = [
 		key: crypto.randomUUID(),
 		title: 'eQ8 | Full-Stack Engineer',
 		jobDescription:
-			"Eq8 is a strategic workforce planning SaaS platform. I had a great time working at eQ8, the team we had there are a great bunch of people and we were never too short on a good time. The platform's back end was built using C# and the .NET framework, with Azure Functions utilized for serverless computing, gRPC used for API communication, and both SQL and noSQL databases. The front end was built using C# Razor pages, but we were in the process of transitioning our front end to use React with Typescript.",
+			"Eq8 is a strategic workforce planning SaaS platform. I had a great experience working at eQ8, the team there are a fun bunch of people and we were never short of a good time. The platform's back end was built using C# and the .NET framework, with Azure Functions utilized for serverless computing, gRPC used for API communication, and both SQL and noSQL databases. The front end was built using C# Razor pages, but we were in the process of transitioning our front end to use React with Typescript.",
 		jobProjects: [
 			{
 				key: crypto.randomUUID(),

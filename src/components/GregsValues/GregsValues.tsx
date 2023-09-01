@@ -36,8 +36,8 @@ export function GregsValues() {
 				<Typography color="white" className={styles.body}>
 					One of the many reasons I&apos;m so keen on Canva is how well the
 					company values align with mine. I&apos;ve found it hugely motivating
-					learning about how Canva stands behind this code of ethics and lives
-					them in everything they do.
+					learning about how Canva stands behind this code of ethics and
+					demonstrates them in everything they do.
 				</Typography>
 			</div>
 			<CardCarousel />

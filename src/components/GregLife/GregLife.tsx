@@ -10,6 +10,7 @@ import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
 import purpleDoodle from '@/assets/svg/purple-heading-doodle.svg'
 import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
 import { CUBIC_BEZIER, DURATION, fadeInVariants } from '@/constants/animation'
+import Link from 'next/link'
 
 export function GregLife() {
 	return (
@@ -85,8 +86,15 @@ export function GregLife() {
 					special. With a cheeky smile and a huge passion for the industry, I
 					offer a willingness and dedication to eat up all there is to learn. I
 					want to be empowered by the best workers at the best workplace, which
-					of course, is Canva. I hope my eagerness is shown through my building
-					this personalised portfolio (github link in the footer).
+					of course, is Canva. This personalised portfolio is my love letter to
+					you. Peek behind the curtain{' '}
+					<Link
+						href="https://github.com/GregM1991/portfolio"
+						className={styles.link}
+					>
+						here
+					</Link>{' '}
+					👀
 				</Typography>
 			</div>
 		</Section>
