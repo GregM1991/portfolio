@@ -86,8 +86,7 @@ export function GregLife() {
 					offer a willingness and dedication to eat up all there is to learn. I
 					want to be empowered by the best workers at the best workplace, which
 					of course, is Canva. I hope my eagerness is shown through my building
-					this personlised portfolio, of which the code can be found on my
-					github (link in the footer).
+					this personalised portfolio (github link in the footer).
 				</Typography>
 			</div>
 		</Section>

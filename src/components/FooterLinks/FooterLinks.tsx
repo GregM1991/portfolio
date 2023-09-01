@@ -20,7 +20,7 @@ export function FooterLinks() {
 				<div className={styles.footerBottom}>
 					<SocialLinks />
 					<Typography type="p" color="white" className={styles.copywrite}>
-						© Greg 2023. All rights reserved.
+						&copy; Greg 2023. All rights reserved.
 					</Typography>
 				</div>
 			</div>

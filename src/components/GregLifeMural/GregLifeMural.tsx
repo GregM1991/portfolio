@@ -74,6 +74,7 @@ export function GregLifeMural() {
 				variants={fadeInRightVariants}
 				initial="hidden"
 				whileInView="visible"
+				viewport={{ once: true }}
 				className={styles.text}
 			>
 				#GregLife

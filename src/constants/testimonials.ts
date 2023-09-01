@@ -12,8 +12,8 @@ export const TESTIMONIALS: Testimonial[] = [
 		leadText:
 			'Working with Greg made me feel like we were the Dynamic Duo of the design and engineering world.',
 		bodyText:
-			"When it comes to frontend development, Greg's skils are off the charts, and effortlessly brings my design ideas to life with a touch of humor that made every day at work an enjoyable experience. His exceptional communication skills foster a productive collaboration between design and engineering",
-		name: 'Karin Uli (She/ Her)',
+			"When it comes to front-end development, Greg's skills are off the charts. He effortlessly brings my design ideas to life with a touch of humor that made every day at work an enjoyable experience. His exceptional communication skills foster a productive collaboration between design and engineering.",
+		name: 'Karin Uli (She/Her)',
 		role: 'Snr Product Designer, Faethm by Pearson',
 	},
 	{
@@ -21,10 +21,10 @@ export const TESTIMONIALS: Testimonial[] = [
 		img: hina,
 		imgAltText: 'Hina looking at the camera and smiling',
 		leadText:
-			"I really admire Greg's impressive skills and remarkable attention to detail as a Frontend engineer.",
+			"I really admire Greg's impressive skills and remarkable attention to detail as a front-end engineer.",
 		bodyText:
-			'His ability to transform designs into captivating user experiences is truly commendable. Moreover, his collaborative spirit and teamwork greatly contribute to a harmonious and efficient development process. His techincal brilliance and team-orientated mindset is a rarity that any organisation would be fortunate to have',
-		name: 'Hina Shahid',
+			'His ability to transform designs into captivating user experiences is truly commendable. Moreover, his collaborative spirit and teamwork greatly contribute to a harmonious and efficient development process. His techincal brilliance and team-orientated mindset is a rarity that any organisation would be fortunate to have.',
+		name: 'Hina Shahid (She/Her)',
 		role: 'Snr Full-Stack Engineer, eq8',
 	},
 	{
@@ -44,10 +44,10 @@ export const TESTIMONIALS: Testimonial[] = [
 		imgAltText:
 			'Andy smiling at the camera in a north face jacket with trees in the background',
 		leadText:
-			'Our time working together at Office-Hub was a ball, Greg brought a great vibe to the small team',
+			'Our time working together at Office-Hub was a blast, Greg brought a great vibe to the small team',
 		bodyText:
-			"If you're looking for a Software Engineer comfortable across the full stack (with a penchant for frontend), I can't recommend Greg highly enough. He's a dream to work with - very creative and has a great eye for detail.",
+			"If you're looking for a Software Engineer comfortable across the full stack (with a penchant for front end), I can't recommend Greg highly enough. He's a dream to work with - very creative and has a great eye for detail.",
 		name: 'Andy Muprhy (He/Him)',
-		role: 'Snr Software Engineer, Domain',
+		role: 'Snr Full-Stack, Domain',
 	},
 ]

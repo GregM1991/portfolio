@@ -44,7 +44,7 @@
 	width: 117px;
 	height: auto;
 	position: absolute;
-	bottom: 100px;
+	bottom: 40px;
 	right: -15px;
 }
 
@@ -63,6 +63,10 @@
 	.canvaRooftop {
 		margin-top: 50px;
 		width: 400px;
+	}
+
+	.yellowDoodle {
+		right: 0;
 	}
 }
 
@@ -100,6 +104,7 @@
 
 	.yellowDoodle {
 		width: 243px;
+		bottom: 0;
 	}
 }
 
@@ -123,6 +128,10 @@
 		height: 190px;
 		left: -190px;
 	}
+
+	.yellowDoodle {
+		bottom: 65px;
+	}
 }
 
 @media (min-width: 1400px) {
@@ -145,6 +154,10 @@
 		width: 215px;
 		height: 137px;
 		top: -125px;
+	}
+
+	.yellowDoodle {
+		bottom: 0;
 	}
 }
 

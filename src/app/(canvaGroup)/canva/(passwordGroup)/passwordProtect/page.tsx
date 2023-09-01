@@ -17,12 +17,14 @@ export default function Page() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.contentWrapper}>
-				<Typography type="h1" styledAs="h2">
-					Enter password:
-				</Typography>
+				<label htmlFor="name">
+					<Typography type="span" className={styles.span}>
+						Enter password:
+					</Typography>
+				</label>
 				{message && <Typography color="red">{message}</Typography>}
 				<form action={onSubmit} className={styles.form}>
-					<input type="password" name="password" />
+					<input type="password" name="password" id="name" />
 					<Button>Enter</Button>
 				</form>
 			</div>

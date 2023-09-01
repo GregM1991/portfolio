@@ -7,7 +7,7 @@ export const JOBS: Projects[] = [
 		key: crypto.randomUUID(),
 		title: 'eQ8 | Full-Stack Engineer',
 		jobDescription:
-			"Eq8 is a Strategic Workforce Planning SaaS platform. I had a great time working at eQ8, the team we had there are a great bunch of people and we were never too short on a good tmie. The platform's backend was built using C# and the .NET framework, with Azure Functions utilized for serverless computing, gRPC used for API communication, and both SQL and noSQL databases. The front end was built using C# Razor pages, but we were in the process of transitioning our front-ends to use React with Typescript.",
+			"Eq8 is a strategic workforce planning SaaS platform. I had a great time working at eQ8, the team we had there are a great bunch of people and we were never too short on a good time. The platform's back end was built using C# and the .NET framework, with Azure Functions utilized for serverless computing, gRPC used for API communication, and both SQL and noSQL databases. The front end was built using C# Razor pages, but we were in the process of transitioning our front end to use React with Typescript.",
 		jobProjects: [
 			{
 				key: crypto.randomUUID(),
@@ -19,7 +19,7 @@ export const JOBS: Projects[] = [
 					},
 					{
 						key: crypto.randomUUID(),
-						copy: 'EQ8 was quite fast paced, so the designs for the page were evolving as we were building it out. I assisted in feedback of these designs as well as building them',
+						copy: 'EQ8 was quite fast-paced, so the designs for the page were evolving as we were building it out. I assisted in feedback of these designs as well as building them',
 					},
 					{
 						key: crypto.randomUUID(),
@@ -88,7 +88,7 @@ export const JOBS: Projects[] = [
 					},
 					{
 						key: crypto.randomUUID(),
-						copy: '3 sections (pages): Description of their scenario, selection of technologies adopted and selection of workforce impact (retirement or retention)',
+						copy: '3 sections (pages): description of their scenario, selection of technologies adopted and selection of workforce impact (retirement or attrition)',
 					},
 					{ key: crypto.randomUUID(), copy: 'REST APIs based on resource' },
 				],

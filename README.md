@@ -1,7 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
+# Portfolio
+<details>
+  <summary>Getting started</summary>
 First, run the development server:
 
 ```bash
@@ -13,22 +12,62 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</details>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Personalised for Canva
+Welcome to my write up of my custom-built portfolio for Canva. I'm gonna dive in to the details of why I built this and hopefully keep things interesting for whoever wants to read this, feel free to ignore this entire readme though!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**TLDR: I want a job at Canva.. I'm hoping this impresses someone enough to get me into the interview process.**
 
-## Learn More
+So it's been a while since I looked at my portfolio, about 3 years. I'm sure this is common for most developers, I took a look at it and borked. She no good. So it needed a touch up to say the least.
 
-To learn more about Next.js, take a look at the following resources:
+Since I started doing Software Engineering, Canva has been the unicorn, the place to work, the Holy Grail. So when I was scrolling through their [canva-life](https://www.lifeatcanva.com/en/canva-life/) page and I had an interesting idea to take the page, and map my portfolio content on to it. I did this for a few reasons: 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- First and foremost I thought it would help me stand out in the thousands of applicants Canva receives. I've heard from friends and strangers on the web about how difficult it is, and thought this might help
+- I thought it would be fun! Canva has an awesome style and design system and I wanted to build something in their style, a love letter so-to-speak
+- I hoped it would be different. It's been a while since I've done a splash page from top to bottom, I'm usually bogged down in nitty gritty product details, building/working on components that fill out a specific product feature.
+- I wanted to try some new technologies, this one doesn't really have much to do with Canva specifically, but I wanted to try out Next 13 with server components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+So that's about it for the reasons, let's get into some details.
 
-## Deploy on Vercel
+### Technologies
+**TLDR: I wanted to see what the fuss was about with Next JS, as well as get my head around server components**
+- [Next JS 13](https://nextjs.org/) - I wanted to get my head around React Server components and how they work
+- [Typescript](https://www.typescriptlang.org/)
+- [css-modules](https://github.com/css-modules/css-modules) - styled-components are usually my go to for styling, but with them needing a JS runtime on the client, it would be counter-intuitive with trying to learn SSR
+- [framer-motion](https://www.framer.com/motion/) - now I know what I just said above ^, but I also wanted to get some practice in with animating with Framer motion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Things I've learnt
+- CSS Modules: 
+  - **TLDR: Had a blast, lost out on some DX, would use preprocessor next time** 
+  - I love handling CSS, I often find that css frameworks can cause issues after they've been used for a long time, and they often-times lead to [div soup](https://www.chillybin.co/would-you-like-another-bowl-of-div-soup/). So when I realised I couldn't use styled-components (reasonably) I gave css-modules a go. I missed out on (or need to learn more about with css-modules) was theming, and the ability to build and reference objects that hold my styles. I also missed my nesting styles and queries, so time-permitting I'll bring in Sass.
+- It's difficult to set up a theme without a design system doc to go off of. I spent a fair amount of time just auditing the canva-life page, figuring out what spacing was used and where, how large the type was etc.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Things I'd do with more time
+**TLDR: Spent a lot of time on this, and wanted to call it somewhere.**
+- Implement a proper theme
+- Use a CSS preprocessor (Sass most likely)
+- There are a few components, like the Modal and Typography, that could be more generic. 
+- My values and testimonials sections aren't currently swipeable on mobile, and it'd be nice to have that.
+- Explore more server-component patters, like having server components compose client components
+
+```Typescript
+function ServerComponent({children}) {
+  // Fetching data / server things
+  return (
+    // server rendered markup
+      {children}
+    // server rendered markup
+  )
+}
+
+function App() {
+  return (
+    <ServerComponent>
+      <ClientComponent /> 
+    </ServerComponent>
+  )
+}
+```
+
+So I spent more time on this than I thought I would. With learning how server components work, and getting used to the Next JS way of doing things, I went a little bit over time 😅. So with the way it's looking as I write this (1/09/2023), I figure I call it presentable for now.
