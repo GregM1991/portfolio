@@ -62,7 +62,7 @@ export function MyContribution() {
 					<Typography color="white">
 						With three years of Software Engineering under my belt, plus a past
 						life spent as a Graphic Designer, I can walk the turmultuous line
-						between engineering and design.s
+						between engineering and design.
 					</Typography>
 					<Typography color="white">
 						I kicked off my career as a full-stack developer traversing both
