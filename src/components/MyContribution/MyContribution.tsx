@@ -68,10 +68,10 @@ export function MyContribution() {
 						I kicked off my career as a full-stack developer traversing both
 						ends of the technology spectrum and I believe this has hugely
 						improved my scope of technical understanding. Knowledge of how the
-						front and backend interact with each other is of course key to
+						front and back end interact with each other is of course key to
 						defining your structural and architectural needs. But my heart is
-						truly with the frontend as it allows me express my creative side and
-						build beautiful, articulate software.
+						truly with the front end as it allows me express my creative side
+						and build beautiful, articulate software.
 					</Typography>
 				</div>
 			</div>
