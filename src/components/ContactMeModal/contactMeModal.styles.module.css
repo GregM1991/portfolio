@@ -17,7 +17,7 @@
   width: 90vw;
   max-width: 450px;
   max-height: 85vh;
-  padding: var(--spaces-large);
+  padding: var(--space-l);
   z-index: 3;
   isolation: isolate;
 }

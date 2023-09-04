@@ -5,13 +5,13 @@
 }
 
 .textWrapper {
-  padding: 0 var(--spaces-large)
+  padding: 0 var(--space-l)
 }
 
 .imageWrapper {
   width: 100%;
-  padding-right: var(--spaces-large);
-  margin-top: var(--spaces-xxLarge);
+  padding-right: var(--space-l);
+  margin-top: var(--space-2xl);
 }
 
 .img {

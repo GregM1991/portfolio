@@ -40,8 +40,8 @@
 .buttonWrapper {
   display: flex; 
   justify-content: center;
-  margin-top: var(--spaces-large);
-  padding-right: var(--spaces-large);
+  margin-top: var(--space-l);
+  padding-right: var(--space-l);
 }
 
 .button {
@@ -71,7 +71,7 @@
 
   .card {
     padding: 30px 30px 3rem;
-    margin-right: var(--spaces-small)
+    margin-right: var(--space-s)
   }
 
   .innerContainer {

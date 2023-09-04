@@ -19,19 +19,18 @@
 	--typography-body-font-family: sans-serif;
 	/* this is not scalable (below), if we need to add another size, we have to go everywhere
 	   where the sizes are used in the css and change them to their new set */
-	--spaces-xxxxSmall: 0.25rem;
-	--spaces-xxxSmall: 0.5rem;
-	--spaces-xxSmall: 0.625rem;
-	--spaces-xSmall: 0.9375rem;
-	--spaces-small: 1rem;
-	--spaces-medium: 1.25rem;
-	--spaces-large: 1.5rem;
-	--spaces-xLarge: 1.875rem;
-	--spaces-xxLarge: 2rem;
-	--spaces-xxxLarge: 3rem;
-	--spaces-xxxxLarge: 4rem;
-	--spaces-xxxxxLarge: 7rem;
-	--spaces-xxxxxxLarge: 10rem;
+	--space-4xs: 0.25rem;
+	--space-3xs: 0.5rem;
+	--space-2xs: 0.625rem;
+	--space-xs: 0.9375rem;
+	--space-s: 1rem;
+	--space-m: 1.25rem;
+	--space-l: 1.5rem;
+	--space-xl: 1.875rem;
+	--space-2xl: 2rem;
+	--space-3xl: 3rem;
+	--space-4xl: 4rem;
+	--space-5xl: 10rem;
 	--typography-body: 1rem;
 	--typography-hero-text-header: 2.5rem;
 	--typography-body-lead: 1.125rem;

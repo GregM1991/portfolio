@@ -1,11 +1,10 @@
 'use client'
 import { useState } from 'react'
-import { Button, ContactMeModal, Logo } from '@/components'
-import { NAV_LINKS } from '@/constants/links'
 import Link from 'next/link'
-import styles from './header.styles.module.css'
+import { Button, ContactMeModal, Logo } from '@/components'
 import { HamburgerButton } from './HamburgerButton'
 import { NavLink } from '@/types/links'
+import styles from './header.styles.module.css'
 
 interface HeaderProps {
 	logo: 'canva' | 'normal'

@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  gap: var(--spaces-small);
+  gap: var(--space-s);
   color: inherit;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
 .tooltipContent {
   background-color: var(--palette-white);
   color: var(--palette-indigo);
-  padding: var(--spaces-xxxSmall);
+  padding: var(--space-3xs);
   border-radius: var(--radii-medium);
   font-size: 0.75rem;
   letter-spacing: 0.2px;

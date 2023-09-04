@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 1;
   background-color: var(--palette-white);
-  padding: var(--spaces-xxxxSmall) var(--spaces-large);  
+  padding: var(--space-4xs) var(--space-l);
 }
 
 .nav {
@@ -27,7 +27,7 @@
 }
 
 .nav > ul {
-  padding-left: var(--spaces-large);
+  padding-left: var(--space-l);
   padding-top: 90px;
 }
 
@@ -111,13 +111,13 @@
 }
 
 .button {
-  margin: 0 var(--spaces-large) 90px;
+  margin: 0 var(--space-l) 90px;
 }
 
 @media (min-width: 992px) {
   .header {
     justify-content: revert;
-    padding: var(--spaces-medium) var(--spaces-xSmall)
+    padding: var(--space-m) var(--space-xs)
   }
 
   .nav {
@@ -126,14 +126,14 @@
     position: relative;
     max-height: none;
     padding: 0;
-    padding-right: var(--spaces-xSmall)
+    padding-right: var(--space-xs)
   }
 
   .nav > ul {
     display: flex;
-    gap: var(--spaces-small);
+    gap: var(--space-s);
     padding-top: 0;
-    padding-left: var(--spaces-xLarge)
+    padding-left: var(--space-xl)
   }
 
   .nav li {

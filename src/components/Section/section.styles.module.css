@@ -1,6 +1,6 @@
 .section {
-  padding-top: var(--spaces-xxxxLarge);
-  padding-bottom: var(--spaces-xxxxLarge);
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
   background-color: var(--background-color);
 }
 
@@ -17,8 +17,8 @@
 
 @media(min-width: 992px) {
   .section {
-    padding-top: var(--spaces-xxxxxxLarge);
-    padding-bottom: var(--spaces-xxxxxxLarge);
+    padding-top: var(--space-5xl);
+    padding-bottom: var(--space-5xl);
   }
 
   .hero {

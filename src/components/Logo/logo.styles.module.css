@@ -20,6 +20,6 @@
 	.logo {
 		line-height: 1.3;
 		font-size: 2.3rem;
-		padding-left: var(--spaces-xSmall)
+		padding-left: var(--space-xs)
 	}
 }

@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
 	font-family: ezramedium;
-	margin-bottom: var(--spaces-small);
+	margin-bottom: var(--space-s);
 	letter-spacing: -0.03rem;
   line-height: 1.25;
 }
@@ -25,7 +25,7 @@ picture {
 
 .anchor {
 	position: relative;
-	top: calc(var(--spaces-xxxxLarge) * 1);
+	top: calc(var(--space-4xl) * 1);
 }
 
 .container {
@@ -38,6 +38,6 @@ picture {
 
 @media(min-width: 992px) {
 	.anchor {
-		top: calc((var(--spaces-xxxxxxLarge) * -1) - 110px);
+		top: calc((var(--space-5xl) * -1) - 110px);
 	}
 }

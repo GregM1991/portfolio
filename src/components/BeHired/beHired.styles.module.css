@@ -1,5 +1,5 @@
 .wrapper {
-  padding-bottom: var(--spaces-xxLarge);
+  padding-bottom: var(--space-2xl);
 }
 
 .content {
@@ -40,11 +40,11 @@
 }
 
 .breakoutLine {
-  margin-bottom: var(--spaces-large);
+  margin-bottom: var(--space-l);
 }
 
 .button {
-  margin-top: var(--spaces-xxxLarge);
+  margin-top: var(--space-3xl);
 }
 
 @media (min-width: 768px) {

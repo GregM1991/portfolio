@@ -1,14 +1,14 @@
 import '@/app/global.css'
-import '@/app/variables.css'
+import '@/app/canva-variables.css'
 import '@/app/fonts.css'
 
-interface PassowrdProtectLayoutProps {
+interface PasswordProtectLayoutProps {
 	children: React.ReactNode
 }
 
-export default function PassowrdProtectLayout({
+export default function PasswordProtectLayout({
 	children,
-}: PassowrdProtectLayoutProps) {
+}: PasswordProtectLayoutProps) {
 	return (
 		<html>
 			<body>{children}</body>

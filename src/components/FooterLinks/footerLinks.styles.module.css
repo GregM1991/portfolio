@@ -17,7 +17,7 @@
 .linkHeader {
   font-size: 1rem;
   font-family: sans-serif;
-  margin-bottom: var(--spaces-large);
+  margin-bottom: var(--space-l);
   letter-spacing: 0.5px;
 }
 
@@ -37,8 +37,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spaces-xLarge);
-  padding-top: var(--spaces-xLarge);
+  gap: var(--space-xl);
+  padding-top: var(--space-xl);
   color: var(--palette-white)
 }
 

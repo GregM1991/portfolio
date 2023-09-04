@@ -9,7 +9,7 @@
 	flex-direction: column;
 	align-items: flex-end;
   position: relative;
-  padding-left: var(--spaces-xSmall);
+  padding-left: var(--space-xs);
 }
 
 .type h1 {
@@ -18,7 +18,7 @@
 }
 
 .cuddleCats {
-	margin-bottom: var(--spaces-xxSmall);
+	margin-bottom: var(--space-2xs);
 	object-position: 50% 15%;
 	width: 102px;
 	height: 102px;
@@ -58,7 +58,7 @@
 
 @media (min-width: 768px) {
 	.imageWrapper {
-		padding-right: var(--spaces-xSmall);
+		padding-right: var(--space-xs);
 	}
 
 	.cuddleCats {
@@ -85,7 +85,7 @@
 
 	.type {
 		max-width: 50%;
-		padding: 100px var(--spaces-xSmall) 0 var(--spaces-xSmall);
+		padding: 100px var(--space-xs) 0 var(--space-xs);
 	}
 
 	.imageWrapper {

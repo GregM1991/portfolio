@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: var(--spaces-small);
+  margin-top: var(--space-s);
   color: var(--palette-dark-red);
 }
 
