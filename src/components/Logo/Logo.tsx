@@ -9,13 +9,15 @@ const arvo = Arvo({
 	subsets: ['latin'],
 })
 
-export function Logo() {
-	const style = {
-		'--font-family-primary': arvo.style.fontFamily,
-	} as React.CSSProperties
+interface LogoProps {
+	type: 'canva' | 'normal'
+}
+
+export function Logo({ type }: LogoProps) {
+	const href = type === 'canva' ? '/canva' : '/'
 
 	return (
-		<Link href="/" style={style} className={styles.logo}>
+		<Link href={href} className={`${styles[type]} ${arvo.className}`}>
 			GREG.
 		</Link>
 	)

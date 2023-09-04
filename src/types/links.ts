@@ -1,4 +1,4 @@
-export type Link = {
+export type SocialLink = {
 	key: string
 	linkTooltipText: string
 	href: string
@@ -7,4 +7,10 @@ export type Link = {
 	attributes?: {
 		download: string
 	}
+}
+
+export type NavLink = {
+	key: string
+	linkText: string
+	href: string
 }

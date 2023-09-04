@@ -1,10 +1,10 @@
 import * as Tooltip from '@radix-ui/react-tooltip'
 import Link from 'next/link'
-import { Link as LinkType } from '@/types/links'
+import { SocialLink } from '@/types/links'
 import { VisuallyHidden } from '@/components'
 import styles from './socialLinks.styles.module.css'
 
-export const WithTooltip = ({ link }: { link: LinkType }) => (
+export const WithTooltip = ({ link }: { link: SocialLink }) => (
 	<Tooltip.Root>
 		<Tooltip.Trigger asChild className={styles.iconLink}>
 			<Link

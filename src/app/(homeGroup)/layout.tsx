@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-
+import { Header } from '@/components'
+import { NAV_LINKS } from '@/constants/links'
 import '@/app/global.css'
-import '@/app/variables.css'
-import '@/app/fonts.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",
@@ -16,7 +15,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Header logo="normal" navLinks={NAV_LINKS} />
+				{children}
+			</body>
 		</html>
 	)
 }

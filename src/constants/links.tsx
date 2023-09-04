@@ -1,4 +1,4 @@
-import { Link } from '@/types/links'
+import { NavLink, SocialLink } from '@/types/links'
 import {
 	FileIcon,
 	GitHubLogoIcon,
@@ -8,7 +8,7 @@ import {
 
 const ICON_SIZE = '25'
 
-export const NAV_LINKS = [
+export const NAV_LINKS: NavLink[] = [
 	{
 		key: crypto.randomUUID(),
 		linkText: 'Greg Life',
@@ -47,7 +47,7 @@ export const NAV_LINKS = [
 	},
 ]
 
-export const SOCIAL_LINKS: Link[] = [
+export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'GitHub',

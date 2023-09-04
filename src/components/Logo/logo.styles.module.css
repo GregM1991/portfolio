@@ -2,10 +2,18 @@
 	font-weight: 700;
   font-size: 1.4rem;
 	cursor: pointer;
-	font-family: var(--font-family-primary);
+}
+
+.canva {
+	composes: logo;
 	background: linear-gradient(0.25turn, var(--gradients-brandGradient));
 	background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.normal {
+	composes: logo;
+	background: var(--palette-primary);
 }
 
 @media (min-width: 992px) {

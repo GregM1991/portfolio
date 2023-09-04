@@ -1,10 +1,9 @@
-import * as Tooltip from '@radix-ui/react-tooltip'
 import Link from 'next/link'
-import { Link as LinkType } from '@/types/links'
+import { SocialLink } from '@/types/links'
 import { VisuallyHidden } from '@/components'
 import styles from './socialLinks.styles.module.css'
 
-export const WithoutTooltip = ({ link }: { link: LinkType }) => (
+export const WithoutTooltip = ({ link }: { link: SocialLink }) => (
 	<Link
 		target="_blank"
 		href={link.href}

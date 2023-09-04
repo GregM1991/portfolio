@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Header, Footer } from '@/components'
-
+import { NAV_LINKS } from '@/constants/links'
 import '@/app/global.css'
 import '@/app/variables.css'
 import '@/app/fonts.css'
+import '@/app/canva.css'
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",
@@ -18,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Header />
+				<Header logo="canva" navLinks={NAV_LINKS} />
 				{children}
 				<Footer />
 			</body>
