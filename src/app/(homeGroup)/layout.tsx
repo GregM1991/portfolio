@@ -1,11 +1,19 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components'
-import { Arvo } from 'next/font/google'
+import { Arvo, Raleway } from 'next/font/google'
 import '@/app/global.css'
+import '@/app/(homeGroup)/home.css'
 import '@/app/(homeGroup)/home-variables.css'
 
 const arvo = Arvo({
 	weight: ['400', '700'],
+	style: ['normal'],
+	subsets: ['latin'],
+	display: 'swap',
+})
+
+const raleway = Raleway({
+	weight: ['400', '100'],
 	style: ['normal'],
 	subsets: ['latin'],
 	display: 'swap',
@@ -23,7 +31,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={arvo.className}>
+			<body className={`${arvo.className} ${raleway.className}`}>
 				<Header headerFor="normal" />
 				{children}
 			</body>
