@@ -1,11 +1,9 @@
-import { Section, Typography } from '@/components'
+import { Introduction } from '@/components'
 
 export default function Home() {
 	return (
 		<main>
-			<Section ariaLabel="Introduction to Greg's portfolio">
-				<Typography>Hello</Typography>
-			</Section>
+			<Introduction />
 		</main>
 	)
 }

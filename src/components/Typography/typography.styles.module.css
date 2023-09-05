@@ -16,37 +16,10 @@
 
 .p {
   composes: color;
-  font-size: var(--typography-body);
-}
-
-.pLead {
-	font-size: var(--typography-body-lead);
-  letter-spacing: 0.03rem;
 }
 
 .h2Rich {
   font-size: var(--typography-rich-header-text)
-}
-
-.programHeader {
-  font-size: var(--typography-section-program-heading);
-}
-
-.blockquoteLead {
-  font-size: var(--typography-blockquote-lead);
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  padding-bottom: 1rem;
-}
-
-.ctaLead {
-  font-size: var(--typography-cta-banner-header)
-}
-
-.ctaBody {
-  font-size: var(--typography-cta-banner-body);
-  letter-spacing: -0.01rem;
 }
 
 .acknowledgementBody {

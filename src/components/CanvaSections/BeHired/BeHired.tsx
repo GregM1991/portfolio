@@ -24,14 +24,10 @@ export function BeHired() {
 			<span id="be-hired" className="anchor" />
 			<div id="be-hired" className={`${styles.content} container`}>
 				<Typewriter />
-				<Typography
-					color="white"
-					variant="ctaBody"
-					className={styles.breakoutLine}
-				>
+				<Typography color="white" className={styles.breakoutLine}>
 					Don&apos;t take too long to think it over!
 				</Typography>
-				<Typography color="white" variant="ctaBody">
+				<Typography color="white">
 					Hopefully I&apos;ve sold you on the Greg Life and piqued your interest
 					enough to warrant getting in touch. Reach me below, I&apos;m always
 					keen for a chat.

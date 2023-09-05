@@ -4,13 +4,13 @@ import {
 	AnimatedImage,
 	Section,
 } from '@/components'
-import styles from './gregLife.styles.module.css'
+import Link from 'next/link'
+import { CUBIC_BEZIER, DURATION, fadeInVariants } from '@/constants/animation'
 import canvaRooftop from '@/assets/images/greg-at-canva-peace-sign.jpg'
 import cuddleCats from '@/assets/images/greg-cuddling-cats-with-grin.jpg'
 import purpleDoodle from '@/assets/svg/purple-heading-doodle.svg'
 import yellowDoodle from '@/assets/svg/hero-default-doodle-2.svg'
-import { CUBIC_BEZIER, DURATION, fadeInVariants } from '@/constants/animation'
-import Link from 'next/link'
+import styles from './gregLife.styles.module.css'
 
 export function GregLife() {
 	return (
@@ -81,7 +81,7 @@ export function GregLife() {
 						className={styles.purpleDoodle}
 					/>
 				</AnimatedTypography>
-				<Typography variant="pLead">
+				<Typography className={styles.pLead}>
 					Sometimes the chance comes along to be part of something truly
 					special. With a cheeky smile and a huge passion for the industry, I
 					offer a willingness and dedication to eat up all there is to learn. I

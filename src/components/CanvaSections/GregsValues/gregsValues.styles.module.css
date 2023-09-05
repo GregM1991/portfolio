@@ -12,6 +12,7 @@
   position: relative;
   padding-right: 5rem;
   opacity: 0;
+  font-size: var(--typography-section-program-heading);
 }
 
 .header::before {

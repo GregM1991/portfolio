@@ -7,6 +7,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-size: var(--typography-cta-banner-body);
+  letter-spacing: -0.01rem;
 }
 
 .wrapper p {
@@ -25,6 +27,10 @@
   font-style: inherit;
   display: inline-block;
   line-height: 1.1;
+}
+
+.ctaLead {
+  font-size: var(--typography-cta-banner-header)
 }
 
 .leadWithBorder {

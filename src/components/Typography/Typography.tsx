@@ -1,23 +1,14 @@
 import { forwardRef } from 'react'
 import { Palette } from '@/types/palette'
-import styles from './typography.styles.module.css'
 import { palette } from '@/theme/theme'
+import styles from './typography.styles.module.css'
 
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
-// It occurs to me that these are not general variants, they are class specific
-type Variant =
-	| 'pLead'
-	| 'h2Rich'
-	| 'programHeader'
-	| 'blockquoteLead'
-	| 'ctaLead'
-	| 'ctaBody'
-	| 'acknowledgementBody'
 
 interface TypographyProps {
 	type?: ElementType
 	styledAs?: ElementType
-	variant?: Variant
+	variant?: 'h2Rich'
 	color?: keyof Palette
 	className?: string
 	children: React.ReactNode
@@ -27,24 +18,24 @@ export const Typography = forwardRef<
 	HTMLHeadingElement & HTMLSpanElement,
 	TypographyProps
 >(function Typography(
-	{ type = 'p', styledAs, variant, color, className, children },
+	{ type = 'p', styledAs = '', variant = '', color, className, children },
 	ref,
 ) {
 	const additiveStyles = {
 		'--color': color ? palette[color] : 'inherit',
 	} as React.CSSProperties
+
+	const classes = [
+		styles[type],
+		styles[styledAs],
+		styles[variant],
+		className,
+	].join(' ')
+
 	const Component = type
-	const typeCSS = styles[type]
-	const styledAsCSS = styledAs ? styles[styledAs] : ''
-	const variantCSS = variant ? styles[variant] : ''
-	const classNameCSS = className ? className : ''
 
 	return (
-		<Component
-			className={`${typeCSS} ${styledAsCSS} ${variantCSS} ${classNameCSS}`}
-			style={additiveStyles}
-			ref={ref}
-		>
+		<Component className={classes} style={additiveStyles} ref={ref}>
 			{children}
 		</Component>
 	)

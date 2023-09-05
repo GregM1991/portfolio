@@ -38,7 +38,7 @@ export function Testimonial({
 				/>
 			</div>
 			<blockquote className={styles.blockquote}>
-				<Typography variant="blockquoteLead">{leadText}</Typography>
+				<Typography className={styles.blockquoteLead}>{leadText}</Typography>
 				<Typography>{bodyText}</Typography>
 				<footer className={styles.footer}>
 					<cite className={styles.cite}>{name}</cite>

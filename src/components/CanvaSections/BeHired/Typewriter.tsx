@@ -10,7 +10,7 @@ export default function Typewriter() {
 	const borderImage = leadWrapperTrigger ? styles.leadWithBorder : ''
 
 	return (
-		<Typography color="white" type="h2" variant="ctaLead">
+		<Typography color="white" type="h2" className={styles.ctaLead}>
 			<motion.span
 				variants={sentence}
 				viewport={{ once: true, amount: 'all' }}

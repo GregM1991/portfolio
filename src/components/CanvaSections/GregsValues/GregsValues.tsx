@@ -24,7 +24,6 @@ export function GregsValues() {
 				<AnimatedTypography
 					type="h2"
 					color="white"
-					variant="programHeader"
 					className={styles.header}
 					variants={fadeInVariants}
 					viewport={{ once: true }}
