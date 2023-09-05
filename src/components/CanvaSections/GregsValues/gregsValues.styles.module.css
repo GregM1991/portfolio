@@ -22,7 +22,7 @@
   display: block;
   width: 120px;
   height: 120px;
-  background: url("../../assets/svg/program-doodle.svg") no-repeat;
+  background: url("../../../assets/svg/program-doodle.svg") no-repeat;
   background-size: auto;
   background-size: 120px 120px;
   transform: rotate(100deg);

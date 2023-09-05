@@ -22,7 +22,7 @@
   right: -40px;
   width: 100px;
   height: 77px;
-  background: url("../../assets/svg/testimonial-doodle.svg") no-repeat;
+  background: url("../../../../assets/svg/testimonial-doodle.svg") no-repeat;
   background-size: contain;
   pointer-events: none;
 }
@@ -37,7 +37,7 @@
   max-width: 0 0 58.3%;
   letter-spacing: 0.03em;
   padding-top: 3.25rem;
-  background: url("../../assets/svg/quote.svg") no-repeat top left;
+  background: url("../../../../assets/svg/quote.svg") no-repeat top left;
   background-size: 50px 40px;
 }
 

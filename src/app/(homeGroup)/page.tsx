@@ -1,7 +1,11 @@
+import { Section, Typography } from '@/components'
+
 export default function Home() {
 	return (
 		<main>
-			<h1>Under construction</h1>
+			<Section ariaLabel="Introduction to Greg's portfolio">
+				<Typography>Hello</Typography>
+			</Section>
 		</main>
 	)
 }

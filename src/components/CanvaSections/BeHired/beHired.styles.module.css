@@ -28,7 +28,7 @@
 }
 
 .leadWithBorder {
-  border-image: url("../../assets/svg/border-box.svg") 15 round;
+  border-image: url("../../../assets/svg/border-box.svg") 15 round;
 }
 
 .textCursor {
