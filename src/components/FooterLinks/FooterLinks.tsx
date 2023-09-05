@@ -1,5 +1,5 @@
 import { Typography, SocialLinks } from '@/components'
-import { NAV_LINKS } from '@/constants/links'
+import { CANVA_NAV_LINKS } from '@/constants/links'
 import styles from './footerLinks.styles.module.css'
 import Link from 'next/link'
 
@@ -11,7 +11,7 @@ export function FooterLinks() {
 					Featured Links
 				</Typography>
 				<ul role="list">
-					{NAV_LINKS.map(link => (
+					{CANVA_NAV_LINKS.map(link => (
 						<li key={link.key} className={styles.link}>
 							<Link href={link.href}>{link.linkText}</Link>
 						</li>

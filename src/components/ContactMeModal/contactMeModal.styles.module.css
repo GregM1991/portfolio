@@ -1,5 +1,5 @@
 .overlay {
-  background: var(--palette-indigo);
+  background: var(--palette-secondary);
   position: fixed;
   inset: 0;
   opacity: 0.4;
@@ -35,6 +35,6 @@
   letter-spacing: .3px;
 }
 
-.modalContainer > ul {
+.content > ul {
   padding-top: 5px;
 }

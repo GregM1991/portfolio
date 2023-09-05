@@ -7,24 +7,32 @@ import { NavLink } from '@/types/links'
 import styles from './header.styles.module.css'
 
 interface HeaderProps {
-	logo: 'canva' | 'normal'
-	navLinks: NavLink[]
+	headerFor: 'canva' | 'normal'
+	navLinks?: NavLink[]
 }
 
-export function Header({ logo, navLinks }: HeaderProps) {
+export function Header({ headerFor, navLinks }: HeaderProps) {
 	const [isChecked, setIsChecked] = useState(false)
+	const stylePrefix = headerFor === 'canva' ? 'canva-' : ''
 
 	const handleClick = () => setIsChecked(checked => !checked)
 
 	return (
-		<header className={styles.header}>
-			<Logo type={logo} />
+		<header className={styles[`${stylePrefix}header`]}>
+			<Logo type={headerFor} />
 			<HamburgerButton isChecked={isChecked} handleClick={handleClick} />
 			<nav className={styles.nav}>
 				<ul role="list" className={styles.menu}>
-					{navLinks.map(link => (
-						<li key={link.key} onClick={handleClick}>
-							<Link className={styles.navLink} href={link.href}>
+					{navLinks?.map(link => (
+						<li
+							key={link.key}
+							onClick={handleClick}
+							className={styles.menuListItem}
+						>
+							<Link
+								className={styles[`${stylePrefix}navLink`]}
+								href={link.href}
+							>
 								{link.linkText}
 							</Link>
 						</li>

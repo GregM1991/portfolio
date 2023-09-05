@@ -47,7 +47,7 @@ export const TESTIMONIALS: Testimonial[] = [
 			'Our time working together at Office-Hub was a blast, Greg brought a great vibe to the small team',
 		bodyText:
 			"If you're looking for a Software Engineer comfortable across the full stack (with a penchant for front end), I can't recommend Greg highly enough. He's a dream to work with - very creative and has a great eye for detail.",
-		name: 'Andy Muprhy (He/Him)',
-		role: 'Snr Full-Stack, Domain',
+		name: 'Andy Murphy (He/Him)',
+		role: 'Snr Full-Stack Engineer, Domain',
 	},
 ]

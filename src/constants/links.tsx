@@ -8,7 +8,7 @@ import {
 
 const ICON_SIZE = '25'
 
-export const NAV_LINKS: NavLink[] = [
+export const CANVA_NAV_LINKS: NavLink[] = [
 	{
 		key: crypto.randomUUID(),
 		linkText: 'Greg Life',

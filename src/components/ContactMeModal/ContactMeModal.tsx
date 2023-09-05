@@ -30,9 +30,9 @@ export function ContactMeModal({
 								📧 Email: <a href="mailto:gregm31@live.com">gregm31@live.com</a>
 							</Typography>
 							<Typography type="span">📱 Phone: +61 407 670 950</Typography>
-							<SocialLinks withTooltip={false} />
 						</div>
 					</Dialog.Description>
+					<SocialLinks withTooltip={false} />
 					<Dialog.Close asChild>
 						<FAB
 							icon={<Cross2Icon />}

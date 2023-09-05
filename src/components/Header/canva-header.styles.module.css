@@ -1,0 +1,66 @@
+.header {
+  composes: header from "./header.styles.module.css";
+  padding: var(--space-4xs) var(--space-l);
+}
+
+.nav {
+  composes: nav from "./header.styles.module.css";
+}
+
+.menu {
+  composes: menu from "./header.styles.module.css";
+}
+
+.menuListItem {
+  composes: menuListItem from "./header.styles.module.css";
+}
+
+.navLink {
+  composes: navLink from "./header.styles.module.css";
+}
+
+.sideMenu {
+  composes: sideMenu from "./header.styles.module.css";
+}
+
+.hambContainer {
+  composes: hambContainer;
+}
+
+.hamb{
+  composes: hamb;
+}
+
+.hambLine {
+  composes: hambLine;
+}
+
+@media (min-width: 992px) {
+  .header {
+    composes: header
+  }
+
+  .nav {
+    composes: nav
+  }
+
+  .menu {
+    composes: menu
+  }
+
+  .menuListItem {
+    composes: menuListItem
+  }
+
+  .navLink {
+    composes: navLink
+  }
+
+  .hambContainer {
+    composes: hambContainer
+  }
+
+  .button {
+    composes: button
+  }
+}

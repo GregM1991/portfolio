@@ -1,6 +1,6 @@
-import '@/app/global.css'
-import '@/app/canva-variables.css'
-import '@/app/fonts.css'
+import '@/app/(canvaGroup)/canva.css'
+import '@/app/(canvaGroup)/canva-variables.css'
+import '@/app/(canvaGroup)/fonts.css'
 
 interface PasswordProtectLayoutProps {
 	children: React.ReactNode

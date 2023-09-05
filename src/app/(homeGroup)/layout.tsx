@@ -1,7 +1,15 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components'
-import { NAV_LINKS } from '@/constants/links'
+import { Arvo } from 'next/font/google'
 import '@/app/global.css'
+import '@/app/(homeGroup)/home-variables.css'
+
+const arvo = Arvo({
+	weight: ['400', '700'],
+	style: ['normal'],
+	subsets: ['latin'],
+	display: 'swap',
+})
 
 export const metadata: Metadata = {
 	title: "Greg Martin's portfolio 🎨",
@@ -15,8 +23,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>
-				<Header logo="normal" navLinks={NAV_LINKS} />
+			<body className={arvo.className}>
+				<Header headerFor="normal" />
 				{children}
 			</body>
 		</html>

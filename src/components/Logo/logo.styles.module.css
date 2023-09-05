@@ -1,5 +1,5 @@
 .logo {
-	font-weight: 700;
+	font-family: var(--typography-heading-font-family);
   font-size: 1.4rem;
 	cursor: pointer;
 }
@@ -13,13 +13,21 @@
 
 .normal {
 	composes: logo;
-	background: var(--palette-primary);
+	font-weight: 700;
+	color: var(--palette-primary);
 }
 
 @media (min-width: 992px) {
 	.logo {
 		line-height: 1.3;
 		font-size: 2.3rem;
-		padding-left: var(--space-xs)
+	}
+
+	.canva {
+		padding-left: var(--space-xs);
+	}
+
+	.normal {
+		padding-left: 0;
 	}
 }

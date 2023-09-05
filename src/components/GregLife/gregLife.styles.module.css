@@ -49,7 +49,7 @@
 }
 
 .link {
-	color: var(--palette-purple);
+	color: var(--palette-primary);
 }
 
 .link:hover {
