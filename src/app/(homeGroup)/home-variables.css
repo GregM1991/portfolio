@@ -4,6 +4,8 @@
 :root {
   /* palette */
   --palette-primary: #1B5452;
+  --palette-primary-dark: #124341;
+  --palette-secondary: #7BC7B3;
   --palette-white: #fff;
   --palette-gray-medium: #cbd3da;
 	--palette-gray-dark: #293039;

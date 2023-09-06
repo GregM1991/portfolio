@@ -6,8 +6,6 @@ import {
 	LinkedInLogoIcon,
 } from '@radix-ui/react-icons'
 
-const ICON_SIZE = '25'
-
 export const CANVA_NAV_LINKS: NavLink[] = [
 	{
 		key: crypto.randomUUID(),
@@ -52,42 +50,28 @@ export const SOCIAL_LINKS: SocialLink[] = [
 		key: crypto.randomUUID(),
 		linkTooltipText: 'GitHub',
 		href: 'https://github.com/GregM1991',
-		icon: (
-			<GitHubLogoIcon aria-hidden="true" height={ICON_SIZE} width={ICON_SIZE} />
-		),
+		icon: GitHubLogoIcon,
 		screenReader: 'Navigate to Gregs Linked-in page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'linkedIn',
 		href: 'https://www.linkedin.com/in/greg-martin-76688678/',
-		icon: (
-			<LinkedInLogoIcon
-				aria-hidden="true"
-				height={ICON_SIZE}
-				width={ICON_SIZE}
-			/>
-		),
+		icon: LinkedInLogoIcon,
 		screenReader: 'Navigate to Gregs Linked-in page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'Instagram',
 		href: 'https://www.instagram.com/grillustration_/',
-		icon: (
-			<InstagramLogoIcon
-				aria-hidden="true"
-				height={ICON_SIZE}
-				width={ICON_SIZE}
-			/>
-		),
+		icon: InstagramLogoIcon,
 		screenReader: 'Navigate to Gregs Instagram page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'Resume',
 		href: '/Greg_Martin_Resume_2023.pdf',
-		icon: <FileIcon aria-hidden="true" height={ICON_SIZE} width={ICON_SIZE} />,
+		icon: FileIcon,
 		screenReader: 'Download a pdf version of Gregs resume',
 		attributes: {
 			download: 'Greg_Martin_Resume_2023',

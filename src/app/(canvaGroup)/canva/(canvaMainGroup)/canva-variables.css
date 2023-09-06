@@ -1,6 +1,7 @@
 :root {
-	--palette-secondary: #280f91;
 	--palette-primary: #7d2ae8;
+	--palette-primary-dark: #6318c5;
+	--palette-secondary: #280f91;
 	--palette-pink: #ffa5f0;
 	--palette-light-pink: #ffe6ff;
 	--palette-red: #ff5055;

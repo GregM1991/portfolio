@@ -18,8 +18,8 @@ export function FooterLinks() {
 					))}
 				</ul>
 				<div className={styles.footerBottom}>
-					<SocialLinks />
-					<Typography canva type="p" color="white" className={styles.copywrite}>
+					<SocialLinks withTooltip />
+					<Typography canva color="white" className={styles.copywrite}>
 						&copy; Greg 2023. All rights reserved.
 					</Typography>
 				</div>

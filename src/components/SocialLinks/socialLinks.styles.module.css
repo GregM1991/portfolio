@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   gap: var(--space-s);
-  color: inherit;
+  color: var(--color);
   margin: 0;
   padding: 0;
 }

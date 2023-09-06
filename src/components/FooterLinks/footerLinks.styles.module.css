@@ -43,7 +43,7 @@
 }
 
 .copywrite {
-  --typography-body: 0.8125rem;
+  font-size: 0.8125rem;
   letter-spacing: 0.3px;
   opacity: 0.8
 }

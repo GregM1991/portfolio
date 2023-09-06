@@ -24,7 +24,7 @@ export const canvaPalette: CanvaPalette = {
 
 export const palette: Palette = {
 	primary: '#1B5452',
-	secondary: 'red',
+	secondary: '#7BC7B3',
 	white: '#fff',
 	gray: '#6c757d',
 	'gray-light': '#f8f9f9',

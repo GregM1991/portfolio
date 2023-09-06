@@ -2,12 +2,17 @@
   border-radius: var(--radii-medium);
   border: 2px solid transparent;
   cursor: pointer;
+  transition: all .15s ease-in-out
 }
 
 /* variants */
 .primary {
   background-color: var(--palette-primary);
   color: var(--palette-white);
+}
+
+.primary:hover {
+  background-color: var(--palette-primary-dark)
 }
 
 .secondary {
@@ -23,6 +28,10 @@
   background-color: var(--palette-white);
   border: 2px solid var(--palette-primary);
   color: var(--palette-primary);
+}
+
+.outline:hover {
+  background-color: var(--palette-light)
 }
 
 /* sizes */
