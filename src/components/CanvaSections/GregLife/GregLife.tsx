@@ -63,6 +63,7 @@ export function GregLife() {
 			<div className={styles.type}>
 				<AnimatedTypography
 					type="h1"
+					variant="h1Lead"
 					variants={fadeInVariants}
 					initial="hidden"
 					animate="visible"
@@ -81,7 +82,7 @@ export function GregLife() {
 						className={styles.purpleDoodle}
 					/>
 				</AnimatedTypography>
-				<Typography className={styles.pLead}>
+				<Typography canva className={styles.pLead}>
 					Sometimes the chance comes along to be part of something truly
 					special. With a cheeky smile and a huge passion for the industry, I
 					offer a willingness and dedication to eat up all there is to learn. I

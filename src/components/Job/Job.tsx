@@ -38,10 +38,12 @@ export function Job({
 	return (
 		<div ref={wrapperRef} className={`${styles.wrapper} ${styles[layout]}`}>
 			<div className={styles.textWrapper}>
-				<Typography type="h3" color="dark-red">
+				<Typography canva type="h3" color="dark-red">
 					{title}
 				</Typography>
-				<Typography color="dark-red">{jobDescription}</Typography>
+				<Typography canva color="dark-red">
+					{jobDescription}
+				</Typography>
 				{jobProjects.map((project: ProjectType) => (
 					<Project
 						key={project.key}

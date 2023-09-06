@@ -13,8 +13,12 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
 ) {
 	return (
 		<div className={styles.card} ref={ref}>
-			<Typography type="h3">{title}</Typography>
-			<Typography className={styles.valueBodyText}>{body}</Typography>
+			<Typography canva type="h3">
+				{title}
+			</Typography>
+			<Typography canva className={styles.valueBodyText}>
+				{body}
+			</Typography>
 		</div>
 	)
 })

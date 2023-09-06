@@ -1,15 +1,29 @@
+import clsx from 'clsx'
 import { forwardRef } from 'react'
-import { Palette } from '@/types/palette'
-import { palette } from '@/theme/theme'
+import { CanvaPalette, Palette } from '@/types/palette'
+import { getColorFromPalette } from '@/theme/theme'
 import styles from './typography.styles.module.css'
 
 type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+type Sizes =
+	| 'two-xs'
+	| 'xs'
+	| 's'
+	| 'm'
+	| 'l'
+	| 'xl'
+	| 'two-xl'
+	| 'three-xl'
+	| 'four-xl'
+	| 'five-xl'
+	| 'six-xl'
 
 interface TypographyProps {
 	type?: ElementType
-	styledAs?: ElementType
-	variant?: 'h2Rich'
-	color?: keyof Palette
+	canva?: boolean
+	variant?: 'h2Rich' | 'h1Lead'
+	size?: Sizes
+	color?: keyof CanvaPalette | keyof Palette
 	className?: string
 	children: React.ReactNode
 }
@@ -18,21 +32,27 @@ export const Typography = forwardRef<
 	HTMLHeadingElement & HTMLSpanElement,
 	TypographyProps
 >(function Typography(
-	{ type = 'p', styledAs = '', variant = '', color, className, children },
+	{
+		type = 'p',
+		canva = false,
+		variant = '',
+		size = '',
+		color,
+		className,
+		children,
+	},
 	ref,
 ) {
-	const additiveStyles = {
-		'--color': color ? palette[color] : 'inherit',
-	} as React.CSSProperties
-
-	const classes = [
-		styles[type],
-		styles[styledAs],
-		styles[variant],
-		className,
-	].join(' ')
-
+	const classes = clsx([styles[type], styles[variant], styles[size], className])
 	const Component = type
+	let colorValue: string | undefined
+	if (color) {
+		colorValue = getColorFromPalette(color, canva)
+	}
+
+	const additiveStyles = {
+		'--color': color ? colorValue : 'inherit',
+	} as React.CSSProperties
 
 	return (
 		<Component className={classes} style={additiveStyles} ref={ref}>

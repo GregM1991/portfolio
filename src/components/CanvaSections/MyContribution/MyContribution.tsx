@@ -30,7 +30,7 @@ export function MyContribution() {
 	return (
 		<AnimatedSection
 			ref={wrapperRef}
-			bgColor="indigo"
+			bgColor="secondary"
 			ariaLabel="My contribution"
 			variants={fadeInVariants}
 			viewport={{ once: true }}
@@ -56,15 +56,15 @@ export function MyContribution() {
 					/>
 				</motion.div>
 				<div className={styles.textWrapper}>
-					<Typography type="h2" color="white" variant="h2Rich">
+					<Typography canva type="h2" color="white" variant="h2Rich">
 						My contribution
 					</Typography>
-					<Typography color="white">
+					<Typography canva color="white">
 						With three years of Software Engineering under my belt, plus a past
 						life spent as a Graphic Designer, I can walk the turmultuous line
 						between engineering and design.
 					</Typography>
-					<Typography color="white">
+					<Typography canva color="white">
 						I kicked off my career as a full-stack developer traversing both
 						ends of the technology spectrum and I believe this has hugely
 						improved my scope of technical understanding. Knowledge of how the

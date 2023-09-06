@@ -1,10 +1,10 @@
 import { forwardRef } from 'react'
 import styles from './section.styles.module.css'
-import { Palette } from '@/types/palette'
-import { palette } from '@/theme/theme'
+import { CanvaPalette } from '@/types/palette'
+import { canvaPalette } from '@/theme/theme'
 
 interface SectionProps {
-	bgColor?: keyof Palette
+	bgColor?: keyof CanvaPalette
 	children: React.ReactNode
 	ariaLabel: string
 	variant?: 'hero'
@@ -24,7 +24,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
 	ref,
 ) {
 	const additiveStyles = {
-		'--background-color': palette[bgColor],
+		'--background-color': canvaPalette[bgColor],
 	} as React.CSSProperties
 
 	return (

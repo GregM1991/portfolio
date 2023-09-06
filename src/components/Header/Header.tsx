@@ -11,6 +11,9 @@ interface HeaderProps {
 	navLinks?: NavLink[]
 }
 
+// TODO: The whole canva/normal thing should be extracted to a theme...
+// or I could pull out the path and check if canva is there instead of
+// passing a prop?
 export function Header({ headerFor, navLinks }: HeaderProps) {
 	const [isChecked, setIsChecked] = useState(false)
 	const stylePrefix = headerFor === 'canva' ? 'canva-' : ''
@@ -40,7 +43,11 @@ export function Header({ headerFor, navLinks }: HeaderProps) {
 				</ul>
 				<ContactMeModal
 					trigger={
-						<Button aria-controls="radix-:R1mj9:" className={styles.button}>
+						<Button
+							aria-controls="radix-:R1mj9:"
+							className={styles.button}
+							variant={headerFor === 'canva' ? 'primary' : 'outline'}
+						>
 							Contact me
 						</Button>
 					}

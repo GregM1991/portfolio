@@ -2,15 +2,7 @@
 	color: var(--color);
 }
 
-.h1 {
-	composes: color;
-	font-size: var(--typography-hero-text-header);
-	line-height: 1.1;
-	font-weight: 700;
-	letter-spacing: -0.2rem;
-}
-
-.h2, .h3, .h4, .h5, .h6, .span, .p {
+.h1, .h2, .h3, .h4, .h5, .h6, .span, .p {
   composes: color;
 }
 
@@ -18,11 +10,23 @@
   composes: color;
 }
 
+.h1Lead {
+	composes: h1;
+	font-size: var(--typography-hero-text-header);
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: -0.2rem;
+}
+
 .h2Rich {
   font-size: var(--typography-rich-header-text)
 }
 
-.acknowledgementBody {
-  font-size: 0.9375rem;
-  letter-spacing: 0
+.two-xs {
+	font-size: var(--step--2);
+}
+
+.six-xl {
+	font-size: var(--step-8);
+	line-height: 1.2;
 }

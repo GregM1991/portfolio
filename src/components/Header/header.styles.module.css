@@ -34,6 +34,7 @@
 .menu {
   padding-left: var(--space-l);
   padding-top: 90px;
+  margin: 0;
 }
 
 .menuListItem {

@@ -38,8 +38,10 @@ export function Testimonial({
 				/>
 			</div>
 			<blockquote className={styles.blockquote}>
-				<Typography className={styles.blockquoteLead}>{leadText}</Typography>
-				<Typography>{bodyText}</Typography>
+				<Typography canva className={styles.blockquoteLead}>
+					{leadText}
+				</Typography>
+				<Typography canva>{bodyText}</Typography>
 				<footer className={styles.footer}>
 					<cite className={styles.cite}>{name}</cite>
 					<small>{role}</small>

@@ -16,6 +16,7 @@ export function MyJobs() {
 		>
 			<span id="projects" className="anchor" />
 			<Typography
+				canva
 				type="h2"
 				color="dark-red"
 				variant="h2Rich"

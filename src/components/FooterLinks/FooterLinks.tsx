@@ -7,7 +7,7 @@ export function FooterLinks() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={`${styles.linkWrapper} container`}>
-				<Typography type="h2" color="white" className={styles.linkHeader}>
+				<Typography canva type="h2" color="white" className={styles.linkHeader}>
 					Featured Links
 				</Typography>
 				<ul role="list">
@@ -19,7 +19,7 @@ export function FooterLinks() {
 				</ul>
 				<div className={styles.footerBottom}>
 					<SocialLinks />
-					<Typography type="p" color="white" className={styles.copywrite}>
+					<Typography canva type="p" color="white" className={styles.copywrite}>
 						&copy; Greg 2023. All rights reserved.
 					</Typography>
 				</div>

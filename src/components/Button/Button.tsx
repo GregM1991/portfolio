@@ -1,9 +1,12 @@
 import { forwardRef } from 'react'
 import { DialogTriggerProps } from '@radix-ui/react-dialog'
 import styles from './button.styles.module.css'
+import clsx from 'clsx'
 
 interface ButtonProps {
-	variant?: 'primary' | 'secondary'
+	variant?: 'primary' | 'secondary' | 'outline'
+	size?: 'regular' | 'large'
+	fluid?: boolean
 	className?: string
 	children: React.ReactNode
 }
@@ -11,13 +14,26 @@ interface ButtonProps {
 export const Button = forwardRef<
 	HTMLButtonElement,
 	ButtonProps & DialogTriggerProps & React.RefAttributes<HTMLButtonElement>
->(function Button({ variant = 'primary', className, children, ...rest }, ref) {
+>(function Button(
+	{
+		variant = 'primary',
+		size = 'regular',
+		fluid = false,
+		className,
+		children,
+		...rest
+	},
+	ref,
+) {
+	const classes = clsx(
+		styles.wrapper,
+		styles[variant],
+		styles[size],
+		{ [styles.fluid]: fluid },
+		className,
+	)
 	return (
-		<button
-			ref={ref}
-			className={`${styles.wrapper} ${styles[variant]} ${className}`}
-			{...rest}
-		>
+		<button ref={ref} className={classes} {...rest}>
 			{children}
 		</button>
 	)

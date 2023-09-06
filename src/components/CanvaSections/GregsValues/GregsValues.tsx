@@ -32,7 +32,7 @@ export function GregsValues() {
 				>
 					Greg&apos;s values
 				</AnimatedTypography>
-				<Typography color="white" className={styles.body}>
+				<Typography canva color="white" className={styles.body}>
 					One of the many reasons I&apos;m so keen on Canva is how well the
 					company values align with mine. I&apos;ve found it hugely motivating
 					learning about how Canva stands behind this code of ethics and

@@ -54,7 +54,10 @@
   --step-3: clamp(1.51rem, calc(1.36rem + 0.77vw), 1.95rem);
   --step-4: clamp(1.81rem, calc(1.60rem + 1.09vw), 2.44rem);
   --step-5: clamp(2.18rem, calc(1.87rem + 1.52vw), 3.05rem);
-
+  --step-6: clamp(2.61rem, calc(1.86rem + 3.75vw), 4.77rem);
+  --step-7: clamp(3.14rem, calc(2.15rem + 4.91vw), 5.96rem);
+  --step-8: clamp(3.76rem, calc(2.48rem + 6.41vw), 7.45rem);
+  
   --typography-heading-font-family: 'Arvo', sans-serif;
   --typography-body-font-family: sans-serif;
 }

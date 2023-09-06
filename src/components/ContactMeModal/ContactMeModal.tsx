@@ -20,16 +20,18 @@ export function ContactMeModal({
 				<Dialog.Overlay className={styles.overlay} />
 				<Dialog.Content className={styles.content}>
 					<Dialog.Title>
-						<Typography type="span" styledAs="h4" color="indigo">
+						<Typography canva type="span" color="secondary">
 							Get in touch
 						</Typography>
 					</Dialog.Title>
 					<Dialog.Description>
 						<div className={styles.modalContainer}>
-							<Typography type="span">
+							<Typography canva type="span">
 								📧 Email: <a href="mailto:gregm31@live.com">gregm31@live.com</a>
 							</Typography>
-							<Typography type="span">📱 Phone: +61 407 670 950</Typography>
+							<Typography canva type="span">
+								📱 Phone: +61 407 670 950
+							</Typography>
 						</div>
 					</Dialog.Description>
 					<SocialLinks withTooltip={false} />

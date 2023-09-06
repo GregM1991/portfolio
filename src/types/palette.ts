@@ -1,7 +1,7 @@
-export interface Palette {
+export interface CanvaPalette {
 	blue: string
-	indigo: string
-	purple: string
+	primary: string
+	secondary: string
 	pink: string
 	'light-pink': string
 	red: string
@@ -15,9 +15,18 @@ export interface Palette {
 	gray: string
 	'gray-light': string
 	'gray-dark': string
-	primary: string
-	secondary: string
 	light: string
 	dark: string
 	blendBlue: string
+}
+
+export interface Palette {
+	primary: string
+	secondary: string
+	white: string
+	gray: string
+	'gray-light': string
+	'gray-dark': string
+	light: string
+	dark: string
 }
