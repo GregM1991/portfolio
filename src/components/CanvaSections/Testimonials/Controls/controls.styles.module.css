@@ -1,8 +1,9 @@
 .arrowButton {
+  display: none;
   position: absolute;
   top: calc(50% - 24px);
   border: 1px solid var(--palette-light);
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .btnRight {
@@ -13,9 +14,9 @@
   left: 0;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .arrowButton {
-    display: none;
+    display: grid;
   }
 }
 
