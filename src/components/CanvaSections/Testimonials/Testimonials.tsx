@@ -11,6 +11,20 @@ import styles from './testimonials.styles.module.css'
 export function Testimonials() {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
+	const handleControlRightClick = () => {
+		if (currentTestimonial === 3) return
+		setCurrentTestimonial(currentTestimonial + 1)
+	}
+
+	const handleControlLeftClick = () => {
+		if (currentTestimonial === 0) return
+		setCurrentTestimonial(currentTestimonial - 1)
+	}
+
+	const handlePaginationClick = (num: number) => {
+		setCurrentTestimonial(num)
+	}
+
 	return (
 		<Section
 			ariaLabel="Testimonials about Greg as a person/developer"
@@ -37,15 +51,16 @@ export function Testimonials() {
 						/>
 					</AnimatePresence>
 				</div>
-				<Controls
-					currentTestimonial={currentTestimonial}
-					setCurrentTestimonial={setCurrentTestimonial}
-				/>
 				<Pagination
 					currentTestimonial={currentTestimonial}
-					setCurrentTestimonial={setCurrentTestimonial}
+					onClick={handlePaginationClick}
 				/>
 			</motion.div>
+			<Controls
+				currentTestimonial={currentTestimonial}
+				onRightClick={handleControlRightClick}
+				onLeftClick={handleControlLeftClick}
+			/>
 		</Section>
 	)
 }

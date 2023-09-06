@@ -7,9 +7,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 35px;
-  opacity: 0;
 }
 
 .gridWrapper {
   display: grid;
+  min-height: content;
 }
