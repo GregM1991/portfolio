@@ -19,7 +19,7 @@ Welcome to my write up of my custom-built portfolio for Canva. I'm gonna dive in
 
 **TLDR: I want a job at Canva.. I'm hoping this impresses someone enough to get me into the interview process.**
 
-So it's been a while since I looked at my portfolio, about 3 years. I'm sure this is common for most developers, I took a look at it and borked. She no good. So it needed a touch up to say the least.
+So it's been a while since I looked at my portfolio, about 3 years. I'm sure this is common for most developers but I took a look at it and it's borked. So it needed a touch up to say the least.
 
 Since I started doing Software Engineering, Canva has been the unicorn, the place to work, the Holy Grail. So when I was scrolling through their [canva-life](https://www.lifeatcanva.com/en/canva-life/) page and I had an interesting idea to take the page, and map my portfolio content on to it. I did this for a few reasons: 
 

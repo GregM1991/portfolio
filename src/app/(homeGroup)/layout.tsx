@@ -13,7 +13,7 @@ const arvo = Arvo({
 })
 
 const raleway = Raleway({
-	weight: ['400', '100'],
+	weight: ['400', '200'],
 	style: ['normal'],
 	subsets: ['latin'],
 	display: 'swap',

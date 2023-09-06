@@ -22,6 +22,7 @@ interface TypographyProps {
 	type?: ElementType
 	canva?: boolean
 	variant?: 'h2Rich' | 'h1Lead'
+	weight?: 'normal' | 'light' | 'bold'
 	size?: Sizes
 	color?: keyof CanvaPalette | keyof Palette
 	className?: string
@@ -36,6 +37,7 @@ export const Typography = forwardRef<
 		type = 'p',
 		canva = false,
 		variant = '',
+		weight = 'normal',
 		size = '',
 		color,
 		className,
@@ -43,7 +45,13 @@ export const Typography = forwardRef<
 	},
 	ref,
 ) {
-	const classes = clsx([styles[type], styles[variant], styles[size], className])
+	const classes = clsx([
+		styles[type],
+		styles[variant],
+		styles[size],
+		styles[weight],
+		className,
+	])
 	const Component = type
 	let colorValue: string | undefined
 	if (color) {

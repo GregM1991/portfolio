@@ -22,11 +22,58 @@
   font-size: var(--typography-rich-header-text)
 }
 
+.normal {
+	font-weight: 400;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.bold {
+	font-weight: 700;
+}
+
 .two-xs {
 	font-size: var(--step--2);
 }
 
+.xs {
+	font-size: var(--step--1);
+}
+
+.s {
+	font-size: var(--step-0);
+}
+
+.m {
+	font-size: var(--step-1);
+}
+
+.l {
+	font-size: var(--step-2);
+}
+
+.xl {
+	font-size: var(--step-3);
+}
+
+.two-xl {
+	font-size: var(--step-4);
+}
+
+.three-xl {
+	font-size: var(--step-5);
+}
+
+.four-xl {
+	font-size: var(--step-6);
+}
+
+.five-xl {
+	font-size: var(--step-7);
+}
+
 .six-xl {
 	font-size: var(--step-8);
-	line-height: 1.2;
 }
