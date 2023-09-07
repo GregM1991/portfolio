@@ -60,6 +60,5 @@
   --step-7: clamp(4.77rem, calc(4.41rem + 1.77vw), 5.96rem);
   --step-8: clamp(5.96rem, calc(5.52rem + 2.21vw), 7.45rem);
   
-  --typography-heading-font-family: 'Arvo', sans-serif;
   --typography-body-font-family: sans-serif;
 }

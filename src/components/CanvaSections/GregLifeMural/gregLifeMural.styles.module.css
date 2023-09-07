@@ -41,7 +41,7 @@
 .text {
   text-align: center;
   font-size: var(--typography-greg-life);
-  font-family: var(--typography-heading-font-family);
+  font-family: var(--font-ezra);
   font-weight: 700;
   letter-spacing: -0.2rem;
   grid-column: 1 / 3;

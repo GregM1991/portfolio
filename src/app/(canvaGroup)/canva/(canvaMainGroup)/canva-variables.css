@@ -16,7 +16,6 @@
 	--radii-medium: 6px;
 	--radii-large: 1rem;
 	--radii-full: 9999px;
-	--typography-heading-font-family: ezramedium, sans-serif;
 	--typography-body-font-family: sans-serif;
 	/* this is not scalable (below), if we need to add another size, we have to go everywhere
 	   where the sizes are used in the css and change them to their new set */

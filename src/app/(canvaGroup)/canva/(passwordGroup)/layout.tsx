@@ -1,6 +1,6 @@
-import '@/app/(canvaGroup)/canva/(canvaMainGroup)/canva-fonts.css'
 import '@/app/(canvaGroup)/canva/(canvaMainGroup)/canva-variables.css'
 import '@/app/(canvaGroup)/canva/(canvaMainGroup)/canva.css'
+import { ezra } from '../(canvaMainGroup)/layout'
 
 interface PasswordProtectLayoutProps {
 	children: React.ReactNode
@@ -11,7 +11,7 @@ export default function PasswordProtectLayout({
 }: PasswordProtectLayoutProps) {
 	return (
 		<html>
-			<body>{children}</body>
+			<body className={ezra.className}>{children}</body>
 		</html>
 	)
 }

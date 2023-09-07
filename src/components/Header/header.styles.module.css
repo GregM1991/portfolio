@@ -43,7 +43,7 @@
 }
 
 .navLink {
-  font-family: var(--typography-heading-font-family);
+  font-family: var(--font-ezra);
   font-size: var(--step-3);
   color: var(--palette-gray-dark);
 }

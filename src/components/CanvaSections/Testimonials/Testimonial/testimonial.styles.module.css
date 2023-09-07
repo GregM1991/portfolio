@@ -42,7 +42,7 @@
 }
 
 .blockquoteLead {
-  font-family: var(--typography-heading-font-family);
+  font-family: var(--font-ezra);
   font-size: var(--typography-blockquote-lead);
   line-height: 1.1;
   font-weight: 700;
