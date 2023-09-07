@@ -3,6 +3,7 @@ import {
 	AnimatedTypography,
 	AnimatedImage,
 	CanvaSection,
+	VisuallyHidden,
 } from '@/components'
 import Link from 'next/link'
 import { CUBIC_BEZIER, DURATION, fadeInVariants } from '@/constants/animation'
@@ -94,6 +95,7 @@ export function GregLife() {
 						className={styles.link}
 					>
 						here
+						<VisuallyHidden>on my GitHub</VisuallyHidden>
 					</Link>{' '}
 					👀
 				</Typography>
