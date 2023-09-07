@@ -1,10 +1,10 @@
 import { NavLink, SocialLink } from '@/types/links'
 import {
-	FileIcon,
-	GitHubLogoIcon,
-	InstagramLogoIcon,
-	LinkedInLogoIcon,
-} from '@radix-ui/react-icons'
+	FaInstagram,
+	FaGithub,
+	FaLinkedinIn,
+	FaFileArrowDown,
+} from 'react-icons/fa6'
 
 export const CANVA_NAV_LINKS: NavLink[] = [
 	{
@@ -50,28 +50,28 @@ export const SOCIAL_LINKS: SocialLink[] = [
 		key: crypto.randomUUID(),
 		linkTooltipText: 'GitHub',
 		href: 'https://github.com/GregM1991',
-		icon: GitHubLogoIcon,
+		icon: FaGithub,
 		screenReader: 'Navigate to Gregs Linked-in page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'linkedIn',
 		href: 'https://www.linkedin.com/in/greg-martin-76688678/',
-		icon: LinkedInLogoIcon,
+		icon: FaLinkedinIn,
 		screenReader: 'Navigate to Gregs Linked-in page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'Instagram',
 		href: 'https://www.instagram.com/grillustration_/',
-		icon: InstagramLogoIcon,
+		icon: FaInstagram,
 		screenReader: 'Navigate to Gregs Instagram page',
 	},
 	{
 		key: crypto.randomUUID(),
 		linkTooltipText: 'Resume',
 		href: '/Greg_Martin_Resume_2023.pdf',
-		icon: FileIcon,
+		icon: FaFileArrowDown,
 		screenReader: 'Download a pdf version of Gregs resume',
 		attributes: {
 			download: 'Greg_Martin_Resume_2023',

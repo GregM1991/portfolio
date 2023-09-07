@@ -1,6 +1,6 @@
 'use client'
 import * as Dialog from '@radix-ui/react-dialog'
-import { Cross2Icon } from '@radix-ui/react-icons'
+import { RxCross1 } from 'react-icons/rx'
 import { FAB, SocialLinks, Typography } from '@/components'
 import styles from './contactMeModal.styles.module.css'
 
@@ -37,7 +37,7 @@ export function ContactMeModal({
 					<SocialLinks withTooltip={false} />
 					<Dialog.Close asChild>
 						<FAB
-							icon={<Cross2Icon />}
+							icon={<RxCross1 />}
 							ariaLabel="Close"
 							className={styles.close}
 						/>

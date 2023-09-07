@@ -1,10 +1,5 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-m) var(--space-m-l);
-  max-width: 1400px;
-  gap: var(--space-s);
-  margin: auto;
+  composes: flex-column-wrapper from global;
 }
 
 .tagLine {

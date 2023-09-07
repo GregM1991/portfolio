@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
 import { values } from '@/constants/values'
 import { fadeInUpVariants } from '@/constants/animation'
 import { Card } from './Card'
@@ -43,14 +43,14 @@ export function CardCarousel() {
 			</div>
 			<div className={styles.buttonWrapper}>
 				<FAB
-					icon={<ChevronLeftIcon />}
+					icon={<GoChevronLeft />}
 					ariaLabel="left arrow icon"
 					disabled={transformValue >= 0}
 					className={styles.button}
 					onClick={onClickLeft}
 				/>
 				<FAB
-					icon={<ChevronRightIcon />}
+					icon={<GoChevronRight />}
 					ariaLabel="right arrow icon"
 					disabled={transformValue < -80}
 					className={styles.button}

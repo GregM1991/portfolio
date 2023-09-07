@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
+
 import { FAB } from '@/components'
 import styles from './controls.styles.module.css'
 
@@ -15,7 +16,7 @@ export const Controls = ({
 }: ControlsProps) => (
 	<>
 		<FAB
-			icon={<ChevronLeftIcon />}
+			icon={<GoChevronLeft />}
 			ariaLabel="arrow left button"
 			disabled={currentTestimonial === 0}
 			className={`${styles.arrowButton} ${styles.btnLeft}`}
@@ -23,7 +24,7 @@ export const Controls = ({
 			tab-index={0}
 		/>
 		<FAB
-			icon={<ChevronRightIcon />}
+			icon={<GoChevronRight />}
 			ariaLabel="arrow right button"
 			disabled={currentTestimonial === 3}
 			className={`${styles.arrowButton} ${styles.btnRight}`}

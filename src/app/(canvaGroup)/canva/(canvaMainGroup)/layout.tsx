@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 
 export const ezra = localFont({
 	src: '../../../../../public/fonts/ezra_medium-webfont.woff2',
+	display: 'swap',
+	fallback: ['sans-serif'],
 	variable: '--font-ezra',
 })
 

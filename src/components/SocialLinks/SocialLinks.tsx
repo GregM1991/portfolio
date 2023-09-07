@@ -26,7 +26,7 @@ export function SocialLinks({
 	size = 25,
 	canva = false,
 }: SocialLinks) {
-	// Gotta be a theme wrapper or something, can't do this everywhere
+	// TODO: Gotta be a theme wrapper or something, can't do this everywhere
 	let colorValue: string | undefined
 	if (color) {
 		colorValue = getColorFromPalette(color, canva)

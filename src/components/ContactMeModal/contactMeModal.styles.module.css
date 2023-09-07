@@ -23,10 +23,14 @@
 }
 
 .close {
+  display: grid;
+  place-items: center;
   position: absolute;
   background-color: var(--palette-light-pink);
   top: 5px;
   right: 0;
+  font-size: 15px;
+  border: none;
 }
 
 .modalContainer {

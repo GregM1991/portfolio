@@ -1,0 +1,3 @@
+.wrapper {
+  composes: flex-column-wrapper from global;
+}

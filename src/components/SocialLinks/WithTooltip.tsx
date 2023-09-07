@@ -16,7 +16,7 @@ export const WithTooltip = ({ link, size }: SocialLinkProps) => {
 					{...(link.attributes ? link.attributes : {})}
 				>
 					<>
-						<Icon height={size} width={size} aria-hidden="true" />
+						<Icon aria-hidden="true" style={{ fontSize: `${size}px` }} />
 						<VisuallyHidden>{link.screenReader}</VisuallyHidden>
 					</>
 				</Link>

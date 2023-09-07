@@ -70,7 +70,7 @@ export function MyContribution() {
 						improved my scope of technical understanding. Knowledge of how the
 						front and back end interact with each other is of course key to
 						defining your structural and architectural needs. But my heart is
-						truly with the front end as it allows me express my creative side
+						truly with the front end as it allows me to express my creative side
 						and build beautiful, articulate software.
 					</Typography>
 				</div>

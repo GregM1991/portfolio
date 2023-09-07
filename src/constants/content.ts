@@ -11,3 +11,10 @@ export const INTRO_COPY = {
 		'Just a Full-Stack Engineer, standing in front of JavaScript, asking it to love him.',
 	body: [introP1, introP2, introP3],
 }
+
+export const SKILLS_COPY = {
+	title: 'My Skills',
+	body: [
+		'I kicked off my career as a full-stack developer traversing both ends of the technology spectrum. I believe this has hugely improved my scope of technical understanding. Knowledge of how the front and back end interact with each other is, of course, key to defining your structural and architectural needs. But my heart is truly with the front end as it allows me to express my creative side and build beautiful, articulate software.',
+	],
+}
