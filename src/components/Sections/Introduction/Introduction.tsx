@@ -1,24 +1,24 @@
-import { Section, SocialLinks, Typography } from '@/components'
+import { CanvaSection, SocialLinks, Typography } from '@/components'
 import Image from 'next/image'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
+import { INTRO_COPY } from '@/constants/content'
 
 export function Introduction() {
 	return (
-		<Section ariaLabel="Introduction to Greg's portfolio">
+		<section aria-label="Introduction to Greg's portfolio">
 			<div className={styles.wrapper}>
 				<SocialLinks size={20} color="secondary" />
-				<Typography color="primary" weight="bold" type="h1" size="six-xl">
-					Greg&apos;s Place
+				<Typography color="primary" weight="bold" type="h1" size="five-xl">
+					{INTRO_COPY.title}
 				</Typography>
 				<Typography
 					weight="light"
 					type="span"
-					size="two-xl"
+					size="xl"
 					className={styles.tagLine}
 				>
-					A Full-Stack Engineer, standing in front of JavaScript, asking it to
-					love him.
+					{INTRO_COPY.tagLine}
 				</Typography>
 				<div className={styles.imageWrapper}>
 					<Image
@@ -29,7 +29,10 @@ export function Introduction() {
 						placeholder="blur"
 					/>
 				</div>
+				{INTRO_COPY.body.map(para => (
+					<Typography key={crypto.randomUUID()}>{para}</Typography>
+				))}
 			</div>
-		</Section>
+		</section>
 	)
 }

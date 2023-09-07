@@ -2,7 +2,7 @@ import {
 	Typography,
 	AnimatedTypography,
 	AnimatedImage,
-	Section,
+	CanvaSection,
 } from '@/components'
 import Link from 'next/link'
 import { CUBIC_BEZIER, DURATION, fadeInVariants } from '@/constants/animation'
@@ -14,7 +14,7 @@ import styles from './gregLife.styles.module.css'
 
 export function GregLife() {
 	return (
-		<Section
+		<CanvaSection
 			variant="hero"
 			ariaLabel="An opening welcome from Greg to visitors of his portfolio site"
 			className={`${styles.wrapper} container`}
@@ -98,6 +98,6 @@ export function GregLife() {
 					👀
 				</Typography>
 			</div>
-		</Section>
+		</CanvaSection>
 	)
 }

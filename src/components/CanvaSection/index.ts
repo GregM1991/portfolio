@@ -1,2 +1,2 @@
-export * from './Section'
+export * from './CanvaSection'
 export * from './AnimatedSection'

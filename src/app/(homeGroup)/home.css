@@ -6,3 +6,8 @@ h5,
 h6 {
 	font-family: 'Arvo', sans-serif;
 }
+
+p, span {
+	line-height: 1.5;
+	font-size: var(--step-1);
+}

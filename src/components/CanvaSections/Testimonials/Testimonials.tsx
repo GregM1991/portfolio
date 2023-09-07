@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Section, Testimonial } from '@/components'
+import { CanvaSection, Testimonial } from '@/components'
 import { Pagination } from './Pagination/Pagination'
 import { Controls } from './Controls/Controls'
 import { TESTIMONIALS } from '@/constants/testimonials'
@@ -26,7 +26,7 @@ export function Testimonials() {
 	}
 
 	return (
-		<Section
+		<CanvaSection
 			ariaLabel="Testimonials about Greg as a person/developer"
 			className={`${styles.wrapper}`}
 		>
@@ -61,6 +61,6 @@ export function Testimonials() {
 				onRightClick={handleControlRightClick}
 				onLeftClick={handleControlLeftClick}
 			/>
-		</Section>
+		</CanvaSection>
 	)
 }
