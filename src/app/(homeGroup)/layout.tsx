@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components'
 import { Arvo, Raleway } from 'next/font/google'
-import '@/app/global.css'
-import '@/app/(homeGroup)/home.css'
-import '@/app/(homeGroup)/home-variables.css'
+import '../global.css'
+import './home.css'
+import './home-variables.css'
 
 const arvo = Arvo({
 	weight: ['400', '700'],

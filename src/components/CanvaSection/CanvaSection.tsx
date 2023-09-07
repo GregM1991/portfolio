@@ -1,7 +1,9 @@
+'use client'
 import { forwardRef } from 'react'
 import styles from './canvaSection.styles.module.css'
 import { CanvaPalette } from '@/types/palette'
 import { canvaPalette } from '@/theme/theme'
+import { motion } from 'framer-motion'
 
 interface SectionProps {
 	bgColor?: keyof CanvaPalette
@@ -12,6 +14,7 @@ interface SectionProps {
 	initAnimatedConfig?: React.CSSProperties
 }
 
+// TODO: Probably don't need a specific component for this now, just a global
 export const CanvaSection = forwardRef<HTMLElement, SectionProps>(
 	function CanvaSection(
 		{
@@ -42,3 +45,5 @@ export const CanvaSection = forwardRef<HTMLElement, SectionProps>(
 		)
 	},
 )
+
+export const AnimatedSection = motion(CanvaSection)
