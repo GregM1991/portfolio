@@ -1,4 +1,4 @@
-import { Introduction, Skills } from '@/components'
+import { Introduction, Skills, Projects } from '@/components'
 
 // TODO: Fix font stuff
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
 		<main>
 			<Introduction />
 			<Skills />
+			<Projects />
 		</main>
 	)
 }

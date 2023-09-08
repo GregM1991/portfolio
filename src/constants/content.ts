@@ -18,3 +18,8 @@ export const SKILLS_COPY = {
 		'I kicked off my career as a full-stack developer traversing both ends of the technology spectrum. I believe this has hugely improved my scope of technical understanding. Knowledge of how the front and back end interact with each other is, of course, key to defining your structural and architectural needs. But my heart is truly with the front end as it allows me to express my creative side and build beautiful, articulate software.',
 	],
 }
+
+export const PROJECTS_COPY = {
+	title: "What I've been working on",
+	body: "Throughout my career as a Full-Stack Engineer, I've taken on significant roles in developing core features, refactoring legacy systems into React, and leading the creation of a custom UI Component Library. I've collaborated closely with UI/UX teams, mentored junior engineers, and been instrumental in key projects like API development and enhancing user authentication processes. I've also recently started on some personal projects, this portfolio included!",
+}

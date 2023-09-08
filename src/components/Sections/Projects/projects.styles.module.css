@@ -1,0 +1,14 @@
+.wrapper {
+  composes: section-container from global;
+  gap: var(--space-s);
+}
+
+.projectsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-3xs)
+}
+
+.projectWrapper {
+  composes: flex-column-wrapper from global;
+}

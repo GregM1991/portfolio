@@ -1,5 +1,5 @@
 .wrapper {
-  composes: flex-column-wrapper from global;
+  composes: section-container from global;
   gap: var(--space-l);
 }
 
