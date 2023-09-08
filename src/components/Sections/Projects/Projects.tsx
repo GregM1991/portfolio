@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import { Typography } from '@/components'
+import { Typography, Project } from '@/components'
 import { PROJECTS_COPY } from '@/constants/content'
-import randomImage from '@/assets/images/greg-silhouette-in-lights.jpg'
+import { PROJECT_THUMBS } from '@/constants/projects'
 import styles from './projects.styles.module.css'
 
 export function Projects() {
@@ -13,16 +12,18 @@ export function Projects() {
 				</Typography>
 				<Typography>{PROJECTS_COPY.body}</Typography>
 				<div className={styles.projectsWrapper}>
-					<div className={styles.projectWrapper}>
-						<div className={styles.imageWrapper}>
-							<Image
-								alt="project alt text would go here"
-								src={randomImage}
-								fill
+					{PROJECT_THUMBS.map(
+						({ key, title, body, projImage, alt, htmlLink }) => (
+							<Project
+								key={key}
+								title={title}
+								body={body}
+								projImage={projImage}
+								imageAlt={alt}
+								htmlLink={htmlLink}
 							/>
-						</div>
-						<Typography type="h3">Project Title goes here</Typography>
-					</div>
+						),
+					)}
 				</div>
 			</div>
 		</section>

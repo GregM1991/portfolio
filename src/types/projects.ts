@@ -5,17 +5,26 @@ type Point = {
 	copy: string
 }
 
-export interface Project {
+export interface CanvaProject {
 	key: string
 	title: string
 	points: Point[]
 }
 
-export interface Projects {
+export interface Project {
+	key: string
+	title: string
+	body: string
+	projImage: StaticImageData
+	alt: string
+	htmlLink: string
+}
+
+export interface Jobs {
 	key: string
 	title: string
 	jobDescription: string
-	jobProjects: Project[]
+	jobProjects: CanvaProject[]
 	imageSrc: StaticImageData
 	imageAltText: string
 }

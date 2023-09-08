@@ -1,14 +1,14 @@
 'use client'
 import { useRef } from 'react'
 import { AnimatedImage, Typography } from '@/components'
-import { Projects, Project as ProjectType } from '@/types/projects'
+import { Jobs, CanvaProject } from '@/types/projects'
 import { Project } from './Project'
 import { useScroll, useSpring, useTransform } from 'framer-motion'
 import { fadeInUpVariants } from '@/constants/animation'
 import styles from './job.styles.module.css'
 import { useIsMobile } from '@/shared/hooks/useIsMobile'
 
-interface JobProps extends Projects {
+interface JobProps extends Jobs {
 	layout?: 'left' | 'right'
 }
 
@@ -44,7 +44,7 @@ export function Job({
 				<Typography canva color="dark-red">
 					{jobDescription}
 				</Typography>
-				{jobProjects.map((project: ProjectType) => (
+				{jobProjects.map((project: CanvaProject) => (
 					<Project
 						key={project.key}
 						title={project.title}

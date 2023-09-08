@@ -1,8 +1,8 @@
 import { Typography } from '@/components'
-import { Project } from '@/types/projects'
+import { CanvaProject } from '@/types/projects'
 import styles from './project.styles.module.css'
 
-export function Project({ title, points }: Project) {
+export function Project({ title, points }: CanvaProject) {
 	return (
 		<div className={styles.wrapper}>
 			<Typography canva type="h4" className={styles.h4}>

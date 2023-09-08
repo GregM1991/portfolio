@@ -1,6 +1,6 @@
 import { AnimatedSection, Job, Typography } from '@/components'
 import styles from './myJobs.styles.module.css'
-import { JOBS } from '@/constants/projects'
+import { JOBS } from '@/constants/jobs'
 import { fadeInVariants } from '@/constants/animation'
 
 export function MyJobs() {
