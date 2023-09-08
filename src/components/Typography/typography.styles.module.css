@@ -6,10 +6,6 @@
   composes: color;
 }
 
-.p {
-  composes: color;
-}
-
 .h1Lead {
 	composes: h1;
 	font-size: var(--typography-hero-text-header);

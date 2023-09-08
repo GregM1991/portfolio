@@ -10,6 +10,7 @@ const arvo = Arvo({
 	style: ['normal'],
 	subsets: ['latin'],
 	display: 'swap',
+	variable: '--font-arvo',
 })
 
 const raleway = Raleway({
@@ -17,6 +18,7 @@ const raleway = Raleway({
 	style: ['normal'],
 	subsets: ['latin'],
 	display: 'swap',
+	variable: '--font-raleway',
 })
 
 export const metadata: Metadata = {
@@ -30,8 +32,8 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en">
-			<body className={`${arvo.className} ${raleway.className}`}>
+		<html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
+			<body>
 				<Header headerFor="normal" />
 				{children}
 			</body>

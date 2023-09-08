@@ -1,5 +1,6 @@
 .wrapper {
   composes: flex-column-wrapper from global;
+  gap: var(--space-l);
 }
 
 .tagLine {
@@ -15,4 +16,8 @@
 .imageWrapper img {
   width: 100%;
   object-position: 100% 0%;
+}
+
+.bodyCopy > p:not(:first-child) {
+  margin-top: var(--space-2xs);
 }
