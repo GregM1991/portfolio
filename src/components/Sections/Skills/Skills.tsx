@@ -14,7 +14,7 @@ export function Skills() {
 	return (
 		<section aria-label="A section showcasing Greg's skills">
 			<div className={styles.wrapper}>
-				<Typography color="primary" type="h2" weight="bold" size="xl">
+				<Typography color="primary" type="h2" size="xl">
 					{SKILLS_COPY.title}
 				</Typography>
 				<Typography>{SKILLS_COPY.body}</Typography>

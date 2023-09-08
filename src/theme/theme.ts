@@ -33,6 +33,7 @@ export const palette: Palette = {
 	dark: '#0e1318',
 }
 
+// TODO: Get rid of this in lieu of what's implemented in Typography?
 function isCanvaPaletteKey(key: string): key is keyof CanvaPalette {
 	return key in canvaPalette
 }

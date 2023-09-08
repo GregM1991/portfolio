@@ -1,13 +1,4 @@
-.color {
-	color: var(--color);
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, .span, .p {
-  composes: color;
-}
-
 .h1Lead {
-	composes: h1;
 	font-size: var(--typography-hero-text-header);
 	line-height: 1.1;
 	font-weight: 700;
@@ -28,48 +19,4 @@
 
 .bold {
 	font-weight: 700;
-}
-
-.two-xs {
-	font-size: var(--step--2);
-}
-
-.xs {
-	font-size: var(--step--1);
-}
-
-.s {
-	font-size: var(--step-0);
-}
-
-.m {
-	font-size: var(--step-1);
-}
-
-.l {
-	font-size: var(--step-2);
-}
-
-.xl {
-	font-size: var(--step-3);
-}
-
-.two-xl {
-	font-size: var(--step-4);
-}
-
-.three-xl {
-	font-size: var(--step-5);
-}
-
-.four-xl {
-	font-size: var(--step-6);
-}
-
-.five-xl {
-	font-size: var(--step-7);
-}
-
-.six-xl {
-	font-size: var(--step-8);
 }

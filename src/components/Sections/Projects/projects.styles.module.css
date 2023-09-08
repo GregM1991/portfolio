@@ -1,14 +1,24 @@
 .wrapper {
-  composes: section-container from global;
+  composes: section-container from '../../../styles/composable.module.css';;
   gap: var(--space-s);
 }
 
 .projectsWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-3xs)
+  gap: var(--space-3xs);
 }
 
 .projectWrapper {
   composes: flex-column-wrapper from global;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: clamp(20vh, 50vw, 400px);
+}
+
+.imageWrapper img {
+  width: 100%;
 }

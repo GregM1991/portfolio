@@ -10,7 +10,7 @@ export function Introduction() {
 			<div className={styles.wrapper}>
 				<div>
 					<SocialLinks size={20} color="secondary" />
-					<Typography color="primary" weight="bold" type="h1" size="five-xl">
+					<Typography color="primary" type="h1" size="5xl">
 						{INTRO_COPY.title}
 					</Typography>
 					<Typography

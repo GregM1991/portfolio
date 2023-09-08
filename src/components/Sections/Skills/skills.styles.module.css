@@ -1,5 +1,5 @@
 .wrapper {
-  composes: section-container from global;
+  composes: section-container from '../../../styles/composable.module.css';
   gap: var(--space-s);
 }
 
