@@ -1,6 +1,14 @@
+import {
+	SiTypescript,
+	SiCss3,
+	SiHtml5,
+	SiReact,
+	SiNodedotjs,
+	SiRedux,
+} from 'react-icons/si'
 import { Typography } from '@/components'
-import styles from './skills.styles.module.css'
 import { SKILLS_COPY } from '@/constants/content'
+import styles from './skills.styles.module.css'
 
 export function Skills() {
 	return (
@@ -10,6 +18,14 @@ export function Skills() {
 					{SKILLS_COPY.title}
 				</Typography>
 				<Typography>{SKILLS_COPY.body}</Typography>
+				<div className={styles.iconsWrapper}>
+					<SiHtml5 />
+					<SiCss3 />
+					<SiTypescript />
+					<SiReact />
+					<SiNodedotjs />
+					<SiRedux />
+				</div>
 			</div>
 		</section>
 	)

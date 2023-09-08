@@ -1,3 +1,11 @@
 .wrapper {
   composes: flex-column-wrapper from global;
 }
+
+.iconsWrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--step-4);
+  color: var(--palette-secondary);
+  margin-top: var(--space-xl)
+}

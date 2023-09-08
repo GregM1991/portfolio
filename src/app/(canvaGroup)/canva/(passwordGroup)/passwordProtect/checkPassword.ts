@@ -10,6 +10,7 @@ export async function checkPassword(formData: FormData) {
 			path: '/',
 			httpOnly: true,
 			sameSite: 'strict',
+			secure: true,
 		})
 		redirect('/canva')
 	} else {
