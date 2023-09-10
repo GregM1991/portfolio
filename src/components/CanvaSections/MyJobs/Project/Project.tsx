@@ -1,8 +1,8 @@
+import { CanvaJob } from '@/types/projects'
 import { Typography } from '@/components'
-import { CanvaProject } from '@/types/projects'
 import styles from './project.styles.module.css'
 
-export function Project({ title, points }: CanvaProject) {
+export function Project({ title, points }: Omit<CanvaJob, 'key'>) {
 	return (
 		<div className={styles.wrapper}>
 			<Typography canva type="h4" className={styles.h4}>

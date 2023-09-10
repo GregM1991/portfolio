@@ -1,4 +1,4 @@
-import { Introduction, Skills, Projects } from '@/components'
+import { Introduction, Skills, Projects, Testimonials } from '@/components'
 
 export default function Home() {
 	return (
@@ -6,6 +6,7 @@ export default function Home() {
 			<Introduction />
 			<Skills />
 			<Projects />
+			<Testimonials />
 			<hr
 				style={{
 					maxWidth: '80vw',

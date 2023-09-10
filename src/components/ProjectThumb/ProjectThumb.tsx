@@ -1,25 +1,28 @@
-import Image, { StaticImageData } from 'next/image'
-import { Typography } from '@/components'
-import styles from './project.styles.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
+import { Typography } from '@/components'
+import { Project } from '@/types/projects'
+import styles from './projectThumb.styles.module.css'
+import clsx from 'clsx'
 
-interface ProjectProps {
-	projImage: StaticImageData
-	imageAlt: string
-	title: string
-	body: string
-	htmlLink: string
+interface ProjectThumbProps extends Project {
+	doubleColumn?: boolean
 }
 
-export function Project({
+export function ProjectThumb({
 	projImage,
 	imageAlt,
 	title,
 	body,
 	htmlLink,
-}: ProjectProps) {
+	doubleColumn = false,
+}: ProjectThumbProps) {
+	const wrapperClassName = clsx([
+		styles.wrapper,
+		{ [styles.doubleColumn]: doubleColumn },
+	])
 	return (
-		<div className={styles.wrapper}>
+		<div className={wrapperClassName}>
 			<div className={styles.imageWrapper}>
 				<Image alt={imageAlt} src={projImage} fill />
 			</div>

@@ -25,3 +25,11 @@
 .viewProject:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 708px) {
+  .doubleColumn {
+    grid-column: span 2;
+    align-items: center;
+    text-align: center;
+  }
+} 

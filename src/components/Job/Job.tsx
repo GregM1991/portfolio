@@ -1,8 +1,7 @@
 'use client'
 import { useRef } from 'react'
-import { AnimatedImage, Typography } from '@/components'
-import { Jobs, CanvaProject } from '@/types/projects'
-import { Project } from './Project'
+import { AnimatedImage, Typography, Project } from '@/components'
+import { Jobs, CanvaJob } from '@/types/projects'
 import { useScroll, useSpring, useTransform } from 'framer-motion'
 import { fadeInUpVariants } from '@/constants/animation'
 import styles from './job.styles.module.css'
@@ -44,7 +43,7 @@ export function Job({
 				<Typography canva color="dark-red">
 					{jobDescription}
 				</Typography>
-				{jobProjects.map((project: CanvaProject) => (
+				{jobProjects.map((project: CanvaJob) => (
 					<Project
 						key={project.key}
 						title={project.title}
