@@ -1,0 +1,108 @@
+.blockQuoteWrapper {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.imageWrapper {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 83.3%;
+  padding: 0 15px;
+  margin-bottom: var(--space-l);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 4.2 / 5.6;
+}
+
+.blockquote {
+  max-width: 0 0 58.3%;
+  padding-top: 3.25rem;
+  position: relative;
+}
+
+.blockquote::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: -25px;
+  width: 100px;
+  height: 100px;
+  background: url("../../../../assets/images/block-quote.png") no-repeat top left;
+  background-size: 100px 100px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.blockquoteLead {
+  line-height: 1;
+  margin-bottom: var(--space-l);
+  display: inline-block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-m);
+  gap: var(--space-3xs);
+  font-style: normal;
+  font-family: var(--font-raleway)
+}
+
+.cite {
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .blockQuoteWrapper  {
+    flex-direction: row-reverse;
+  }
+
+  .imageWrapper {
+    max-width: 50%;
+    flex: 0 0 50%;
+    aspect-ratio: 7/9;
+    margin-bottom: 0;
+    padding: 0 0 0 15px;
+  }
+
+  .blockquote {
+    padding: 52px var(--space-xs) 0;
+    max-width: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .blockQuoteWrapper  {
+    justify-content: space-between;
+  }
+  
+  .imageWrapper {
+    max-width: 33.3%;
+    flex: 0 0 33.333%;
+  }
+
+  .blockquote {
+    flex: 0 0 58.3%;
+    max-width: 58.3%;
+    padding: 40px 0 0 96px;
+    background-size: 80px 69px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .imageWrapper::after {
+    top: -90px;
+    right: -90px;
+    width: 176px;
+    height: 134px;
+  }
+}

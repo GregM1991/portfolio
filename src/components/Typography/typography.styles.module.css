@@ -6,7 +6,15 @@
 }
 
 .h2Rich {
-  font-size: var(--typography-rich-header-text)
+  font-size: var(--typography-rich-header-text);
+}
+
+.arvo {
+	font-family: var(--font-arvo);
+}
+
+.raleway {
+	font-family: var(--font-raleway);
 }
 
 .normal {

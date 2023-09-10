@@ -6,7 +6,7 @@
 
 .section-container {
 	composes: flex-column-wrapper;
-	padding: var(--space-m) var(--space-m-l);
+	padding: var(--space-3xl) var(--space-m-l);
 	max-width: 1400px;
 	margin: auto;
 }

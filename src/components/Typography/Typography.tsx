@@ -7,14 +7,24 @@ export const Typography = forwardRef<
 	HTMLHeadingElement & HTMLSpanElement,
 	TypographyProps
 >(function Typography(
-	{ type = 'p', variant = '', weight = '', size, color, className, children },
+	{
+		type = 'p',
+		variant = '',
+		weight = '',
+		font = '',
+		size,
+		color,
+		className,
+		children,
+	},
 	ref,
 ) {
 	const Component = type
 	const classes = clsx([
-		styles[type],
-		styles[variant],
+		{ [styles[type]]: type },
+		{ [styles[variant]]: variant },
 		{ [styles[weight]]: weight },
+		{ [styles[font]]: font },
 		className,
 	])
 

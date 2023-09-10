@@ -1,0 +1,8 @@
+.wrapper {
+  composes: section-container from '../../../styles/composable.module.css';
+  align-items: center;
+}
+
+.gridWrapper {
+  display: grid;
+}

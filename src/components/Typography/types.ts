@@ -7,6 +7,7 @@ export interface TypographyProps {
 	canva?: boolean
 	variant?: 'h2Rich' | 'h1Lead'
 	weight?: 'normal' | 'light' | 'bold'
+	font?: 'arvo' | 'raleway'
 	size?: keyof typeof stepMap
 	color?: keyof CanvaPalette | keyof Palette
 	className?: string

@@ -1,14 +1,14 @@
 'use client'
 import { useState } from 'react'
-import { CanvaSection, Testimonial } from '@/components'
-import { Pagination } from './Pagination/Pagination'
-import { Controls } from './Controls/Controls'
+import { NewTestimonial } from '@/components'
+import { Pagination } from '@/components/CanvaSections/Testimonials/Pagination/Pagination'
+import { Controls } from '@/components/CanvaSections/Testimonials/Controls/Controls'
 import { TESTIMONIALS } from '@/constants/testimonials'
-import { AnimatePresence, motion } from 'framer-motion'
-import { fadeInUpVariants } from '@/constants/animation'
-import styles from './testimonials.styles.module.css'
+import { AnimatePresence } from 'framer-motion'
+import styles from './newTestimonials.styles.module.css'
 
-export function Testimonials() {
+// TODO: Need to merge these and canva Testimonials so that there's not two..
+export function NewTestimonials() {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
 	const handleControlRightClick = () => {
@@ -26,21 +26,11 @@ export function Testimonials() {
 	}
 
 	return (
-		<CanvaSection
-			ariaLabel="Testimonials about Greg as a person/developer"
-			className={styles.wrapper}
-		>
-			<span id="testimonials" className="anchor" />
-			<motion.div
-				className={`${styles.contentWrapper} container`}
-				variants={fadeInUpVariants}
-				viewport={{ once: true }}
-				initial="hidden"
-				whileInView="visible"
-			>
+		<section aria-label="Testimonials about Greg as a person/developer">
+			<div className={styles.wrapper}>
 				<div className={styles.gridWrapper}>
 					<AnimatePresence>
-						<Testimonial
+						<NewTestimonial
 							key={TESTIMONIALS[currentTestimonial].key}
 							img={TESTIMONIALS[currentTestimonial].img}
 							imgAltText={TESTIMONIALS[currentTestimonial].imgAltText}
@@ -55,12 +45,12 @@ export function Testimonials() {
 					currentTestimonial={currentTestimonial}
 					onClick={handlePaginationClick}
 				/>
-			</motion.div>
+			</div>
 			<Controls
 				currentTestimonial={currentTestimonial}
 				onRightClick={handleControlRightClick}
 				onLeftClick={handleControlLeftClick}
 			/>
-		</CanvaSection>
+		</section>
 	)
 }
