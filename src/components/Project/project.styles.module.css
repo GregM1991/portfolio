@@ -1,5 +1,6 @@
 .wrapper {
   composes: flex-column-wrapper from global;
+  gap: var(--space-s);
 }
 
 .imageWrapper {
@@ -13,5 +14,14 @@
 }
 
 .title {
-  margin-top: var(--space-m)
+  margin-top: var(--space-m);
+}
+
+.viewProject {
+  display: inline-block;
+  margin-top: var(--space-s);
+}
+
+.viewProject:hover {
+  text-decoration: underline;
 }

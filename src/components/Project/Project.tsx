@@ -19,16 +19,19 @@ export function Project({
 	htmlLink,
 }: ProjectProps) {
 	return (
-		<Link href={htmlLink}>
-			<div className={styles.wrapper}>
-				<div className={styles.imageWrapper}>
-					<Image alt={imageAlt} src={projImage} fill />
-				</div>
-				<Typography type="h3" size="l" className={styles.title}>
-					{title}
-				</Typography>
-				<Typography>{body}</Typography>
+		<div className={styles.wrapper}>
+			<div className={styles.imageWrapper}>
+				<Image alt={imageAlt} src={projImage} fill />
 			</div>
-		</Link>
+			<Typography type="h3" size="l" className={styles.title}>
+				{title}
+			</Typography>
+			<Typography>{body}</Typography>
+			<Link href={htmlLink} className={styles.viewProject}>
+				<Typography weight="bold" type="span">
+					View project &gt;
+				</Typography>
+			</Link>
+		</div>
 	)
 }
