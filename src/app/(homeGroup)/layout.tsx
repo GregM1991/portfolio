@@ -36,6 +36,30 @@ export default function RootLayout({
 			<body>
 				<Header headerFor="normal" />
 				{children}
+
+				<div
+					style={{
+						textAlign: 'center',
+						fontFamily: 'var(--font-raleway)',
+						padding: 'var(--space-3xl) var(--space-m)',
+						display: 'flex',
+						flexDirection: 'column',
+					}}
+				>
+					<hr
+						style={{
+							maxWidth: '100%',
+							color: 'var(--palette-secondary)',
+							margin: '0 0 var(--space-3xl)',
+						}}
+					/>
+					<span style={{ fontSize: 'var(--step-2)' }}>🔨👷🏻‍♂️ </span>
+					<span style={{ fontSize: 'var(--step-1)' }}>
+						Things may look a little bare, but that&apos;s because we&apos;re
+						still under construction... Hold tight!
+					</span>
+					<span style={{ fontSize: 'var(--step-2)' }}> 👷🏻‍♂️🧱</span>
+				</div>
 			</body>
 		</html>
 	)
