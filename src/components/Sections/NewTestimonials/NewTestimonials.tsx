@@ -26,7 +26,10 @@ export function NewTestimonials() {
 	}
 
 	return (
-		<section aria-label="Testimonials about Greg as a person/developer">
+		<section
+			aria-label="Testimonials about Greg as a person/developer"
+			className={styles.section}
+		>
 			<div className={styles.wrapper}>
 				<div className={styles.gridWrapper}>
 					<AnimatePresence>
