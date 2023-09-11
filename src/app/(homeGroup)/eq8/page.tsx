@@ -1,44 +1,79 @@
 import { Typography } from '@/components'
 import Image from 'next/image'
-import eq8Gang from '@/assets/images/eq8-pub.jpg'
 import styles from './eq8.styles.module.css'
+import { CONTENT } from './content'
 
 export default function Eq8Project() {
 	return (
 		<main className={styles.wrapper}>
-			<div>
+			<section aria-label="Description and introduction to the eq8 project page">
 				<Typography type="h1" size="2xl">
-					Working at eQ8
+					{CONTENT.description.heading}
 				</Typography>
-				<Typography className={styles.openingCopy}>
-					I had a great experience working at eQ8, the team there are a fun
-					bunch of people and we were never short of a good time, you can see a
-					few of my workmates below.
-				</Typography>
-				<Typography className={styles.openingCopy}>
-					EQ8 is in the start-up phase and the environment showed this. The
-					lessons I learned at my time there had a lot to do with what&apos;s
-					necessary for the product to maximise use-ability and minimise
-					time-to-market.
-				</Typography>
-			</div>
+				{CONTENT.description.body.map(({ key, copy }) => (
+					<Typography key={key} className={styles.copy}>
+						{copy}
+					</Typography>
+				))}
+			</section>
 			<div className={styles.imageWrapper}>
 				<Image
-					src={eq8Gang}
-					alt="Greg, Annisa and Aaron smiling and having a beer in the sunshine"
+					src={CONTENT.description.imageSrc}
+					alt={CONTENT.description.imageAlt}
 					fill
 					sizes="100vw"
 					placeholder="blur"
 				/>
 			</div>
-			{/* IMAGE */}
-			{/* GOALS OF WORKING */}
-			{/* CHALLENGES AND GROWTH */}
+			<section aria-label="Technologies used at eQ8">
+				<Typography type="h2" size="xl">
+					Tech Stack
+				</Typography>
+				<ul role="list" className={styles.tech}>
+					{CONTENT.tech.map((tech, index) => (
+						<li key={`${index}-${tech}`}>
+							<Typography type="span">
+								<span className={styles.liDecoration}>○</span>
+								{tech}
+							</Typography>
+						</li>
+					))}
+				</ul>
+			</section>
+			<section aria-label="Gregs goals at eq8">
+				<Typography type="h2" size="xl">
+					{CONTENT.goals.heading}
+				</Typography>
+				{CONTENT.goals.body.map(({ key, copy }) => (
+					<Typography key={key} className={styles.copy}>
+						{copy}
+					</Typography>
+				))}
+			</section>
+			<section>
+				<Typography type="h2" size="xl">
+					{CONTENT.challenges.heading}
+				</Typography>
+				{CONTENT.challenges.body.map(({ key, copy }) => (
+					<Typography key={key} className={styles.copy}>
+						{copy}
+					</Typography>
+				))}
+			</section>
+			<section aria-label="A spotlight section focusing on work Greg did at eq8"></section>
 			{/* SPOTLIGHT 1 */}
+			{/* Refactor old Demand Config page */}
 			{/* CONTRIBUTIONS */}
 			{/* SPOTLIGHT 2 */}
+			{/* Refactor old Demand Config page */}
 			{/* CONTRIBUTIONS */}
-			{/* OVERVIEW */}
+			{/* 
+				OVERVIEW 
+				- Hectic and fast-paced but forced me out of my comfort zone
+				- Was great seeing how far I've come with React and sharing that knowledge
+				- Alot to learn from the people, and they were lovely too.
+				- Big thanks to Hina and Annisa
+			*/}
 		</main>
 	)
 }
