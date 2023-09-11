@@ -45,6 +45,24 @@ export const CANVA_NAV_LINKS: NavLink[] = [
 	},
 ]
 
+export const NAV_LINKS: NavLink[] = [
+	{
+		key: crypto.randomUUID(),
+		linkText: 'eQ8',
+		href: '/eq8',
+	},
+	{
+		key: crypto.randomUUID(),
+		linkText: 'Faethm',
+		href: '/faethm',
+	},
+	{
+		key: crypto.randomUUID(),
+		linkText: 'portfolio',
+		href: '/portfolio',
+	},
+]
+
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		key: crypto.randomUUID(),

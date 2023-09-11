@@ -1,8 +1,15 @@
 .wrapper {
   composes: section-container from '../../../styles/composable.module.css';
   padding-top: var(--space-2xl);
+  gap: var(--space-xl);
 }
 
 .openingCopy {
   margin-top: var(--space-l);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: clamp(20vh, 50vw, 500px);
 }

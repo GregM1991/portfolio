@@ -4,6 +4,7 @@ import { Arvo, Raleway } from 'next/font/google'
 import '../global.css'
 import './home.css'
 import './home-variables.css'
+import { NAV_LINKS } from '@/constants/links'
 
 const arvo = Arvo({
 	weight: ['400', '700'],
@@ -34,9 +35,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
 			<body>
-				<Header headerFor="normal" />
+				<Header headerFor="normal" navLinks={NAV_LINKS} />
 				{children}
-
 				<div
 					style={{
 						textAlign: 'center',

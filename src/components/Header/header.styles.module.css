@@ -43,7 +43,7 @@
 }
 
 .navLink {
-  font-family: var(--font-ezra);
+  font-family: var(--font-raleway);
   font-size: var(--step-3);
   color: var(--palette-gray-dark);
 }
@@ -54,6 +54,7 @@
 
 .canva-navLink {
   composes: navLink;
+  font-family: var(--font-ezra);
   font-size: 1.5rem;
   letter-spacing: .005rem;
 }
@@ -142,9 +143,16 @@
   .nav {
     flex-direction: revert;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
     max-height: none;
     padding: 0;
+    gap: var(--space-m);
+  }
+
+  .canva-nav {
+    composes: nav;
+    justify-content: space-between;
     padding-right: var(--space-xs);
   }
 

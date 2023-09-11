@@ -24,7 +24,7 @@ export function Header({ headerFor, navLinks }: HeaderProps) {
 		<header className={styles[`${stylePrefix}header`]}>
 			<Logo type={headerFor} />
 			<HamburgerButton isChecked={isChecked} handleClick={handleClick} />
-			<nav className={styles.nav}>
+			<nav className={styles[`${stylePrefix}nav`]}>
 				<ul role="list" className={styles.menu}>
 					{navLinks?.map(link => (
 						<li
