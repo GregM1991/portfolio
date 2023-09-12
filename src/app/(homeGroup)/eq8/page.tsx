@@ -2,6 +2,7 @@ import { Typography } from '@/components'
 import Image from 'next/image'
 import styles from './eq8.styles.module.css'
 import { CONTENT } from './content'
+import { Carousel } from '@/components/Carousel'
 
 export default function Eq8Project() {
 	return (
@@ -65,10 +66,10 @@ export default function Eq8Project() {
 				<Typography type="h3" size="xl">
 					{CONTENT.demandConfig.heading}
 				</Typography>
-				<Typography type="h3" size="xl">
-					{CONTENT.demandConfig.description}
-				</Typography>
+				<Typography>{CONTENT.demandConfig.description}</Typography>
 				{/* Image showcase */}
+				<Carousel items={CONTENT.demandConfig.screens} />
+
 				{/* Contributions */}
 			</section>
 			{/* SPOTLIGHT 1 */}

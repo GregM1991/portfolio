@@ -1,16 +1,18 @@
 'use client'
-import { ReactNode, ReactPortal, useState } from 'react'
+import { useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Controls } from '@/components'
+import { Screen } from '@/app/(homeGroup)/eq8/content'
+import styles from './carousel.styles.module.css'
 
-interface CarouselProps<T> {
-	items: T[]
+interface CarouselProps {
+	items: Screen[]
 }
 
-export function Carousel<T extends ReactPortal & ReactNode>({
-	items,
-}: CarouselProps<T>) {
+export function Carousel({ items }: CarouselProps) {
 	const [currentIndex, setCurrentIndex] = useState(0)
+	const indexItem = items[currentIndex]
 
 	const handleNext = () => {
 		setCurrentIndex(prevIndex =>
@@ -32,8 +34,15 @@ export function Carousel<T extends ReactPortal & ReactNode>({
 	const rightDisabled = currentIndex === items.length - 1
 
 	return (
-		<div>
-			{items[currentIndex]}
+		<div className={styles.wrapper}>
+			<div className={styles.imageWrapper}>
+				<Image
+					key={indexItem.key}
+					src={indexItem.src}
+					alt={indexItem.alt}
+					fill
+				/>
+			</div>
 			<Controls
 				onRightClick={handleNext}
 				onLeftClick={handlePrevious}

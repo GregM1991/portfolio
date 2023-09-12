@@ -1,4 +1,11 @@
+import { StaticImageData } from 'next/image'
 import eq8Gang from '@/assets/images/eq8-pub.jpg'
+import {
+	dcOld,
+	dcSegmentExpanded,
+	dcSegmentExpandedEdit,
+	dcDriverView,
+} from '@/assets/images/demand-config-screens'
 
 export const EQ8_TECH = [
 	'C#',
@@ -9,6 +16,36 @@ export const EQ8_TECH = [
 	'Razor pages',
 	'React with Typescript',
 	'Zustand',
+]
+
+export type Screen = {
+	key: string
+	src: StaticImageData
+	alt: string
+}
+
+const SCREENS: Screen[] = [
+	{
+		key: crypto.randomUUID(),
+		src: dcOld,
+		alt: ' Legacy view of demand configuration',
+	},
+
+	{
+		key: crypto.randomUUID(),
+		src: dcSegmentExpanded,
+		alt: 'Updated view of demand configuration with segment expanded',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: dcSegmentExpandedEdit,
+		alt: 'Updated view of demand configuration with segment expanded and in edit mode',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: dcDriverView,
+		alt: 'Updated view of demand configuration in driver view',
+	},
 ]
 
 export const CONTENT = {
@@ -62,5 +99,6 @@ export const CONTENT = {
 		heading: 'Refactor of Legacy Demand Configuration',
 		description:
 			'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
+		screens: SCREENS,
 	},
 }
