@@ -25,7 +25,11 @@
 
 .liDecoration {
   color: var(--palette-primary);
-  margin-right: 10px;
+  margin-right: var(--space-s);
+}
+
+.carousel {
+  margin-top: var(--space-l);
 }
 
 @media (min-width: 982px) {

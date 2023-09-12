@@ -22,29 +22,38 @@ export type Screen = {
 	key: string
 	src: StaticImageData
 	alt: string
+	imageDescription: string
 }
 
 const SCREENS: Screen[] = [
 	{
 		key: crypto.randomUUID(),
 		src: dcOld,
-		alt: ' Legacy view of demand configuration',
+		alt: 'Legacy view of demand configuration',
+		imageDescription:
+			'A view of the old demand configuration page, there was a lot to the page, a bunch of sliders and buttons.',
 	},
 
 	{
 		key: crypto.randomUUID(),
 		src: dcSegmentExpanded,
 		alt: 'Updated view of demand configuration with segment expanded',
+		imageDescription:
+			'Here is the new view, it was designed to look more simple on intial view, with the option open an UI shelf that houses the segments associations.',
 	},
 	{
 		key: crypto.randomUUID(),
 		src: dcSegmentExpandedEdit,
 		alt: 'Updated view of demand configuration with segment expanded and in edit mode',
+		imageDescription:
+			'There is an edit mode for the segment that allows drivers to be created, read, updated and deleted all from the one spot.',
 	},
 	{
 		key: crypto.randomUUID(),
 		src: dcDriverView,
 		alt: 'Updated view of demand configuration in driver view',
+		imageDescription:
+			'There is an alternate view wherein the user can view their associations by the driver, instead of the segment.',
 	},
 ]
 

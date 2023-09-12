@@ -66,9 +66,13 @@ export default function Eq8Project() {
 				<Typography type="h3" size="xl">
 					{CONTENT.demandConfig.heading}
 				</Typography>
-				<Typography>{CONTENT.demandConfig.description}</Typography>
-				{/* Image showcase */}
-				<Carousel items={CONTENT.demandConfig.screens} />
+				<Typography className={styles.copy}>
+					{CONTENT.demandConfig.description}
+				</Typography>
+				<Carousel
+					items={CONTENT.demandConfig.screens}
+					className={styles.carousel}
+				/>
 
 				{/* Contributions */}
 			</section>

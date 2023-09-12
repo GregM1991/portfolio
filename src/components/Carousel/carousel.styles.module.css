@@ -3,7 +3,26 @@
 }
 
 .imageWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr auto;
   position: relative;
+  min-height: 700px;
   width: 100%;
-  height: clamp(20vh, 50vw, 500px);
+  isolation: isolate;
+}
+
+.imageStyle {
+  grid-row: 1 / 3;
+  object-position: 50% 0%;
+}
+
+.description {
+  display: inline-block;
+  padding: var(--space-m);
+  text-align: center;
+  grid-row: 2 / 3;
+  background-color: rgba(27,84,82, 0.8);
+  color: var(--palette-white);
+  z-index: 1;
 }
