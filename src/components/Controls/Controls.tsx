@@ -4,13 +4,15 @@ import { FAB } from '@/components'
 import styles from './controls.styles.module.css'
 
 interface ControlsProps {
-	currentTestimonial: number
+	leftDisabled: boolean
+	rightDisabled: boolean
 	onRightClick: () => void
 	onLeftClick: () => void
 }
 
 export const Controls = ({
-	currentTestimonial,
+	leftDisabled,
+	rightDisabled,
 	onRightClick,
 	onLeftClick,
 }: ControlsProps) => (
@@ -18,7 +20,7 @@ export const Controls = ({
 		<FAB
 			icon={<GoChevronLeft />}
 			ariaLabel="arrow left button"
-			disabled={currentTestimonial === 0}
+			disabled={leftDisabled}
 			className={`${styles.arrowButton} ${styles.btnLeft}`}
 			onClick={onLeftClick}
 			tab-index={0}
@@ -26,7 +28,7 @@ export const Controls = ({
 		<FAB
 			icon={<GoChevronRight />}
 			ariaLabel="arrow right button"
-			disabled={currentTestimonial === 3}
+			disabled={rightDisabled}
 			className={`${styles.arrowButton} ${styles.btnRight}`}
 			onClick={onRightClick}
 			tab-index={0}

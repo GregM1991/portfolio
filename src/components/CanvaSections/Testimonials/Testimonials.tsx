@@ -1,11 +1,10 @@
 'use client'
 import { useState } from 'react'
-import { CanvaSection, Testimonial } from '@/components'
+import { CanvaSection, Testimonial, Controls } from '@/components'
 import { Pagination } from './Pagination/Pagination'
-import { Controls } from './Controls/Controls'
 import { TESTIMONIALS } from '@/constants/testimonials'
-import { AnimatePresence, motion } from 'framer-motion'
 import { fadeInUpVariants } from '@/constants/animation'
+import { AnimatePresence, motion } from 'framer-motion'
 import styles from './testimonials.styles.module.css'
 
 export function Testimonials() {
@@ -24,6 +23,9 @@ export function Testimonials() {
 	const handlePaginationClick = (num: number) => {
 		setCurrentTestimonial(num)
 	}
+
+	const leftDisabled = currentTestimonial === 0
+	const rightDisabled = currentTestimonial === 3
 
 	return (
 		<CanvaSection
@@ -57,7 +59,8 @@ export function Testimonials() {
 				/>
 			</motion.div>
 			<Controls
-				currentTestimonial={currentTestimonial}
+				leftDisabled={leftDisabled}
+				rightDisabled={rightDisabled}
 				onRightClick={handleControlRightClick}
 				onLeftClick={handleControlLeftClick}
 			/>

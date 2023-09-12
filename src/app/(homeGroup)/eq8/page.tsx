@@ -60,7 +60,17 @@ export default function Eq8Project() {
 					</Typography>
 				))}
 			</section>
-			<section aria-label="A spotlight section focusing on work Greg did at eq8"></section>
+			<section aria-label="A spotlight section focusing on work Greg did at eq8">
+				{/* TODO: Add tooltip to some of the things that would be confusing to people */}
+				<Typography type="h3" size="xl">
+					{CONTENT.demandConfig.heading}
+				</Typography>
+				<Typography type="h3" size="xl">
+					{CONTENT.demandConfig.description}
+				</Typography>
+				{/* Image showcase */}
+				{/* Contributions */}
+			</section>
 			{/* SPOTLIGHT 1 */}
 			{/* Refactor old Demand Config page */}
 			{/* CONTRIBUTIONS */}

@@ -58,4 +58,9 @@ export const CONTENT = {
 			},
 		],
 	},
+	demandConfig: {
+		heading: 'Refactor of Legacy Demand Configuration',
+		description:
+			'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
+	},
 }
