@@ -1,3 +1,4 @@
+export * from './Accordion'
 export * from './Acknowledgement'
 export * from './AnimatedImage'
 export * from './Button'

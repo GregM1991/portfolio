@@ -3,8 +3,6 @@ import { DEMAND_CONFIG, GLOBAL_SUPPLY_UPLOAD } from '@/constants/eq8Content'
 import styles from './eq8.styles.module.css'
 import { Eq8Intro, Eq8Tech, Eq8Challenges, Eq8Goals, Eq8Overview } from './'
 
-
-// TODO: Next create an accordion to have TLDR instead of content
 export default function Eq8Project() {
 	return (
 		<main className={styles.wrapper}>
