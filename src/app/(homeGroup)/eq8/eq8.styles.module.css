@@ -10,7 +10,7 @@
 }
 
 .doubleColumn > p:not(:first-child) {
-	break-inside: avoid;
+	/* break-inside: avoid; */
   margin-top: var(--space-m);
 }
 

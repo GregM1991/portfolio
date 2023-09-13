@@ -6,6 +6,13 @@ import {
 	dcSegmentExpandedEdit,
 	dcDriverView,
 } from '@/assets/images/demand-config-screens'
+import {
+	supplyUploadFileSelected,
+	supplyUploadFileNotSelected,
+	filterSelection,
+	uploadInProgress,
+	uploadInProgress2,
+} from '@/assets/images/global-supply-screens'
 
 export const EQ8_TECH = [
 	'C#',
@@ -25,7 +32,7 @@ export type Screen = {
 	imageDescription: string
 }
 
-const SCREENS: Screen[] = [
+const DEMAND_CONFIG_SCREENS: Screen[] = [
 	{
 		key: crypto.randomUUID(),
 		src: dcOld,
@@ -33,7 +40,6 @@ const SCREENS: Screen[] = [
 		imageDescription:
 			'A view of the old demand configuration page, there was a lot to the page, a bunch of sliders and buttons.',
 	},
-
 	{
 		key: crypto.randomUUID(),
 		src: dcSegmentExpanded,
@@ -54,6 +60,44 @@ const SCREENS: Screen[] = [
 		alt: 'Updated view of demand configuration in driver view',
 		imageDescription:
 			'There is an alternate view wherein the user can view their associations by the driver, instead of the segment.',
+	},
+]
+
+const GLOBAL_SUPPLY_SCREENS: Screen[] = [
+	{
+		key: crypto.randomUUID(),
+		src: supplyUploadFileNotSelected,
+		alt: 'View of the global supply upload',
+		imageDescription:
+			'A view of the global supply upload page, without a file selected.',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: supplyUploadFileSelected,
+		alt: 'View of the global supply upload where a file is selected for upload',
+		imageDescription:
+			'View of the global supply upload where a file is selected for upload.',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: filterSelection,
+		alt: 'A page shown where filters can be selected',
+		imageDescription:
+			'Here the user can filter based on what columns was entered in the global supply upload. The filtered selections will form the subset of data for the scneraio.',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: uploadInProgress,
+		alt: 'A page showing updated progress on a users data upload',
+		imageDescription:
+			'A portion of the UI is dedicated to show the user feedback on their upload.',
+	},
+	{
+		key: crypto.randomUUID(),
+		src: uploadInProgress2,
+		alt: 'A page showing updated progress on a users data upload',
+		imageDescription:
+			'A portion of the UI is dedicated to show the user feedback on their upload.',
 	},
 ]
 
@@ -108,7 +152,7 @@ export const CONTENT = {
 		heading: 'Refactor of Legacy Demand Configuration',
 		description:
 			'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
-		screens: SCREENS,
+		screens: DEMAND_CONFIG_SCREENS,
 		contribution: {
 			heading: 'Contribution',
 			body: [
@@ -129,22 +173,19 @@ export const CONTENT = {
 	},
 	globalSupplyUpload: {
 		heading: 'Global Supply Upload',
-		description: 'Global Supply Upload ',
-		screens: SCREENS,
+		description:
+			'Global Supply Upload allowed for our clients to upload a global supply dataset that they could then create scenarios from. They would apply filters to the global dataset and a subset would be created from those filters for the scenario. Before they needed to create their own dataset manually, and upload that each time.',
+		screens: GLOBAL_SUPPLY_SCREENS,
 		contribution: {
 			heading: 'Contribution',
 			body: [
 				{
 					key: crypto.randomUUID(),
-					copy: "While the original system on C# Razor pages served its purpose, we aimed for a more dynamic and user-friendly experience. We rebuilt the feature with React and Typescript, utilising React APIs like useContext and useReducer to handle each segment's complex state. This transition enhanced the system's responsiveness and set the stage for a more intuitive user interface.",
+					copy: 'A significant part of this project was the creation of a user-friendly interface. I took the lead in building out greenfield designs for the page, allowing users to seamlessly segment the global dataset using various filters. This intuitive design ensured that clients could easily derive specific subsets from their global data, streamlining their planning processes.',
 				},
 				{
 					key: crypto.randomUUID(),
-					copy: "As we delved into the refactoring process, design blueprints for the configuration interface were in a state of flux. Adapting to these evolving designs was both a challenge and an opportunity. It allowed me to be part of iterative design discussions, offering feedback and insights to ensure that the final design was not only visually appealing but also met our functional requirements. My role wasn't confined to just coding; it was about understanding and contributing to the design ethos of the refactored system.",
-				},
-				{
-					key: crypto.randomUUID(),
-					copy: 'I also contributed to the creation of our CRUD APIs. Our services to handle these operations were being stripped out of the MVC app and moved to their own services driven by events, so making sure our services and the MVC app were kept in sync was crucial.',
+					copy: 'Beyond the frontend, I collaborated closely with the team on the backend infrastructure. I helped flesh out the design and implementation of APIs that efficiently segmented and stored data. This ensured that the Global Supply Upload feature was not only user-friendly but also backed by a robust and efficient data management system.',
 				},
 			],
 		},
