@@ -1,4 +1,4 @@
-import { Typography } from '@/components'
+import { Tldr, Typography } from '@/components'
 import styles from './eq8.styles.module.css'
 import { OVERVIEW } from '@/constants/eq8Content'
 
@@ -8,9 +8,11 @@ export function Eq8Overview() {
 			<Typography type="h3" size="xl">
 				{OVERVIEW.heading}
 			</Typography>
-			<div className={styles.doubleColumn}>
-				<Typography>{OVERVIEW.description}</Typography>
-			</div>
+			<Tldr tldrString={OVERVIEW.tldr} className={styles.tldr}>
+				<div className={styles.doubleColumn}>
+					<Typography>{OVERVIEW.description}</Typography>
+				</div>
+			</Tldr>
 		</section>
 	)
 }

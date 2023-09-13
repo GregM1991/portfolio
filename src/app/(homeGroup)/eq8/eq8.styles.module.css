@@ -8,10 +8,6 @@
   composes: doubleColumn from global;
 }
 
-.doubleColumn > p:not(:first-child) {
-  margin-top: var(--space-m);
-}
-
 .imageWrapper {
   position: relative;
   width: 100%;

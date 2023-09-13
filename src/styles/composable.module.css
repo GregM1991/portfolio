@@ -4,9 +4,13 @@
 	flex-direction: column;
 }
 
-.section-container {
-	composes: flex-column-wrapper;
-	padding: var(--space-2xl) var(--space-m-l);
+.max-width-container {
 	max-width: 1400px;
 	margin: auto;
+}
+
+.section-container {
+	composes: flex-column-wrapper;
+	composes: max-width-container;
+	padding: var(--space-xl) var(--space-m-l);
 }

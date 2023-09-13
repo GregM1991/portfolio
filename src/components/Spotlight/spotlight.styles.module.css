@@ -6,3 +6,7 @@
 .carousel {
   margin: var(--space-l) 0;
 }
+
+.tldr {
+  margin-top: var(--space-l);
+}

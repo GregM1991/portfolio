@@ -1,4 +1,4 @@
-import { Typography, Carousel } from '@/components'
+import { Typography, Carousel, Tldr } from '@/components'
 import { SpotlightContent } from '@/types/content'
 import styles from './spotlight.styles.module.css'
 
@@ -22,11 +22,13 @@ export function Spotlight({ ariaLabel, content }: SpotlightProps) {
 			<Typography type="h4" size="m">
 				{content.contribution.heading}
 			</Typography>
-			<div className={styles.doubleColumn}>
-				{content.contribution.body.map(({ key, copy }) => (
-					<Typography key={key}>{copy}</Typography>
-				))}
-			</div>
+			<Tldr tldrString={content.tldr} className={styles.tldr}>
+				<div className={styles.doubleColumn}>
+					{content.contribution.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
+			</Tldr>
 		</section>
 	)
 }

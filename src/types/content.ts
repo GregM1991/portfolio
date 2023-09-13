@@ -22,4 +22,5 @@ export type SpotlightContent = {
 	description: string
 	screens: Screen[]
 	contribution: Contribution
+	tldr: string
 }

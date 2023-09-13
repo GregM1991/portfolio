@@ -1,4 +1,5 @@
 .header {
+  composes: max-width-container from '../../styles/composable.module.css';
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,6 +46,7 @@
 .navLink {
   font-family: var(--font-raleway);
   font-size: var(--step-3);
+  font-weight: 400;
   color: var(--palette-gray-dark);
 }
 
@@ -170,7 +172,6 @@
 
   .navLink {
     font-size: 0.875rem;
-    font-family: var(--typography-body-font-family);
     letter-spacing: 0.4px;
   }
 

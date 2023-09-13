@@ -123,6 +123,7 @@ export const GOALS = {
 			copy: "I also wanted to step out of my comfort zone, like I said I've spent a lot of my career working with JavaScript, so I wanted something new. I was also heading from a somewhat established company (Faethm had been acquired by Pearson) to a start-up, to help get a feel for the wider industry.",
 		},
 	],
+	tldr: 'I joined eQ8 to explore C# after mainly working with JS and to enhance my React skills. I aimed to mentor junior devs and step out of my comfort zone by transitioning from an established company to a startup, seeking a broader industry perspective.',
 }
 
 export const CHALLENGES = {
@@ -141,6 +142,7 @@ export const CHALLENGES = {
 			copy: 'All in all, my time at eq8 was filled with learning curves that shaped me into a more resilient and adaptable engineer.',
 		},
 	],
+	tldr: "At eq8, the rapid project pace limited my deep dive into C#, teaching me adaptability and prioritization. The high-energy environment improved my stress management and multitasking abilities. I tackled challenges like integrating features into legacy code, learning the significance of documentation and careful modernization. Overall, eq8's challenges made me a stronger, more adaptable engineer.",
 }
 
 export const DEMAND_CONFIG: SpotlightContent = {
@@ -165,6 +167,7 @@ export const DEMAND_CONFIG: SpotlightContent = {
 			},
 		],
 	},
+	tldr: 'We transitioned from C# Razor pages to a more responsive system using React and Typescript, enhancing user experience. Amid evolving designs, I actively contributed to design discussions, and ensured synchronization between our new CRUD APIs and the MVC app.',
 }
 
 export const GLOBAL_SUPPLY_UPLOAD = {
@@ -185,10 +188,12 @@ export const GLOBAL_SUPPLY_UPLOAD = {
 			},
 		],
 	},
+	tldr: 'I spearheaded the creation of an intuitive interface for users to filter global datasets, enhancing their planning processes. Collaborating on the backend, I contributed to the design of APIs, ensuring efficient data management for the Global Supply Upload feature.',
 }
 
 export const OVERVIEW = {
 	heading: 'Overview',
 	description:
 		'Working at eQ8 was a whirlwind experience; the environment was hectic and fast-paced, pushing me out of my comfort zone and catalyzing my growth. It was incredibly rewarding to witness my progress with React and to have the opportunity to share that knowledge with the team. I was surrounded by talented individuals from whom I learned immensely, and their camaraderie made the journey even more fulfilling. A special shoutout to Hina and Annisa for their invaluable support and guidance throughout.',
+	tldr: 'At eQ8, the dynamic environment accelerated my growth, especially in React, and I cherished sharing insights with my skilled colleagues. A huge shoutout to Hina and Annisa for their awesome support and skills.',
 }
