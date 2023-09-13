@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Controls, Typography } from '@/components'
-import { Screen } from '@/app/(homeGroup)/eq8/content'
+import { Screen } from '@/types/content'
 import styles from './carousel.styles.module.css'
 import clsx from 'clsx'
 

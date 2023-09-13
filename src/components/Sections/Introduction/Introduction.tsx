@@ -2,7 +2,7 @@ import { SocialLinks, Typography } from '@/components'
 import Image from 'next/image'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
-import { INTRO_COPY } from '@/constants/content'
+import { INTRO_COPY } from '@/constants/homepageContent'
 
 export function Introduction() {
 	return (

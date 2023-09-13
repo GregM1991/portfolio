@@ -7,7 +7,7 @@ import {
 	SiRedux,
 } from 'react-icons/si'
 import { Typography } from '@/components'
-import { SKILLS_COPY } from '@/constants/content'
+import { SKILLS_COPY } from '@/constants/homepageContent'
 import styles from './skills.styles.module.css'
 
 export function Skills() {
@@ -17,7 +17,9 @@ export function Skills() {
 				<Typography color="primary" type="h2" size="xl">
 					{SKILLS_COPY.title}
 				</Typography>
-				<Typography>{SKILLS_COPY.body}</Typography>
+				<div className="doubleColumn">
+					<Typography>{SKILLS_COPY.body}</Typography>
+				</div>
 				<div className={styles.iconsWrapper}>
 					<SiHtml5 />
 					<SiCss3 />

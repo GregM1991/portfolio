@@ -19,6 +19,10 @@
   object-position: 100% 0%;
 }
 
+.bodyCopy {
+  composes: doubleColumn from global;
+}
+
 .bodyCopy > p:not(:first-child) {
   margin-top: var(--space-2xs);
 }
