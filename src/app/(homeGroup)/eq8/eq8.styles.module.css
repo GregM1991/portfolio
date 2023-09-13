@@ -6,7 +6,6 @@
 
 .doubleColumn {
   composes: doubleColumn from global;
-  margin-top: var(--space-l);
 }
 
 .doubleColumn > p:not(:first-child) {
@@ -31,6 +30,10 @@
 .liDecoration {
   color: var(--palette-primary);
   margin-right: var(--space-s);
+}
+
+.tldr {
+  margin-top: var(--space-l);
 }
 
 @media (min-width: 982px) {

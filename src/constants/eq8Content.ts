@@ -96,6 +96,7 @@ const GLOBAL_SUPPLY_SCREENS: Screen[] = [
 
 export const OPENING = {
 	heading: 'Working at eQ8',
+	tldr: 'At eQ8, I had a fantastic time with a fun team. The startup environment taught me valuable lessons about optimizing product usability and speeding up its launch.',
 	body: [
 		{
 			key: crypto.randomUUID(),

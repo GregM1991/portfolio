@@ -1,0 +1,11 @@
+.button {
+  padding: var(--space-s) 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.button:hover {
+  color: var(--palette-primary)
+}

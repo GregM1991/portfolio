@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Typography } from '@/components'
+import { Typography, Tldr } from '@/components'
 import { OPENING } from '@/constants/eq8Content'
 import styles from './eq8.styles.module.css'
 
@@ -10,11 +10,13 @@ export function Eq8Intro() {
 				<Typography type="h1" size="2xl">
 					{OPENING.heading}
 				</Typography>
-				<div className={styles.doubleColumn}>
-					{OPENING.body.map(({ key, copy }) => (
-						<Typography key={key}>{copy}</Typography>
-					))}
-				</div>
+				<Tldr tldrString={OPENING.tldr} className={styles.tldr}>
+					<div className={styles.doubleColumn}>
+						{OPENING.body.map(({ key, copy }) => (
+							<Typography key={key}>{copy}</Typography>
+						))}
+					</div>
+				</Tldr>
 			</section>
 			<div className={styles.imageWrapper}>
 				<Image
