@@ -11,11 +11,11 @@ export default function Eq8Project() {
 				<Typography type="h1" size="2xl">
 					{CONTENT.description.heading}
 				</Typography>
-				{CONTENT.description.body.map(({ key, copy }) => (
-					<Typography key={key} className={styles.copy}>
-						{copy}
-					</Typography>
-				))}
+				<div className={styles.doubleColumn}>
+					{CONTENT.description.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
 			</section>
 			<div className={styles.imageWrapper}>
 				<Image
@@ -45,43 +45,63 @@ export default function Eq8Project() {
 				<Typography type="h2" size="xl">
 					{CONTENT.goals.heading}
 				</Typography>
-				{CONTENT.goals.body.map(({ key, copy }) => (
-					<Typography key={key} className={styles.copy}>
-						{copy}
-					</Typography>
-				))}
+				<div className={styles.doubleColumn}>
+					{CONTENT.goals.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
 			</section>
 			<section>
 				<Typography type="h2" size="xl">
 					{CONTENT.challenges.heading}
 				</Typography>
-				{CONTENT.challenges.body.map(({ key, copy }) => (
-					<Typography key={key} className={styles.copy}>
-						{copy}
-					</Typography>
-				))}
+				<div className={styles.doubleColumn}>
+					{CONTENT.challenges.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
 			</section>
 			<section aria-label="A spotlight section focusing on work Greg did at eq8">
 				{/* TODO: Add tooltip to some of the things that would be confusing to people */}
 				<Typography type="h3" size="xl">
 					{CONTENT.demandConfig.heading}
 				</Typography>
-				<Typography className={styles.copy}>
-					{CONTENT.demandConfig.description}
-				</Typography>
+				<div className={styles.doubleColumn}>
+					<Typography>{CONTENT.demandConfig.description}</Typography>
+				</div>
 				<Carousel
 					items={CONTENT.demandConfig.screens}
 					className={styles.carousel}
 				/>
-
-				{/* Contributions */}
+				<Typography type="h4" size="m">
+					{CONTENT.demandConfig.contribution.heading}
+				</Typography>
+				<div className={styles.doubleColumn}>
+					{CONTENT.demandConfig.contribution.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
 			</section>
-			{/* SPOTLIGHT 1 */}
-			{/* Refactor old Demand Config page */}
-			{/* CONTRIBUTIONS */}
-			{/* SPOTLIGHT 2 */}
-			{/* Refactor old Demand Config page */}
-			{/* CONTRIBUTIONS */}
+			<section aria-label="A spotlight section focusing on work Greg did at eq8">
+				<Typography type="h3" size="xl">
+					{CONTENT.globalSupplyUpload.heading}
+				</Typography>
+				<div className={styles.doubleColumn}>
+					<Typography>{CONTENT.globalSupplyUpload.description}</Typography>
+				</div>
+				<Carousel
+					items={CONTENT.globalSupplyUpload.screens}
+					className={styles.carousel}
+				/>
+				<Typography type="h4" size="m">
+					{CONTENT.globalSupplyUpload.contribution.heading}
+				</Typography>
+				<div className={styles.doubleColumn}>
+					{CONTENT.globalSupplyUpload.contribution.body.map(({ key, copy }) => (
+						<Typography key={key}>{copy}</Typography>
+					))}
+				</div>
+			</section>
 			{/* 
 				OVERVIEW 
 				- Hectic and fast-paced but forced me out of my comfort zone

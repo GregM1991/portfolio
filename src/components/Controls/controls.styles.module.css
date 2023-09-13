@@ -1,7 +1,7 @@
 .arrowButton {
   display: none;
   position: absolute;
-  top: calc(50% - 24px);
+  top: 50%;
   border: 1px solid var(--palette-light);
   transform: translateY(-50%);
 }

@@ -7,7 +7,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 4fr auto;
   position: relative;
-  min-height: 700px;
+  height: clamp(300px, 60vh, 700px);
   width: 100%;
   isolation: isolate;
 }
@@ -26,3 +26,4 @@
   color: var(--palette-white);
   z-index: 1;
 }
+

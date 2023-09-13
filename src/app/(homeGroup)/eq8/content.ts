@@ -109,5 +109,44 @@ export const CONTENT = {
 		description:
 			'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
 		screens: SCREENS,
+		contribution: {
+			heading: 'Contribution',
+			body: [
+				{
+					key: crypto.randomUUID(),
+					copy: "While the original system on C# Razor pages served its purpose, we aimed for a more dynamic and user-friendly experience. We rebuilt the feature with React and Typescript, utilising React APIs like useContext and useReducer to handle each segment's complex state. This transition enhanced the system's responsiveness and set the stage for a more intuitive user interface.",
+				},
+				{
+					key: crypto.randomUUID(),
+					copy: "As we delved into the refactoring process, design blueprints for the configuration interface were in a state of flux. Adapting to these evolving designs was both a challenge and an opportunity. It allowed me to be part of iterative design discussions, offering feedback and insights to ensure that the final design was not only visually appealing but also met our functional requirements. My role wasn't confined to just coding; it was about understanding and contributing to the design ethos of the refactored system.",
+				},
+				{
+					key: crypto.randomUUID(),
+					copy: 'I also contributed to the creation of our CRUD APIs. Our services to handle these operations were being stripped out of the MVC app and moved to their own services driven by events, so making sure our services and the MVC app were kept in sync was crucial.',
+				},
+			],
+		},
+	},
+	globalSupplyUpload: {
+		heading: 'Global Supply Upload',
+		description: 'Global Supply Upload ',
+		screens: SCREENS,
+		contribution: {
+			heading: 'Contribution',
+			body: [
+				{
+					key: crypto.randomUUID(),
+					copy: "While the original system on C# Razor pages served its purpose, we aimed for a more dynamic and user-friendly experience. We rebuilt the feature with React and Typescript, utilising React APIs like useContext and useReducer to handle each segment's complex state. This transition enhanced the system's responsiveness and set the stage for a more intuitive user interface.",
+				},
+				{
+					key: crypto.randomUUID(),
+					copy: "As we delved into the refactoring process, design blueprints for the configuration interface were in a state of flux. Adapting to these evolving designs was both a challenge and an opportunity. It allowed me to be part of iterative design discussions, offering feedback and insights to ensure that the final design was not only visually appealing but also met our functional requirements. My role wasn't confined to just coding; it was about understanding and contributing to the design ethos of the refactored system.",
+				},
+				{
+					key: crypto.randomUUID(),
+					copy: 'I also contributed to the creation of our CRUD APIs. Our services to handle these operations were being stripped out of the MVC app and moved to their own services driven by events, so making sure our services and the MVC app were kept in sync was crucial.',
+				},
+			],
+		},
 	},
 }

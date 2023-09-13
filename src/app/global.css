@@ -89,3 +89,15 @@ select {
 		scroll-behavior: auto !important;
 	}
 }
+
+/* global classes */
+.doubleColumn {
+	column-count: 1;
+	column-gap: var(--space-m);
+}
+
+@media (min-width: 982px) {
+	.doubleColumn {
+		column-count: 2;
+	}
+}

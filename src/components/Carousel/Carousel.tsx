@@ -41,8 +41,8 @@ export function Carousel({ items, className }: CarouselProps) {
 					key={indexItem.key}
 					src={indexItem.src}
 					alt={indexItem.alt}
-					fill
 					className={styles.imageStyle}
+					fill
 				/>
 				{indexItem.imageDescription && (
 					<span className={styles.description}>
