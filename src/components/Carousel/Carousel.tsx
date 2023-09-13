@@ -1,8 +1,7 @@
 'use client'
 import { useState } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Controls, Typography } from '@/components'
+import { AnimatePresence } from 'framer-motion'
+import { AnimatedImage, Controls, Typography } from '@/components'
 import { Screen } from '@/types/content'
 import styles from './carousel.styles.module.css'
 import clsx from 'clsx'
@@ -37,18 +36,24 @@ export function Carousel({ items, className }: CarouselProps) {
 	return (
 		<div className={classes}>
 			<div className={styles.imageWrapper}>
-				<Image
-					key={indexItem.key}
-					src={indexItem.src}
-					alt={indexItem.alt}
-					className={styles.imageStyle}
-					fill
-				/>
-				{indexItem.imageDescription && (
-					<span className={styles.description}>
-						<Typography type="span">{indexItem.imageDescription}</Typography>
-					</span>
-				)}
+				<AnimatePresence>
+					<AnimatedImage
+						key={indexItem.key}
+						src={indexItem.src}
+						alt={indexItem.alt}
+						className={styles.imageStyle}
+						fill
+						transition={{ duration: 0.5 }}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+					/>
+					{indexItem.imageDescription && (
+						<span className={styles.description}>
+							<Typography type="span">{indexItem.imageDescription}</Typography>
+						</span>
+					)}
+				</AnimatePresence>
 			</div>
 			<Controls
 				onRightClick={handleNext}
