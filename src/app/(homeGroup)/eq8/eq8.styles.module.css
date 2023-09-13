@@ -10,7 +10,6 @@
 }
 
 .doubleColumn > p:not(:first-child) {
-	/* break-inside: avoid; */
   margin-top: var(--space-m);
 }
 
@@ -32,10 +31,6 @@
 .liDecoration {
   color: var(--palette-primary);
   margin-right: var(--space-s);
-}
-
-.carousel {
-  margin: var(--space-l) 0;
 }
 
 @media (min-width: 982px) {

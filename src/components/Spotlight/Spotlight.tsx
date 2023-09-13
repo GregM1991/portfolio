@@ -1,6 +1,6 @@
 import { Typography, Carousel } from '@/components'
-import styles from './spotlight.styles.module.css'
 import { SpotlightContent } from '@/types/content'
+import styles from './spotlight.styles.module.css'
 
 interface SpotlightProps {
 	ariaLabel: string

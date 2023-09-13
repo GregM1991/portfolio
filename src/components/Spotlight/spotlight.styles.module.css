@@ -1,0 +1,8 @@
+.doubleColumn {
+  composes: doubleColumn from global;
+  margin-top: var(--space-l);
+}
+
+.carousel {
+  margin: var(--space-l) 0;
+}
