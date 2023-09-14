@@ -20,7 +20,6 @@ export default function Eq8Project() {
 		<main className={styles.wrapper}>
 			<LeadContentBlock
 				heading={OPENING.heading}
-				headingProps={{ type: 'h2' }}
 				body={OPENING.body}
 				sectionAriaLabel={OPENING.sectionAriaLabel}
 				tldrString={OPENING.tldr}
@@ -28,20 +27,20 @@ export default function Eq8Project() {
 				imageAlt={OPENING.imageAlt}
 			/>
 			<TechContentBlock
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				sectionAriaLabel={EQ8_TECH.sectionAriaLabel}
 				techStack={EQ8_TECH.techStack}
 			/>
 			<GenericContentBlock
 				heading={GOALS.heading}
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				body={GOALS.body}
 				sectionAriaLabel={GOALS.sectionAriaLabel}
 				tldrString={GOALS.tldr}
 			/>
 			<GenericContentBlock
 				heading={CHALLENGES.heading}
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				body={CHALLENGES.body}
 				sectionAriaLabel={CHALLENGES.sectionAriaLabel}
 				tldrString={CHALLENGES.tldr}
@@ -56,7 +55,7 @@ export default function Eq8Project() {
 			/>
 			<GenericContentBlock
 				heading={OVERVIEW.heading}
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				body={OVERVIEW.body}
 				sectionAriaLabel={OVERVIEW.sectionAriaLabel}
 				tldrString={OVERVIEW.tldr}

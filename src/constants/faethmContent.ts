@@ -72,49 +72,41 @@ export const CHALLENGES = {
 }
 
 export const IN_HOUSE_IDENTITY_TO_AUTH0: SpotlightContent = {
-	heading: 'Refactor of Legacy Demand Configuration',
+	heading: 'In-House Identity to Auth0',
 	description:
-		'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
+		'When Faethm started out they implemented their own bespoke authentication flow and over time the maintainability and scope of this feature blew out of control. We set out to find a third-party alternative that would handle all our use cases and landed on Auth0.',
 	contribution: {
 		heading: 'Contribution',
 		body: [
 			{
 				key: crypto.randomUUID(),
-				copy: "While the original system on C# Razor pages served its purpose, we aimed for a more dynamic and user-friendly experience. We rebuilt the feature with React and Typescript, utilising React APIs like useContext and useReducer to handle each segment's complex state. This transition enhanced the system's responsiveness and set the stage for a more intuitive user interface.",
+				copy: 'I was involved in the development of a suite of APIs utilised to seamlessly integrate with our back end, focusing on login and user management functionalities. This ensured that our users had a smooth and secure experience every time they accessed our platform.',
 			},
 			{
 				key: crypto.randomUUID(),
-				copy: "As we delved into the refactoring process, design blueprints for the configuration interface were in a state of flux. Adapting to these evolving designs was both a challenge and an opportunity. It allowed me to be part of iterative design discussions, offering feedback and insights to ensure that the final design was not only visually appealing but also met our functional requirements. My role wasn't confined to just coding; it was about understanding and contributing to the design ethos of the refactored system.",
-			},
-			{
-				key: crypto.randomUUID(),
-				copy: 'I also contributed to the creation of our CRUD APIs. Our services to handle these operations were being stripped out of the MVC app and moved to their own services driven by events, so making sure our services and the MVC app were kept in sync was crucial.',
+				copy: 'AAnother significant task I was involved in was the integration of Auth0 into our front-end login flow. By incorporating Auth0, we were able to enhance the security and efficiency of our authentication process, providing our users with a reliable and streamlined login experience.',
 			},
 		],
 	},
-	tldr: 'We transitioned from C# Razor pages to a more responsive system using React and Typescript, enhancing user experience. Amid evolving designs, I actively contributed to design discussions, and ensured synchronization between our new CRUD APIs and the MVC app.',
+	tldr: 'I played a key role in developing APIs for backend integration, particularly for user login and management, ensuring a seamless user experience. Additionally, I contributed to integrating Auth0 into our front end, ensuring the user was redirected to Auth0 and back with minimal interference.',
 }
 
 export const SUPPLY_DEMAND_MODEL: SpotlightContent = {
-	heading: 'Refactor of Legacy Demand Configuration',
+	heading: 'SWP - Supply & Demand Model',
 	description:
-		'Demand configuration is a feature that allows clients to associate Demand Drivers to different Segments in their business. We needed to update and refresh the UI/UX of this page as it was a bane for customers. We also split out the APIs and business logic required for the feature into services.',
+		"This feature was brought in to help users understand the ins and outs of their workforce and how it's set to be impacted by different emerging technologies. Data models would be pulled from the wider product and would end in a graph showing the need to increase/decrease individuals in a particular role.",
 	contribution: {
 		heading: 'Contribution',
 		body: [
 			{
 				key: crypto.randomUUID(),
-				copy: "While the original system on C# Razor pages served its purpose, we aimed for a more dynamic and user-friendly experience. We rebuilt the feature with React and Typescript, utilising React APIs like useContext and useReducer to handle each segment's complex state. This transition enhanced the system's responsiveness and set the stage for a more intuitive user interface.",
+				copy: 'I was actively involved in the architecture of this feature. This involved running point on the UI and what could be utilised from our UI component library, as well as what new components could be created for the library, as well as which components would be more specific to the product. We also went through what state would be needed for both the front-end and back-end applications, including the choice of SQL database and schema.',
 			},
 			{
 				key: crypto.randomUUID(),
-				copy: "As we delved into the refactoring process, design blueprints for the configuration interface were in a state of flux. Adapting to these evolving designs was both a challenge and an opportunity. It allowed me to be part of iterative design discussions, offering feedback and insights to ensure that the final design was not only visually appealing but also met our functional requirements. My role wasn't confined to just coding; it was about understanding and contributing to the design ethos of the refactored system.",
-			},
-			{
-				key: crypto.randomUUID(),
-				copy: 'I also contributed to the creation of our CRUD APIs. Our services to handle these operations were being stripped out of the MVC app and moved to their own services driven by events, so making sure our services and the MVC app were kept in sync was crucial.',
+				copy: "From there I was involved in the building out of the front-end and back-end applications. Our front end was a multi-step form consisting of three sections; a description of the user's scenario, selection of technologies adopted and workforce impact (retirement/attrition rates). Our back end was built using Node with Typescript, with REST APIs performing CRUD operations on our resources.",
 			},
 		],
 	},
-	tldr: 'We transitioned from C# Razor pages to a more responsive system using React and Typescript, enhancing user experience. Amid evolving designs, I actively contributed to design discussions, and ensured synchronization between our new CRUD APIs and the MVC app.',
+	tldr: "I played a pivotal role in the feature's architecture, focusing on UI components, state management, and database selection. The implementation involved a multi-step front-end form and a Node-based back-end with REST APIs for data operations.",
 }

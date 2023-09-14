@@ -10,6 +10,7 @@ import {
 	GOALS,
 	IN_HOUSE_IDENTITY_TO_AUTH0,
 	OPENING,
+	SUPPLY_DEMAND_MODEL,
 } from '@/constants/faethmContent'
 import styles from '../project.styles.module.css'
 
@@ -25,20 +26,20 @@ export default function FaethmProject() {
 				imageAlt={OPENING.imageAlt}
 			/>
 			<TechContentBlock
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				sectionAriaLabel={FAETHM_TECH.sectionAriaLabel}
 				techStack={FAETHM_TECH.techStack}
 			/>
 			<GenericContentBlock
 				heading={GOALS.heading}
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				body={GOALS.body}
 				sectionAriaLabel={GOALS.sectionAriaLabel}
 				tldrString={GOALS.tldr}
 			/>
 			<GenericContentBlock
 				heading={CHALLENGES.heading}
-				headingProps={{ type: 'h2' }}
+				headingProps={{ type: 'h2', size: 'xl' }}
 				body={CHALLENGES.body}
 				sectionAriaLabel={CHALLENGES.sectionAriaLabel}
 				tldrString={CHALLENGES.tldr}
@@ -47,10 +48,10 @@ export default function FaethmProject() {
 				ariaLabel="A spotlight section for work Greg did on the Auth0 migration at Faethm"
 				content={IN_HOUSE_IDENTITY_TO_AUTH0}
 			/>
-			{/* <Spotlight
+			<Spotlight
 				ariaLabel="A spotlight section for work Greg did on the SWP Supply and Demand model at Faethm"
 				content={SUPPLY_DEMAND_MODEL}
-			/> */}
+			/>
 		</main>
 	)
 }
