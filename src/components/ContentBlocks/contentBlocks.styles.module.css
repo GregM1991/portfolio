@@ -1,0 +1,35 @@
+.doubleColumn {
+  composes: doubleColumn from global;
+}
+
+.tldr {
+  margin-top: var(--space-l);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: clamp(20vh, 50vw, 500px);
+  margin-top: var(--space-xl);
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-l);
+  margin: 0;
+  padding: 0;
+  margin-top: var(--space-l);
+}
+
+.liDecoration {
+  color: var(--palette-primary);
+  margin-right: var(--space-s);
+}
+
+
+@media (min-width: 982px) {
+  .tech {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

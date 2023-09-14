@@ -6,7 +6,7 @@ import clsx from 'clsx'
 
 interface TldrProps {
 	tldrString: string
-	className: string
+	className?: string
 	children: React.ReactNode
 }
 

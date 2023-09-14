@@ -1,6 +1,6 @@
 import { CanvaPalette, Palette } from '@/types/palette'
 
-type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
+export type ElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
 export interface TypographyProps {
 	type?: ElementType

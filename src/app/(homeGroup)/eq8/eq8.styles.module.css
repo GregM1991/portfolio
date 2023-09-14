@@ -3,37 +3,3 @@
   padding-top: var(--space-2xl);
   gap: var(--space-xl);
 }
-
-.doubleColumn {
-  composes: doubleColumn from global;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  height: clamp(20vh, 50vw, 500px);
-}
-
-.tech {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-l);
-  margin: 0;
-  padding: 0;
-  margin-top: var(--space-l);
-}
-
-.liDecoration {
-  color: var(--palette-primary);
-  margin-right: var(--space-s);
-}
-
-.tldr {
-  margin-top: var(--space-l);
-}
-
-@media (min-width: 982px) {
-  .tech {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}

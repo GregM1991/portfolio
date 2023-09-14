@@ -14,16 +14,19 @@ import {
 	uploadInProgress2,
 } from '@/assets/images/global-supply-screens'
 
-export const EQ8_TECH = [
-	'C#',
-	'dotnet',
-	'Azure functions',
-	'gRPC',
-	'SQL + noSQL databases',
-	'Razor pages',
-	'React with Typescript',
-	'Zustand',
-]
+export const EQ8_TECH = {
+	sectionAriaLabel: 'Technologies used at eQ8',
+	techStack: [
+		'C#',
+		'dotnet',
+		'Azure functions',
+		'gRPC',
+		'SQL + noSQL databases',
+		'Razor pages',
+		'React with Typescript',
+		'Zustand',
+	],
+}
 
 const DEMAND_CONFIG_SCREENS: Screen[] = [
 	{
@@ -109,9 +112,11 @@ export const OPENING = {
 	],
 	imageSrc: eq8Gang,
 	imageAlt: 'Greg, Annisa and Aaron smiling and having a beer in the sunshine',
+	sectionAriaLabel: 'Description and introduction to the eq8 project page',
 }
 
 export const GOALS = {
+	sectionAriaLabel: 'Gregs goals at eq8',
 	heading: 'Goals at eQ8',
 	body: [
 		{
@@ -143,6 +148,7 @@ export const CHALLENGES = {
 		},
 	],
 	tldr: "At eq8, the rapid project pace limited my deep dive into C#, teaching me adaptability and prioritization. The high-energy environment improved my stress management and multitasking abilities. I tackled challenges like integrating features into legacy code, learning the significance of documentation and careful modernization. Overall, eq8's challenges made me a stronger, more adaptable engineer.",
+	sectionAriaLabel: 'Gregs challenges at eq8',
 }
 
 export const DEMAND_CONFIG: SpotlightContent = {
@@ -193,7 +199,12 @@ export const GLOBAL_SUPPLY_UPLOAD = {
 
 export const OVERVIEW = {
 	heading: 'Overview',
-	description:
-		'Working at eQ8 was a whirlwind experience; the environment was hectic and fast-paced, pushing me out of my comfort zone and catalyzing my growth. It was incredibly rewarding to witness my progress with React and to have the opportunity to share that knowledge with the team. I was surrounded by talented individuals from whom I learned immensely, and their camaraderie made the journey even more fulfilling. A special shoutout to Hina and Annisa for their invaluable support and guidance throughout.',
+	body: [
+		{
+			key: crypto.randomUUID(),
+			copy: 'Working at eQ8 was a whirlwind experience; the environment was hectic and fast-paced, pushing me out of my comfort zone and catalyzing my growth. It was incredibly rewarding to witness my progress with React and to have the opportunity to share that knowledge with the team. I was surrounded by talented individuals from whom I learned immensely, and their camaraderie made the journey even more fulfilling. A special shoutout to Hina and Annisa for their invaluable support and guidance throughout.',
+		},
+	],
 	tldr: 'At eQ8, the dynamic environment accelerated my growth, especially in React, and I cherished sharing insights with my skilled colleagues. A huge shoutout to Hina and Annisa for their awesome support and skills.',
+	sectionAriaLabel: 'An overview of Gregs time at eq8',
 }

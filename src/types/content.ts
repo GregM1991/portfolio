@@ -7,14 +7,14 @@ export type Screen = {
 	imageDescription: string
 }
 
-type ContributionParagraph = {
+export type Paragraph = {
 	key: string
 	copy: string
 }
 
 type Contribution = {
 	heading: string
-	body: ContributionParagraph[]
+	body: Paragraph[]
 }
 
 export type SpotlightContent = {
