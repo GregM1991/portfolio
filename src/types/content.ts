@@ -20,7 +20,7 @@ type Contribution = {
 export type SpotlightContent = {
 	heading: string
 	description: string
-	screens: Screen[]
+	screens?: Screen[]
 	contribution: Contribution
 	tldr: string
 }

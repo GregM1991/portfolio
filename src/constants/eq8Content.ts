@@ -103,7 +103,7 @@ export const OPENING = {
 	body: [
 		{
 			key: crypto.randomUUID(),
-			copy: 'I had a great experience working at eQ8, the team there are a fun bunch of people and we were never short of a good time, you can see a few of my workmates below.',
+			copy: 'I had a great experience working at eQ8, the team there are a fun bunch of people and we were never short of a good time, you can see a few of my workmates pictured below.',
 		},
 		{
 			key: crypto.randomUUID(),

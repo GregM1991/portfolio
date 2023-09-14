@@ -4,7 +4,11 @@
 }
 
 .carousel {
-  margin: var(--space-l) 0;
+  margin-top: var(--space-l);
+}
+
+.contributionHeader {
+  margin-top: var(--space-l);
 }
 
 .tldr {

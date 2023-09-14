@@ -6,7 +6,7 @@ import styles from './contentBlocks.styles.module.css'
 
 interface GenericContentBlockProps {
 	heading: string
-	headingProps: Omit<TypographyProps, 'children'>
+	headingProps?: Omit<TypographyProps, 'children'>
 	body: Paragraph[]
 	tldrString: string
 	sectionAriaLabel?: string

@@ -1,0 +1,5 @@
+.wrapper {
+  composes: section-container from '../../styles/composable.module.css';
+  padding-top: var(--space-2xl);
+  gap: var(--space-xl);
+}

@@ -18,8 +18,10 @@ export function Spotlight({ ariaLabel, content }: SpotlightProps) {
 			<div className={styles.doubleColumn}>
 				<Typography>{content.description}</Typography>
 			</div>
-			<Carousel items={content.screens} className={styles.carousel} />
-			<Typography type="h4" size="m">
+			{content.screens && (
+				<Carousel items={content.screens} className={styles.carousel} />
+			)}
+			<Typography type="h4" size="m" className={styles.contributionHeader}>
 				{content.contribution.heading}
 			</Typography>
 			<Tldr tldrString={content.tldr} className={styles.tldr}>
