@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react'
 import { Button, Typography } from '@/components'
+import { BiSolidChevronUp } from 'react-icons/bi'
 import styles from './tldr.styles.module.css'
-import clsx from 'clsx'
 
 interface TldrProps {
 	tldrString: string
@@ -11,27 +11,25 @@ interface TldrProps {
 }
 
 export function Tldr({ tldrString, className, children }: TldrProps) {
-	const [isTldr, setIsTldr] = useState(true)
+	const [contentIsShown, setContentIsShown] = useState(false)
 	return (
 		<div className={className}>
-			{isTldr ? (
-				<Typography>
-					<em className={styles.emphasis}>TLDR: </em>
-					{tldrString}
-				</Typography>
-			) : (
-				children
-			)}
+			<Typography>
+				<em className={styles.emphasis}>TLDR: </em>
+				{tldrString}
+			</Typography>
 			<Button
-				variant="outline"
-				size="regular"
-				onClick={() => setIsTldr(prevTldr => !prevTldr)}
+				variant="text"
+				size="small"
+				onClick={() => setContentIsShown(prev => !prev)}
 				className={styles.button}
 			>
-				{isTldr
-					? 'Click here for the longform version'
-					: 'Collapse longform content'}
+				{contentIsShown ? 'Read less' : 'Read more'}
+				<BiSolidChevronUp
+					className={contentIsShown ? styles.chevronDown : styles.chevronUp}
+				/>
 			</Button>
+			{contentIsShown && children}
 		</div>
 	)
 }

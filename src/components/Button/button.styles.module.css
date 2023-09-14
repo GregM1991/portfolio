@@ -35,7 +35,15 @@
   background-color: var(--palette-light)
 }
 
+.text {
+  background-color: transparent;
+}
+
 /* sizes */
+.small {
+  padding: 0;
+}
+
 .regular {
   padding: 0.5rem 1.5rem;
   font-size: 0.9375rem;

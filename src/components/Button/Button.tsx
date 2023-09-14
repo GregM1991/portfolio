@@ -4,8 +4,8 @@ import styles from './button.styles.module.css'
 import clsx from 'clsx'
 
 interface ButtonProps {
-	variant?: 'primary' | 'secondary' | 'outline'
-	size?: 'regular' | 'large'
+	variant?: 'primary' | 'secondary' | 'outline' | 'text'
+	size?: 'small' | 'regular' | 'large'
 	fluid?: boolean
 	className?: string
 	children: React.ReactNode

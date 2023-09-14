@@ -12,9 +12,16 @@ export function Spotlight({ ariaLabel, content }: SpotlightProps) {
 	return (
 		<section aria-label={ariaLabel}>
 			{/* TODO: Add tooltip to some of the things that would be confusing to people */}
-			<Typography type="h3" size="xl">
-				{content.heading}
-			</Typography>
+			<div>
+				<Typography type="h3" size="xl">
+					{content.heading}
+				</Typography>
+				{!content.screens && (
+					<Typography type="span" size="xs">
+						(Apologies for lack of reference imagery)
+					</Typography>
+				)}
+			</div>
 			<div className={styles.doubleColumn}>
 				<Typography>{content.description}</Typography>
 			</div>

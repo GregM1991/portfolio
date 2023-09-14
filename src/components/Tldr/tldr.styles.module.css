@@ -1,5 +1,16 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-arvo);
+  font-weight: 700;
+  color: var(--palette-primary);
   margin-top: var(--space-s);
+  width: 113px;
+}
+
+.button:hover {
+  text-decoration: underline;
 }
 
 .emphasis {
@@ -7,4 +18,18 @@
   font-style: normal;
   font-weight: 700;
   color: var(--palette-primary);
+}
+
+.chevron {
+  transition: 0.15s ease-in-out;
+}
+
+.chevronDown {
+  composes: chevron;
+  transform: rotate(180deg);
+}
+
+.chevronUp {
+  composes: chevron;
+  transform: rotate(0deg);
 }
