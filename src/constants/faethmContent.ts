@@ -45,7 +45,7 @@ export const GOALS = {
 		},
 		{
 			key: crypto.randomUUID(),
-			copy: 'Another aspiration was to immerse myself in a larger, agile team environment, a departure from my previous experience in a two-person team. I recognized the potential challenges and the need for effective communication in such a setting. Thus, enhancing my interpersonal and collaborative skills was a priority, ensuring that I could contribute effectively and harmoniously within a bigger team.',
+			copy: 'I had an aspiration to immerse myself in a larger, agile team environment, a departure from my previous experience in a two-person team. I recognized the potential challenges and the need for effective communication in such a setting. Thus, enhancing my interpersonal and collaborative skills was a priority, ensuring that I could contribute effectively and harmoniously within a bigger team.',
 		},
 	],
 	tldr: 'Before joining Faethm, I aimed to deepen my expertise in React and Node JS, focusing on holistic development. Additionally, transitioning to a larger team, I prioritized enhancing my communication and collaboration skills to thrive in an agile environment.',
@@ -71,6 +71,26 @@ export const CHALLENGES = {
 	sectionAriaLabel: 'Gregs challenges at Faethm',
 }
 
+export const UI_COMPONENT_LIBRARY: SpotlightContent = {
+	heading: 'UI Component Library',
+	description:
+		"This was my crowning jewel at Faethm, the UI Component Library. From the moment I joined, I started working on understanding and shaping the component library and how it's used within Faethm. As component libraries go, it's a set of reusable components set up as a package to be brought into front-end applications as needed. The components were built out with the Faethm Design System at its core for styling, using the atomic design system to build out complex components simply.",
+	contribution: {
+		heading: 'Contribution',
+		body: [
+			{
+				key: crypto.randomUUID(),
+				copy: 'I was appointed as the lead for the UI Component Library. This meant I was in charge of the general patterns of design for our components, how the codebase was maintained and written to allow for scalability and ease of use for our developers. I wrote many of the components myself, and would be a key person to review new code.',
+			},
+			{
+				key: crypto.randomUUID(),
+				copy: 'I set up a fortnightly meeting to sync up the design and engineering teams, as well as to give updates on how the UI Component Library was tracking. The reasons for this were through observations in my first initial months at Faethm. I found that the Design and Engineering teams were out of sync. I noticed that the Design team were making alterations to component designs, as well as creating new components and not communicating that with engineering. I also reviewed PRs where developers were not utilising the components built within the component library.',
+			},
+		],
+	},
+	tldr: "I was appointed as the lead for the UI Component Library, overseeing design patterns, codebase maintenance, and writing components for scalability and developer ease. To address observed communication gaps between the Design and Engineering teams at Faethm, I initiated fortnightly meetings to synchronize both teams and provide updates on the UI Component Library's progress.",
+}
+
 export const IN_HOUSE_IDENTITY_TO_AUTH0: SpotlightContent = {
 	heading: 'In-House Identity to Auth0',
 	description:
@@ -84,7 +104,7 @@ export const IN_HOUSE_IDENTITY_TO_AUTH0: SpotlightContent = {
 			},
 			{
 				key: crypto.randomUUID(),
-				copy: 'AAnother significant task I was involved in was the integration of Auth0 into our front-end login flow. By incorporating Auth0, we were able to enhance the security and efficiency of our authentication process, providing our users with a reliable and streamlined login experience.',
+				copy: 'Another significant task I was involved in was the integration of Auth0 into our front-end login flow. By incorporating Auth0, we were able to enhance the security and efficiency of our authentication process, providing our users with a reliable and streamlined login experience.',
 			},
 		],
 	},

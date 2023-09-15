@@ -11,6 +11,7 @@ import {
 	IN_HOUSE_IDENTITY_TO_AUTH0,
 	OPENING,
 	SUPPLY_DEMAND_MODEL,
+	UI_COMPONENT_LIBRARY,
 } from '@/constants/faethmContent'
 import styles from '../project.styles.module.css'
 
@@ -43,6 +44,10 @@ export default function FaethmProject() {
 				body={CHALLENGES.body}
 				sectionAriaLabel={CHALLENGES.sectionAriaLabel}
 				tldrString={CHALLENGES.tldr}
+			/>
+			<Spotlight
+				ariaLabel="A spotlight section for work Greg did on the UI Component Library at Faethm"
+				content={UI_COMPONENT_LIBRARY}
 			/>
 			<Spotlight
 				ariaLabel="A spotlight section for work Greg did on the Auth0 migration at Faethm"
