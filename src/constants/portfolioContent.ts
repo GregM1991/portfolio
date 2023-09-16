@@ -42,6 +42,10 @@ export const GOALS = {
 			key: crypto.randomUUID(),
 			copy: "My second goal was to learn more about the Server Side Rendering of applications and how that's done in the context of React. Server components are not entirely new, but gaining traction, and I want to be on the right side of their adoption into the mainstream. So I'm easing myself in with this portfolio site, to get some hands-on experience.",
 		},
+		{
+			key: crypto.randomUUID(),
+			copy: 'Lastly, I just wanted a bit of a playground where I could test out things, make mistakes and just have a good time building and learning. I used Framer motion for animations and gave utopia.fyi (a responsive design pattern that allows type and space to scale with the screen) a go. I also wanted to implement a site using CSS custom properties. It was a blast.',
+		},
 	],
 	tldr: 'I aimed to create a current portfolio to display my abilities, using the portfolio itself as a testament to my front-end skills due to a lack of personal projects. Additionally, I sought to understand Server Side Rendering in React, diving into server components to stay ahead of their growing popularity and gain hands-on experience.',
 }

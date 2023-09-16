@@ -30,7 +30,7 @@
 .screensGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-s);
+  gap: var(--space-xl);
 }
 
 @media (min-width: 768px) {

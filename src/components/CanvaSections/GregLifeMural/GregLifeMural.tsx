@@ -38,6 +38,7 @@ export function GregLifeMural() {
 			variants={fadeInVariants}
 			initial="hidden"
 			whileInView="visible"
+			viewport={{ once: true }}
 			ref={wrapperRef}
 		>
 			<span id="greg-life-mural" className="anchor" />

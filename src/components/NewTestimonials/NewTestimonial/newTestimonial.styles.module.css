@@ -35,7 +35,7 @@
   left: -15px;
   width: 100px;
   height: 100px;
-  background: url("../../../../assets/images/block-quote.png") no-repeat top left;
+  background: url("../../../assets/images/block-quote.png") no-repeat top left;
   background-size: 100px 100px;
   opacity: 0.5;
   z-index: -1;

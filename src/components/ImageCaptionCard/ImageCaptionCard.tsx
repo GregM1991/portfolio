@@ -1,13 +1,16 @@
 import Image, { StaticImageData } from 'next/image'
 import styles from './imageCaptionCard.styles.module.css'
-import { Typography } from '@/components'
+import { Typography, VisuallyHidden } from '@/components'
 import clsx from 'clsx'
+import Link from 'next/link'
+import { FaGithub } from 'react-icons/fa6'
 
 interface ImageCaptionCardProps {
 	imageSrc: StaticImageData
 	imageAlt: string
-	caption?: string
+	caption?: string | React.ReactNode
 	isScreenCap?: boolean
+	linkToCode?: string
 }
 
 export function ImageCaptionCard({
@@ -15,6 +18,7 @@ export function ImageCaptionCard({
 	imageAlt,
 	caption,
 	isScreenCap = false,
+	linkToCode,
 }: ImageCaptionCardProps) {
 	const imageClasses = clsx(styles.image, { [styles.shadow]: isScreenCap })
 	return (
@@ -27,8 +31,18 @@ export function ImageCaptionCard({
 				className={imageClasses}
 			/>
 			{caption && (
-				<figcaption>
-					<Typography type="span">{caption}</Typography>
+				<figcaption className={styles.figcaption}>
+					<Typography size="xs" type="span">
+						{caption}
+					</Typography>
+					{linkToCode && (
+						<Link href={linkToCode}>
+							<VisuallyHidden>
+								Here is a link to the code for this component
+							</VisuallyHidden>
+							<FaGithub />
+						</Link>
+					)}
 				</figcaption>
 			)}
 		</figure>

@@ -10,3 +10,7 @@
 .shadow {
   box-shadow: var(--box-shadow);
 }
+
+.figcaption {
+  margin-top: var(--space-2xs);
+}
