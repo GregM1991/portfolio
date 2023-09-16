@@ -3,14 +3,14 @@ import Link from 'next/link'
 import {
 	GenericContentBlock,
 	ImageCaptionCard,
-	LeadContentBlock,
-	Spotlight,
 	TechContentBlock,
 	Typography,
 } from '@/components'
 import { FaGithub } from 'react-icons/fa6'
 import { GOALS, OPENING, PORTFOLIO_TECH } from '@/constants/portfolioContent'
 import homepageWhole from '@/assets/images/whole-homepage-portfolio.png'
+import carousel from '@/assets/images/carousel.png'
+import testimonials from '@/assets/images/testimonials-screenshot.png'
 import styles from '../project.styles.module.css'
 
 export default function PortfolioProject() {
@@ -25,20 +25,10 @@ export default function PortfolioProject() {
 			>
 				<Link href={OPENING.codeLink} className={styles.link} target="_blank">
 					<Typography size="xs" type="span">
-						View code here
+						View Portfolio code
 					</Typography>
 					<FaGithub />
 				</Link>
-				<div className={styles.imageWrapper}>
-					<Image
-						src={OPENING.imageSrc}
-						alt={OPENING.imageAlt}
-						sizes="100vw"
-						placeholder="blur"
-						priority
-						className={styles.mainImage}
-					/>
-				</div>
 			</GenericContentBlock>
 			<TechContentBlock
 				headingProps={{ type: 'h2', size: 'xl' }}
@@ -52,10 +42,24 @@ export default function PortfolioProject() {
 				sectionAriaLabel={GOALS.sectionAriaLabel}
 				tldrString={GOALS.tldr}
 			/>
-			<ImageCaptionCard
-				imageSrc={homepageWhole}
-				imageAlt="A screenshot of the whole of the home portfolio page"
-			/>
+			<div className={styles.screensGrid}>
+				<ImageCaptionCard
+					imageSrc={homepageWhole}
+					imageAlt="A screenshot of the whole of the home portfolio page"
+					isScreenCap
+				/>
+				<ImageCaptionCard
+					imageSrc={carousel}
+					imageAlt="A screenshot of the whole of the home portfolio page"
+					isScreenCap
+				/>
+				<ImageCaptionCard
+					imageSrc={testimonials}
+					imageAlt="A screenshot of the whole of the home portfolio page"
+					isScreenCap
+				/>
+			</div>
+			{/* TODO: pickup here, also keep in mind utopia type design */}
 			{/* <GenericContentBlock
 				heading={CHALLENGES.heading}
 				headingProps={{ type: 'h2', size: 'xl' }}
