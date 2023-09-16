@@ -6,16 +6,16 @@ import {
 } from '@/components'
 import {
 	CHALLENGES,
-	DEMAND_CONFIG,
-	EQ8_TECH,
-	GLOBAL_SUPPLY_UPLOAD,
+	FAETHM_TECH,
 	GOALS,
+	IN_HOUSE_IDENTITY_TO_AUTH0,
 	OPENING,
-	OVERVIEW,
-} from '@/constants/eq8Content'
-import styles from '../project.styles.module.css'
+	SUPPLY_DEMAND_MODEL,
+	UI_COMPONENT_LIBRARY,
+} from '@/constants/faethmContent'
+import styles from '../../project.styles.module.css'
 
-export default function Eq8Project() {
+export default function FaethmProject() {
 	return (
 		<main className={styles.wrapper}>
 			<LeadContentBlock
@@ -28,8 +28,8 @@ export default function Eq8Project() {
 			/>
 			<TechContentBlock
 				headingProps={{ type: 'h2', size: 'xl' }}
-				sectionAriaLabel={EQ8_TECH.sectionAriaLabel}
-				techStack={EQ8_TECH.techStack}
+				sectionAriaLabel={FAETHM_TECH.sectionAriaLabel}
+				techStack={FAETHM_TECH.techStack}
 			/>
 			<GenericContentBlock
 				heading={GOALS.heading}
@@ -46,19 +46,16 @@ export default function Eq8Project() {
 				tldrString={CHALLENGES.tldr}
 			/>
 			<Spotlight
-				ariaLabel="A spotlight section focusing on work Greg did at eq8"
-				content={DEMAND_CONFIG}
+				ariaLabel="A spotlight section for work Greg did on the UI Component Library at Faethm"
+				content={UI_COMPONENT_LIBRARY}
 			/>
 			<Spotlight
-				ariaLabel="A spotlight section focusing on work Greg did at eq8"
-				content={GLOBAL_SUPPLY_UPLOAD}
+				ariaLabel="A spotlight section for work Greg did on the Auth0 migration at Faethm"
+				content={IN_HOUSE_IDENTITY_TO_AUTH0}
 			/>
-			<GenericContentBlock
-				heading={OVERVIEW.heading}
-				headingProps={{ type: 'h2', size: 'xl' }}
-				body={OVERVIEW.body}
-				sectionAriaLabel={OVERVIEW.sectionAriaLabel}
-				tldrString={OVERVIEW.tldr}
+			<Spotlight
+				ariaLabel="A spotlight section for work Greg did on the SWP Supply and Demand model at Faethm"
+				content={SUPPLY_DEMAND_MODEL}
 			/>
 		</main>
 	)

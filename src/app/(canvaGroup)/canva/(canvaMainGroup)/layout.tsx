@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	description: 'A personal portfolio built for canva',
 }
 
-export const ezra = localFont({
+const ezra = localFont({
 	src: '../../../../../public/fonts/ezra_medium-webfont.woff2',
 	display: 'swap',
 	fallback: ['sans-serif'],

@@ -3,9 +3,13 @@
   gap: var(--space-s);
 }
 
+.bodyCopy {
+  composes: double-column from global;
+  margin-bottom: var(--space-xl);
+}
+
 .projectsWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-xl);
-  margin-top: var(--space-2xl);
 }

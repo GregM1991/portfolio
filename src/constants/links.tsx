@@ -61,6 +61,11 @@ export const NAV_LINKS: NavLink[] = [
 		linkText: 'portfolio',
 		href: '/portfolio',
 	},
+	{
+		key: crypto.randomUUID(),
+		linkText: 'Canva portfolio',
+		href: '/canva',
+	},
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [

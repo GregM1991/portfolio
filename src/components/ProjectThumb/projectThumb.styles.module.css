@@ -1,5 +1,6 @@
 .wrapper {
-  composes: flex-column-wrapper from global;
+  composes: flex-column-wrapper from '../../styles/composable.module.css';
+  align-items: center;
   gap: var(--space-s);
 }
 
@@ -18,15 +19,19 @@
 }
 
 .viewProject {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
   margin-top: var(--space-s);
+  transition: 0.15s ease;
 }
 
 .viewProject:hover {
   text-decoration: underline;
+  color: var(--palette-primary);
 }
 
-@media (min-width: 708px) {
+@media (min-width: 768px) {
   .doubleColumn {
     grid-column: span 2;
     align-items: center;

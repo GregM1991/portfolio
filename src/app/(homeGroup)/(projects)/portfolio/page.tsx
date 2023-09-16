@@ -16,7 +16,7 @@ import {
 import canvaPageWhole from '@/assets/images/whole-canva-portfolio-page.png'
 import carousel from '@/assets/images/carousel.png'
 import testimonials from '@/assets/images/testimonials-screenshot.png'
-import styles from '../project.styles.module.css'
+import styles from '../../project.styles.module.css'
 
 export default function PortfolioProject() {
 	return (

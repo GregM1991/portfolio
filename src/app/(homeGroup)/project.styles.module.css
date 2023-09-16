@@ -33,6 +33,14 @@
   gap: var(--space-xl);
 }
 
+.horizontalRule {
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  max-width: calc(1400px - (var(--space-m-l) * 2));
+  background: var(--palette-secondary);
+}
+
 @media (min-width: 768px) {
   .screensGrid {
     grid-template-columns: 1fr 1fr;

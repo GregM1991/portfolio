@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Typography } from '@/components'
 import { Project } from '@/types/projects'
+import { GoChevronRight } from 'react-icons/go'
 import styles from './projectThumb.styles.module.css'
 import clsx from 'clsx'
 
@@ -31,9 +32,10 @@ export function ProjectThumb({
 			</Typography>
 			<Typography>{body}</Typography>
 			<Link href={htmlLink} className={styles.viewProject}>
-				<Typography weight="bold" type="span">
-					View project &gt;
+				<Typography size="xs" type="span">
+					View project
 				</Typography>
+				<GoChevronRight />
 			</Link>
 		</div>
 	)
