@@ -25,7 +25,12 @@ export function ProjectThumb({
 	return (
 		<div className={wrapperClassName}>
 			<div className={styles.imageWrapper}>
-				<Image alt={imageAlt} src={projImage} fill />
+				<Image
+					alt={imageAlt}
+					src={projImage}
+					fill={!doubleColumn}
+					sizes="100vw"
+				/>
 			</div>
 			<Typography type="h3" size="l" className={styles.title}>
 				{title}

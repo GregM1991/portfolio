@@ -10,6 +10,17 @@
   height: clamp(20vh, 50vw, 400px);
 }
 
+.doubleColumn .imageWrapper {
+  position: normal;
+  height: auto;
+  display: flex;
+}
+
+.doubleColumn img {
+  width: 100%;
+  height: auto;
+}
+
 .imageWrapper img {
   width: 100%;
 }

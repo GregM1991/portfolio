@@ -1,6 +1,6 @@
 import eq8 from '@/assets/images/eq8-pub.jpg'
 import faethm from '@/assets/images/faethm-kbbq-2.jpg'
-import portfolio from '@/assets/images/greg-standing-on-clifftop-in-tasmania.jpg'
+import portfolio from '@/assets/images/greg-portfolio-mockup.jpg'
 import { Project } from '@/types/projects'
 
 export const PROJECT_THUMBS: Project[] = [

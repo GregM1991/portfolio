@@ -14,10 +14,8 @@ interface LogoProps {
 }
 
 export function Logo({ type }: LogoProps) {
-	const href = type === 'canva' ? '/canva' : '/'
-
 	return (
-		<Link href={href} className={`${styles[type]} ${arvo.className}`}>
+		<Link href="/" className={`${styles[type]} ${arvo.className}`}>
 			GREG.
 		</Link>
 	)
