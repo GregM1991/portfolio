@@ -15,7 +15,7 @@ export function Tldr({ tldrString, className, children }: TldrProps) {
 	return (
 		<div className={className}>
 			<Typography>
-				<em className={styles.emphasis}>TLDR: </em>
+				<em className={styles.emphasis}>TLDR:</em>
 				{tldrString}
 			</Typography>
 			<Button
@@ -26,7 +26,7 @@ export function Tldr({ tldrString, className, children }: TldrProps) {
 			>
 				{contentIsShown ? 'Read less' : 'Read more'}
 				<BiSolidChevronUp
-					className={contentIsShown ? styles.chevronDown : styles.chevronUp}
+					className={contentIsShown ? styles.chevronUp : styles.chevronDown}
 				/>
 			</Button>
 			{contentIsShown && children}

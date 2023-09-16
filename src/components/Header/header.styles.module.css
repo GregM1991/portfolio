@@ -56,7 +56,6 @@
 
 .canva-navLink {
   composes: navLink;
-  font-family: var(--font-ezra);
   font-size: 1.5rem;
   letter-spacing: .005rem;
 }

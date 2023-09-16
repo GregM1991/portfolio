@@ -1,0 +1,8 @@
+.wrapper {
+  composes: flex-column-wrapper from '../../styles/composable.module.css'
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}
