@@ -49,3 +49,24 @@ export const GOALS = {
 	],
 	tldr: 'I aimed to create a current portfolio to display my abilities, using the portfolio itself as a testament to my front-end skills due to a lack of personal projects. Additionally, I sought to understand Server Side Rendering in React, diving into server components to stay ahead of their growing popularity and gain hands-on experience.',
 }
+
+export const OVERVIEW = {
+	sectionAriaLabel:
+		'The challenges and lessons Greg learned building his portfolio',
+	heading: 'Challenges and Lessons Learned',
+	body: [
+		{
+			key: crypto.randomUUID(),
+			copy: "My first challenge was with styled-components. I've been using styled-components from the beginning of my career and was very familiar with how they work, how they're written and how to create themes with them. Unfortunately, styled-components need a JS run time, and as I was trying to SSR as much as I could, it meant I left them out, and opted for css-modules instead.",
+		},
+		{
+			key: crypto.randomUUID(),
+			copy: "I had fun experimenting with css-modules, but there was some tooling I missed from getting used to CSS-in-JS, like style objects, nesting styles and a global theme provider. I managed to find a way to implement some of these things in css-modules, like the composing of generic classes, and I know there's a way to implement themes with CSS custom properties, I just haven't got there yet.",
+		},
+		{
+			key: crypto.randomUUID(),
+			copy: "Another challenge I've had is the creation of the Canva replica inside the repository. I didn't have a design system to work off when building the Canva site, and it made it difficult to nail down the spacing and typography, especially at different media sizes. For now, I've gone with separate CSS files for each set of CSS custom properties, but I know there's a better way to implement these things, a refactor for the future.",
+		},
+	],
+	tldr: 'I transitioned from styled-components to css-modules for server-side rendering, adapting to its nuances and missing CSS-in-JS features. Replicating Canva without a design system was challenging, prompting separate CSS files for custom properties and future refinements.',
+}

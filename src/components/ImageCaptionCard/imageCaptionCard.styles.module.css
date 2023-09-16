@@ -14,3 +14,17 @@
 .figcaption {
   margin-top: var(--space-2xs);
 }
+
+.figcaption a {
+  font-family: var(--font-raleway)
+}
+
+.figcaption a:hover {
+  color: var(--palette-primary);
+  transition: 0.15s ease;
+  text-decoration: underline;
+}
+
+.figcaption svg {
+  margin-left: var(--space-2xs);
+}

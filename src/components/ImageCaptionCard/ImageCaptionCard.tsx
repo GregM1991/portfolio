@@ -33,13 +33,11 @@ export function ImageCaptionCard({
 			{caption && (
 				<figcaption className={styles.figcaption}>
 					<Typography size="xs" type="span">
-						{caption}
+						{caption}{' '}
 					</Typography>
 					{linkToCode && (
 						<Link href={linkToCode}>
-							<VisuallyHidden>
-								Here is a link to the code for this component
-							</VisuallyHidden>
+							<VisuallyHidden>click here to</VisuallyHidden>View code
 							<FaGithub />
 						</Link>
 					)}

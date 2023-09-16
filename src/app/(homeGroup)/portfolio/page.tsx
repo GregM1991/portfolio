@@ -7,7 +7,12 @@ import {
 	Typography,
 } from '@/components'
 import { FaGithub } from 'react-icons/fa6'
-import { GOALS, OPENING, PORTFOLIO_TECH } from '@/constants/portfolioContent'
+import {
+	GOALS,
+	OPENING,
+	OVERVIEW,
+	PORTFOLIO_TECH,
+} from '@/constants/portfolioContent'
 import canvaPageWhole from '@/assets/images/whole-canva-portfolio-page.png'
 import carousel from '@/assets/images/carousel.png'
 import testimonials from '@/assets/images/testimonials-screenshot.png'
@@ -46,6 +51,12 @@ export default function PortfolioProject() {
 				<ImageCaptionCard
 					imageSrc={canvaPageWhole}
 					imageAlt="A screenshot of the whole of the home portfolio page"
+					caption={
+						<Typography size="xs">
+							The personal portfolio I built for canva.{' '}
+							<Link href="/canva">Check the site here</Link>
+						</Typography>
+					}
 					isScreenCap
 				/>
 				<ImageCaptionCard
@@ -53,22 +64,23 @@ export default function PortfolioProject() {
 					imageAlt="A screenshot of the whole of the home portfolio page"
 					caption="A carousel component to showcase screens for my projects."
 					isScreenCap
+					linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/Carousel/Carousel.tsx"
 				/>
 				<ImageCaptionCard
 					imageSrc={testimonials}
 					imageAlt="A screenshot of the whole of the home portfolio page"
 					caption="I had built this testimonials section for the canva page, but it was too good not to use in my regular portfolio."
 					isScreenCap
-					linkToCode=""
+					linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/NewTestimonials/NewTestimonials.tsx"
 				/>
 			</div>
-			{/* <GenericContentBlock
+			<GenericContentBlock
 				heading={OVERVIEW.heading}
 				headingProps={{ type: 'h2', size: 'xl' }}
 				body={OVERVIEW.body}
 				sectionAriaLabel={OVERVIEW.sectionAriaLabel}
 				tldrString={OVERVIEW.tldr}
-			/> */}
+			/>
 		</main>
 	)
 }
