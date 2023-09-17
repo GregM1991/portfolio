@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 
 interface ALineProps {
 	initial: number
@@ -32,30 +32,38 @@ export function ALine({ initial, width }: ALineProps) {
 	)
 }
 
-export function ALineSVG({ initial, width }: ALineProps) {
+export function ALineSVG() {
 	const variants = {
 		initial: {
-			width: initial,
+			width: 0,
 		},
 		target: {
-			width: width,
+			width: 190,
 		},
 	}
+
+	const width = useMotionValue(0)
+	const pathLength = useTransform(width, [0, 190], [0, 1])
+
 	return (
 		<motion.svg
-			width={width}
-			height="40"
+			height="8"
 			xmlns="http://www.w3.org/2000/svg"
-			color="inherit"
+			variants={variants}
+			initial="initial"
+			animate="target"
+			transition={{ tween: 'easeInOut', duration: 1.5, delay: 1.5 }}
+			style={{ width }}
 		>
-			<path
-				d="M 0 20 C 10 40 30 40 40 20 
-        S 70 0 80 20
-        S 110 40 120 20
-        S 150 0 160 20
-        S 190 40 200 20"
-				stroke="black"
+			<motion.path
+				d="M1.74,4.4c0.96,1.5,1.92,3,3.84,3c3.84,0,3.84-6,7.69-6c3.84,0,3.84,6,7.69,6c3.85,0,3.85-6,7.69-6
+				c3.84,0,3.84,6,7.69,6c3.85,0,3.85-6,7.69-6c3.84,0,3.84,6,7.69,6c3.85,0,3.85-6,7.69-6c3.84,0,3.84,6,7.69,6c3.85,0,3.85-6,7.69-6
+				c3.85,0,3.85,6,7.69,6c3.85,0,3.85-6,7.69-6c3.85,0,3.85,6,7.69,6c3.85,0,3.85-6,7.69-6c3.85,0,3.85,6,7.69,6c3.85,0,3.85-6,7.69-6
+				c3.85,0,3.85,6,7.69,6c3.84,0,3.84-6,7.69-6c3.85,0,3.85,6,7.69,6s3.85-6,7.69-6c3.85,0,3.85,6,7.69,6c3.85,0,3.85-6,7.69-6
+				c3.85,0,3.85,6,7.7,6c3.85,0,3.85-6,7.7-6c1.93,0,2.89,1.5,3.85,3"
+				stroke="currentColor"
 				fill="transparent"
+				style={{ pathLength, strokeWidth: 2 }}
 			/>
 		</motion.svg>
 	)

@@ -10,7 +10,7 @@ export function Introduction() {
 			<div className={styles.wrapper}>
 				<div>
 					<div className={styles.socialsWrapper}>
-						<ALineSVG initial={0} width={180} />
+						<ALineSVG />
 						<SocialLinks size={20} color="secondary" />
 					</div>
 
