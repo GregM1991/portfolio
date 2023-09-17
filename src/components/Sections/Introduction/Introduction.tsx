@@ -1,15 +1,19 @@
-import { SocialLinks, Typography } from '@/components'
 import Image from 'next/image'
+import { ALineSVG, SocialLinks, Typography } from '@/components'
+import { INTRO_COPY } from '@/constants/homepageContent'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
-import { INTRO_COPY } from '@/constants/homepageContent'
 
 export function Introduction() {
 	return (
 		<section aria-label="Introduction to Greg's portfolio">
 			<div className={styles.wrapper}>
 				<div>
-					<SocialLinks size={20} color="secondary" />
+					<div className={styles.socialsWrapper}>
+						<ALineSVG initial={0} width={180} />
+						<SocialLinks size={20} color="secondary" />
+					</div>
+
 					<Typography color="primary" type="h1" size="5xl">
 						{INTRO_COPY.title}
 					</Typography>

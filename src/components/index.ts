@@ -1,4 +1,5 @@
 export * from './Acknowledgement'
+export * from './AnimatedElements'
 export * from './AnimatedImage'
 export * from './Button'
 export * from './CanvaSection'

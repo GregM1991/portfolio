@@ -4,6 +4,12 @@
   gap: var(--space-l);
 }
 
+.socialsWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
 .tagLine {
   display: inline-block;
 }
