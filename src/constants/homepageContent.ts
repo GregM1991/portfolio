@@ -7,8 +7,12 @@ const introP3 =
 
 export const INTRO_COPY = {
 	title: "Greg's Place",
-	tagLine:
-		'Just a Full-Stack Engineer, standing in front of JavaScript, asking it to love him.',
+	tagLine: [
+		{ key: crypto.randomUUID(), copy: 'Just a Full-Stack Engineer, ' },
+		{ key: crypto.randomUUID(), copy: 'standing in front of JavaScript,' },
+		{ key: crypto.randomUUID(), copy: ' asking it to love him.' },
+	],
+
 	body: [introP1, introP2, introP3],
 }
 

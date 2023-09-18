@@ -1,6 +1,13 @@
 import Image from 'next/image'
-import { ALineSVG, AnimatedSocialLinks, Typography } from '@/components'
+import {
+	ALineSVG,
+	AnimateChildren,
+	AnimatedSocialLinks,
+	AnimatedTypography,
+	Typography,
+} from '@/components'
 import { INTRO_COPY } from '@/constants/homepageContent'
+import { fadeInUpVariantsB } from '@/constants/animation'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
 
@@ -14,17 +21,30 @@ export function Introduction() {
 						<AnimatedSocialLinks />
 					</div>
 
-					<Typography color="primary" type="h1" size="5xl">
-						{INTRO_COPY.title}
-					</Typography>
-					<Typography
-						weight="light"
-						type="span"
-						size="xl"
-						className={styles.tagLine}
+					<AnimatedTypography
+						variants={fadeInUpVariantsB}
+						initial="hidden"
+						animate="visible"
+						color="primary"
+						type="h1"
+						size="5xl"
 					>
-						{INTRO_COPY.tagLine}
-					</Typography>
+						{INTRO_COPY.title}
+					</AnimatedTypography>
+					<AnimateChildren className={styles.taglineContainer}>
+						{INTRO_COPY.tagLine.map(({ key, copy }) => (
+							<AnimatedTypography
+								key={key}
+								variants={fadeInUpVariantsB}
+								weight="light"
+								type="span"
+								size="xl"
+								className={styles.tagLine}
+							>
+								{copy}
+							</AnimatedTypography>
+						))}
+					</AnimateChildren>
 				</div>
 				<div className={styles.imageWrapper}>
 					<Image

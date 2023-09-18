@@ -21,31 +21,6 @@ interface SocialLinks {
 	canva?: boolean
 }
 
-const variants = {
-	initial: {},
-	target: {
-		transition: {
-			delayChildren: 0.8,
-			staggerChildren: 0.25,
-		},
-	},
-}
-
-const listChildVariants = {
-	initial: {
-		opacity: 0,
-		x: -10,
-	},
-	target: {
-		opacity: 1,
-		x: 0,
-		transition: {
-			tween: 'easeOut',
-			duration: 0.5,
-		},
-	},
-}
-
 export function SocialLinks({
 	withTooltip = false,
 	color,
@@ -81,6 +56,31 @@ export function SocialLinks({
 			))}
 		</ul>
 	)
+}
+
+const variants = {
+	initial: {},
+	target: {
+		transition: {
+			delayChildren: 0.8,
+			staggerChildren: 0.25,
+		},
+	},
+}
+
+const listChildVariants = {
+	initial: {
+		opacity: 0,
+		x: -10,
+	},
+	target: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			tween: 'easeOut',
+			duration: 0.5,
+		},
+	},
 }
 
 export function AnimatedSocialLinks({

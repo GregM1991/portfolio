@@ -1,21 +1,38 @@
 'use client'
-import { motion } from 'framer-motion'
+import { Variant, motion } from 'framer-motion'
 
-const variants = {
-	initial: {
-		opacity: 0,
-	},
-	target: {
-		opacity: 1,
-		transition: {
-			delayChildren: 1.2,
-		},
+const INITIAL = {}
+const TARGET = {
+	transition: {
+		staggerChildren: 0.25,
 	},
 }
 
-export function AnimateChildren({ children }: { children: React.ReactNode }) {
+interface AnimateChildren {
+	initialProps?: Variant
+	targetProps?: Variant
+	className: string
+	children: React.ReactNode
+}
+
+export function AnimateChildren({
+	initialProps = INITIAL,
+	targetProps = TARGET,
+	className,
+	children,
+}: AnimateChildren) {
+	const variants = {
+		hidden: { ...INITIAL, ...initialProps },
+		visible: { ...TARGET, ...targetProps },
+	}
+
 	return (
-		<motion.div variants={variants} initial="initial" animate="target">
+		<motion.div
+			className={className}
+			variants={variants}
+			initial="hidden"
+			animate="visible"
+		>
 			{children}
 		</motion.div>
 	)

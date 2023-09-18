@@ -30,3 +30,8 @@
 .bodyCopy {
   composes: doubleColumn from global;
 }
+
+.taglineContainer {
+  display: flex;
+  flex-direction: column;
+}

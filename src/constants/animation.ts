@@ -18,3 +18,8 @@ export const fadeInUpVariants = {
 	hidden: { ...hidden, translateY: 50 },
 	visible: { ...visible, translateY: 0 },
 }
+
+export const fadeInUpVariantsB = {
+	hidden: { ...hidden, translateY: 15 },
+	visible: { ...visible, translateY: 0 },
+}
