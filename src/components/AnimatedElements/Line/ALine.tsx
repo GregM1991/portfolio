@@ -1,37 +1,6 @@
 'use client'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 
-interface ALineProps {
-	initial: number
-	width: number
-}
-
-export function ALine({ initial, width }: ALineProps) {
-	const variants = {
-		initial: {
-			width: initial,
-		},
-		target: {
-			width: width,
-		},
-	}
-	return (
-		<motion.span
-			variants={variants}
-			initial="initial"
-			animate="target"
-			transition={{
-				type: 'string',
-				stiffness: 100,
-			}}
-			style={{
-				height: '1px',
-				backgroundColor: 'var(--palette-secondary)',
-			}}
-		/>
-	)
-}
-
 export function ALineSVG() {
 	const variants = {
 		initial: {
@@ -39,6 +8,7 @@ export function ALineSVG() {
 		},
 		target: {
 			width: 190,
+			transition: { tween: 'easeOut', duration: 1 },
 		},
 	}
 
@@ -52,7 +22,6 @@ export function ALineSVG() {
 			variants={variants}
 			initial="initial"
 			animate="target"
-			transition={{ tween: 'easeInOut', duration: 1.5, delay: 1.5 }}
 			style={{ width }}
 		>
 			<motion.path

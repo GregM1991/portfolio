@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ALineSVG, SocialLinks, Typography } from '@/components'
+import { ALineSVG, AnimatedSocialLinks, Typography } from '@/components'
 import { INTRO_COPY } from '@/constants/homepageContent'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
@@ -11,7 +11,7 @@ export function Introduction() {
 				<div>
 					<div className={styles.socialsWrapper}>
 						<ALineSVG />
-						<SocialLinks size={20} color="secondary" />
+						<AnimatedSocialLinks />
 					</div>
 
 					<Typography color="primary" type="h1" size="5xl">
