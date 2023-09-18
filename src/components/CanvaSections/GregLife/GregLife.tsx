@@ -66,8 +66,8 @@ export function GregLife() {
 					type="h1"
 					variant="h1Lead"
 					variants={fadeInVariants}
-					initial="hidden"
-					animate="visible"
+					initial="initial"
+					animate="target"
 				>
 					Greg life
 					<AnimatedImage

@@ -23,8 +23,8 @@ export function Introduction() {
 
 					<AnimatedTypography
 						variants={fadeInUpVariantsB}
-						initial="hidden"
-						animate="visible"
+						initial="initial"
+						animate="target"
 						color="primary"
 						type="h1"
 						size="5xl"

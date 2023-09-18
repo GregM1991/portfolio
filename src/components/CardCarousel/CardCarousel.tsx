@@ -28,8 +28,8 @@ export function CardCarousel() {
 		<motion.div
 			variants={fadeInUpVariants}
 			viewport={{ once: true }}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 			className={styles.wrapper}
 		>
 			<div className={styles.carouselContainer}>

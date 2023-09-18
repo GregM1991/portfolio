@@ -22,16 +22,16 @@ export function AnimateChildren({
 	children,
 }: AnimateChildren) {
 	const variants = {
-		hidden: { ...INITIAL, ...initialProps },
-		visible: { ...TARGET, ...targetProps },
+		initial: { ...INITIAL, ...initialProps },
+		target: { ...TARGET, ...targetProps },
 	}
 
 	return (
 		<motion.div
 			className={className}
 			variants={variants}
-			initial="hidden"
-			animate="visible"
+			initial="initial"
+			animate="target"
 		>
 			{children}
 		</motion.div>

@@ -5,21 +5,21 @@ const hidden = { opacity: 0 }
 const visible = { opacity: 1, transition }
 
 export const fadeInVariants = {
-	hidden,
-	visible,
+	initial: hidden,
+	target: visible,
 }
 
 export const fadeInRightVariants = {
-	hidden: { ...hidden, translateX: -50 },
-	visible: { ...visible, translateX: 0 },
+	initial: { ...hidden, translateX: -50 },
+	target: { ...visible, translateX: 0 },
 }
 
 export const fadeInUpVariants = {
-	hidden: { ...hidden, translateY: 50 },
-	visible: { ...visible, translateY: 0 },
+	initial: { ...hidden, translateY: 50 },
+	target: { ...visible, translateY: 0 },
 }
 
 export const fadeInUpVariantsB = {
-	hidden: { ...hidden, translateY: 15 },
-	visible: { ...visible, translateY: 0 },
+	initial: { ...hidden, translateY: 15 },
+	target: { ...visible, translateY: 0 },
 }

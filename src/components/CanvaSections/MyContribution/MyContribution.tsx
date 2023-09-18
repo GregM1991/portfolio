@@ -35,8 +35,8 @@ export function MyContribution() {
 			variants={fadeInVariants}
 			viewport={{ once: true }}
 			initAnimatedConfig={{ opacity: 0 }}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 		>
 			<span id="my-contribution" className="anchor" />
 			<div className={styles.wrapper}>
@@ -44,8 +44,8 @@ export function MyContribution() {
 					className={styles.imageWrapper}
 					variants={fadeInVariants}
 					viewport={{ once: true }}
-					initial="hidden"
-					whileInView="visible"
+					initial="initial"
+					whileInView="target"
 					style={{ translateY: isMobile ? '17px' : translateY }}
 				>
 					<Image

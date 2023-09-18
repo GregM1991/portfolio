@@ -36,8 +36,8 @@ export function GregLifeMural() {
 		<motion.div
 			className={styles.wrapper}
 			variants={fadeInVariants}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 			viewport={{ once: true }}
 			ref={wrapperRef}
 		>
@@ -47,8 +47,8 @@ export function GregLifeMural() {
 				alt="Greg standing on a clifftop in Tasmania looking off into the distance"
 				className={styles.standing}
 				sizes="(max-width: 992px) 100vw, 58vw"
-				initial="hidden"
-				whileInView="visible"
+				initial="initial"
+				whileInView="target"
 				style={{ translateY: translateY }}
 			/>
 			<AnimatedImage
@@ -56,8 +56,8 @@ export function GregLifeMural() {
 				alt="Greg walking through Japanese light show, bare foot and silhouetted"
 				className={styles.lights}
 				sizes="(max-width: 992px) 50vw, 500px"
-				initial="hidden"
-				whileInView="visible"
+				initial="initial"
+				whileInView="target"
 				style={{ translateY: translateYNDouble }}
 			/>
 			<AnimatedImage
@@ -65,16 +65,16 @@ export function GregLifeMural() {
 				alt="Greg making a silly gesture with his hands"
 				className={styles.gesture}
 				sizes="(max-width: 992px) 50vw, 290px"
-				initial="hidden"
-				whileInView="visible"
+				initial="initial"
+				whileInView="target"
 				style={{ translateY: trasnlateYOpposite }}
 			/>
 			<AnimatedTypography
 				type="span"
 				color="white"
 				variants={fadeInRightVariants}
-				initial="hidden"
-				whileInView="visible"
+				initial="initial"
+				whileInView="target"
 				viewport={{ once: true }}
 				className={styles.text}
 			>

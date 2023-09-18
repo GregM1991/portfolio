@@ -60,8 +60,8 @@ export function Job({
 					className={styles.img}
 					variants={fadeInUpVariants}
 					viewport={{ once: true }}
-					initial="hidden"
-					whileInView="visible"
+					initial="initial"
+					whileInView="target"
 					style={{ translateY }}
 				/>
 			</div>

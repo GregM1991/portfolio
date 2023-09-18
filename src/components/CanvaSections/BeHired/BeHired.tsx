@@ -17,8 +17,8 @@ export function BeHired() {
 			className={styles.wrapper}
 			variants={fadeInVariants}
 			viewport={{ once: true }}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 			initAnimatedConfig={{ opacity: 0 }}
 		>
 			<span id="be-hired" className="anchor" />

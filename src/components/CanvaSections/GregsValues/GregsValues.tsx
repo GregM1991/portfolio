@@ -16,8 +16,8 @@ export function GregsValues() {
 			initAnimatedConfig={{ opacity: 0 }}
 			variants={fadeInVariants}
 			viewport={{ once: true }}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 		>
 			<span id="gregs-values" className="anchor" />
 			<div className={styles.textWrapper}>
@@ -27,8 +27,8 @@ export function GregsValues() {
 					className={styles.header}
 					variants={fadeInVariants}
 					viewport={{ once: true }}
-					initial="hidden"
-					whileInView="visible"
+					initial="initial"
+					whileInView="target"
 				>
 					Greg&apos;s values
 				</AnimatedTypography>

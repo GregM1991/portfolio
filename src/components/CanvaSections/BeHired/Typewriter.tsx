@@ -15,8 +15,8 @@ export default function Typewriter() {
 				variants={sentence}
 				viewport={{ once: true, amount: 'all' }}
 				className={styles.leadWrapper}
-				initial="hidden"
-				whileInView="visible"
+				initial="initial"
+				whileInView="target"
 			>
 				{BE.map((char, index) => (
 					<motion.span key={`${char}-${index}`} variants={letter}>
@@ -33,8 +33,8 @@ export default function Typewriter() {
 				<motion.span
 					className={styles.textCursor}
 					variants={typewriter}
-					initial="hidden"
-					whileInView="visible"
+					initial="initial"
+					whileInView="target"
 					viewport={{ once: true, amount: 'all' }}
 					onAnimationComplete={() => setLeadWrapperTrigger(true)}
 				/>

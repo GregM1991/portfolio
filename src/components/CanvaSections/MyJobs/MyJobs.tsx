@@ -11,8 +11,8 @@ export function MyJobs() {
 			initAnimatedConfig={{ opacity: 0 }}
 			variants={fadeInVariants}
 			viewport={{ once: true }}
-			initial="hidden"
-			whileInView="visible"
+			initial="initial"
+			whileInView="target"
 		>
 			<span id="projects" className="anchor" />
 			<Typography
