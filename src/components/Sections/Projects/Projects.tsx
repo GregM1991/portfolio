@@ -1,7 +1,8 @@
-import { Typography, ProjectThumb } from '@/components'
+import { Typography, ProjectThumb, AnimatedTypography } from '@/components'
 import { PROJECTS_COPY } from '@/constants/homepageContent'
 import { PROJECT_THUMBS } from '@/constants/projects'
 import styles from './projects.styles.module.css'
+import { fadeInUpVariantsB } from '@/constants/animation'
 
 export function ProjectThumbs() {
 	const hasOddProjectsNum = PROJECT_THUMBS.length % 2 === 1
@@ -31,9 +32,17 @@ export function Projects() {
 	return (
 		<section aria-label="This section houses Greg's projects">
 			<div className={styles.wrapper}>
-				<Typography color="primary" type="h2" size="xl">
+				<AnimatedTypography
+					variants={fadeInUpVariantsB}
+					initial="initial"
+					whileInView="target"
+					viewport={{ once: true }}
+					color="primary"
+					type="h2"
+					size="xl"
+				>
 					{PROJECTS_COPY.title}
-				</Typography>
+				</AnimatedTypography>
 				<div className={styles.bodyCopy}>
 					<Typography>{PROJECTS_COPY.body}</Typography>
 				</div>

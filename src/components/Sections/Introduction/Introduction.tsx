@@ -24,7 +24,6 @@ export function Introduction() {
 						<ALineSVG />
 						<AnimatedSocialLinks />
 					</div>
-
 					<AnimatedTypography
 						variants={fadeInUpVariantsB}
 						initial="initial"

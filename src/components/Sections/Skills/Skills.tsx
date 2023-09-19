@@ -6,17 +6,26 @@ import {
 	SiNodedotjs,
 	SiRedux,
 } from 'react-icons/si'
-import { Typography } from '@/components'
+import { AnimatedTypography, Typography } from '@/components'
 import { SKILLS_COPY } from '@/constants/homepageContent'
+import { fadeInUpVariantsB } from '@/constants/animation'
 import styles from './skills.styles.module.css'
 
 export function Skills() {
 	return (
 		<section aria-label="A section showcasing Greg's skills">
 			<div className={styles.wrapper}>
-				<Typography color="primary" type="h2" size="xl">
+				<AnimatedTypography
+					variants={fadeInUpVariantsB}
+					initial="initial"
+					whileInView="target"
+					viewport={{ once: true }}
+					color="primary"
+					type="h2"
+					size="xl"
+				>
 					{SKILLS_COPY.title}
-				</Typography>
+				</AnimatedTypography>
 				<div className="doubleColumn">
 					<Typography>{SKILLS_COPY.body}</Typography>
 				</div>
