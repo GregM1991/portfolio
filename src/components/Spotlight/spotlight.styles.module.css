@@ -1,6 +1,5 @@
 .doubleColumn {
   composes: doubleColumn from global;
-  margin-top: var(--space-l);
 }
 
 .carousel {

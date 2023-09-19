@@ -27,6 +27,9 @@
   margin-right: var(--space-s);
 }
 
+.opacityForAnimation {
+  opacity: 0
+}
 
 @media (min-width: 982px) {
   .tech {

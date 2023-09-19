@@ -1,5 +1,6 @@
-import { Typography, Carousel, Tldr } from '@/components'
+import { Typography, Carousel, Tldr, AnimatedTypography } from '@/components'
 import { SpotlightContent } from '@/types/content'
+import { fadeInUpVariantsB } from '@/constants/animation'
 import styles from './spotlight.styles.module.css'
 
 interface SpotlightProps {
@@ -13,9 +14,16 @@ export function Spotlight({ ariaLabel, content }: SpotlightProps) {
 		<section aria-label={ariaLabel}>
 			{/* TODO: Add tooltip to some of the things that would be confusing to people */}
 			<div>
-				<Typography type="h3" size="xl">
+				<AnimatedTypography
+					variants={fadeInUpVariantsB}
+					initial="initial"
+					whileInView="target"
+					viewport={{ once: true }}
+					type="h3"
+					size="xl"
+				>
 					{content.heading}
-				</Typography>
+				</AnimatedTypography>
 				{!content.screens && (
 					<Typography type="span" size="xs">
 						(Apologies for lack of reference imagery)

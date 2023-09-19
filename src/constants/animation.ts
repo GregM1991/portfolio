@@ -25,8 +25,24 @@ export const fadeInUpVariantsB = {
 		opacity: 1,
 		translateY: 0,
 		transition: {
+			ease: 'easeOut',
+			duration: 0.5,
+		},
+	},
+}
+
+export const fadeInDownVariants = {
+	initial: { ...hidden, translateY: -15 },
+	target: {
+		opacity: 1,
+		translateY: 0,
+		transition: {
 			tween: 'easeOut',
 			duration: 0.5,
 		},
+	},
+	exit: {
+		...hidden,
+		translateY: -15,
 	},
 }

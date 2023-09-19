@@ -1,7 +1,9 @@
 import Image, { StaticImageData } from 'next/image'
-import { Tldr, Typography } from '@/components'
+import { AnimatedTypography, Tldr, Typography } from '@/components'
 import { Paragraph } from '@/types/content'
 import { TypographyProps } from '../Typography/types'
+import { fadeInUpVariantsB } from '@/constants/animation'
+import clsx from 'clsx'
 import styles from './contentBlocks.styles.module.css'
 
 interface GenericContentBlockProps {
@@ -32,9 +34,19 @@ export function GenericContentBlock({
 	children,
 }: GenericContentBlockProps) {
 	const Wrapper = sectionAriaLabel ? 'section' : 'div'
+	const animationClass = clsx(sectionAriaLabel && styles.opacityForAnimation)
 	return (
 		<Wrapper aria-label={sectionAriaLabel}>
-			<Typography {...headingProps}>{heading}</Typography>
+			<AnimatedTypography
+				variants={fadeInUpVariantsB}
+				initial="initial"
+				whileInView="target"
+				viewport={{ once: true }}
+				className={animationClass}
+				{...headingProps}
+			>
+				{heading}
+			</AnimatedTypography>
 			<Tldr tldrString={tldrString} className={styles.tldr}>
 				<div className={styles.doubleColumn}>
 					{body.map(({ key, copy }) => (
@@ -85,7 +97,16 @@ export function TechContentBlock({
 	const Wrapper = sectionAriaLabel ? 'section' : 'div'
 	return (
 		<Wrapper aria-label={sectionAriaLabel}>
-			<Typography {...headingProps}>Tech Stack</Typography>
+			<AnimatedTypography
+				variants={fadeInUpVariantsB}
+				initial="initial"
+				whileInView="target"
+				viewport={{ once: true }}
+				className={styles.opacityForAnimation}
+				{...headingProps}
+			>
+				Tech Stack
+			</AnimatedTypography>
 			<ul role="list" className={styles.tech}>
 				{techStack.map((tech, index) => (
 					<li key={`${index}-${tech}`}>

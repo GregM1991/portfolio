@@ -1,3 +1,7 @@
+.wrapper {
+  position: relative;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -33,4 +37,23 @@
 .chevronUp {
   composes: chevron;
   transform: rotate(0deg);
+}
+
+.longformPopover {
+  position: absolute;
+  background: var(--palette-white);
+  padding: var(--space-l);
+  box-shadow: var(--box-shadow-large);
+  z-index: 1;
+}
+
+.close {
+  composes: close from '../ContactMeModal/contactMeModal.styles.module.css';
+  background: transparent;
+  font-size: 12px;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 0;
 }
