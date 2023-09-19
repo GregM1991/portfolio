@@ -38,6 +38,8 @@ export function Introduction() {
 					<AnimateChildren
 						className={styles.taglineContainer}
 						targetProps={{ transition: { delayChildren: 0.25 } }}
+						initial="initial"
+						animate="target"
 					>
 						{INTRO_COPY.tagLine.map(({ key, copy }) => (
 							<AnimatedTypography

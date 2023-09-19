@@ -1,3 +1,4 @@
+'use client'
 import {
 	SiTypescript,
 	SiCss3,
@@ -6,7 +7,8 @@ import {
 	SiNodedotjs,
 	SiRedux,
 } from 'react-icons/si'
-import { AnimatedTypography, Typography } from '@/components'
+import { motion } from 'framer-motion'
+import { AnimateChildren, AnimatedTypography, Typography } from '@/components'
 import { SKILLS_COPY } from '@/constants/homepageContent'
 import { fadeInUpVariantsB } from '@/constants/animation'
 import styles from './skills.styles.module.css'
@@ -29,14 +31,32 @@ export function Skills() {
 				<div className="doubleColumn">
 					<Typography>{SKILLS_COPY.body}</Typography>
 				</div>
-				<div className={styles.iconsWrapper}>
-					<SiHtml5 />
-					<SiCss3 />
-					<SiTypescript />
-					<SiReact />
-					<SiNodedotjs />
-					<SiRedux />
-				</div>
+				<AnimateChildren
+					className={styles.iconsWrapper}
+					targetProps={{ transition: { staggerChildren: 0.125 } }}
+					initial="initial"
+					viewport={{ once: true }}
+					isWhileInView={true}
+				>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiHtml5 />
+					</motion.span>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiCss3 />
+					</motion.span>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiTypescript />
+					</motion.span>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiReact />
+					</motion.span>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiNodedotjs />
+					</motion.span>
+					<motion.span variants={fadeInUpVariantsB}>
+						<SiRedux />
+					</motion.span>
+				</AnimateChildren>
 			</div>
 		</section>
 	)

@@ -6,7 +6,10 @@
 .iconsWrapper {
   display: flex;
   justify-content: space-between;
-  font-size: var(--step-4);
   color: var(--palette-secondary);
   margin: var(--space-l) 0
+}
+
+.iconsWrapper > span {
+  font-size: var(--step-4);
 }

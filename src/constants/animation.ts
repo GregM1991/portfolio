@@ -21,5 +21,12 @@ export const fadeInUpVariants = {
 
 export const fadeInUpVariantsB = {
 	initial: { ...hidden, translateY: 15 },
-	target: { ...visible, translateY: 0 },
+	target: {
+		opacity: 1,
+		translateY: 0,
+		transition: {
+			tween: 'easeOut',
+			duration: 0.5,
+		},
+	},
 }
