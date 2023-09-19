@@ -10,7 +10,11 @@ import { INTRO_COPY } from '@/constants/homepageContent'
 import { fadeInUpVariantsB } from '@/constants/animation'
 import meWide from '@/assets/images/me-wide.jpg'
 import styles from './introduction.styles.module.css'
+import clsx from 'clsx'
 
+// TODO: I need to make sure if JS is disabled that my text can still show
+// atm, opacity for animated things are sometimes set to 0 and won't change
+// if JS isn't enabled
 export function Introduction() {
 	return (
 		<section aria-label="Introduction to Greg's portfolio">
@@ -28,10 +32,14 @@ export function Introduction() {
 						color="primary"
 						type="h1"
 						size="5xl"
+						className={styles.opacityForAnimation}
 					>
 						{INTRO_COPY.title}
 					</AnimatedTypography>
-					<AnimateChildren className={styles.taglineContainer}>
+					<AnimateChildren
+						className={styles.taglineContainer}
+						targetProps={{ transition: { delayChildren: 0.25 } }}
+					>
 						{INTRO_COPY.tagLine.map(({ key, copy }) => (
 							<AnimatedTypography
 								key={key}
@@ -39,7 +47,7 @@ export function Introduction() {
 								weight="light"
 								type="span"
 								size="xl"
-								className={styles.tagLine}
+								className={clsx(styles.tagLine, styles.opacityForAnimation)}
 							>
 								{copy}
 							</AnimatedTypography>

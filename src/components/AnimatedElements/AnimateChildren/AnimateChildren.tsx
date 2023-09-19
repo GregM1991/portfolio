@@ -1,5 +1,6 @@
 'use client'
 import { Variant, motion } from 'framer-motion'
+import merge from 'lodash.merge'
 
 const INITIAL = {}
 const TARGET = {
@@ -22,8 +23,8 @@ export function AnimateChildren({
 	children,
 }: AnimateChildren) {
 	const variants = {
-		initial: { ...INITIAL, ...initialProps },
-		target: { ...TARGET, ...targetProps },
+		initial: merge({}, INITIAL, initialProps),
+		target: merge({}, TARGET, targetProps),
 	}
 
 	return (
