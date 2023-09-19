@@ -13,7 +13,7 @@ interface AnimateChildren extends MotionProps {
 	initialProps?: Variant
 	targetProps?: Variant
 	isWhileInView?: boolean
-	className: string
+	className?: string
 	children: React.ReactNode
 }
 
