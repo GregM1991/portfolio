@@ -1,3 +1,6 @@
-.radialGradient {
-  background: radial-gradient(at 0% 30%, red 1%, yellow 2%, transparent 50%);
+.gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

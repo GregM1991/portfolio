@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   z-index: 1;
-  background-color: var(--palette-white);
+  background-color: transparent;
   padding: var(--space-4xs) var(--space-l);
 }
 
@@ -15,6 +15,7 @@
   composes: header;
   padding: var(--space-4xs) var(--space-l);
   max-width: 100%;
+  background-color: var(--palette-white);
 }
 
 .nav {
@@ -29,7 +30,7 @@
   width: 100%;
   overflow: hidden;
   max-height: 0;
-  background-color: var(--palette-white);
+  background-color: transparent;
   transition: max-height 0.5s ease-out;
 }
 

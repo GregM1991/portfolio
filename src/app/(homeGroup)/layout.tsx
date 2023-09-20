@@ -35,10 +35,9 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
 			<body>
-				<AGradient>
 				<Header headerFor="normal" navLinks={NAV_LINKS} />
 				{children}
-				</AGradient>
+				<AGradient />
 			</body>
 		</html>
 	)
