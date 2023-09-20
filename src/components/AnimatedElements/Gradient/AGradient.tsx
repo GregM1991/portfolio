@@ -66,17 +66,17 @@ export function AGradient() {
 	const insideGradientValue = useTransform(
 		springScroll,
 		[0, 1],
-		['#10615e', '#82b50c'],
+		['#7BC7B3', '#ff9c9c'],
 	)
 	const middleGradientValue = useTransform(
 		springScroll,
 		[0, 1],
-		['#7BC7B3', '#ffe863'],
+		['#aaffaa', '#ffdb7f'],
 	)
 	const outsideGradientValue = useTransform(
 		springScroll,
 		[0, 1],
-		['#adfdd4', '#ffaeae'],
+		['#ecffd3', '#a5fda4'],
 	)
 	const gradient = useMotionTemplate`radial-gradient(at ${gradX}% ${gradY}%, ${insideGradientValue} 10%, ${middleGradientValue} 40%, ${outsideGradientValue})`
 
