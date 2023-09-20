@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Header } from '@/components'
+import { AGradient, Header } from '@/components'
 import { Arvo, Raleway } from 'next/font/google'
 import '../global.css'
 import './home.css'
@@ -35,8 +35,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
 			<body>
+				<AGradient>
 				<Header headerFor="normal" navLinks={NAV_LINKS} />
 				{children}
+				</AGradient>
 			</body>
 		</html>
 	)
