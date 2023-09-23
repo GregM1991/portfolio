@@ -33,11 +33,11 @@ const randomNumArray: RandomNumArrayFunction = (
 }
 
 const createBRadiusString = () =>
-	`${randomNumArray(4, 25, 100).join('% ')}% / ${randomNumArray(
-		4,
-		25,
-		100,
-	).join('% ')}%`
+  `${randomNumArray(4, 25, 100).join("% ")}% / ${randomNumArray(
+    4,
+    25,
+    100
+  ).join("% ")}%`;
 
 export function AGradient() {
 	const { scrollYProgress } = useScroll()
