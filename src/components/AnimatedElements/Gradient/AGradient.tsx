@@ -33,11 +33,11 @@ const randomNumArray: RandomNumArrayFunction = (
 }
 
 const createBRadiusString = () =>
-	`${randomNumArray(4, 25, 100).join('% ')}% / ${randomNumArray(
-		4,
-		25,
-		100,
-	).join('% ')}%`
+  `${randomNumArray(4, 25, 100).join("% ")}% / ${randomNumArray(
+    4,
+    25,
+    100
+  ).join("% ")}%`;
 
 export function AGradient() {
 	const { scrollYProgress } = useScroll()
@@ -55,44 +55,44 @@ export function AGradient() {
 
 	const gradX = useTransform(springScroll, [0, 0.5, 1], randomNumArray(3))
 	const gradY = useTransform(springScroll, [0, 0.5, 1], randomNumArray(3))
-	const y = useTransform(springScroll, [0, 1], yTo)
-	// TODO: size
-	const borderRadius = useTransform(
-		springScroll,
-		[0, 1],
-		[createBRadiusString(), createBRadiusString()],
-	)
+	const y = useTransform(springScroll, [0, 1], yTo);
+  const borderRadius = useTransform(
+    springScroll,
+    [0, 1],
+    [createBRadiusString(), createBRadiusString()]
+  );
+  const size = useTransform(springScroll, [0, 1], ["500px", "1200px"]);
 
-	const insideGradientValue = useTransform(
-		springScroll,
-		[0, 1],
-		['#10615e', '#82b50c'],
-	)
-	const middleGradientValue = useTransform(
-		springScroll,
-		[0, 1],
-		['#7BC7B3', '#ffe863'],
-	)
-	const outsideGradientValue = useTransform(
-		springScroll,
-		[0, 1],
-		['#adfdd4', '#ffaeae'],
-	)
-	const gradient = useMotionTemplate`radial-gradient(at ${gradX}% ${gradY}%, ${insideGradientValue} 10%, ${middleGradientValue} 40%, ${outsideGradientValue})`
+  const insideGradientValue = useTransform(
+    springScroll,
+    [0, 1],
+    ["#7BC7B3", "#ff9c9c"]
+  );
+  const middleGradientValue = useTransform(
+    springScroll,
+    [0, 1],
+    ["#aaffaa", "#ffdb7f"]
+  );
+  const outsideGradientValue = useTransform(
+    springScroll,
+    [0, 1],
+    ["#ecffd3", "#a5fda4"]
+  );
+  const gradient = useMotionTemplate`radial-gradient(at ${gradX}% ${gradY}%, ${insideGradientValue} 10%, ${middleGradientValue} 40%, ${outsideGradientValue})`;
 
-	return (
-		<motion.div
-			layout
-			style={{
-				background: gradient,
-				width: '500px',
-				height: '500px',
-				borderRadius: borderRadius,
-				filter: 'blur(75px)',
-				y,
-				x: '-50%',
-			}}
-			className={styles.gradient}
-		/>
-	)
+  return (
+    <motion.div
+      layout
+      style={{
+        background: gradient,
+        width: size,
+        height: size,
+        borderRadius: borderRadius,
+        filter: "blur(75px)",
+        y,
+        x: "-75%",
+      }}
+      className={styles.gradient}
+    />
+  );
 }
