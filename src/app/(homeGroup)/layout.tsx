@@ -5,6 +5,7 @@ import '../global.css'
 import './home.css'
 import './home-variables.css'
 import { NAV_LINKS } from '@/constants/links'
+import { PropsWithChildren } from "react";
 
 const arvo = Arvo({
 	weight: ['400', '700'],
@@ -27,18 +28,14 @@ export const metadata: Metadata = {
 	description: 'A place to show the world what I got 💪🏻',
 }
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode
-}) {
-	return (
-		<html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
-			<body>
-				<Header headerFor="normal" navLinks={NAV_LINKS} />
-				{children}
-				<AGradient />
-			</body>
-		</html>
-	)
+export default function RootLayout({ children }: PropsWithChildren) {
+  return (
+    <html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
+      <body>
+        <Header headerFor="normal" navLinks={NAV_LINKS} />
+        {children}
+        <AGradient />
+      </body>
+    </html>
+  );
 }
