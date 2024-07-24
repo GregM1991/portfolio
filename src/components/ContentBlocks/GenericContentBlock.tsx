@@ -10,7 +10,7 @@ export function GenericContentBlock({
   body,
   tldrString,
   sectionAriaLabel,
-  children,
+  children
 }: GenericContentBlockProps) {
   const Wrapper = sectionAriaLabel ? "section" : "div";
   const animationClass = clsx(sectionAriaLabel && styles.opacityForAnimation);
@@ -27,13 +27,21 @@ export function GenericContentBlock({
       >
         {heading}
       </AnimatedTypography>
-      <Tldr tldrString={tldrString} className={styles.tldr}>
+      {tldrString ? (
+        <Tldr tldrString={tldrString} className={styles.tldr}>
+          <div className={styles.doubleColumn}>
+            {body.map(({ key, copy }) => (
+              <Typography key={key}>{copy}</Typography>
+            ))}
+          </div>
+        </Tldr>
+      ) : (
         <div className={styles.doubleColumn}>
           {body.map(({ key, copy }) => (
             <Typography key={key}>{copy}</Typography>
           ))}
         </div>
-      </Tldr>
+      )}
       {children}
     </Wrapper>
   );

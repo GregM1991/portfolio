@@ -11,6 +11,7 @@ export function LeadContentBlock({
   sectionAriaLabel,
   imageSrc,
   imageAlt,
+  children
 }: LeadContentBlockProps) {
   return (
     <GenericContentBlock
@@ -31,6 +32,7 @@ export function LeadContentBlock({
           />
         </div>
       )}
+      {children}
     </GenericContentBlock>
   );
 }

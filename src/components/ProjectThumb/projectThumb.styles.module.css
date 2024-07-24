@@ -2,6 +2,7 @@
   composes: flex-column-wrapper from "../../styles/composable.module.css";
   align-items: center;
   gap: var(--space-s);
+  text-align: center;
 }
 
 .imageWrapper {
@@ -25,15 +26,10 @@
   width: 100%;
 }
 
-.title {
-  margin-top: var(--space-m);
-}
-
 .viewProject {
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
-  margin-top: var(--space-s);
   transition: 0.15s ease;
 }
 

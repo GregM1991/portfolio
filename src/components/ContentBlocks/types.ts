@@ -1,6 +1,6 @@
-import { Paragraph } from "@/types/content";
-import { TypographyProps } from "../Typography/types";
-import { StaticImageData } from "next/image";
+import type { Paragraph } from "@/types/content";
+import type { TypographyProps } from "@/components/Typography/types";
+import type { StaticImageData } from "next/image";
 
 export interface GenericContentBlockProps {
   heading: string;

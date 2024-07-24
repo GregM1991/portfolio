@@ -20,15 +20,15 @@ export const fadeInUpVariants = {
 };
 
 export const fadeInUpVariantsB = {
-  initial: { ...hidden, translateY: 15 },
+  initial: { ...hidden, translateY: 15, opacity: 0 },
   target: {
     opacity: 1,
     translateY: 0,
     transition: {
       ease: "easeOut",
-      duration: 0.5,
-    },
-  },
+      duration: 0.5
+    }
+  }
 };
 
 export const fadeInDownVariants = {

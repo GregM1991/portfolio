@@ -1,18 +1,24 @@
 import styles from "@/app/(homeGroup)/project.styles.module.css";
-import { LeadContentBlock } from "@/components";
-import eq8Gang from "@/assets/images/eq8-pub.jpg";
+import { AnimatedTypography, LeadContentBlock } from "@/components";
+import { fadeInUpVariantsB } from "@/constants/animation";
 
 export default function WorkHistory() {
   return (
     <main className={styles.wrapper}>
+      {/* Think I'm done trying to make the content blocks work */}
       <LeadContentBlock
         heading="Work History"
         headingProps={{ type: "h1", size: "2xl" }}
         body={[{ key: "1", copy: "I have worked at a few places" }]}
-        tldrString="I have worked at a few places"
+      />
+      <AnimatedTypography
+        variants={fadeInUpVariantsB}
+        initial="initial"
+        whileInView="target"
+        viewport={{ once: true }}
       >
-        <p>Penis</p>
-      </LeadContentBlock>
+        Faethm by Pearson
+      </AnimatedTypography>
     </main>
   );
 }

@@ -35,7 +35,7 @@ export function ProjectThumb({
       <Typography type="h3" size="l" className={styles.title}>
         {title}
       </Typography>
-      <Typography>{body}</Typography>
+      <Typography className={styles.copy}>{body}</Typography>
       <Link href={htmlLink} className={styles.viewProject}>
         <Typography size="xs" type="span">
           View project
