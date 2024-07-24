@@ -1,5 +1,5 @@
 .wrapper {
-  composes: flex-column-wrapper from '../../styles/composable.module.css';
+  composes: flex-column-wrapper from "../../styles/composable.module.css";
   align-items: center;
   gap: var(--space-s);
 }
@@ -48,4 +48,4 @@
     align-items: center;
     text-align: center;
   }
-} 
+}

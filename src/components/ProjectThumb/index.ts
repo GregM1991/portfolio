@@ -1,1 +1,1 @@
-export * from './ProjectThumb'
+export * from "./ProjectThumb";

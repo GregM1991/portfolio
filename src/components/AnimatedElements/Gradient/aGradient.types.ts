@@ -1,5 +1,5 @@
 export type RandomNumArrayFunction = (
   arrLength: number,
   minNum?: number,
-  maxNum?: number
+  maxNum?: number,
 ) => number[];

@@ -1,6 +1,6 @@
-import { Paragraph } from '@/types/content'
-import { TypographyProps } from '../Typography/types'
-import { StaticImageData } from 'next/image'
+import { Paragraph } from "@/types/content";
+import { TypographyProps } from "../Typography/types";
+import { StaticImageData } from "next/image";
 
 export interface GenericContentBlockProps {
   heading: string;
@@ -17,6 +17,6 @@ export interface LeadContentBlockProps extends GenericContentBlockProps {
 }
 
 export interface TechContentProps
-	extends Pick<GenericContentBlockProps, 'sectionAriaLabel' | 'headingProps'> {
-	techStack: string[]
+  extends Pick<GenericContentBlockProps, "sectionAriaLabel" | "headingProps"> {
+  techStack: string[];
 }

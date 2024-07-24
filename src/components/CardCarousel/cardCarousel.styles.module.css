@@ -29,7 +29,7 @@
 }
 
 .card:hover {
-  background-color: var(--palette-pink)
+  background-color: var(--palette-pink);
 }
 
 .valueBodyText {
@@ -38,7 +38,7 @@
 }
 
 .buttonWrapper {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-top: var(--space-l);
   padding-right: var(--space-l);
@@ -50,7 +50,7 @@
   cursor: pointer;
   border-radius: var(--radii-full);
   background: var(--palette-white);
-  margin: 0 8px; 
+  margin: 0 8px;
   width: 48px;
   height: 48px;
   border: none;
@@ -61,7 +61,7 @@
 }
 
 .button > svg {
-  transform: scale(2)
+  transform: scale(2);
 }
 
 @media (min-width: 992px) {
@@ -71,7 +71,7 @@
 
   .card {
     padding: 30px 30px 3rem;
-    margin-right: var(--space-s)
+    margin-right: var(--space-s);
   }
 
   .innerContainer {

@@ -1,1 +1,1 @@
-export * from './AGradient'
+export * from "./AGradient";

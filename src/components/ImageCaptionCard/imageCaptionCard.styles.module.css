@@ -1,5 +1,5 @@
 .wrapper {
-  composes: flex-column-wrapper from '../../styles/composable.module.css'
+  composes: flex-column-wrapper from "../../styles/composable.module.css";
 }
 
 .image {
@@ -16,7 +16,7 @@
 }
 
 .figcaption a {
-  font-family: var(--font-raleway)
+  font-family: var(--font-raleway);
 }
 
 .figcaption a:hover {

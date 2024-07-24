@@ -1,110 +1,110 @@
 :root {
-	--palette-primary: #7d2ae8;
-	--palette-primary-dark: #6318c5;
-	--palette-secondary: #280f91;
-	--palette-pink: #ffa5f0;
-	--palette-light-pink: #ffe6ff;
-	--palette-red: #ff5055;
-	--palette-dark-red: #6e0f2d;
-	--palette-yellow: #ffd200;
-	--palette-white: #fff;
-	--palette-gray-medium: #cbd3da;
-	--palette-gray-dark: #293039;
-	--palette-light: #e9ecef;
-	--palette-dark: #0e1318;
-	--gradients-brandGradient: #00c4cc, #5a32fa, #7d2ae8;
-	--radii-medium: 6px;
-	--radii-large: 1rem;
-	--radii-full: 9999px;
-	--typography-body-font-family: sans-serif;
-	/* this is not scalable (below), if we need to add another size, we have to go everywhere
+  --palette-primary: #7d2ae8;
+  --palette-primary-dark: #6318c5;
+  --palette-secondary: #280f91;
+  --palette-pink: #ffa5f0;
+  --palette-light-pink: #ffe6ff;
+  --palette-red: #ff5055;
+  --palette-dark-red: #6e0f2d;
+  --palette-yellow: #ffd200;
+  --palette-white: #fff;
+  --palette-gray-medium: #cbd3da;
+  --palette-gray-dark: #293039;
+  --palette-light: #e9ecef;
+  --palette-dark: #0e1318;
+  --gradients-brandGradient: #00c4cc, #5a32fa, #7d2ae8;
+  --radii-medium: 6px;
+  --radii-large: 1rem;
+  --radii-full: 9999px;
+  --typography-body-font-family: sans-serif;
+  /* this is not scalable (below), if we need to add another size, we have to go everywhere
 	   where the sizes are used in the css and change them to their new set */
-	--space-4xs: 0.25rem;
-	--space-3xs: 0.5rem;
-	--space-2xs: 0.625rem;
-	--space-xs: 0.9375rem;
-	--space-s: 1rem;
-	--space-m: 1.25rem;
-	--space-l: 1.5rem;
-	--space-xl: 1.875rem;
-	--space-2xl: 2rem;
-	--space-3xl: 3rem;
-	--space-4xl: 4rem;
-	--space-5xl: 10rem;
-	--typography-body: 1rem;
-	--typography-hero-text-header: 2.5rem;
-	--typography-body-lead: 1.125rem;
-	--typography-rich-header-text: 1.75rem;
-	--typography-section-program-heading: 2.5625rem;
-	--typography-section-program-item-header: 1.25rem;
-	--typography-greg-life: 3.5rem;
-	--typography-blockquote-lead: 1.5rem;
-	--typography-blockquote-footer: 1rem;
-	--typography-cta-banner-header: 3.125rem;
-	--typography-cta-banner-body: 1.0625rem;
-	--typography-small: 80%;
-	--padding-calc-value: calc(((100% - 690px)/2));
-	--container-padding: 1.5rem;
+  --space-4xs: 0.25rem;
+  --space-3xs: 0.5rem;
+  --space-2xs: 0.625rem;
+  --space-xs: 0.9375rem;
+  --space-s: 1rem;
+  --space-m: 1.25rem;
+  --space-l: 1.5rem;
+  --space-xl: 1.875rem;
+  --space-2xl: 2rem;
+  --space-3xl: 3rem;
+  --space-4xl: 4rem;
+  --space-5xl: 10rem;
+  --typography-body: 1rem;
+  --typography-hero-text-header: 2.5rem;
+  --typography-body-lead: 1.125rem;
+  --typography-rich-header-text: 1.75rem;
+  --typography-section-program-heading: 2.5625rem;
+  --typography-section-program-item-header: 1.25rem;
+  --typography-greg-life: 3.5rem;
+  --typography-blockquote-lead: 1.5rem;
+  --typography-blockquote-footer: 1rem;
+  --typography-cta-banner-header: 3.125rem;
+  --typography-cta-banner-body: 1.0625rem;
+  --typography-small: 80%;
+  --padding-calc-value: calc(((100% - 690px) / 2));
+  --container-padding: 1.5rem;
 }
 
 /* xSmall - small screens */
 @media (min-width: 576px) {
   :root {
-		--container-width: 540px;
-		--container-padding: 0.9375rem;
+    --container-width: 540px;
+    --container-padding: 0.9375rem;
   }
 }
 
 /* small - medium screens */
 @media (min-width: 768px) {
   :root {
-		--container-width: 720px;
+    --container-width: 720px;
   }
 }
 
 /* medium - large screens */
 @media (min-width: 992px) {
   :root {
-		--typography-body: 1.25rem;
-		--typography-body-lead: 1.125rem;
-		--typography-hero-text-header: 4rem;
-		--typography-rich-header-text: 4rem;
-		--typography-section-program-heading: 2.5625rem;
-		--typography-section-program-item-header: 1.75rem;
-		--typography-blockquote-lead: 2.25rem;
-		--typography-blockquote-footer: 1.0625rem;
-		--typography-greg-life: 6rem;
-		--typography-cta-banner-header: 5.625rem;
-		--typography-cta-banner-body: 1.5rem;
-		--padding-calc-value: calc(((100% - 930px)/2));
-		--container-width: 960px;
+    --typography-body: 1.25rem;
+    --typography-body-lead: 1.125rem;
+    --typography-hero-text-header: 4rem;
+    --typography-rich-header-text: 4rem;
+    --typography-section-program-heading: 2.5625rem;
+    --typography-section-program-item-header: 1.75rem;
+    --typography-blockquote-lead: 2.25rem;
+    --typography-blockquote-footer: 1.0625rem;
+    --typography-greg-life: 6rem;
+    --typography-cta-banner-header: 5.625rem;
+    --typography-cta-banner-body: 1.5rem;
+    --padding-calc-value: calc(((100% - 930px) / 2));
+    --container-width: 960px;
   }
 }
 
 /* large - xlarge screens */
 @media (min-width: 1200px) {
   :root {
-		--typography-body-lead: 1.5rem;
-		--typography-hero-text-header: 6rem;
-		--typography-section-program-heading: 5.625rem;
-		--padding-calc-value: calc(((100% - 1110px)/2));
-		--container-width: 1140px;
-	}
+    --typography-body-lead: 1.5rem;
+    --typography-hero-text-header: 6rem;
+    --typography-section-program-heading: 5.625rem;
+    --padding-calc-value: calc(((100% - 1110px) / 2));
+    --container-width: 1140px;
+  }
 }
 
 /* xlarge - xxlarge screens */
 @media (min-width: 1400px) {
   :root {
-		--padding-calc-value: calc(((100% - 1290px)/2));
-		--container-width: 1320px;
-		--typography-greg-life: 9rem;
-		--typography-blockquote-lead: 3rem;
-	}
+    --padding-calc-value: calc(((100% - 1290px) / 2));
+    --container-width: 1320px;
+    --typography-greg-life: 9rem;
+    --typography-blockquote-lead: 3rem;
+  }
 }
 
 /* xxlarge - xxxlarge screens */
 @media (min-width: 1600px) {
   :root {
-		--container-width: 1440px;
-	}
+    --container-width: 1440px;
+  }
 }

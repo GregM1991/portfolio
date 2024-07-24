@@ -7,7 +7,7 @@ export function randomIntFromInterval(min: number, max: number) {
 export const randomNumArray: RandomNumArrayFunction = (
   arrLength,
   minNum = 0,
-  maxNum = 100
+  maxNum = 100,
 ) => {
   let arrayOfNums: Array<number> = [];
   for (let i = 0; i < arrLength; i++) {
@@ -20,5 +20,5 @@ export const createBRadiusString = () =>
   `${randomNumArray(4, 25, 100).join("% ")}% / ${randomNumArray(
     4,
     25,
-    100
+    100,
   ).join("% ")}%`;

@@ -1,1 +1,1 @@
-export * from './GregsValues'
+export * from "./GregsValues";

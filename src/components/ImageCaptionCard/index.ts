@@ -1,1 +1,1 @@
-export * from './ImageCaptionCard'
+export * from "./ImageCaptionCard";

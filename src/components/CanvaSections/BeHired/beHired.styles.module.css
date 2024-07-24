@@ -30,7 +30,7 @@
 }
 
 .ctaLead {
-  font-size: var(--typography-cta-banner-header)
+  font-size: var(--typography-cta-banner-header);
 }
 
 .leadWithBorder {
@@ -42,7 +42,7 @@
   display: inline-block;
   width: 4px;
   height: 90px;
-  background-color: var(--palette-white)
+  background-color: var(--palette-white);
 }
 
 .breakoutLine {

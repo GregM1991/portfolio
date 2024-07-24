@@ -1,33 +1,33 @@
 .logo {
-	font-family: var(--font-ezra);
+  font-family: var(--font-ezra);
   font-size: 1.4rem;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .canva {
-	composes: logo;
-	background: linear-gradient(0.25turn, var(--gradients-brandGradient));
-	background-clip: text;
+  composes: logo;
+  background: linear-gradient(0.25turn, var(--gradients-brandGradient));
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .normal {
-	composes: logo;
-	font-weight: 700;
-	color: var(--palette-primary);
+  composes: logo;
+  font-weight: 700;
+  color: var(--palette-primary);
 }
 
 @media (min-width: 992px) {
-	.logo {
-		line-height: 1.3;
-		font-size: 2.3rem;
-	}
+  .logo {
+    line-height: 1.3;
+    font-size: 2.3rem;
+  }
 
-	.canva {
-		padding-left: var(--space-xs);
-	}
+  .canva {
+    padding-left: var(--space-xs);
+  }
 
-	.normal {
-		padding-left: 0;
-	}
+  .normal {
+    padding-left: 0;
+  }
 }

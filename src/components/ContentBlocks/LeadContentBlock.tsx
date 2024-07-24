@@ -10,7 +10,7 @@ export function LeadContentBlock({
   tldrString,
   sectionAriaLabel,
   imageSrc,
-  imageAlt
+  imageAlt,
 }: LeadContentBlockProps) {
   return (
     <GenericContentBlock

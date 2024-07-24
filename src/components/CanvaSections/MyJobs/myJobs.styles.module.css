@@ -5,11 +5,11 @@
 .projectWrapper {
   display: flex;
   flex-direction: column;
-  gap: 8rem
+  gap: 8rem;
 }
 
 @media (min-width: 992px) {
   .header {
-    padding-left: var(--padding-calc-value)
+    padding-left: var(--padding-calc-value);
   }
 }

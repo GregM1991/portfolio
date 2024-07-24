@@ -1,5 +1,5 @@
 .header {
-  composes: max-width-container from '../../styles/composable.module.css';
+  composes: max-width-container from "../../styles/composable.module.css";
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,7 +32,9 @@
   overflow: hidden;
   max-height: 0;
   background-color: transparent;
-  transition: max-height 0.5s ease-out, background-color 1s ease-in;
+  transition:
+    max-height 0.5s ease-out,
+    background-color 1s ease-in;
 }
 
 .menu {
@@ -60,7 +62,7 @@
 .canva-navLink {
   composes: navLink;
   font-size: 1.5rem;
-  letter-spacing: .005rem;
+  letter-spacing: 0.005rem;
 }
 
 .canva-navLink:hover {
@@ -97,10 +99,10 @@
 .hambLine::after {
   position: absolute;
   background: var(--palette-dark);
-  content: '';
+  content: "";
   display: block;
   height: 100%;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -112,22 +114,24 @@
   top: -6px;
 }
 
-.sideMenu:checked~.nav {
+.sideMenu:checked ~ .nav {
   max-height: 100%;
   background-color: var(--palette-white);
-  transition: max-height 0.5s ease-out, background-color 0.1s ease-out;
+  transition:
+    max-height 0.5s ease-out,
+    background-color 0.1s ease-out;
 }
 
-.sideMenu:checked~.hambContainer .hamb .hambLine {
+.sideMenu:checked ~ .hambContainer .hamb .hambLine {
   background: transparent;
 }
 
-.sideMenu:checked~.hambContainer .hamb .hambLine::before {
+.sideMenu:checked ~ .hambContainer .hamb .hambLine::before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.sideMenu:checked~.hambContainer .hamb .hambLine::after {
+.sideMenu:checked ~ .hambContainer .hamb .hambLine::after {
   transform: rotate(45deg);
   top: 0;
 }

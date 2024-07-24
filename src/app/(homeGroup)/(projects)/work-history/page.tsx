@@ -9,10 +9,7 @@ export default function WorkHistory() {
         heading="Work History"
         headingProps={{ type: "h1", size: "2xl" }}
         body={[{ key: "1", copy: "I have worked at a few places" }]}
-        sectionAriaLabel="Work History"
         tldrString="I have worked at a few places"
-        imageSrc={eq8Gang}
-        imageAlt="A group of people at a pub"
       >
         <p>Penis</p>
       </LeadContentBlock>

@@ -1,1 +1,1 @@
-export * from './CanvaSection'
+export * from "./CanvaSection";

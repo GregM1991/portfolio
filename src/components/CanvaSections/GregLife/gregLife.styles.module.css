@@ -1,182 +1,182 @@
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .imageWrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   padding-left: var(--space-xs);
 }
 
 .type h1 {
-	opacity: 0;
-	position: relative;
+  opacity: 0;
+  position: relative;
 }
 
 .cuddleCats {
-	margin-bottom: var(--space-2xs);
-	object-position: 50% 15%;
-	width: 102px;
-	height: 102px;
+  margin-bottom: var(--space-2xs);
+  object-position: 50% 15%;
+  width: 102px;
+  height: 102px;
 }
 
 .canvaRooftop {
-	margin-bottom: 3rem;
-	object-position: 50% 35%;
-	height: auto;
-	width: 270px;
-	aspect-ratio: 56 / 50;
+  margin-bottom: 3rem;
+  object-position: 50% 35%;
+  height: auto;
+  width: 270px;
+  aspect-ratio: 56 / 50;
 }
 
 .purpleDoodle {
-	width: 65px;
-	height: 38px;
-	top: -22px;
-	left: -36px;
-	position: absolute;
+  width: 65px;
+  height: 38px;
+  top: -22px;
+  left: -36px;
+  position: absolute;
 }
 
 .yellowDoodle {
-	width: 117px;
-	height: auto;
-	position: absolute;
-	bottom: 40px;
-	right: -15px;
+  width: 117px;
+  height: auto;
+  position: absolute;
+  bottom: 40px;
+  right: -15px;
 }
 
 .link {
-	color: var(--palette-primary);
+  color: var(--palette-primary);
 }
 
 .link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .pLead {
-	font-size: var(--typography-body-lead);
+  font-size: var(--typography-body-lead);
   letter-spacing: 0.03rem;
 }
 
 @media (min-width: 768px) {
-	.imageWrapper {
-		padding-right: var(--space-xs);
-	}
+  .imageWrapper {
+    padding-right: var(--space-xs);
+  }
 
-	.cuddleCats {
-		position: absolute;
-		width: 150px;
-		height: 150px;
-		right: 440px;
-	}
+  .cuddleCats {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 440px;
+  }
 
-	.canvaRooftop {
-		margin-top: 50px;
-		width: 400px;
-	}
+  .canvaRooftop {
+    margin-top: 50px;
+    width: 400px;
+  }
 
-	.yellowDoodle {
-		right: 0;
-	}
+  .yellowDoodle {
+    right: 0;
+  }
 }
 
 @media (min-width: 992px) {
-	.wrapper {
-		flex-direction: row-reverse;
-	}
+  .wrapper {
+    flex-direction: row-reverse;
+  }
 
-	.type {
-		max-width: 50%;
-		padding: 100px var(--space-xs) 0 var(--space-xs);
-	}
+  .type {
+    max-width: 50%;
+    padding: 100px var(--space-xs) 0 var(--space-xs);
+  }
 
-	.imageWrapper {
-		flex: 0 0 50%;
-	}
+  .imageWrapper {
+    flex: 0 0 50%;
+  }
 
-	.cuddleCats {
-		width: 102px;
-		height: 102px;
-		left: -110px;
-	}
+  .cuddleCats {
+    width: 102px;
+    height: 102px;
+    left: -110px;
+  }
 
-	.canvaRooftop {
-		margin-top: 50px;
-		width: 100%;
-	}
+  .canvaRooftop {
+    margin-top: 50px;
+    width: 100%;
+  }
 
-	.purpleDoodle {
-		width: 194px;
-		height: 123px;
-		top: -100px;
-		left: -36px;
-	}
+  .purpleDoodle {
+    width: 194px;
+    height: 123px;
+    top: -100px;
+    left: -36px;
+  }
 
-	.yellowDoodle {
-		width: 243px;
-		bottom: 0;
-	}
+  .yellowDoodle {
+    width: 243px;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
-	.imageWrapper {
-		flex: 0 0 41.66667%;
-		max-width: 41.66667%;
-	}
-	
-	.type {
-		padding-top: 200px;
-	}
-	
-	.canvaRooftop {
-		margin-top: 100px;
-		aspect-ratio: 1 / 1;
-	}
+  .imageWrapper {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
 
-	.cuddleCats {
-		width: 190px;
-		height: 190px;
-		left: -190px;
-	}
+  .type {
+    padding-top: 200px;
+  }
 
-	.yellowDoodle {
-		bottom: 65px;
-	}
+  .canvaRooftop {
+    margin-top: 100px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .cuddleCats {
+    width: 190px;
+    height: 190px;
+    left: -190px;
+  }
+
+  .yellowDoodle {
+    bottom: 65px;
+  }
 }
 
 @media (min-width: 1400px) {
-	.imageWrapper {
-		flex: 0 0 600px;
-		max-width: 600px;
-		padding-right: 0;
-	}
+  .imageWrapper {
+    flex: 0 0 600px;
+    max-width: 600px;
+    padding-right: 0;
+  }
 
-	.cuddleCats {
-		left: -175px;
-	}
+  .cuddleCats {
+    left: -175px;
+  }
 
-	.canvaRooftop {
-		width: 560px;
-		height: 560px;
-	}
+  .canvaRooftop {
+    width: 560px;
+    height: 560px;
+  }
 
-	.purpleDoodle {
-		width: 215px;
-		height: 137px;
-		top: -125px;
-	}
+  .purpleDoodle {
+    width: 215px;
+    height: 137px;
+    top: -125px;
+  }
 
-	.yellowDoodle {
-		bottom: 0;
-	}
+  .yellowDoodle {
+    bottom: 0;
+  }
 }
 
 @media (min-width: 1600px) {
-	.purpleDoodle {
-		top: -74px;
-		left: -128px;
-	}
+  .purpleDoodle {
+    top: -74px;
+    left: -128px;
+  }
 }

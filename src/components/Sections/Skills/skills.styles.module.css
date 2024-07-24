@@ -1,5 +1,5 @@
 .wrapper {
-  composes: section-container from '../../../styles/composable.module.css';
+  composes: section-container from "../../../styles/composable.module.css";
   gap: var(--space-s);
 }
 
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   color: var(--palette-secondary);
-  margin: var(--space-l) 0
+  margin: var(--space-l) 0;
 }
 
 .iconsWrapper > span {
