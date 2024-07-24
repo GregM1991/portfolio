@@ -3,13 +3,15 @@
   position: fixed;
   inset: 0;
   opacity: 0.4;
-  z-index: 2
+  z-index: 2;
 }
 
 .content {
   background-color: var(--palette-white);
   border-radius: var(--radii-large);
-  box-shadow: hsl(1 100% 7% / 35%) 0px 10px 38px -10px, hsl(1 100% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow:
+    hsl(1 100% 7% / 35%) 0px 10px 38px -10px,
+    hsl(1 100% 7% / 20%) 0px 10px 20px -15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -36,7 +38,7 @@
 .modalContainer {
   display: flex;
   flex-direction: column;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
 .content > ul {

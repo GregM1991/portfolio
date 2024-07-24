@@ -1,1 +1,1 @@
-export * from './AnimateChildren'
+export * from "./AnimateChildren";

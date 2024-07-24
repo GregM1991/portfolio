@@ -5,7 +5,7 @@
 }
 
 .textWrapper {
-  padding: 0 var(--space-l)
+  padding: 0 var(--space-l);
 }
 
 .imageWrapper {
@@ -27,7 +27,7 @@
   .wrapper {
     flex-direction: revert;
   }
-  
+
   .imageWrapper {
     padding-right: 0;
     margin-top: 0;
@@ -51,11 +51,11 @@
   .left .textWrapper {
     padding-right: 60px;
   }
-  
+
   .left .img {
     border-radius: var(--radii-large) 0 0 var(--radii-large);
   }
-  
+
   .right {
     flex-direction: row-reverse;
     padding-right: var(--padding-calc-value);

@@ -1,0 +1,3 @@
+export const summary = `Throughout my journey as a Full Stack Engineer, I have been widely interested in the entire environment of Software Engineering, but have been most engaged by the front end. I have a passion for clean, scalable code and have proven skills in JavaScript & Typescript and supporting frameworks/libraries that solve creative problems. I'm an agile thinker and strong communicator, motivated to grow my skill-set through new challenging projects and prove my value in any endeavor I take on. My previous 
+career as a Graphic Designer has given me a strong ability to talk design language 
+as well as communicate with Product teams and align on the best possible user experience outcomes.`;

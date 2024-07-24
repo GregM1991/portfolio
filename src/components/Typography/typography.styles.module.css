@@ -1,8 +1,8 @@
 .h1Lead {
-	font-size: var(--typography-hero-text-header);
-	line-height: 1.1;
-	font-weight: 700;
-	letter-spacing: -0.2rem;
+  font-size: var(--typography-hero-text-header);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
 }
 
 .h2Rich {
@@ -10,21 +10,21 @@
 }
 
 .arvo {
-	font-family: var(--font-arvo);
+  font-family: var(--font-arvo);
 }
 
 .raleway {
-	font-family: var(--font-raleway);
+  font-family: var(--font-raleway);
 }
 
 .normal {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .light {
-	font-weight: 200;
+  font-weight: 200;
 }
 
 .bold {
-	font-weight: 700;
+  font-weight: 700;
 }

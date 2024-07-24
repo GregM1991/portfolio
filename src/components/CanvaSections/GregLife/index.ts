@@ -1,1 +1,1 @@
-export * from './GregLife'
+export * from "./GregLife";
