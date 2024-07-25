@@ -48,19 +48,29 @@ export const CANVA_NAV_LINKS: NavLink[] = [
 export const NAV_LINKS: NavLink[] = [
   {
     key: crypto.randomUUID(),
-    linkText: "Work History",
-    href: "/work-history",
+    linkText: "Journaling App",
+    href: "/journaling-app"
   },
   {
     key: crypto.randomUUID(),
-    linkText: "portfolio",
-    href: "/portfolio",
+    linkText: "Doot Notes",
+    href: "/doot-notes"
   },
   {
     key: crypto.randomUUID(),
-    linkText: "Canva portfolio",
-    href: "/canva",
+    linkText: "Super Blog Brothers",
+    href: "/super-blog-brothers"
   },
+  {
+    key: crypto.randomUUID(),
+    linkText: "Portfolio",
+    href: "/portfolio"
+  },
+  {
+    key: crypto.randomUUID(),
+    linkText: "Canva Portfolio",
+    href: "/canva"
+  }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [

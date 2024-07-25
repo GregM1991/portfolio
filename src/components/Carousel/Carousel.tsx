@@ -26,10 +26,6 @@ export function Carousel({ items, className }: CarouselProps) {
     setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
-  const handleDotClick = (index: number) => {
-    setCurrentIndex(index);
-  };
-
   const leftDisabled = currentIndex === 0;
   const rightDisabled = currentIndex === items.length - 1;
 
