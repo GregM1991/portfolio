@@ -1,6 +1,7 @@
 import styles from "@/app/(homeGroup)/project.styles.module.css";
-import { AnimatedTypography, LeadContentBlock } from "@/components";
+import { AnimatedTypography, LeadContentBlock, Typography } from "@/components";
 import { fadeInUpVariantsB } from "@/constants/animation";
+import { responsibilities, summary } from "./workHistoryContent";
 
 export default function WorkHistory() {
   return (
@@ -9,16 +10,36 @@ export default function WorkHistory() {
       <LeadContentBlock
         heading="Work History"
         headingProps={{ type: "h1", size: "2xl" }}
-        body={[{ key: "1", copy: "I have worked at a few places" }]}
+        body={[{ key: "1", copy: summary }]}
       />
-      <AnimatedTypography
-        variants={fadeInUpVariantsB}
-        initial="initial"
-        whileInView="target"
-        viewport={{ once: true }}
-      >
-        Faethm by Pearson
-      </AnimatedTypography>
+      <div>
+        <AnimatedTypography
+          variants={fadeInUpVariantsB}
+          initial="initial"
+          whileInView="target"
+          viewport={{ once: true }}
+          type="h2"
+          size="l"
+        >
+          eQ8
+        </AnimatedTypography>
+        <AnimatedTypography
+          variants={fadeInUpVariantsB}
+          initial="initial"
+          whileInView="target"
+          viewport={{ once: true }}
+          type="span"
+        >
+          Mid/Senior Full-Stack Engineer | Jan 2023 - Present
+        </AnimatedTypography>
+        <ul>
+          {responsibilities.map((responsibility, index) => (
+            <li key={index}>
+              <Typography type="span">{responsibility}</Typography>
+            </li>
+          ))}
+        </ul>
+      </div>
     </main>
   );
 }
