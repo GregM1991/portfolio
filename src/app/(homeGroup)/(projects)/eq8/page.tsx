@@ -13,7 +13,7 @@ import {
   OPENING,
   OVERVIEW,
 } from "@/constants/eq8Content";
-import styles from "../../project.styles.module.css";
+import styles from "@/app/(homeGroup)/project.styles.module.css";
 
 export default function Eq8Project() {
   return (
