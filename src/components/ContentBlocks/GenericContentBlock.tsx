@@ -1,4 +1,9 @@
-import { AnimatedTypography, Tldr, Typography } from "@/components";
+import {
+  AnimatedTypography,
+  ASocialLinks,
+  Tldr,
+  Typography
+} from "@/components";
 import { GenericContentBlockProps } from "./types";
 import clsx from "clsx";
 import styles from "./contentBlocks.styles.module.css";
@@ -10,7 +15,8 @@ export function GenericContentBlock({
   body,
   tldrString,
   sectionAriaLabel,
-  children
+  children,
+  links
 }: GenericContentBlockProps) {
   const Wrapper = sectionAriaLabel ? "section" : "div";
   const animationClass = clsx(sectionAriaLabel && styles.opacityForAnimation);
@@ -27,6 +33,11 @@ export function GenericContentBlock({
       >
         {heading}
       </AnimatedTypography>
+      {links && (
+        <div className={styles.socialsWrapper}>
+          <ASocialLinks links={links} withTooltip />
+        </div>
+      )}
       {tldrString ? (
         <Tldr tldrString={tldrString} className={styles.tldr}>
           <div className={styles.doubleColumn}>
@@ -36,7 +47,7 @@ export function GenericContentBlock({
           </div>
         </Tldr>
       ) : (
-        <div className={styles.doubleColumn}>
+        <div className={`${styles.doubleColumn} ${styles.body}`}>
           {body.map(({ key, copy }) => (
             <Typography key={key}>{copy}</Typography>
           ))}

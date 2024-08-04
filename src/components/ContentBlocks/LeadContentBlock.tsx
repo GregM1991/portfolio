@@ -3,6 +3,7 @@ import { LeadContentBlockProps } from "./types";
 import Image from "next/image";
 import styles from "./contentBlocks.styles.module.css";
 
+// TODO: These content blocks aren't working, need to rethink implementation
 export function LeadContentBlock({
   heading,
   headingProps,
@@ -11,6 +12,7 @@ export function LeadContentBlock({
   sectionAriaLabel,
   imageSrc,
   imageAlt,
+  links,
   children
 }: LeadContentBlockProps) {
   return (
@@ -20,6 +22,7 @@ export function LeadContentBlock({
       body={body}
       sectionAriaLabel={sectionAriaLabel}
       tldrString={tldrString}
+      links={links} // TODO: This is so stinky, passing links down to the generic content block
     >
       {imageSrc && (
         <div className={styles.imageWrapper}>
