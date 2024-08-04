@@ -31,6 +31,15 @@
   opacity: 0;
 }
 
+.body {
+  margin-top: var(--space-l);
+}
+
+.socialsWrapper {
+  color: var(--palette-secondary);
+  margin-top: var(--space-2xs)
+}
+
 @media (min-width: 982px) {
   .tech {
     grid-template-columns: 1fr 1fr 1fr;
