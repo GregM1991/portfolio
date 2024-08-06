@@ -4,7 +4,7 @@
 }
 
 .bodyCopy {
-  composes: double-column from global;
+  composes: doubleColumn from global;
   margin-bottom: var(--space-xl);
 }
 
