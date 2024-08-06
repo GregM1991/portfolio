@@ -1,5 +1,9 @@
 "use client";
-import { LeadContentBlock, TechContentBlock } from "@/components";
+import {
+  GenericContentBlock,
+  LeadContentBlock,
+  TechContentBlock
+} from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
 import styles from "./superBlogBrothers.styles.module.css";
 import content from "./content";
@@ -10,7 +14,7 @@ export default function SuperBlogBrothersProject() {
     <main className={projectStyles.wrapper}>
       <LeadContentBlock
         heading="Super Blog Brothers"
-        body={[{ key: "1", copy: content.copy }]}
+        body={content.openingBody}
         headingProps={{ size: "2xl" }}
         links={content.links}
       />
@@ -27,6 +31,13 @@ export default function SuperBlogBrothersProject() {
         sectionAriaLabel={content.techSectionAriaLabel}
         techStack={content.techStack}
       />
+      <GenericContentBlock
+        heading={content.purposeAndGoals.heading}
+        headingProps={{ type: "h2", size: "xl" }}
+        body={content.purposeAndGoals.body}
+        sectionAriaLabel={content.purposeAndGoals.sectionAriaLabel}
+      />
+      {/* TODO: Get into the double column show-case, take screen record of 3d, plus screen caps of other stuff */}
     </main>
   );
 }

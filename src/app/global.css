@@ -80,6 +80,7 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
@@ -100,4 +101,8 @@ select {
   .doubleColumn {
     column-count: 2;
   }
+}
+
+p+p {
+  margin-top: var(--space-3xs);
 }
