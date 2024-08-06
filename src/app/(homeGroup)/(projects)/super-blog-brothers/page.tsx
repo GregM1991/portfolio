@@ -1,5 +1,5 @@
 "use client";
-import { LeadContentBlock } from "@/components";
+import { LeadContentBlock, TechContentBlock } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
 import styles from "./superBlogBrothers.styles.module.css";
 import content from "./content";
@@ -22,6 +22,11 @@ export default function SuperBlogBrothersProject() {
           placeholder="blur"
         />
       </div>
+      <TechContentBlock
+        headingProps={{ type: "h2", size: "xl" }}
+        sectionAriaLabel={content.techSectionAriaLabel}
+        techStack={content.techStack}
+      />
     </main>
   );
 }

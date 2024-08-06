@@ -20,6 +20,16 @@ const links: SocialLink[] = [
     screenReader: "A link to the Super Blog Brothers Github repository"
   }
 ];
+const techStack = ["SvelteKit", "Threelte JS", "Prismic", "Typescript"];
+const techSectionAriaLabel =
+  "The tech stack used in the Super Blog Brothers project";
 
-const content = { SuperBlogBrothersSplash, copy, imageAltTxt, links };
+const content = {
+  SuperBlogBrothersSplash,
+  copy,
+  imageAltTxt,
+  links,
+  techStack,
+  techSectionAriaLabel
+};
 export default content;
