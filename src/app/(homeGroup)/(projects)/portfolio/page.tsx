@@ -1,22 +1,21 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   GenericContentBlock,
   ImageCaptionCard,
   TechContentBlock,
-  Typography,
+  Typography
 } from "@/components";
 import { FaGithub } from "react-icons/fa6";
 import {
   GOALS,
   OPENING,
   OVERVIEW,
-  PORTFOLIO_TECH,
+  PORTFOLIO_TECH
 } from "@/constants/portfolioContent";
 import canvaPageWhole from "@/assets/images/whole-canva-portfolio-page.png";
 import carousel from "@/assets/images/carousel.png";
 import testimonials from "@/assets/images/testimonials-screenshot.png";
-import styles from "../../project.styles.module.css";
+import styles from "@/app/(homeGroup)/project.styles.module.css";
 
 export default function PortfolioProject() {
   return (
