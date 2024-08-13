@@ -7,7 +7,7 @@ import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 const imageAltTxt = `Super Blog Brothers written on a dark background with floating geometry`;
 const openingBody = [
   {
-    key: "2",
+    key: "1",
     copy: `Super Blog Brothers was a fun build, I met Andy and George through a friend of mine, and we hit it off due to our love of games. They told me about their plan to start a video game blog and the conversation flowed on to a site I could build for them.`
   },
   {

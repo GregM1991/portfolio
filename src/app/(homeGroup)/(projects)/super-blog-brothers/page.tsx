@@ -7,7 +7,6 @@ import {
   Typography
 } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
-import superBlogBrothersStyles from "./superBlogBrothers.styles.module.css";
 import content from "./content";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +20,7 @@ export default function SuperBlogBrothersProject() {
         headingProps={{ size: "2xl" }}
         links={content.links}
       />
-      <div className={superBlogBrothersStyles.imageWrapper}>
+      <div className={projectStyles.imageWrapper}>
         <Image
           src={content.images.superBlogBrothersSplash}
           alt={content.imageAltTxt}
