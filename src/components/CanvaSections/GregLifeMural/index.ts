@@ -1,1 +1,1 @@
-export * from './GregLifeMural'
+export * from "./GregLifeMural";

@@ -4,17 +4,14 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-arvo), sans-serif;
-	font-weight: 700;
-	color: var(--palette-primary);
+  font-family: var(--font-arvo), sans-serif;
+  font-weight: 700;
+  color: var(--palette-primary);
 }
 
-html p, span {
-	line-height: 1.5;
-	font-size: var(--step-0);
-	font-family: var(--font-raleway), sans-serif;
-}
-
-div > p:not(:first-child) {
-  margin-top: var(--space-xs);
+html p,
+span {
+  line-height: 1.5;
+  font-size: var(--step-0);
+  font-family: var(--font-raleway), sans-serif;
 }

@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--palette-secondary)
+  background-color: var(--palette-secondary);
 }
 
 .linkWrapper {
@@ -39,13 +39,13 @@
   align-items: center;
   gap: var(--space-xl);
   padding-top: var(--space-xl);
-  color: var(--palette-white)
+  color: var(--palette-white);
 }
 
 .copywrite {
   font-size: 0.8125rem;
   letter-spacing: 0.3px;
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 @media (min-width: 992px) {

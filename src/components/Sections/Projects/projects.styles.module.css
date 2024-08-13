@@ -1,10 +1,10 @@
 .wrapper {
-  composes: section-container from '../../../styles/composable.module.css';;
+  composes: section-container from "../../../styles/composable.module.css";
   gap: var(--space-s);
 }
 
 .bodyCopy {
-  composes: double-column from global;
+  composes: doubleColumn from global;
   margin-bottom: var(--space-xl);
 }
 

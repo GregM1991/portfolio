@@ -51,7 +51,7 @@
 
 @media (min-width: 768px) {
   .standing {
-    max-width: calc(100% - var(--space-xl))
+    max-width: calc(100% - var(--space-xl));
   }
 
   .lights {

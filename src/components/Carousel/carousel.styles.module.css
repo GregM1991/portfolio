@@ -22,8 +22,7 @@
   padding: var(--space-m);
   text-align: center;
   grid-row: 2 / 3;
-  background-color: rgba(27,84,82, 0.8);
+  background-color: rgba(27, 84, 82, 0.8);
   color: var(--palette-white);
   z-index: 1;
 }
-

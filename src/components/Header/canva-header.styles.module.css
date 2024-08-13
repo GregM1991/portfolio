@@ -27,7 +27,7 @@
   composes: hambContainer;
 }
 
-.hamb{
+.hamb {
   composes: hamb;
 }
 
@@ -37,30 +37,30 @@
 
 @media (min-width: 992px) {
   .header {
-    composes: header
+    composes: header;
   }
 
   .nav {
-    composes: nav
+    composes: nav;
   }
 
   .menu {
-    composes: menu
+    composes: menu;
   }
 
   .menuListItem {
-    composes: menuListItem
+    composes: menuListItem;
   }
 
   .navLink {
-    composes: navLink
+    composes: navLink;
   }
 
   .hambContainer {
-    composes: hambContainer
+    composes: hambContainer;
   }
 
   .button {
-    composes: button
+    composes: button;
   }
 }

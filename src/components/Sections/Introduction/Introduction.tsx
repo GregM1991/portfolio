@@ -2,7 +2,7 @@ import Image from "next/image";
 import {
   ALineSVG,
   AnimateChildren,
-  AnimatedSocialLinks,
+  ASocialLinks,
   AnimatedTypography,
   Typography
 } from "@/components";
@@ -24,7 +24,7 @@ export function Introduction() {
       <div>
         <div className={styles.socialsWrapper}>
           <ALineSVG />
-          <AnimatedSocialLinks />
+          <ASocialLinks />
         </div>
         <AnimatedTypography
           variants={fadeInUpVariantsB}

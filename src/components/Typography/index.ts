@@ -1,2 +1,2 @@
-export * from './Typography'
-export * from './AnimatedTypography'
+export * from "./Typography";
+export * from "./AnimatedTypography";

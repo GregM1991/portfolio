@@ -1,5 +1,5 @@
 .wrapper {
-  composes: section-container from '../../styles/composable.module.css';
+  composes: section-container from "../../styles/composable.module.css";
   padding-top: var(--space-2xl);
   gap: var(--space-xl);
 }
@@ -41,6 +41,10 @@
   background: var(--palette-secondary);
 }
 
+.doubleColumn {
+  composes: doubleColumn from global;
+}
+
 @media (min-width: 768px) {
   .screensGrid {
     grid-template-columns: 1fr 1fr;
@@ -51,11 +55,11 @@
     grid-area: 1 / 1 / 5 / 2;
   }
 
-  .screensGrid > figure:nth-child(2) {
+  .screensGrid>figure:nth-child(2) {
     grid-area: 2 / 2 / 3 / 3;
   }
 
-  .screensGrid > figure:nth-child(3) {
+  .screensGrid>figure:nth-child(3) {
     grid-area: 3 / 2 / 4 / 3;
   }
 }

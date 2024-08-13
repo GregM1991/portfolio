@@ -1,16 +1,16 @@
 /* composable styles */
 .flex-column-wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .max-width-container {
-	max-width: 1400px;
-	margin: auto;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .section-container {
-	composes: flex-column-wrapper;
-	composes: max-width-container;
-	padding: var(--space-xl) var(--space-m-l);
+  composes: flex-column-wrapper;
+  composes: max-width-container;
+  padding: var(--space-xl) var(--space-m-l);
 }

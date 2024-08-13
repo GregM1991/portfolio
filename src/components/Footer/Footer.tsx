@@ -1,10 +1,10 @@
-import { Acknowledgement, FooterLinks } from '@/components'
+import { Acknowledgement, FooterLinks } from "@/components";
 
 export function Footer() {
-	return (
-		<>
-			<Acknowledgement />
-			<FooterLinks />
-		</>
-	)
+  return (
+    <>
+      <Acknowledgement />
+      <FooterLinks />
+    </>
+  );
 }

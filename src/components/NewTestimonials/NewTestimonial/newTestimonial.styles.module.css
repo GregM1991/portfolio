@@ -53,7 +53,7 @@
   margin-top: var(--space-m);
   gap: var(--space-3xs);
   font-style: normal;
-  font-family: var(--font-raleway)
+  font-family: var(--font-raleway);
 }
 
 .cite {
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: 768px) {
-  .blockQuoteWrapper  {
+  .blockQuoteWrapper {
     flex-direction: row-reverse;
   }
 
@@ -81,10 +81,10 @@
 }
 
 @media (min-width: 992px) {
-  .blockQuoteWrapper  {
+  .blockQuoteWrapper {
     justify-content: space-between;
   }
-  
+
   .imageWrapper {
     max-width: 33.3%;
     flex: 0 0 33.333%;
