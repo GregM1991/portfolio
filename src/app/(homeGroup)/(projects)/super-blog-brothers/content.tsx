@@ -1,5 +1,6 @@
 import superBlogBrothersSplash from "@/assets/images/super-blog-brothers/super-blog-brothers-splash.png";
 import animatedBlocks from "@/assets/images/super-blog-brothers/blocks.png";
+import animatedBlogList from "@/assets/images/super-blog-brothers/blog-hover-image-animation.gif";
 import { SocialLink } from "@/types/links";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 
@@ -58,13 +59,26 @@ const purposeAndGoals = {
   sectionAriaLabel: "Purpose and Goals of the Super Blog Brothers project"
 };
 
+export const overview = {
+  sectionAriaLabel:
+    "The challenges and lessons Greg learned building Super Blog Brothers",
+  heading: "Challenges and Lessons Learned",
+  body: [
+    {
+      key: "1",
+      copy: "The biggest challenge for me came to me towards the end, and that's having a solid outline from the start. I think with a project with such an open brief it's nice to have a little wiggle room, but without structure and planning it can blow out the timeline as I get carried away with trying out all the cool things I can do. There's also a lesson that goes hand in hand with this kind of issue and that's not to let the perfect be the enemy of the good. I found myself losing time trying to optimise everything, or make things pixel perfect when it really wasn't necessary to do so."
+    }
+  ]
+};
+
 const content = {
-  images: { superBlogBrothersSplash, animatedBlocks },
+  images: { superBlogBrothersSplash, animatedBlocks, animatedBlogList },
   openingBody,
   imageAltTxt,
   links,
   techStack,
   techSectionAriaLabel,
-  purposeAndGoals
+  purposeAndGoals,
+  overview
 };
 export default content;

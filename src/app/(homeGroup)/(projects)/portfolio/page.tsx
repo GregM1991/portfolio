@@ -48,8 +48,10 @@ export default function PortfolioProject() {
       />
       <div className={styles.screensGrid}>
         <ImageCaptionCard
-          imageSrc={canvaPageWhole}
-          imageAlt="A screenshot of the whole of the home portfolio page"
+          imageProps={{
+            src: canvaPageWhole,
+            alt: "A screenshot of the whole of the home portfolio page"
+          }}
           caption={
             <Typography size="xs">
               The personal portfolio I built for canva.{" "}
@@ -59,15 +61,19 @@ export default function PortfolioProject() {
           isScreenCap
         />
         <ImageCaptionCard
-          imageSrc={carousel}
-          imageAlt="A screenshot of the whole of the home portfolio page"
+          imageProps={{
+            src: carousel,
+            alt: "A screenshot of the carousel that showcases screens for my projects"
+          }}
           caption="A carousel component to showcase screens for my projects."
           isScreenCap
           linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/Carousel/Carousel.tsx"
         />
         <ImageCaptionCard
-          imageSrc={testimonials}
-          imageAlt="A screenshot of the whole of the home portfolio page"
+          imageProps={{
+            src: testimonials,
+            alt: "A screenshot of the testimonials section"
+          }}
           caption="I had built this testimonials section for the canva page, but it was too good not to use in my regular portfolio."
           isScreenCap
           linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/NewTestimonials/NewTestimonials.tsx"

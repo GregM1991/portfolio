@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { type StaticImageData, type ImageProps } from "next/image";
 import styles from "./imageCaptionCard.styles.module.css";
 import { Typography, VisuallyHidden } from "@/components";
 import clsx from "clsx";
@@ -6,30 +6,22 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 
 interface ImageCaptionCardProps {
-  imageSrc: StaticImageData;
-  imageAlt: string;
   caption?: string | React.ReactNode;
   isScreenCap?: boolean;
   linkToCode?: string;
+  imageProps: ImageProps;
 }
 
 export function ImageCaptionCard({
-  imageSrc,
-  imageAlt,
+  imageProps,
   caption,
   isScreenCap = false,
-  linkToCode,
+  linkToCode
 }: ImageCaptionCardProps) {
   const imageClasses = clsx(styles.image, { [styles.shadow]: isScreenCap });
   return (
     <figure className={styles.wrapper}>
-      <Image
-        src={imageSrc}
-        alt={imageAlt}
-        sizes="100vw"
-        placeholder="blur"
-        className={imageClasses}
-      />
+      <Image {...imageProps} alt={imageProps.alt} className={imageClasses} />
       {caption && (
         <figcaption className={styles.figcaption}>
           <Typography size="xs" type="span">

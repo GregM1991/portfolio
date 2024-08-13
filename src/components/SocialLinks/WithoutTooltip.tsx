@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { VisuallyHidden } from "@/components";
-import { SocialLinkProps } from "./SocialLinks";
 import styles from "./socialLinks.styles.module.css";
+import type { SocialLinkProps } from "./socialLinks.types";
 
 export const WithoutTooltip = ({ link, size }: SocialLinkProps) => {
   const Icon = link.icon;

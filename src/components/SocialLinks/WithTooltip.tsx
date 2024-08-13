@@ -1,8 +1,8 @@
 import * as Tooltip from "@radix-ui/react-tooltip";
 import Link from "next/link";
-import { SocialLinkProps } from "./SocialLinks";
 import { VisuallyHidden } from "@/components";
 import styles from "./socialLinks.styles.module.css";
+import type { SocialLinkProps } from "./socialLinks.types";
 
 export const WithTooltip = ({ link, size }: SocialLinkProps) => {
   const Icon = link.icon;
