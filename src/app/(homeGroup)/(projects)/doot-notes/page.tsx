@@ -28,10 +28,10 @@ export default function SuperBlogBrothersProject() {
           placeholder="blur"
         />
       </div>
-      {/* <TechContentBlock
+      <TechContentBlock
         headingProps={{ type: "h2", size: "xl" }}
-        sectionAriaLabel={content.techSectionAriaLabel}
-        techStack={content.techStack}
+        sectionAriaLabel={content.techStack.sectionAriaLabel}
+        techStack={content.techStack.tech}
       />
       <GenericContentBlock
         heading={content.purposeAndGoals.heading}
@@ -39,7 +39,7 @@ export default function SuperBlogBrothersProject() {
         body={content.purposeAndGoals.body}
         sectionAriaLabel={content.purposeAndGoals.sectionAriaLabel}
       />
-      <div className={projectStyles.screensGrid}>
+      {/* <div className={projectStyles.screensGrid}>
         <ImageCaptionCard
           imageProps={{
             src: content.images.animatedBlocks,

@@ -35,6 +35,37 @@ const links: SocialLink[] = [
   }
 ];
 
-const content = { openingBody, images, links };
+const techStack = {
+  tech: [
+    "SvelteKit",
+    "Typescript",
+    "Prisma",
+    "Web Standards Authentication",
+    "Resend",
+    "Melt UI",
+    "Vitest & Testing Library",
+    "MSW",
+    "zod",
+    "sveltekit-superforms",
+    "SQLite"
+  ],
+  sectionAriaLabel: "The tech stack used in the Doot Notes project"
+};
+
+const purposeAndGoals = {
+  heading: "Purpose and Goals",
+  body: [
+    {
+      key: "1",
+      copy: `The purpose of this project was really just to have fun playing around with a new full-stack framework. I've spent my career honing my skills in React (having tried out Remix which I love) and thought I'd try out something new and different. Given the rave reviews people have for SvelteKit I decided this was the one.`
+    },
+    {
+      key: "2",
+      copy: "There are still so many more things I want to try and implement in a solo project like this, but having recently brought a baby girl into this world, time is rather short. Some things up next are Role-Based Access Control, caching, end-to-end testing, error monitoring."
+    }
+  ],
+  sectionAriaLabel: "Purpose and Goals of the Doot Notes project"
+};
+const content = { openingBody, images, links, techStack, purposeAndGoals };
 
 export default content;
