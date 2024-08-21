@@ -14,7 +14,7 @@ export default function SuperBlogBrothersProject() {
   return (
     <main className={projectStyles.wrapper}>
       <LeadContentBlock
-        heading="Doot Notes"
+        heading="Doot Notes (Under Construction 🚧)"
         body={content.openingBody}
         headingProps={{ size: "2xl" }}
         links={content.links}
@@ -52,12 +52,12 @@ export default function SuperBlogBrothersProject() {
           />
         ))}
       </div>
-      {/* <GenericContentBlock
+      <GenericContentBlock
         heading={content.overview.heading}
         headingProps={{ type: "h2", size: "xl" }}
         body={content.overview.body}
         sectionAriaLabel={content.overview.sectionAriaLabel}
-      /> */}
+      />
     </main>
   );
 }

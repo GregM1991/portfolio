@@ -45,13 +45,16 @@ const images = [
     gridName: "list",
     caption: (
       <Typography size="xs">
-        The blog list page has a fun hover effect on the images, showing a
-        preview of the cover art of the game being reviewed.{" "}
+        This is the main area of the application where users can view notes by a
+        user. If they are the owner of the notes, they are given CRUD
+        capabilites{" "}
         <Link href="https://video-game-blog-beta.vercel.app/blog">
-          Check them out here
+          {" "}
+          {/* TODO: Replace once doot-notes is hosted */}
+          Check it out here
         </Link>
         , or check out the code{" "}
-        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/ContentIndex/ContentList.svelte">
+        <Link href="https://github.com/GregM1991/doot-notes/tree/main/src/routes/users/%5Busername%5D/notes">
           here
         </Link>
       </Typography>
@@ -64,32 +67,14 @@ const images = [
     gridName: "profile",
     caption: (
       <Typography size="xs">
-        These blocks give a fun sense of play to the splash screen and are
-        interactive.{" "}
+        The profile page, where users can change their username, email or
+        password. Enable 2FA, view sessions across browsers and more.{" "}
         <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
-          Check them out here
+          {/* TODO: Replace once doot-notes is hosted */}
+          Check it out here
         </Link>
         , or check out the code{" "}
-        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
-          here
-        </Link>
-      </Typography>
-    )
-  },
-  {
-    key: 4,
-    src: dootNotesImgs.newNote,
-    alt: "A screenshot of the user creating a new note",
-    gridName: "new",
-    caption: (
-      <Typography size="xs">
-        These blocks give a fun sense of play to the splash screen and are
-        interactive.{" "}
-        <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
-          Check them out here
-        </Link>
-        , or check out the code{" "}
-        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
+        <Link href="https://github.com/GregM1991/doot-notes/blob/main/src/routes/settings/profile/%2Bpage.svelte">
           here
         </Link>
       </Typography>
@@ -149,13 +134,25 @@ const purposeAndGoals = {
   sectionAriaLabel: "Purpose and Goals of the Doot Notes project"
 };
 
+const overview = {
+  heading: "Challenges and Lessons Learned/Learning",
+  body: [
+    {
+      key: "1",
+      copy: ""
+    }
+  ],
+  sectionAriaLabel: "Overview of the Doot Notes project"
+};
+
 const content = {
   openingBody,
   images,
   userSearch,
   links,
   techStack,
-  purposeAndGoals
+  purposeAndGoals,
+  overview
 };
 
 export default content;
