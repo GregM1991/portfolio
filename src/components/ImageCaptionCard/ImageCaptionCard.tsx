@@ -10,17 +10,19 @@ interface ImageCaptionCardProps {
   isScreenCap?: boolean;
   linkToCode?: string;
   imageProps: ImageProps;
+  style?: React.CSSProperties;
 }
 
 export function ImageCaptionCard({
   imageProps,
   caption,
   isScreenCap = false,
-  linkToCode
+  linkToCode,
+  style
 }: ImageCaptionCardProps) {
   const imageClasses = clsx(styles.image, { [styles.shadow]: isScreenCap });
   return (
-    <figure className={styles.wrapper}>
+    <figure className={styles.wrapper} style={style}>
       <Image {...imageProps} alt={imageProps.alt} className={imageClasses} />
       {caption && (
         <figcaption className={styles.figcaption}>

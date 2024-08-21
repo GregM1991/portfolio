@@ -1,4 +1,4 @@
-import userSearch from "@/assets/images/doot-notes/users-search.png";
+import * as dootNotesImgs from "@/assets/images/doot-notes";
 import { SocialLink } from "@/types/links";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 
@@ -14,8 +14,24 @@ const openingBody = [
 ];
 const images = {
   userSearch: {
-    src: userSearch,
+    src: dootNotesImgs.userSearch,
     alt: "A screenshot of the user search page"
+  },
+  editNote: {
+    src: dootNotesImgs.editNote,
+    alt: "A screenshot of the user editing a note"
+  },
+  notesList: {
+    src: dootNotesImgs.notesList,
+    alt: "A screenshot of the user notes page"
+  },
+  profilePage: {
+    src: dootNotesImgs.profilePage,
+    alt: "A screenshot of the user profile page"
+  },
+  newNote: {
+    src: dootNotesImgs.newNote,
+    alt: "A screenshot of the user creating a new note"
   }
 };
 const links: SocialLink[] = [
@@ -61,11 +77,16 @@ const purposeAndGoals = {
     },
     {
       key: "2",
-      copy: "There are still so many more things I want to try and implement in a solo project like this, but having recently brought a baby girl into this world, time is rather short. Some things up next are Role-Based Access Control, caching, end-to-end testing, error monitoring."
+      copy: "There are still so many more things I want to try and implement in a solo project like this, but having recently brought a baby girl into this world, time is rather short. Some things up next are Role-Based Access Control, caching, end-to-end testing, error monitoring. Most of all I'm just looking forward to jazzing everything up with animations and transitions to make a fun experience for the user."
+    },
+    {
+      key: "3",
+      copy: `The last goal for this website was to have it be fully operational without JavaSript. The idea of progressive enhancement is something that jives with me, being able to have my web app work for the widest array of users possible, and doing it using with the standard web technologies.`
     }
   ],
   sectionAriaLabel: "Purpose and Goals of the Doot Notes project"
 };
+
 const content = { openingBody, images, links, techStack, purposeAndGoals };
 
 export default content;

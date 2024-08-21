@@ -16,6 +16,7 @@ import canvaPageWhole from "@/assets/images/whole-canva-portfolio-page.png";
 import carousel from "@/assets/images/carousel.png";
 import testimonials from "@/assets/images/testimonials-screenshot.png";
 import styles from "@/app/(homeGroup)/project.styles.module.css";
+import portfolioStyles from "./portfolio.styles.module.css";
 
 export default function PortfolioProject() {
   return (
@@ -46,7 +47,7 @@ export default function PortfolioProject() {
         sectionAriaLabel={GOALS.sectionAriaLabel}
         tldrString={GOALS.tldr}
       />
-      <div className={styles.screensGrid}>
+      <div className={portfolioStyles.screensGrid}>
         <ImageCaptionCard
           imageProps={{
             src: canvaPageWhole,
