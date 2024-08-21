@@ -3,8 +3,9 @@ import animatedBlocks from "@/assets/images/super-blog-brothers/blocks.png";
 import animatedBlogList from "@/assets/images/super-blog-brothers/blog-hover-image-animation.gif";
 import { SocialLink } from "@/types/links";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import { Typography } from "@/components";
+import Link from "next/link";
 
-const imageAltTxt = `Super Blog Brothers written on a dark background with floating geometry`;
 const openingBody = [
   {
     key: "1",
@@ -59,6 +60,71 @@ const purposeAndGoals = {
   sectionAriaLabel: "Purpose and Goals of the Super Blog Brothers project"
 };
 
+const superBlogBrothersSplashImage = {
+  src: superBlogBrothersSplash,
+  alt: `Super Blog Brothers written on a dark background with floating geometry`
+};
+
+const images = [
+  {
+    key: 1,
+    src: animatedBlocks,
+    alt: "A screenshot of the whole of the home portfolio page",
+    caption: (
+      <Typography size="xs">
+        These blocks give a fun sense of play to the splash screen and are
+        interactive.{" "}
+        <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
+          here
+        </Link>
+      </Typography>
+    ),
+    gridName: "blocks"
+  },
+  {
+    key: 2,
+    src: animatedBlogList,
+    alt: "A gif of the blog list page showing the animation between image hovers",
+    caption: (
+      <Typography size="xs">
+        The blog list page has a fun hover effect on the images, showing a
+        preview of the cover art of the game being reviewed.{" "}
+        <Link href="https://video-game-blog-beta.vercel.app/blog">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/ContentIndex/ContentList.svelte">
+          here
+        </Link>
+      </Typography>
+    ),
+    gridName: "blogList"
+  },
+  {
+    key: 2,
+    src: animatedBlogList, // TODO: Change this to the correct image (animated topics)
+    alt: "A gif of the writing topics page showing the scroll animation",
+    caption: (
+      <Typography size="xs">
+        I wanted the topics that Andy and George write about to be a little more
+        interesting than just a static list, so I added a scoll animation.{" "}
+        <Link href="https://video-game-blog-beta.vercel.app/about">
+          Check it out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/TopicList/index.svelte">
+          here
+        </Link>
+      </Typography>
+    ),
+    gridName: "topics"
+  }
+];
+
 export const overview = {
   sectionAriaLabel:
     "The challenges and lessons Greg learned building Super Blog Brothers",
@@ -72,9 +138,9 @@ export const overview = {
 };
 
 const content = {
-  images: { superBlogBrothersSplash, animatedBlocks, animatedBlogList },
+  superBlogBrothersSplashImage,
+  images,
   openingBody,
-  imageAltTxt,
   links,
   techStack,
   techSectionAriaLabel,

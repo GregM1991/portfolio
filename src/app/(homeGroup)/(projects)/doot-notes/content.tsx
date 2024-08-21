@@ -1,5 +1,7 @@
 import * as dootNotesImgs from "@/assets/images/doot-notes";
+import { Typography } from "@/components";
 import { SocialLink } from "@/types/links";
+import Link from "next/link";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 
 const openingBody = [
@@ -12,28 +14,88 @@ const openingBody = [
     copy: `The app is built using SvelteKit, Typescript and plain old CSS. The features I've currently implemented are user authentication, user search, CRUD operations on notes, and a user profile page. The user profile page gives users the ability to change their username and password, with email verification for all sensitive account operations. They have the ability to view all sessions currently open as well as log out of all sessions bar the current one. Lastly the user can download all data associated with their account as well as delete the account entirely.`
   }
 ];
-const images = {
-  userSearch: {
-    src: dootNotesImgs.userSearch,
-    alt: "A screenshot of the user search page"
-  },
-  editNote: {
-    src: dootNotesImgs.editNote,
-    alt: "A screenshot of the user editing a note"
-  },
-  notesList: {
-    src: dootNotesImgs.notesList,
-    alt: "A screenshot of the user notes page"
-  },
-  profilePage: {
-    src: dootNotesImgs.profilePage,
-    alt: "A screenshot of the user profile page"
-  },
-  newNote: {
-    src: dootNotesImgs.newNote,
-    alt: "A screenshot of the user creating a new note"
-  }
+const userSearch = {
+  src: dootNotesImgs.userSearch,
+  alt: "A screenshot of the user search page"
 };
+const images = [
+  {
+    key: 1,
+    src: dootNotesImgs.editNote,
+    alt: "A screenshot of the user editing a note",
+    gridName: "edit",
+    caption: (
+      <Typography size="xs">
+        These blocks give a fun sense of play to the splash screen and are
+        interactive.{" "}
+        <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
+          here
+        </Link>
+      </Typography>
+    )
+  },
+  {
+    key: 2,
+    src: dootNotesImgs.notesList,
+    alt: "A screenshot of the user notes page",
+    gridName: "list",
+    caption: (
+      <Typography size="xs">
+        The blog list page has a fun hover effect on the images, showing a
+        preview of the cover art of the game being reviewed.{" "}
+        <Link href="https://video-game-blog-beta.vercel.app/blog">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/ContentIndex/ContentList.svelte">
+          here
+        </Link>
+      </Typography>
+    )
+  },
+  {
+    key: 3,
+    src: dootNotesImgs.profilePage,
+    alt: "A screenshot of the user profile page",
+    gridName: "profile",
+    caption: (
+      <Typography size="xs">
+        These blocks give a fun sense of play to the splash screen and are
+        interactive.{" "}
+        <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
+          here
+        </Link>
+      </Typography>
+    )
+  },
+  {
+    key: 4,
+    src: dootNotesImgs.newNote,
+    alt: "A screenshot of the user creating a new note",
+    gridName: "new",
+    caption: (
+      <Typography size="xs">
+        These blocks give a fun sense of play to the splash screen and are
+        interactive.{" "}
+        <Link href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
+          Check them out here
+        </Link>
+        , or check out the code{" "}
+        <Link href="https://github.com/GregM1991/video-game-blog/blob/main/src/lib/slices/Hero/index.svelte#L72">
+          here
+        </Link>
+      </Typography>
+    )
+  }
+];
 const links: SocialLink[] = [
   {
     key: "1",
@@ -87,6 +149,13 @@ const purposeAndGoals = {
   sectionAriaLabel: "Purpose and Goals of the Doot Notes project"
 };
 
-const content = { openingBody, images, links, techStack, purposeAndGoals };
+const content = {
+  openingBody,
+  images,
+  userSearch,
+  links,
+  techStack,
+  purposeAndGoals
+};
 
 export default content;
