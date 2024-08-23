@@ -135,11 +135,15 @@ const purposeAndGoals = {
 };
 
 const overview = {
-  heading: "Challenges and Lessons Learned/Learning",
+  heading: "Challenges & Lessons Learned/Learning",
   body: [
     {
       key: "1",
-      copy: ""
+      copy: "One of the goals I mentioned was to keep the site fully accessible to users without JS. Doing this with SvelteKit wasn't hard at all, as it's very intuitive to SSR pages (it works much like Remix which I'm familiar with, using loaders and actions). The challenge came with making sure everything was accounted for, with Forms being properly handled with validation and error messages. Making sure I wasn't sending anything sensitive back to the client."
+    },
+    {
+      key: "2",
+      copy: "The other challenge was around SvelteKit's less mature ecosystem (compared to React) and finding third party tools to help me out. It wasn't crazy difficult, but there were quirks and bits and bobs I needed to get the hang of. I used a Form validation library Superforms, which is fantastic, but when it came to handling images, the only solution for validation was to perform a client side fetch call to send the data instead of a native web form submission."
     }
   ],
   sectionAriaLabel: "Overview of the Doot Notes project"
