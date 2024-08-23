@@ -1,9 +1,9 @@
+"use server";
 import * as dootNotesImgs from "@/assets/images/doot-notes";
 import { Typography } from "@/components";
 import { SocialLink } from "@/types/links";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
-
 const openingBody = [
   {
     key: "1",
@@ -81,19 +81,19 @@ const images = [
     )
   }
 ];
-const links: SocialLink[] = [
+const links = [
   {
     key: "1",
     linkTooltipText: "Visit the Doot Notes website",
     href: "https://video-game-blog-lbm4vcmxo-gregm1991s-projects.vercel.app/",
-    icon: FaArrowUpRightFromSquare,
+    icon: <FaArrowUpRightFromSquare />,
     screenReader: "A link to the Doot Notes website"
   },
   {
     key: "2",
     linkTooltipText: "Visit the Doot Notes Github repository",
     href: "https://github.com/GregM1991/portfolio",
-    icon: FaGithub,
+    icon: <FaGithub />,
     screenReader: "A link to the Doot Notes Github repository"
   }
 ];
@@ -149,14 +149,14 @@ const overview = {
   sectionAriaLabel: "Overview of the Doot Notes project"
 };
 
-const content = {
-  openingBody,
-  images,
-  userSearch,
-  links,
-  techStack,
-  purposeAndGoals,
-  overview
-};
-
-export default content;
+export async function getDootNoteContent() {
+  return {
+    openingBody,
+    images,
+    userSearch,
+    links,
+    techStack,
+    purposeAndGoals,
+    overview
+  };
+}

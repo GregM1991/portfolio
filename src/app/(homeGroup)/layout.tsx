@@ -1,12 +1,15 @@
+import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
-import { AGradient, Header } from "@/components";
 import { Arvo, Raleway } from "next/font/google";
+import { AGradient, Header } from "@/components";
+import { NAV_LINKS } from "@/constants/links";
+
 import "../global.css";
 import "./home.css";
 import "./home-variables.css";
-import { NAV_LINKS } from "@/constants/links";
-import { PropsWithChildren } from "react";
-import Providers from "../providers";
+import "react-notion-x/src/styles.css";
+import "prismjs/themes/prism-tomorrow.css";
+import "katex/dist/katex.min.css";
 
 const arvo = Arvo({
   weight: ["400", "700"],
@@ -33,11 +36,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
       <body>
-        <Providers>
-          <Header headerFor="normal" navLinks={NAV_LINKS} />
-          {children}
-          <AGradient />
-        </Providers>
+        <Header headerFor="normal" navLinks={NAV_LINKS} />
+        {children}
+        <AGradient />
       </body>
     </html>
   );

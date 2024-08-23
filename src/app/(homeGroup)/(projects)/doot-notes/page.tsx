@@ -1,4 +1,4 @@
-"use client";
+"use server";
 import {
   GenericContentBlock,
   ImageCaptionCard,
@@ -7,10 +7,21 @@ import {
 } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
 import dootNotesStyles from "./dootNotes.styles.module.css";
-import content from "./content";
 import Image from "next/image";
+import { getDootNoteContent } from "./content";
+import { notion } from "@notion";
+import dynamic from "next/dynamic";
 
-export default function SuperBlogBrothersProject() {
+const rootPageId = "1d50f10300fe4760922a96c885b09d13";
+
+async function getNotionPage(rootPageId: string) {
+  return await notion.getPage(rootPageId);
+}
+
+export default async function SuperBlogBrothersProject() {
+  const content = await getDootNoteContent();
+  const data = await getNotionPage(rootPageId);
+  console.dir(data, { depth: 8 });
   return (
     <main className={projectStyles.wrapper}>
       <LeadContentBlock
@@ -58,6 +69,7 @@ export default function SuperBlogBrothersProject() {
         body={content.overview.body}
         sectionAriaLabel={content.overview.sectionAriaLabel}
       />
+      {/* Render todo and in progress collumns for notion */}
     </main>
   );
 }

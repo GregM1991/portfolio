@@ -4,7 +4,7 @@ export type SocialLink = {
   key: string;
   linkTooltipText: string;
   href: string;
-  icon: IconType;
+  icon: IconType | JSX.Element;
   screenReader: string;
   attributes?: {
     download: string;
