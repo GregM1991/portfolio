@@ -17,7 +17,6 @@ export * from "./ImageCaptionCard";
 export * from "./Job";
 export * from "./Logo";
 export * from "./NewTestimonials";
-export * from "./NotionPage";
 export * from "./ProjectThumb";
 export * from "./Sections";
 export * from "./SocialLinks";

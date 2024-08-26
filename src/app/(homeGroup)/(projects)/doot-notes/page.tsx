@@ -10,18 +10,21 @@ import dootNotesStyles from "./dootNotes.styles.module.css";
 import Image from "next/image";
 import { getDootNoteContent } from "./content";
 import { notion } from "@notion";
-import dynamic from "next/dynamic";
 
-const rootPageId = "1d50f10300fe4760922a96c885b09d13";
+const dbId = "441113d4188b42ca906844df337e8f12";
 
-async function getNotionPage(rootPageId: string) {
-  return await notion.getPage(rootPageId);
+async function getNotionPage(id: string) {
+  const data = await notion.databases.query({
+    // TODO: Apparently can't find db
+    database_id: id
+  });
+  console.log(data);
+  return data;
 }
 
 export default async function SuperBlogBrothersProject() {
   const content = await getDootNoteContent();
-  const data = await getNotionPage(rootPageId);
-  console.dir(data, { depth: 8 });
+  const data = await getNotionPage(dbId);
   return (
     <main className={projectStyles.wrapper}>
       <LeadContentBlock

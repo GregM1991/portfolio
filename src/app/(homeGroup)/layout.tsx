@@ -7,9 +7,6 @@ import { NAV_LINKS } from "@/constants/links";
 import "../global.css";
 import "./home.css";
 import "./home-variables.css";
-import "react-notion-x/src/styles.css";
-import "prismjs/themes/prism-tomorrow.css";
-import "katex/dist/katex.min.css";
 
 const arvo = Arvo({
   weight: ["400", "700"],

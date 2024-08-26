@@ -1,3 +1,3 @@
-import { NotionAPI } from "notion-client";
+import { Client } from "@notionhq/client";
 
-export const notion: NotionAPI = new NotionAPI();
+export const notion = new Client({ auth: process.env.NOTION_API_KEY });
