@@ -1,6 +1,7 @@
 export * from "./Acknowledgement";
 export * from "./AnimatedElements";
 export * from "./AnimatedImage";
+export * from "./Banner";
 export * from "./Button";
 export * from "./CanvaSection";
 export * from "./CanvaSections";

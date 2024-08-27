@@ -1,0 +1,9 @@
+.wrapper {
+  padding: var(--space-s) var(--space-s);
+  border-radius: var(--radii-medium);
+}
+
+.warning {
+  background: var(--palette-warning);
+  border: 1px solid var(--palette-warning-dark);
+}

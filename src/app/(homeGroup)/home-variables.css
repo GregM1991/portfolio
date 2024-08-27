@@ -11,6 +11,8 @@
   --palette-gray-dark: #293039;
   --palette-light: #e9ecef;
   --palette-dark: #0e1318;
+  --palette-warning: #fffbc4;
+  --palette-warning-dark: #ffe262;
 
   /* radii */
   --radii-medium: 6px;

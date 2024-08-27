@@ -1,7 +1,43 @@
+.animationOpacity {
+  opacity: 0;
+}
+
 .screensGrid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
+}
+
+.socialsWrapper {
+  color: var(--palette-secondary);
+  margin-top: var(--space-2xs);
+  font-size: var(--step-1);
+}
+
+.openingBody {
+  margin-top: var(--space-l);
+}
+
+.inProgress {
+  margin-top: var(--space-l);
+}
+
+.inProgressHighlight {
+  display: inline-block;
+  background-color: #d3e5ef;
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+
+.roadMapList {
+  display: flex;
+  gap: var(--space-xs);
+  list-style-type: none;
+  padding: 0;
+}
+
+.roadMapList li {
+  margin-bottom: var(--space-xs);
 }
 
 @media (min-width: 768px) {
