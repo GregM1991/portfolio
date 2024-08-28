@@ -18,26 +18,45 @@
   margin-top: var(--space-l);
 }
 
-.inProgress {
+.roadMap {
   margin-top: var(--space-l);
 }
 
-.inProgressHighlight {
-  display: inline-block;
+.inProgress {
   background-color: #d3e5ef;
+}
+
+.todo {
+  background-color: #e8deee;
+}
+
+.highlight {
+  display: inline-block;
   padding: 1px 3px;
   border-radius: 5px;
 }
 
 .roadMapList {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-xs);
   list-style-type: none;
   padding: 0;
 }
 
-.roadMapList li {
-  margin-bottom: var(--space-xs);
+.roadMapListItem {
+  border-radius: var(--radii-medium);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.roadMapListItem.inProgress {
+  background-color: #f5fafc;
+  border: 1px solid #d3e5ef;
+}
+
+.roadMapListItem.todo {
+  background-color: #fbf9fd;
+  border: 1px solid #e8deee;
 }
 
 @media (min-width: 768px) {

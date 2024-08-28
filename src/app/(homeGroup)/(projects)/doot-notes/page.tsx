@@ -15,6 +15,7 @@ import { getDootNoteContent } from "./content";
 import { notion } from "@notion";
 import { fadeInUpVariantsB } from "@/constants/animation";
 import Link from "next/link";
+import { RoadMapList } from "./RoadMapList";
 
 const dbId = "1d50f10300fe4760922a96c885b09d13";
 
@@ -51,12 +52,6 @@ export default async function SuperBlogBrothersProject() {
 
   return (
     <main className={projectStyles.wrapper}>
-      {/* <LeadContentBlock
-        heading="Doot Notes"
-        body={content.openingBody}
-        headingProps={{ size: "2xl" }}
-        links={content.links}
-      /> */}
       <div>
         <AnimatedTypography
           variants={fadeInUpVariantsB}
@@ -77,7 +72,7 @@ export default async function SuperBlogBrothersProject() {
         <Banner type="warning">
           <Typography size="xs">
             🚧 Hi there! This project is something I&apos;m continuing to work
-            on. Check out my &apos;Todos&apos; and &apos;In Progress&apos;
+            on. Check out my &apos;Todos&apos; and &apos;In Progress&apos;{" "}
             <Link href="/doot-notes/#road-map">below</Link>, or view the{" "}
             <Link href="https://elfin-opal-cea.notion.site/1d50f10300fe4760922a96c885b09d13?v=441113d4188b42ca906844df337e8f12">
               Notion page here
@@ -142,21 +137,9 @@ export default async function SuperBlogBrothersProject() {
         >
           Road Map
         </AnimatedTypography>
-        <div className={dootNotesStyles.inProgress}>
-          <Typography type="span">
-            This is what&apos;s currently{" "}
-            <span className={dootNotesStyles.inProgressHighlight}>
-              In Progress
-            </span>
-            :
-          </Typography>
-          <ul className={dootNotesStyles.roadMapList}>
-            {inProgress.map((item: string) => (
-              <li className={dootNotesStyles.roadMapListItem} key={item}>
-                {item}
-              </li>
-            ))}
-          </ul>
+        <div className={dootNotesStyles.roadMap}>
+          <RoadMapList listItems={inProgress} type="inProgress" />
+          <RoadMapList listItems={todo} type="todo" />
         </div>
       </section>
     </main>
