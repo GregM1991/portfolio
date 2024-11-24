@@ -3,10 +3,12 @@ import dootNotesStyles from "./dootNotes.styles.module.css";
 
 const content = {
   inProgress: {
-    title: "In Progress"
+    title: "In Progress",
+    tagLine: "This is what's currently "
   },
   todo: {
-    title: "ToDo"
+    title: "ToDo",
+    tagLine: "This is what's currently in "
   }
 };
 
@@ -18,7 +20,7 @@ type RoadMapListProps = {
 export const RoadMapList = ({ listItems, type }: RoadMapListProps) => (
   <>
     <Typography type="span">
-      This is what&apos;s currently{" "}
+      {content[type].tagLine}
       <span className={`${dootNotesStyles.highlight} ${dootNotesStyles[type]}`}>
         {content[type].title}
       </span>
