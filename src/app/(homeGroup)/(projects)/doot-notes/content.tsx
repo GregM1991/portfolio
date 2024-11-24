@@ -1,9 +1,9 @@
 "use server";
 import * as dootNotesImgs from "@/assets/images/doot-notes";
 import { Typography } from "@/components";
-import { SocialLink } from "@/types/links";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+
 const openingBody = [
   {
     key: "1",
@@ -85,14 +85,14 @@ const links = [
   {
     key: "1",
     linkTooltipText: "Visit the Doot Notes website",
-    href: "https://video-game-blog-lbm4vcmxo-gregm1991s-projects.vercel.app/",
+    href: "https://dootnotes.com/",
     icon: <FaArrowUpRightFromSquare />,
     screenReader: "A link to the Doot Notes website"
   },
   {
     key: "2",
     linkTooltipText: "Visit the Doot Notes Github repository",
-    href: "https://github.com/GregM1991/portfolio",
+    href: "https://github.com/GregM1991/doot-notes",
     icon: <FaGithub />,
     screenReader: "A link to the Doot Notes Github repository"
   }
@@ -110,7 +110,10 @@ const techStack = {
     "MSW",
     "zod",
     "sveltekit-superforms",
-    "SQLite"
+    "SQLite",
+    "LiteFS",
+    "Cloudflare S2",
+    "fly.io"
   ],
   sectionAriaLabel: "The tech stack used in the Doot Notes project"
 };
