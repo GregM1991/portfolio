@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 interface CarouselProps {
   items: Screen[];
-  className: string;
+  className?: string;
 }
 
 export function Carousel({ items, className }: CarouselProps) {

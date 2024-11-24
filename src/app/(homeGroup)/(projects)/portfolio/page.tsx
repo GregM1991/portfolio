@@ -3,19 +3,20 @@ import {
   GenericContentBlock,
   ImageCaptionCard,
   TechContentBlock,
-  Typography
+  Typography,
 } from "@/components";
 import { FaGithub } from "react-icons/fa6";
 import {
   GOALS,
   OPENING,
   OVERVIEW,
-  PORTFOLIO_TECH
+  PORTFOLIO_TECH,
 } from "@/constants/portfolioContent";
 import canvaPageWhole from "@/assets/images/whole-canva-portfolio-page.png";
 import carousel from "@/assets/images/carousel.png";
 import testimonials from "@/assets/images/testimonials-screenshot.png";
 import styles from "@/app/(homeGroup)/project.styles.module.css";
+import portfolioStyles from "./portfolio.styles.module.css";
 
 export default function PortfolioProject() {
   return (
@@ -46,11 +47,11 @@ export default function PortfolioProject() {
         sectionAriaLabel={GOALS.sectionAriaLabel}
         tldrString={GOALS.tldr}
       />
-      <div className={styles.screensGrid}>
+      <div className={portfolioStyles.screensGrid}>
         <ImageCaptionCard
           imageProps={{
             src: canvaPageWhole,
-            alt: "A screenshot of the whole of the home portfolio page"
+            alt: "A screenshot of the whole of the home portfolio page",
           }}
           caption={
             <Typography size="xs">
@@ -63,7 +64,7 @@ export default function PortfolioProject() {
         <ImageCaptionCard
           imageProps={{
             src: carousel,
-            alt: "A screenshot of the carousel that showcases screens for my projects"
+            alt: "A screenshot of the carousel that showcases screens for my projects",
           }}
           caption="A carousel component to showcase screens for my projects."
           isScreenCap
@@ -72,7 +73,7 @@ export default function PortfolioProject() {
         <ImageCaptionCard
           imageProps={{
             src: testimonials,
-            alt: "A screenshot of the testimonials section"
+            alt: "A screenshot of the testimonials section",
           }}
           caption="I had built this testimonials section for the canva page, but it was too good not to use in my regular portfolio."
           isScreenCap

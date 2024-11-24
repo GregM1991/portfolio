@@ -1,11 +1,12 @@
+import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
-import { AGradient, Header } from "@/components";
 import { Arvo, Raleway } from "next/font/google";
+import { AGradient, Header } from "@/components";
+import { NAV_LINKS } from "@/constants/links";
+
 import "../global.css";
 import "./home.css";
 import "./home-variables.css";
-import { NAV_LINKS } from "@/constants/links";
-import { PropsWithChildren } from "react";
 
 const arvo = Arvo({
   weight: ["400", "700"],

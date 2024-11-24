@@ -13,7 +13,7 @@ export function LeadContentBlock({
   imageSrc,
   imageAlt,
   links,
-  children
+  children,
 }: LeadContentBlockProps) {
   return (
     <GenericContentBlock

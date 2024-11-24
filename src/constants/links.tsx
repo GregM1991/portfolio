@@ -49,28 +49,28 @@ export const NAV_LINKS: NavLink[] = [
   {
     key: crypto.randomUUID(),
     linkText: "Journaling App",
-    href: "/journaling-app"
+    href: "/journaling-app",
   },
   {
     key: crypto.randomUUID(),
     linkText: "Doot Notes",
-    href: "/doot-notes"
+    href: "/doot-notes",
   },
   {
     key: crypto.randomUUID(),
     linkText: "Super Blog Brothers",
-    href: "/super-blog-brothers"
+    href: "/super-blog-brothers",
   },
   {
     key: crypto.randomUUID(),
     linkText: "Portfolio",
-    href: "/portfolio"
+    href: "/portfolio",
   },
   {
     key: crypto.randomUUID(),
     linkText: "Canva Portfolio",
-    href: "/canva"
-  }
+    href: "/canva",
+  },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -79,21 +79,21 @@ export const SOCIAL_LINKS: SocialLink[] = [
     linkTooltipText: "GitHub",
     href: "https://github.com/GregM1991",
     icon: FaGithub,
-    screenReader: "Navigate to Gregs Github page"
+    screenReader: "Navigate to Gregs Github page",
   },
   {
     key: crypto.randomUUID(),
     linkTooltipText: "linkedIn",
     href: "https://www.linkedin.com/in/greg-martin-76688678/",
     icon: FaLinkedinIn,
-    screenReader: "Navigate to Gregs Linked-in page"
+    screenReader: "Navigate to Gregs Linked-in page",
   },
   {
     key: crypto.randomUUID(),
     linkTooltipText: "Instagram",
     href: "https://www.instagram.com/grillustration_/",
     icon: FaInstagram,
-    screenReader: "Navigate to Gregs Instagram page"
+    screenReader: "Navigate to Gregs Instagram page",
   },
   {
     key: crypto.randomUUID(),
@@ -102,7 +102,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: FaFileArrowDown,
     screenReader: "Download a pdf version of Gregs resume",
     attributes: {
-      download: "Greg_Martin_Resume_2023"
-    }
-  }
+      download: "Greg_Martin_Resume_2023",
+    },
+  },
 ];

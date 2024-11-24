@@ -9,5 +9,5 @@ export const responsibilities = [
   `Rebuilding and refactoring legacy c# razor pages into React (Typescript) using relevant industry standard libraries and packages.`,
   `Splitting out tightly-coupled services from our Monolith repo to be in line with the service-based architecture we are transitioning to. Writing performant/scalable APIs using ASP.NET in c# to carry out the business logic side of our application.`,
   `During this time I was one of two front-end engineers. I helped flesh out best practices for our front end and am heavily relied upon to be a gateway for front-end code to pass through in order to be approved for production.`,
-  `Mentoring the more junior members of the team to help support them and bring them to a level of proficiency needed for modern web standards.`
+  `Mentoring the more junior members of the team to help support them and bring them to a level of proficiency needed for modern web standards.`,
 ];

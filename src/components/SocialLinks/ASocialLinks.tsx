@@ -11,31 +11,31 @@ const variants = {
   target: {
     transition: {
       delayChildren: 0.8,
-      staggerChildren: 0.25
-    }
-  }
+      staggerChildren: 0.25,
+    },
+  },
 };
 
 const listChildVariants = {
   initial: {
     opacity: 0,
-    x: -10
+    x: -10,
   },
   target: {
     opacity: 1,
     x: 0,
     transition: {
       tween: "easeOut",
-      duration: 0.5
-    }
-  }
+      duration: 0.5,
+    },
+  },
 };
 
 export function ASocialLinks({
   color,
   size = 25,
   canva = false,
-  links = SOCIAL_LINKS
+  links = SOCIAL_LINKS,
 }: SocialLinksProps) {
   let colorValue: string | undefined;
   if (color) {
@@ -43,7 +43,7 @@ export function ASocialLinks({
   }
 
   const additiveStyles = {
-    "--color": color ? colorValue : "inherit"
+    "--color": color ? colorValue : "inherit",
   } as React.CSSProperties;
 
   return (

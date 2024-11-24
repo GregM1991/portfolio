@@ -3,6 +3,7 @@ import Link from "next/link";
 import { VisuallyHidden } from "@/components";
 import styles from "./socialLinks.styles.module.css";
 import type { SocialLinkProps } from "./socialLinks.types";
+import { TooltipIcon } from "./TooltipIcon";
 
 export const WithTooltip = ({ link, size }: SocialLinkProps) => {
   const Icon = link.icon;
@@ -16,7 +17,7 @@ export const WithTooltip = ({ link, size }: SocialLinkProps) => {
           {...(link.attributes ? link.attributes : {})}
         >
           <>
-            <Icon aria-hidden="true" style={{ fontSize: `${size}px` }} />
+            <TooltipIcon icon={link.icon} size={size} />
             <VisuallyHidden>{link.screenReader}</VisuallyHidden>
           </>
         </Link>

@@ -5,14 +5,12 @@
 }
 
 .imageWrapper {
-  display: flex;
-  box-shadow: var(--box-shadow);
-  margin-top: var(--space-m);
+  width: 100%;
 }
 
-.mainImage {
-  height: auto;
+.imageWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .link {
@@ -27,12 +25,6 @@
   color: var(--palette-primary);
 }
 
-.screensGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
-}
-
 .horizontalRule {
   height: 1px;
   border: none;
@@ -43,23 +35,4 @@
 
 .doubleColumn {
   composes: doubleColumn from global;
-}
-
-@media (min-width: 768px) {
-  .screensGrid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto auto 1fr;
-  }
-
-  .screensGrid figure:first-child {
-    grid-area: 1 / 1 / 5 / 2;
-  }
-
-  .screensGrid>figure:nth-child(2) {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-
-  .screensGrid>figure:nth-child(3) {
-    grid-area: 3 / 2 / 4 / 3;
-  }
 }

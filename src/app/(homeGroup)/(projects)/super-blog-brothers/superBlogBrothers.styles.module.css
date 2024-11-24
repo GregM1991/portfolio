@@ -1,8 +1,13 @@
-.imageWrapper {
-  width: 100%;
+.screensGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
 }
 
-.imageWrapper img {
-  width: 100%;
-  height: auto;
+@media (min-width: 768px) {
+  .screensGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "blocks ." "blocks blogList" "topics blogList" "topics";
+  }
 }

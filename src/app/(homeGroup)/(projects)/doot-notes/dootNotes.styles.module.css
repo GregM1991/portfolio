@@ -1,0 +1,67 @@
+.animationOpacity {
+  opacity: 0;
+}
+
+.screensGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.socialsWrapper {
+  color: var(--palette-secondary);
+  margin-top: var(--space-2xs);
+  font-size: var(--step-1);
+}
+
+.openingBody {
+  margin-top: var(--space-l);
+}
+
+.roadMap {
+  margin-top: var(--space-l);
+}
+
+.inProgress {
+  background-color: #d3e5ef;
+}
+
+.todo {
+  background-color: #e8deee;
+}
+
+.highlight {
+  display: inline-block;
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+
+.roadMapList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style-type: none;
+  padding: 0;
+}
+
+.roadMapListItem {
+  border-radius: var(--radii-medium);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.roadMapListItem.inProgress {
+  background-color: #f5fafc;
+  border: 1px solid #d3e5ef;
+}
+
+.roadMapListItem.todo {
+  background-color: #fbf9fd;
+  border: 1px solid #e8deee;
+}
+
+@media (min-width: 768px) {
+  .screensGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "list ." "list edit" "profile edit" "profile .";
+  }
+}
