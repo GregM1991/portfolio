@@ -4,12 +4,12 @@ import dootNotesStyles from "./dootNotes.styles.module.css";
 const content = {
   inProgress: {
     title: "In Progress",
-    tagLine: "This is what's currently "
+    tagLine: "This is what's currently ",
   },
   todo: {
     title: "ToDo",
-    tagLine: "This is what's currently in "
-  }
+    tagLine: "This is what's currently in ",
+  },
 };
 
 type RoadMapListProps = {

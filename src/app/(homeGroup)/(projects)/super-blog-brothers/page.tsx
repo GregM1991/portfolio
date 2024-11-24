@@ -3,7 +3,7 @@ import {
   GenericContentBlock,
   ImageCaptionCard,
   LeadContentBlock,
-  TechContentBlock
+  TechContentBlock,
 } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
 import styles from "./superBlogBrothers.styles.module.css";
@@ -44,7 +44,7 @@ export default function SuperBlogBrothersProject() {
             key={image.key}
             imageProps={{
               src: image.src,
-              alt: image.alt
+              alt: image.alt,
             }}
             caption={image.caption}
             style={{ gridArea: image.gridName }}

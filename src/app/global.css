@@ -103,6 +103,6 @@ select {
   }
 }
 
-p+p {
+p + p {
   margin-top: var(--space-3xs);
 }

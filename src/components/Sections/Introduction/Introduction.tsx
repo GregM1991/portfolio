@@ -4,7 +4,7 @@ import {
   AnimateChildren,
   ASocialLinks,
   AnimatedTypography,
-  Typography
+  Typography,
 } from "@/components";
 import { INTRO_COPY } from "@/constants/homepageContent";
 import { fadeInUpVariantsB } from "@/constants/animation";

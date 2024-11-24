@@ -18,7 +18,7 @@ export function ImageCaptionCard({
   caption,
   isScreenCap = false,
   linkToCode,
-  style
+  style,
 }: ImageCaptionCardProps) {
   const imageClasses = clsx(styles.image, { [styles.shadow]: isScreenCap });
   return (

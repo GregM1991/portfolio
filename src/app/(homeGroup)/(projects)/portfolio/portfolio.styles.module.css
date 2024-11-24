@@ -14,11 +14,11 @@
     grid-area: 1 / 1 / 5 / 2;
   }
 
-  .screensGrid>figure:nth-child(2) {
+  .screensGrid > figure:nth-child(2) {
     grid-area: 2 / 2 / 3 / 3;
   }
 
-  .screensGrid>figure:nth-child(3) {
+  .screensGrid > figure:nth-child(3) {
     grid-area: 3 / 2 / 4 / 3;
   }
 }

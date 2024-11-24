@@ -26,9 +26,9 @@ export const fadeInUpVariantsB = {
     translateY: 0,
     transition: {
       ease: "easeOut",
-      duration: 0.5
-    }
-  }
+      duration: 0.5,
+    },
+  },
 };
 
 export const fadeInDownVariants = {

@@ -9,12 +9,12 @@ import Link from "next/link";
 const openingBody = [
   {
     key: "1",
-    copy: `Super Blog Brothers was a fun build, I met Andy and George through a friend of mine, and we hit it off due to our love of games. They told me about their plan to start a video game blog and the conversation flowed on to a site I could build for them.`
+    copy: `Super Blog Brothers was a fun build, I met Andy and George through a friend of mine, and we hit it off due to our love of games. They told me about their plan to start a video game blog and the conversation flowed on to a site I could build for them.`,
   },
   {
     key: "2",
-    copy: `The brief they gave me was largely open, having been through a Bachelor of Comms design they trusted me with the look and feel. I talked them into some 3d assets (using Threlte JS) to help them with personlisation and they loved that, bringing this feel of game assets to a website about games. I got to build the site using my favourite framework SvelteKit, so the DX was really nice for me. I opted for a CMS, Prismic, so that Andy and George could take control of the content side and add/remove posts as they wanted.`
-  }
+    copy: `The brief they gave me was largely open, having been through a Bachelor of Comms design they trusted me with the look and feel. I talked them into some 3d assets (using Threlte JS) to help them with personlisation and they loved that, bringing this feel of game assets to a website about games. I got to build the site using my favourite framework SvelteKit, so the DX was really nice for me. I opted for a CMS, Prismic, so that Andy and George could take control of the content side and add/remove posts as they wanted.`,
+  },
 ];
 
 const links: SocialLink[] = [
@@ -23,15 +23,15 @@ const links: SocialLink[] = [
     linkTooltipText: "Visit the Super Blog Brothers website",
     href: "https://video-game-blog-lbm4vcmxo-gregm1991s-projects.vercel.app/",
     icon: FaArrowUpRightFromSquare,
-    screenReader: "A link to the Super Blog Brothers website"
+    screenReader: "A link to the Super Blog Brothers website",
   },
   {
     key: "2",
     linkTooltipText: "Visit the Super Blog Brothers Github repository",
     href: "https://github.com/GregM1991/portfolio",
     icon: FaGithub,
-    screenReader: "A link to the Super Blog Brothers Github repository"
-  }
+    screenReader: "A link to the Super Blog Brothers Github repository",
+  },
 ];
 
 const techStack = [
@@ -40,7 +40,7 @@ const techStack = [
   "Prismic",
   "Typescript",
   "GSAP",
-  "Tailwind"
+  "Tailwind",
 ];
 const techSectionAriaLabel =
   "The tech stack used in the Super Blog Brothers project";
@@ -50,19 +50,19 @@ const purposeAndGoals = {
   body: [
     {
       key: "1",
-      copy: `My endgame for the Super Blog Brothers was to create a nice modern looking website that had a sense of fun about it. I wanted to replicate the kind of interest and wonder you get from playing a great video game, so I naturally was drawn towards animations and 3d.`
+      copy: `My endgame for the Super Blog Brothers was to create a nice modern looking website that had a sense of fun about it. I wanted to replicate the kind of interest and wonder you get from playing a great video game, so I naturally was drawn towards animations and 3d.`,
     },
     {
       key: "2",
-      copy: `The site also needed to be easily updated and editable, so that the Brothers could add/update/delete their blog posts at will. For this I needed a CMS, and I've had some small experience with Prismic, so I went with this. I remember there being a bit of a learning curve with the old Prismic, but given the Brothers would just be using it as a content creation for blog posts, and their background in games development, I didn't think it too much of an issue.`
-    }
+      copy: `The site also needed to be easily updated and editable, so that the Brothers could add/update/delete their blog posts at will. For this I needed a CMS, and I've had some small experience with Prismic, so I went with this. I remember there being a bit of a learning curve with the old Prismic, but given the Brothers would just be using it as a content creation for blog posts, and their background in games development, I didn't think it too much of an issue.`,
+    },
   ],
-  sectionAriaLabel: "Purpose and Goals of the Super Blog Brothers project"
+  sectionAriaLabel: "Purpose and Goals of the Super Blog Brothers project",
 };
 
 const superBlogBrothersSplashImage = {
   src: superBlogBrothersSplash,
-  alt: `Super Blog Brothers written on a dark background with floating geometry`
+  alt: `Super Blog Brothers written on a dark background with floating geometry`,
 };
 
 const images = [
@@ -83,7 +83,7 @@ const images = [
         </Link>
       </Typography>
     ),
-    gridName: "blocks"
+    gridName: "blocks",
   },
   {
     key: 2,
@@ -102,7 +102,7 @@ const images = [
         </Link>
       </Typography>
     ),
-    gridName: "blogList"
+    gridName: "blogList",
   },
   {
     key: 2,
@@ -121,8 +121,8 @@ const images = [
         </Link>
       </Typography>
     ),
-    gridName: "topics"
-  }
+    gridName: "topics",
+  },
 ];
 
 export const overview = {
@@ -132,9 +132,9 @@ export const overview = {
   body: [
     {
       key: "1",
-      copy: "The biggest challenge for me came to me towards the end, and that's having a solid outline from the start. I think with a project with such an open brief it's nice to have a little wiggle room, but without structure and planning it can blow out the timeline as I get carried away with trying out all the cool things I can do. There's also a lesson that goes hand in hand with this kind of issue and that's not to let the perfect be the enemy of the good. I found myself losing time trying to optimise everything, or make things pixel perfect when it really wasn't necessary to do so."
-    }
-  ]
+      copy: "The biggest challenge for me came to me towards the end, and that's having a solid outline from the start. I think with a project with such an open brief it's nice to have a little wiggle room, but without structure and planning it can blow out the timeline as I get carried away with trying out all the cool things I can do. There's also a lesson that goes hand in hand with this kind of issue and that's not to let the perfect be the enemy of the good. I found myself losing time trying to optimise everything, or make things pixel perfect when it really wasn't necessary to do so.",
+    },
+  ],
 };
 
 const content = {
@@ -145,6 +145,6 @@ const content = {
   techStack,
   techSectionAriaLabel,
   purposeAndGoals,
-  overview
+  overview,
 };
 export default content;

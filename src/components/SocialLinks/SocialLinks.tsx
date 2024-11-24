@@ -12,7 +12,7 @@ export function SocialLinks({
   color,
   size = 25,
   canva = false,
-  links = SOCIAL_LINKS
+  links = SOCIAL_LINKS,
 }: SocialLinksProps) {
   // TODO: Gotta be a theme wrapper or something, can't do this everywhere
   let colorValue: string | undefined;
@@ -21,7 +21,7 @@ export function SocialLinks({
   }
 
   const additiveStyles = {
-    "--color": color ? colorValue : "inherit"
+    "--color": color ? colorValue : "inherit",
   } as React.CSSProperties;
 
   return withTooltip ? (

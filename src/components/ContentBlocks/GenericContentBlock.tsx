@@ -2,7 +2,7 @@ import {
   AnimatedTypography,
   ASocialLinks,
   Tldr,
-  Typography
+  Typography,
 } from "@/components";
 import { GenericContentBlockProps } from "./types";
 import clsx from "clsx";
@@ -16,7 +16,7 @@ export function GenericContentBlock({
   tldrString,
   sectionAriaLabel,
   children,
-  links
+  links,
 }: GenericContentBlockProps) {
   const Wrapper = sectionAriaLabel ? "section" : "div";
   const animationClass = clsx(sectionAriaLabel && styles.opacityForAnimation);

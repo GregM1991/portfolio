@@ -6,7 +6,7 @@ import {
   GenericContentBlock,
   ImageCaptionCard,
   TechContentBlock,
-  Typography
+  Typography,
 } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
 import dootNotesStyles from "./dootNotes.styles.module.css";
@@ -22,7 +22,7 @@ const dbId = "1d50f10300fe4760922a96c885b09d13";
 async function getNotionPage(id: string) {
   let items = {
     todo: [] as any,
-    inProgress: [] as any
+    inProgress: [] as any,
   };
 
   const db = await notion.databases.query({
@@ -30,9 +30,9 @@ async function getNotionPage(id: string) {
     filter: {
       or: [
         { property: "Tags", multi_select: { contains: "ToDo" } },
-        { property: "Tags", multi_select: { contains: "In Progress" } }
-      ]
-    }
+        { property: "Tags", multi_select: { contains: "In Progress" } },
+      ],
+    },
   });
 
   db.results.forEach(async (item: any) => {
@@ -111,7 +111,7 @@ export default async function SuperBlogBrothersProject() {
             key={image.key}
             imageProps={{
               src: image.src,
-              alt: image.alt
+              alt: image.alt,
             }}
             caption={image.caption}
             style={{ gridArea: image.gridName }}

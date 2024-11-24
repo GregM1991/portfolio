@@ -13,7 +13,7 @@ const arvo = Arvo({
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-arvo"
+  variable: "--font-arvo",
 });
 
 const raleway = Raleway({
@@ -21,12 +21,12 @@ const raleway = Raleway({
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-raleway"
+  variable: "--font-raleway",
 });
 
 export const metadata: Metadata = {
   title: "Greg Martin's portfolio 🎨",
-  description: "A place to show the world what I got 💪🏻"
+  description: "A place to show the world what I got 💪🏻",
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {

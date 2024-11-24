@@ -37,7 +37,7 @@
 
 .socialsWrapper {
   color: var(--palette-secondary);
-  margin-top: var(--space-2xs)
+  margin-top: var(--space-2xs);
 }
 
 @media (min-width: 982px) {
