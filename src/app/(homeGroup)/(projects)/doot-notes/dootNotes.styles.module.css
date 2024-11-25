@@ -4,8 +4,12 @@
 
 .screensGrid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: var(--space-xl);
+  grid-template-areas: "list" "edit" "profile";
+
+  @media (min-width: 768px) {
+    grid-template-areas: "list ." "list edit" "profile edit" "profile .";
+  }
 }
 
 .socialsWrapper {
@@ -57,11 +61,4 @@
 .roadMapListItem.todo {
   background-color: #fbf9fd;
   border: 1px solid #e8deee;
-}
-
-@media (min-width: 768px) {
-  .screensGrid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "list ." "list edit" "profile edit" "profile .";
-  }
 }
