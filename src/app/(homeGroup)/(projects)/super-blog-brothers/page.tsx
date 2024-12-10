@@ -6,7 +6,7 @@ import {
   TechContentBlock,
 } from "@/components";
 import projectStyles from "@/app/(homeGroup)/project.styles.module.css";
-import styles from "./superBlogBrothers.styles.module.css";
+import superBlogBrosStyles from "./superBlogBrothers.styles.module.css";
 import content from "./content";
 import Image from "next/image";
 
@@ -38,13 +38,13 @@ export default function SuperBlogBrothersProject() {
         body={content.purposeAndGoals.body}
         sectionAriaLabel={content.purposeAndGoals.sectionAriaLabel}
       />
-      <div className={projectStyles.screensGrid}>
+      <div className={superBlogBrosStyles.screensGrid}>
         {content.images.map((image) => (
           <ImageCaptionCard
             key={image.key}
             imageProps={{
               src: image.src,
-              alt: image.alt,
+              alt: image.alt
             }}
             caption={image.caption}
             style={{ gridArea: image.gridName }}
