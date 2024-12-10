@@ -1,5 +1,6 @@
 export * from "./Acknowledgement";
 export * from "./AnimatedElements";
+export * from "./AnimatedLink/AnimatedLink";
 export * from "./AnimatedImage";
 export * from "./Banner";
 export * from "./Button";
