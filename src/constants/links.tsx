@@ -79,30 +79,30 @@ export const SOCIAL_LINKS: SocialLink[] = [
     linkTooltipText: "GitHub",
     href: "https://github.com/GregM1991",
     icon: FaGithub,
-    screenReader: "Navigate to Gregs Github page",
+    screenReader: "Navigate to Gregs Github page"
   },
   {
     key: crypto.randomUUID(),
     linkTooltipText: "linkedIn",
     href: "https://www.linkedin.com/in/greg-martin-76688678/",
     icon: FaLinkedinIn,
-    screenReader: "Navigate to Gregs Linked-in page",
+    screenReader: "Navigate to Gregs Linked-in page"
   },
   {
     key: crypto.randomUUID(),
     linkTooltipText: "Instagram",
     href: "https://www.instagram.com/grillustration_/",
     icon: FaInstagram,
-    screenReader: "Navigate to Gregs Instagram page",
+    screenReader: "Navigate to Gregs Instagram page"
   },
   {
     key: crypto.randomUUID(),
     linkTooltipText: "Resume",
-    href: "/Greg_Martin_Resume_2023.pdf",
+    href: "/greg-martin-resume-241124.pdf",
     icon: FaFileArrowDown,
     screenReader: "Download a pdf version of Gregs resume",
     attributes: {
-      download: "Greg_Martin_Resume_2023",
-    },
-  },
+      download: "greg-martin-resume-241124"
+    }
+  }
 ];
