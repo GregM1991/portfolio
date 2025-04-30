@@ -26,15 +26,17 @@ const images = [
     gridName: "edit",
     caption: (
       <Typography size="xs">
-        These blocks give a fun sense of play to the splash screen and are
-        interactive.{" "}
+        If a user is logged in and viewing their own notes page, they have the
+        power to create/read/update/delete their notes.{" "}
         <AnimatedLink href="https://dootnotes.com/users/grug_grug/notes/cm0my5gpo0004vf5k6z5m8luc">
-          Check them out here
+          Check it out here
         </AnimatedLink>
         , or check out the code{" "}
         <AnimatedLink href="https://github.com/GregM1991/doot-notes/tree/main/src/routes/users/%5Busername%5D/notes">
           here
         </AnimatedLink>
+        . You&apos;ll need to be logged in to view this page, but you can create
+        an account if you please!
       </Typography>
     )
   },

@@ -4,11 +4,11 @@ export const PORTFOLIO_TECH = {
   sectionAriaLabel: "Technologies used for my portfolio",
   techStack: [
     "React/Typescript",
-    "Next 13",
+    "Next 15",
     "server components",
     "css-modules",
-    "Framer Motion",
-  ],
+    "Framer Motion"
+  ]
 };
 
 export const OPENING = {
@@ -17,17 +17,17 @@ export const OPENING = {
   body: [
     {
       key: crypto.randomUUID(),
-      copy: "As all Software Engineers do, I looked back at my portfolio I'd built around 3 years back and cringed at what I'd written. I needed an update/refresh and thought it would be fun to rebuild it in Next JS v13. I chose Next 13 because of the integration with React Server Components as it's something I hadn't dived into before, and had heard a lot about them. It was a good challenge and a lot of fun learning the SSR patterns, as well as discovering what great DX features Next has.",
+      copy: "As all Software Engineers do, I looked back at my portfolio I'd built around 3 years back and cringed at what I'd written. I needed an update/refresh and thought it would be fun to rebuild it in Next JS v13. I chose Next 15 because of the integration with React Server Components as it's something I hadn't dived into before, and had heard a lot about them. It was a good challenge and a lot of fun learning the SSR patterns, as well as discovering what great DX features Next has."
     },
     {
       key: crypto.randomUUID(),
-      copy: "At the time of building this I was interested in getting a job at Canva. It's been an aspiration of mine from when I began coding, to be hired in to a company with some of the top talent in Australia is a solid goal I set for myself. With this in mind I built a section of this portfolio as a replica of their canva-life page and used it as a template for my own personal content. You can find the link below.",
-    },
+      copy: "At the time of building this I was interested in getting a job at Canva. It's been an aspiration of mine from when I began coding, to be hired in to a company with some of the top talent in Australia is a solid goal I set for myself. With this in mind I built a section of this portfolio as a replica of their canva-life page and used it as a template for my own personal content. You can find the link below."
+    }
   ],
   imageSrc: portfolioMain,
   imageAlt: "A view of the landing page for Gregs portfolio",
   sectionAriaLabel: "Description and introduction to Gregs portfolio",
-  codeLink: "https://github.com/GregM1991/portfolio",
+  codeLink: "https://github.com/GregM1991/portfolio"
 };
 
 export const GOALS = {

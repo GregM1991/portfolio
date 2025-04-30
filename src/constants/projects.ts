@@ -12,7 +12,7 @@ export const PROJECT_THUMBS: Project[] = [
     projImage: dootNotesImg,
     imageAlt:
       "Greg, Annisa and Aaron smiling and having a beer in the sunshine",
-    htmlLink: "/doot-notes",
+    htmlLink: "/doot-notes"
   },
   {
     key: "super-blog-brothers",
@@ -21,14 +21,14 @@ export const PROJECT_THUMBS: Project[] = [
     projImage: superBlogBrothersImg,
     imageAlt:
       "Greg, Annisa and Aaron smiling and having a beer in the sunshine",
-    htmlLink: "/super-blog-brothers",
+    htmlLink: "/super-blog-brothers"
   },
   {
     key: "portfolio-site",
     title: "This portfolio site",
-    body: "A Next 13 SSG/SSR portfolio site to help me sell the Greg dream",
+    body: "A Next 15 SSG/SSR portfolio site to help me sell the Greg dream",
     projImage: portfolio,
     imageAlt: "A picture of a laptop and phone with Gregs website on each.",
-    htmlLink: "/portfolio",
-  },
+    htmlLink: "/portfolio"
+  }
 ];

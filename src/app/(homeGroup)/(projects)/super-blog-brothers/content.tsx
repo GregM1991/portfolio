@@ -37,7 +37,7 @@ const links: SocialLink[] = [
 
 const techStack = [
   "SvelteKit",
-  "Threelte JS",
+  "Threlte JS",
   "Prismic",
   "Typescript",
   "GSAP",
@@ -75,7 +75,7 @@ const images = [
       <Typography size="xs">
         These blocks give a fun sense of play to the splash screen and are
         interactive.{" "}
-        <AnimatedLink href="https://video-game-blog-6zt3lzda0-gregm1991s-projects.vercel.app/">
+        <AnimatedLink href="https://video-game-blog-beta.vercel.app">
           Check them out here
         </AnimatedLink>
         , or check out the code{" "}
