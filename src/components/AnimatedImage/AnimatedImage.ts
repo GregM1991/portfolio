@@ -2,4 +2,4 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export const AnimatedImage = motion(Image);
+export const AnimatedImage = motion.create(Image);

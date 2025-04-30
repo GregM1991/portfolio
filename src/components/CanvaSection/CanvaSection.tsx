@@ -46,4 +46,4 @@ export const CanvaSection = forwardRef<HTMLElement, SectionProps>(
   },
 );
 
-export const AnimatedSection = motion(CanvaSection);
+export const AnimatedSection = motion.create(CanvaSection);

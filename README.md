@@ -29,7 +29,7 @@ Since I started doing Software Engineering, Canva has been the unicorn, the plac
 - First and foremost I thought it would help me stand out in the thousands of applicants Canva receives. I've heard from friends and strangers on the web about how difficult it is, and thought this might help
 - I thought it would be fun! Canva has an awesome style and design system and I wanted to build something in their style, a love letter so-to-speak
 - I hoped it would be different. It's been a while since I've done a splash page from top to bottom, I'm usually bogged down in nitty gritty product details, building/working on components that fill out a specific product feature.
-- I wanted to try some new technologies, this one doesn't really have much to do with Canva specifically, but I wanted to try out Next 13 with server components
+- I wanted to try some new technologies, this one doesn't really have much to do with Canva specifically, but I wanted to try out Next 13 (now updated to 15) with server components.
 
 So that's about it for the reasons, let's get into some details.
 

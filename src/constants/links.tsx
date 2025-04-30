@@ -46,31 +46,19 @@ export const CANVA_NAV_LINKS: NavLink[] = [
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  {
-    key: crypto.randomUUID(),
-    linkText: "Journaling App",
-    href: "/journaling-app",
-  },
-  {
-    key: crypto.randomUUID(),
-    linkText: "Doot Notes",
-    href: "/doot-notes",
-  },
+  // { TODO: Uncomment when ready
+  //   key: crypto.randomUUID(),
+  //   linkText: "Journaling App",
+  //   href: "/journaling-app",
+  // },
+  { key: crypto.randomUUID(), linkText: "Doot Notes", href: "/doot-notes" },
   {
     key: crypto.randomUUID(),
     linkText: "Super Blog Brothers",
-    href: "/super-blog-brothers",
+    href: "/super-blog-brothers"
   },
-  {
-    key: crypto.randomUUID(),
-    linkText: "Portfolio",
-    href: "/portfolio",
-  },
-  {
-    key: crypto.randomUUID(),
-    linkText: "Canva Portfolio",
-    href: "/canva",
-  },
+  { key: crypto.randomUUID(), linkText: "Portfolio", href: "/portfolio" },
+  { key: crypto.randomUUID(), linkText: "Canva Portfolio", href: "/canva" }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
