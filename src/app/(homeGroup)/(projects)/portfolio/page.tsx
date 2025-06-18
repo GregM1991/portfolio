@@ -77,7 +77,7 @@ export default function PortfolioProject() {
           }}
           caption="I had built this testimonials section for the canva page, but it was too good not to use in my regular portfolio."
           isScreenCap
-          linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/NewTestimonials/NewTestimonials.tsx"
+          linkToCode="https://github.com/GregM1991/portfolio/blob/main/src/components/Testimonials/Testimonials.tsx"
         />
       </div>
       <GenericContentBlock

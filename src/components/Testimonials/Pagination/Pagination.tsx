@@ -4,13 +4,15 @@ import { range } from "lodash";
 export interface PaginationProps {
   currentTestimonial: number;
   onClick: (num: number) => void;
+  variant?: "home" | "canva";
 }
 
 export const Pagination = ({
   currentTestimonial,
   onClick,
+  variant = "home",
 }: PaginationProps) => (
-  <div>
+  <div className={variant === "canva" ? "canva" : ""}>
     {range(4).map((num) => (
       <button
         key={num}

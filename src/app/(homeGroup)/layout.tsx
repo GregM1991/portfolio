@@ -4,7 +4,6 @@ import { Arvo, Raleway } from "next/font/google";
 import { AGradient, Header } from "@/components";
 import { NAV_LINKS } from "@/constants/links";
 
-import "../global.css";
 import "./home.css";
 import "./home-variables.css";
 
@@ -29,14 +28,12 @@ export const metadata: Metadata = {
   description: "A place to show the world what I got 💪🏻",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function HomeLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en" className={`${arvo.variable} ${raleway.variable}`}>
-      <body>
-        <Header headerFor="normal" navLinks={NAV_LINKS} />
-        {children}
-        <AGradient />
-      </body>
-    </html>
+    <div className={`${arvo.variable} ${raleway.variable}`}>
+      <Header headerFor="normal" navLinks={NAV_LINKS} />
+      {children}
+      <AGradient />
+    </div>
   );
 }
