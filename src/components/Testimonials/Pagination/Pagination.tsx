@@ -13,7 +13,7 @@ export const Pagination = ({
   variant = "home",
 }: PaginationProps) => (
   <div className={variant === "canva" ? "canva" : ""}>
-    {range(4).map((num) => (
+    {range(totalTestimonials).map((num) => (
       <button
         key={num}
         aria-label={`pagination button ${num + 1}`}
