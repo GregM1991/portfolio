@@ -8,83 +8,77 @@ import {
 
 export const CANVA_NAV_LINKS: NavLink[] = [
   {
-    key: crypto.randomUUID(),
+    key: "canva-greg-life",
     linkText: "Greg Life",
-    href: "/canva/#greg-life",
+    href: "/canva/#greg-life"
   },
-
   {
-    key: crypto.randomUUID(),
+    key: "canva-my-contribution",
     linkText: "My contribution",
-    href: "/canva/#my-contribution",
+    href: "/canva/#my-contribution"
   },
   {
-    key: crypto.randomUUID(),
+    key: "canva-gregs-values",
     linkText: "Greg's values",
-    href: "/canva/#gregs-values",
+    href: "/canva/#gregs-values"
   },
   {
-    key: crypto.randomUUID(),
+    key: "canva-projects",
     linkText: "A place for projects",
-    href: "/canva/#projects",
+    href: "/canva/#projects"
   },
   {
-    key: crypto.randomUUID(),
+    key: "canva-greg-life-mural",
     linkText: "#GregLife",
-    href: "/canva/#greg-life-mural",
+    href: "/canva/#greg-life-mural"
   },
   {
-    key: crypto.randomUUID(),
+    key: "canva-testimonials",
     linkText: "Testimonials",
-    href: "/canva/#testimonials",
+    href: "/canva/#testimonials"
   },
   {
-    key: crypto.randomUUID(),
+    key: "canva-be-hired",
     linkText: "Be hired?",
-    href: "/canva/#be-hired",
-  },
+    href: "/canva/#be-hired"
+  }
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  // { TODO: Uncomment when ready
-  //   key: crypto.randomUUID(),
-  //   linkText: "Journaling App",
-  //   href: "/journaling-app",
-  // },
-  { key: crypto.randomUUID(), linkText: "Doot Notes", href: "/doot-notes" },
+  { key: "nav-doot-notes", linkText: "Doot Notes", href: "/doot-notes" },
   {
-    key: crypto.randomUUID(),
+    key: "nav-super-blog-brothers",
     linkText: "Super Blog Brothers",
     href: "/super-blog-brothers"
   },
-  { key: crypto.randomUUID(), linkText: "Portfolio", href: "/portfolio" },
-  { key: crypto.randomUUID(), linkText: "Canva Portfolio", href: "/canva" }
+  { key: "nav-portfolio", linkText: "Portfolio", href: "/portfolio" },
+  { key: "nav-canva-portfolio", linkText: "Canva Portfolio", href: "/canva" }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    key: crypto.randomUUID(),
+    key: "social-github",
     linkTooltipText: "GitHub",
     href: "https://github.com/GregM1991",
     icon: FaGithub,
     screenReader: "Navigate to Gregs Github page"
   },
   {
-    key: crypto.randomUUID(),
+    key: "social-linkedin",
     linkTooltipText: "linkedIn",
     href: "https://www.linkedin.com/in/greg-martin-76688678/",
     icon: FaLinkedinIn,
     screenReader: "Navigate to Gregs Linked-in page"
   },
   {
-    key: crypto.randomUUID(),
+    key: "social-instagram",
     linkTooltipText: "Instagram",
     href: "https://www.instagram.com/grillustration_/",
     icon: FaInstagram,
     screenReader: "Navigate to Gregs Instagram page"
   },
   {
-    key: crypto.randomUUID(),
+    key: "social-resume",
     linkTooltipText: "Resume",
     href: "/greg-martin-resume-241124.pdf",
     icon: FaFileArrowDown,

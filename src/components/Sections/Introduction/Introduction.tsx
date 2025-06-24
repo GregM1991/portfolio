@@ -67,8 +67,8 @@ export function Introduction() {
         />
       </div>
       <div className={styles.bodyCopy}>
-        {INTRO_COPY.body.map((para) => (
-          <Typography key={crypto.randomUUID()}>{para}</Typography>
+        {INTRO_COPY.body.map((para, idx) => (
+          <Typography key={`intro-body-${idx}`}>{para}</Typography>
         ))}
       </div>
     </section>
