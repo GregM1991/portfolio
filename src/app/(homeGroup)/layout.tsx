@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
 import { Arvo, Raleway } from "next/font/google";
-import { AGradient, Header } from "@/components";
+import { AGradient, Header, ErrorBoundary } from "@/components";
 import { NAV_LINKS } from "@/constants/links";
 
 import "./home.css";
@@ -32,7 +32,9 @@ export default function HomeLayout({ children }: PropsWithChildren) {
   return (
     <div className={`${arvo.variable} ${raleway.variable} theme-home`}>
       <Header headerFor="normal" navLinks={NAV_LINKS} />
-      {children}
+      <ErrorBoundary variant="home">
+        {children}
+      </ErrorBoundary>
       <AGradient />
     </div>
   );
