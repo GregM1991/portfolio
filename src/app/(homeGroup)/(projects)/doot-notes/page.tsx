@@ -36,11 +36,28 @@ async function getNotionPage(id: string) {
       }
     });
 
-    db.results.forEach(async (item: any) => {
-      if (item.properties.Tags.multi_select[0].name === "ToDo") {
-        items.todo.push(item.properties.Name.title[0].text.content);
-      } else {
-        items.inProgress.push(item.properties.Name.title[0].text.content);
+    db.results.forEach((item: any) => {
+      // Safe property access with fallbacks
+      const tags = item?.properties?.Tags?.multi_select;
+      const nameTitle = item?.properties?.Name?.title;
+      
+      if (!tags?.length || !nameTitle?.length) {
+        console.warn("Skipping item with missing required properties:", item?.id);
+        return;
+      }
+
+      const tag = tags[0]?.name;
+      const content = nameTitle[0]?.text?.content;
+
+      if (!tag || !content) {
+        console.warn("Skipping item with missing tag or content:", item?.id);
+        return;
+      }
+
+      if (tag === "ToDo") {
+        items.todo.push(content);
+      } else if (tag === "In Progress") {
+        items.inProgress.push(content);
       }
     });
 

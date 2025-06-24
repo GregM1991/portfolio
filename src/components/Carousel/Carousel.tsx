@@ -13,8 +13,22 @@ interface CarouselProps {
 
 export function Carousel({ items, className }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const indexItem = items[currentIndex];
   const classes = clsx([styles.wrapper, className]);
+
+  // Early return for empty items
+  if (!items || items.length === 0) {
+    return (
+      <div className={classes}>
+        <div className={styles.imageWrapper}>
+          <Typography type="span">No items to display</Typography>
+        </div>
+      </div>
+    );
+  }
+
+  // Ensure currentIndex is within bounds
+  const safeIndex = Math.max(0, Math.min(currentIndex, items.length - 1));
+  const indexItem = items[safeIndex];
 
   const handleNext = () => {
     if (currentIndex === items.length - 1) return;
