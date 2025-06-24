@@ -64,6 +64,7 @@ export function Introduction() {
           fill
           sizes="100vw"
           placeholder="blur"
+          priority
         />
       </div>
       <div className={styles.bodyCopy}>

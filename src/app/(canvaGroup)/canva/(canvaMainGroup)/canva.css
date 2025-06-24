@@ -36,6 +36,25 @@ picture {
   margin: auto;
 }
 
+.loading-centered {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-greg-life {
+  min-height: 60vh;
+}
+
+.loading-contribution {
+  min-height: 50vh;
+}
+
+.loading-testimonials {
+  min-height: 40vh;
+}
+
 @media (min-width: 992px) {
   .anchor {
     top: calc((var(--space-5xl) * -1) - 110px);
