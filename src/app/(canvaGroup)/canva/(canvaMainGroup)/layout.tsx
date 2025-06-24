@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import type { Metadata } from "next";
-import { Header, Footer } from "@/components";
+import { Header, Footer, ErrorBoundary } from "@/components";
 import { CANVA_NAV_LINKS } from "@/constants/links";
 import "./canva-variables.css";
 import "./canva.css";
@@ -25,7 +25,9 @@ export default function CanvaLayout({
   return (
     <div className={`${ezra.variable} sans-serif theme-canva`}>
       <Header headerFor="canva" navLinks={CANVA_NAV_LINKS} />
-      {children}
+      <ErrorBoundary variant="canva">
+        {children}
+      </ErrorBoundary>
       <Footer />
     </div>
   );

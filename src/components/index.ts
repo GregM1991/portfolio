@@ -11,6 +11,7 @@ export * from "./Carousel";
 export * from "./ContentBlocks";
 export * from "./Controls";
 export * from "./ContactMeModal";
+export * from "./ErrorBoundary";
 export * from "./Footer";
 export * from "./FooterLinks";
 export * from "./FAB";
