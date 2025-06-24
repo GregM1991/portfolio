@@ -1,7 +1,8 @@
 /* @link spaces https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,1887&s=0.75|0.5|0.4|0.25,1.5|2|3|4|6|8|10,s-l&g=s,l,xl,12 */
 /* @link typography https://utopia.fyi/type/calculator?c=320,16,1.25,1400,20,1.25,8,2,1200&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-:root {
+:root,
+.theme-home {
   /* palette */
   --palette-primary: #1b5452;
   --palette-primary-dark: #124341;

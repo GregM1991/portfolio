@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function HomeLayout({ children }: PropsWithChildren) {
   return (
-    <div className={`${arvo.variable} ${raleway.variable}`}>
+    <div className={`${arvo.variable} ${raleway.variable} theme-home`}>
       <Header headerFor="normal" navLinks={NAV_LINKS} />
       {children}
       <AGradient />

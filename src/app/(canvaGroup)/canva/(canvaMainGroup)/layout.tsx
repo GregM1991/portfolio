@@ -23,7 +23,7 @@ export default function CanvaLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`${ezra.variable} sans-serif`}>
+    <div className={`${ezra.variable} sans-serif theme-canva`}>
       <Header headerFor="canva" navLinks={CANVA_NAV_LINKS} />
       {children}
       <Footer />
