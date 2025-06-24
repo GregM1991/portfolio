@@ -1,6 +1,8 @@
 import styles from "./pagination.styles.module.css";
 import { range } from "lodash";
 
+const TOTAL_TESTIMONIALS = 4; 
+
 export interface PaginationProps {
   currentTestimonial: number;
   onClick: (num: number) => void;
@@ -10,10 +12,10 @@ export interface PaginationProps {
 export const Pagination = ({
   currentTestimonial,
   onClick,
-  variant = "home",
+  variant = "home"
 }: PaginationProps) => (
   <div className={variant === "canva" ? "canva" : ""}>
-    {range(totalTestimonials).map((num) => (
+    {range(TOTAL_TESTIMONIALS).map((num) => (
       <button
         key={num}
         aria-label={`pagination button ${num + 1}`}
