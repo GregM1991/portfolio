@@ -25,6 +25,7 @@ export function GregLife() {
         <AnimatedImage
           alt="Greg holding his two cats Sesame and Rame and smiling excitedly"
           src={cuddleCats}
+          priority
           sizes="(max-width: 768px) 102px, (max-width: 1200px) 150px, 190px"
           initial={{ x: -65, y: 65, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}

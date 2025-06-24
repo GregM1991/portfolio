@@ -1,10 +1,17 @@
 "use client";
+import dynamic from "next/dynamic";
 import {
   AnimatedSection,
   Typography,
   Button,
-  ContactMeModal,
 } from "@/components";
+
+const DynamicContactMeModal = dynamic(
+  () => import("@/components").then((mod) => mod.ContactMeModal),
+  {
+    loading: () => <Button variant="secondary" size="large" fluid disabled>Loading...</Button>,
+  },
+);
 import { fadeInVariants } from "@/constants/animation";
 import Typewriter from "./Typewriter";
 import styles from "./beHired.styles.module.css";
@@ -32,7 +39,7 @@ export function BeHired() {
           enough to warrant getting in touch. Reach me below, I&apos;m always
           keen for a chat.
         </Typography>
-        <ContactMeModal
+        <DynamicContactMeModal
           trigger={
             <Button
               aria-controls="radix-:R1mj9:"
