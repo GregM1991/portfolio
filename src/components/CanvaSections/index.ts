@@ -4,4 +4,3 @@ export * from "./GregLifeMural";
 export * from "./GregsValues";
 export * from "./MyContribution";
 export * from "./MyJobs";
-export * from "./Testimonials";

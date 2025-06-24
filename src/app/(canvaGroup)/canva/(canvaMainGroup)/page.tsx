@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { GregLife, MyContribution } from "@/components";
+import { GregLife, MyContribution, Testimonials } from "@/components";
 
 const DynamicGregsValues = dynamic(
   () => import("../../../../components").then((mod) => mod.GregsValues),
@@ -20,12 +20,6 @@ const DynamicMyJobs = dynamic(
     loading: () => <p>Loading...</p>,
   },
 );
-const DynamicTestimonials = dynamic(
-  () => import("../../../../components").then((mod) => mod.Testimonials),
-  {
-    loading: () => <p>Loading...</p>,
-  },
-);
 const DynamicBeHired = dynamic(
   () => import("../../../../components").then((mod) => mod.BeHired),
   {
@@ -41,7 +35,7 @@ export default function Home() {
       <DynamicGregsValues />
       <DynamicMyJobs />
       <DynamicGregLifeMural />
-      <DynamicTestimonials />
+      <Testimonials variant="canva" />
       <DynamicBeHired />
     </main>
   );

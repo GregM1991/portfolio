@@ -15,6 +15,25 @@
   margin-bottom: var(--space-l);
 }
 
+/* Canva variant decorative element */
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -40px;
+  width: 100px;
+  height: 77px;
+  background: url("../../../assets/svg/testimonial-doodle.svg") no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Show decorative element for canva variant */
+:global(.canva) .imageWrapper::after {
+  opacity: 1;
+}
+
 .img {
   height: 100%;
   width: 100%;
@@ -27,6 +46,7 @@
   position: relative;
 }
 
+/* Home variant quote background */
 .blockquote::after {
   display: block;
   position: absolute;
@@ -41,10 +61,32 @@
   z-index: -1;
 }
 
+/* Canva variant quote background */
+:global(.canva) .blockquote {
+  letter-spacing: 0.03em;
+  background: url("../../../assets/svg/quote.svg") no-repeat top left;
+  background-size: 50px 40px;
+}
+
+:global(.canva) .blockquote::after {
+  display: none;
+}
+
 .blockquoteLead {
   line-height: 1;
   margin-bottom: var(--space-l);
   display: inline-block;
+}
+
+/* Canva variant lead styling */
+:global(.canva) .blockquoteLead {
+  font-family: var(--font-ezra);
+  font-size: var(--typography-blockquote-lead);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -56,8 +98,20 @@
   font-family: var(--font-raleway);
 }
 
+/* Canva variant footer styling */
+:global(.canva) .footer {
+  margin-top: 1.5rem;
+  font-size: var(--typography-blockquote-footer);
+  gap: 0;
+}
+
 .cite {
   font-style: normal;
+}
+
+/* Canva variant cite styling */
+:global(.canva) .cite {
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +132,11 @@
     max-width: 0 0 50%;
     flex: 0 0 50%;
   }
+
+  /* Canva variant blockquote styling */
+  :global(.canva) .blockquote {
+    letter-spacing: -0.01em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -95,6 +154,12 @@
     max-width: 58.3%;
     background-size: 80px 69px;
   }
+
+  /* Canva variant blockquote positioning */
+  :global(.canva) .blockquote {
+    padding: 40px 0 0 96px;
+    background-size: 80px 69px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -104,5 +169,12 @@
     width: 150px;
     height: 150px;
     background-size: 150px 150px;
+  }
+
+  :global(.canva) .imageWrapper::after {
+    top: -90px;
+    right: -90px;
+    width: 176px;
+    height: 134px;
   }
 }

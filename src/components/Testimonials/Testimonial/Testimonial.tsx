@@ -2,7 +2,7 @@
 import { Typography } from "@/components";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import styles from "./newTestimonial.styles.module.css";
+import styles from "./testimonial.styles.module.css";
 
 interface TestimonialProps {
   img: StaticImageData;
@@ -11,15 +11,17 @@ interface TestimonialProps {
   bodyText: string;
   name: string;
   role: string;
+  variant?: "home" | "canva";
 }
 
-export function NewTestimonial({
+export function Testimonial({
   img,
   imgAltText,
   leadText,
   bodyText,
   name,
   role,
+  variant = "home",
 }: TestimonialProps) {
   return (
     <motion.div
@@ -38,16 +40,22 @@ export function NewTestimonial({
         />
       </div>
       <blockquote className={styles.blockquote}>
-        <Typography
-          type="span"
-          size="xl"
-          font="arvo"
-          color="gray-dark"
-          className={styles.blockquoteLead}
-        >
-          {leadText}
-        </Typography>
-        <Typography>{bodyText}</Typography>
+        {variant === "canva" ? (
+          <Typography canva className={styles.blockquoteLead}>
+            {leadText}
+          </Typography>
+        ) : (
+          <Typography
+            type="span"
+            size="xl"
+            font="arvo"
+            color="gray-dark"
+            className={styles.blockquoteLead}
+          >
+            {leadText}
+          </Typography>
+        )}
+        <Typography canva={variant === "canva"}>{bodyText}</Typography>
         <footer className={styles.footer}>
           <cite className={styles.cite}>{name}</cite>
           <small>{role}</small>

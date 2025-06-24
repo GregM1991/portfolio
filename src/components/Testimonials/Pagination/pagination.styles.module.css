@@ -5,6 +5,7 @@
   border-radius: 10px;
   border: none;
   margin: 5px 4px;
+  background: var(--palette-gray-light);
 }
 
 .active {

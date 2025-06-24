@@ -18,7 +18,7 @@ export * from "./Header";
 export * from "./ImageCaptionCard";
 export * from "./Job";
 export * from "./Logo";
-export * from "./NewTestimonials";
+export * from "./Testimonials";
 export * from "./ProjectThumb";
 export * from "./Sections";
 export * from "./SocialLinks";

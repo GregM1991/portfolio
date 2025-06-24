@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import type { Metadata } from "next";
 import { Header, Footer } from "@/components";
 import { CANVA_NAV_LINKS } from "@/constants/links";
-import "../../../global.css";
 import "./canva-variables.css";
 import "./canva.css";
 
@@ -18,18 +17,16 @@ const ezra = localFont({
   variable: "--font-ezra",
 });
 
-export default function RootLayout({
+export default function CanvaLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${ezra.variable} sans-serif`}>
-        <Header headerFor="canva" navLinks={CANVA_NAV_LINKS} />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <div className={`${ezra.variable} sans-serif`}>
+      <Header headerFor="canva" navLinks={CANVA_NAV_LINKS} />
+      {children}
+      <Footer />
+    </div>
   );
 }
