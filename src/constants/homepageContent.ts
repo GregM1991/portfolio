@@ -8,12 +8,15 @@ const introP3 =
 export const INTRO_COPY = {
   title: "Greg's Place",
   tagLine: [
-    { key: crypto.randomUUID(), copy: "Just a Full-Stack Engineer, " },
-    { key: crypto.randomUUID(), copy: "standing in front of JavaScript," },
-    { key: crypto.randomUUID(), copy: " asking it to love him." },
+    { key: "tagline-fullstack-engineer", copy: "Just a Full-Stack Engineer, " },
+    {
+      key: "tagline-standing-in-front",
+      copy: "standing in front of JavaScript,"
+    },
+    { key: "tagline-asking-js", copy: " asking it to love him." }
   ],
 
-  body: [introP1, introP2, introP3],
+  body: [introP1, introP2, introP3]
 };
 
 export const SKILLS_COPY = {

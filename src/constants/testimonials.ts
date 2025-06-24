@@ -6,7 +6,7 @@ import { Testimonial } from "@/types/testimonial";
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    key: crypto.randomUUID(),
+    key: "karin-uli",
     img: karin,
     imgAltText: "Karin smiling on a beach in front of a white beach shack",
     leadText:
@@ -14,10 +14,10 @@ export const TESTIMONIALS: Testimonial[] = [
     bodyText:
       "When it comes to front-end development, Greg's skills are off the charts. He effortlessly brings my design ideas to life with a touch of humor that made every day at work an enjoyable experience. His exceptional communication skills foster a productive collaboration between design and engineering.",
     name: "Karin Uli (She/Her)",
-    role: "Snr Product Designer, Faethm by Pearson",
+    role: "Snr Product Designer, Faethm by Pearson"
   },
   {
-    key: crypto.randomUUID(),
+    key: "hina-shahid",
     img: hina,
     imgAltText: "Hina looking at the camera and smiling",
     leadText:
@@ -25,10 +25,10 @@ export const TESTIMONIALS: Testimonial[] = [
     bodyText:
       "His ability to transform designs into captivating user experiences is truly commendable. Moreover, his collaborative spirit and teamwork greatly contribute to a harmonious and efficient development process. His techincal brilliance and team-orientated mindset is a rarity that any organisation would be fortunate to have.",
     name: "Hina Shahid (She/Her)",
-    role: "Snr Full-Stack Engineer, eq8",
+    role: "Snr Full-Stack Engineer, eq8"
   },
   {
-    key: crypto.randomUUID(),
+    key: "aaron-lewis",
     img: aaron,
     imgAltText: "Aaron kneeling in the Australian bush, smiling with a hat on.",
     leadText:
@@ -36,10 +36,10 @@ export const TESTIMONIALS: Testimonial[] = [
     bodyText:
       "If you're looking for the deal of the century; a skilled engineer with the keen eye of a diligent designer, look no further than this one!",
     name: "Aaron Lewis (He/Him)",
-    role: "Full-Stack Enigneer, eQ8",
+    role: "Full-Stack Enigneer, eQ8"
   },
   {
-    key: crypto.randomUUID(),
+    key: "andy-murphy",
     img: andy,
     imgAltText:
       "Andy smiling at the camera in a north face jacket with trees in the background",
@@ -48,6 +48,6 @@ export const TESTIMONIALS: Testimonial[] = [
     bodyText:
       "If you're looking for a Software Engineer comfortable across the full stack (with a penchant for front end), I can't recommend Greg highly enough. He's a dream to work with - very creative and has a great eye for detail.",
     name: "Andy Murphy (He/Him)",
-    role: "Snr Full-Stack Engineer, Domain",
-  },
+    role: "Snr Full-Stack Engineer, Domain"
+  }
 ];
