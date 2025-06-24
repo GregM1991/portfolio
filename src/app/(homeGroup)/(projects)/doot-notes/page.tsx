@@ -25,28 +25,33 @@ async function getNotionPage(id: string) {
     inProgress: [] as any
   };
 
-  const db = await notion.databases.query({
-    database_id: id,
-    filter: {
-      or: [
-        { property: "Tags", multi_select: { contains: "ToDo" } },
-        { property: "Tags", multi_select: { contains: "In Progress" } }
-      ]
-    }
-  });
+  try {
+    const db = await notion.databases.query({
+      database_id: id,
+      filter: {
+        or: [
+          { property: "Tags", multi_select: { contains: "ToDo" } },
+          { property: "Tags", multi_select: { contains: "In Progress" } }
+        ]
+      }
+    });
 
-  db.results.forEach(async (item: any) => {
-    if (item.properties.Tags.multi_select[0].name === "ToDo") {
-      items.todo.push(item.properties.Name.title[0].text.content);
-    } else {
-      items.inProgress.push(item.properties.Name.title[0].text.content);
-    }
-  });
+    db.results.forEach(async (item: any) => {
+      if (item.properties.Tags.multi_select[0].name === "ToDo") {
+        items.todo.push(item.properties.Name.title[0].text.content);
+      } else {
+        items.inProgress.push(item.properties.Name.title[0].text.content);
+      }
+    });
 
-  return items;
+    return items;
+  } catch (error) {
+    console.error("Error fetching Notion page:", error);
+    return { todo: [], inProgress: [] };
+  }
 }
 
-export default async function SuperBlogBrothersProject() {
+export default async function DootNotesProject() {
   const content = await getDootNoteContent();
   const { todo, inProgress } = await getNotionPage(dbId);
 
