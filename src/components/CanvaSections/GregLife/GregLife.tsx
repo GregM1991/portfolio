@@ -7,6 +7,7 @@ import {
 } from "@/components";
 import Link from "next/link";
 import { CUBIC_BEZIER, DURATION, fadeInVariants } from "@/constants/animation";
+import { APP_CONFIG } from "@/config/appConfig";
 import canvaRooftop from "@/assets/images/greg-at-canva-peace-sign.jpg";
 import cuddleCats from "@/assets/images/greg-cuddling-cats-with-grin.jpg";
 import purpleDoodle from "@/assets/svg/purple-heading-doodle.svg";
@@ -27,7 +28,7 @@ export function GregLife() {
           src={cuddleCats}
           priority
           sizes="(max-width: 768px) 102px, (max-width: 1200px) 150px, 190px"
-          initial={{ x: -65, y: 65, opacity: 0 }}
+          initial={{ x: APP_CONFIG.animation.gregLife.imageTranslateOffset, y: APP_CONFIG.animation.gregLife.imageYOffset, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{
             ease: CUBIC_BEZIER,
@@ -40,12 +41,12 @@ export function GregLife() {
           src={canvaRooftop}
           priority
           sizes="(max-width: 768px) 270px, (max-width: 992px) 400px, (max-width: 1400px) 42vw, 600px"
-          initial={{ x: -65, y: 65, opacity: 0 }}
+          initial={{ x: APP_CONFIG.animation.gregLife.imageTranslateOffset, y: APP_CONFIG.animation.gregLife.imageYOffset, opacity: 0 }}
           animate={{ x: 0, y: 0, opacity: 1 }}
           transition={{
             ease: CUBIC_BEZIER,
             duration: DURATION,
-            delay: 0.25,
+            delay: APP_CONFIG.animation.gregLife.imageDelay,
           }}
           className={styles.canvaRooftop}
         />
@@ -53,11 +54,11 @@ export function GregLife() {
           src={yellowDoodle}
           alt="Yellow doodle"
           animate={{ opacity: 1, scale: 1 }}
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, scale: APP_CONFIG.animation.gregLife.doodleInitialScale }}
           transition={{
             ease: CUBIC_BEZIER,
-            duration: 0.5,
-            delay: 1.5,
+            duration: APP_CONFIG.animation.gregLife.doodleDuration,
+            delay: APP_CONFIG.animation.gregLife.doodleDelay,
           }}
           className={styles.yellowDoodle}
         />
@@ -75,11 +76,11 @@ export function GregLife() {
             src={purpleDoodle}
             alt="Purple doodle"
             animate={{ opacity: 1, scale: 1 }}
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: APP_CONFIG.animation.gregLife.doodleInitialScale }}
             transition={{
               ease: CUBIC_BEZIER,
-              duration: 0.5,
-              delay: 1.5,
+              duration: APP_CONFIG.animation.gregLife.doodleDuration,
+              delay: APP_CONFIG.animation.gregLife.doodleDelay,
             }}
             className={styles.purpleDoodle}
           />
@@ -92,7 +93,7 @@ export function GregLife() {
           of course, is Canva. This personalised portfolio is my love letter to
           you. Peek behind the curtain{" "}
           <Link
-            href="https://github.com/GregM1991/portfolio"
+            href={APP_CONFIG.contact.portfolioRepo}
             className={styles.link}
           >
             here
