@@ -1,7 +1,8 @@
 import styles from "./pagination.styles.module.css";
 import { range } from "lodash";
+import { APP_CONFIG } from "@/config/appConfig";
 
-const TOTAL_TESTIMONIALS = 4; 
+const TOTAL_TESTIMONIALS = APP_CONFIG.testimonials.totalCount; 
 
 export interface PaginationProps {
   currentTestimonial: number;

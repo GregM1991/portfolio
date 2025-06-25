@@ -6,6 +6,7 @@ import { Pagination } from "./Pagination/Pagination";
 import { TESTIMONIALS } from "@/constants/testimonials";
 import { fadeInUpVariants } from "@/constants/animation";
 import { AnimatePresence, motion } from "framer-motion";
+import { APP_CONFIG } from "@/config/appConfig";
 import styles from "./testimonials.styles.module.css";
 
 interface TestimonialsProps {
@@ -16,12 +17,12 @@ export function Testimonials({ variant = "home" }: TestimonialsProps) {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const handleControlRightClick = () => {
-    if (currentTestimonial === 3) return;
+    if (currentTestimonial === APP_CONFIG.testimonials.maxIndex) return;
     setCurrentTestimonial(currentTestimonial + 1);
   };
 
   const handleControlLeftClick = () => {
-    if (currentTestimonial === 0) return;
+    if (currentTestimonial === APP_CONFIG.testimonials.minIndex) return;
     setCurrentTestimonial(currentTestimonial - 1);
   };
 
@@ -29,8 +30,8 @@ export function Testimonials({ variant = "home" }: TestimonialsProps) {
     setCurrentTestimonial(num);
   };
 
-  const leftDisabled = currentTestimonial === 0;
-  const rightDisabled = currentTestimonial === 3;
+  const leftDisabled = currentTestimonial === APP_CONFIG.testimonials.minIndex;
+  const rightDisabled = currentTestimonial === APP_CONFIG.testimonials.maxIndex;
 
   const ariaLabel = "Testimonials about Greg as a person/developer";
 
