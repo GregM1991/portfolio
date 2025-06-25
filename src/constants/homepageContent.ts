@@ -22,7 +22,7 @@ export const INTRO_COPY = {
 export const SKILLS_COPY = {
   title: "My Skills",
   body: [
-    "I kicked off my career as a full-stack developer traversing both ends of the technology spectrum. I believe this has hugely improved my scope of technical understanding. Knowledge of how the front and back end interact with each other is, of course, key to defining your structural and architectural needs. But my heart is truly with the front end as it allows me to express my creative side and build beautiful, articulate software.",
+    "I kicked off my career as a full-stack developer traversing both ends of the technology spectrum. I believe this has hugely improved my scope of technical understanding. My experience spans from modern frontend frameworks like React, Next.js, and Svelte to backend technologies including Node.js, C#/.NET, and cloud platforms like AWS and Azure. I've worked extensively with databases (SQL and NoSQL), GraphQL APIs, and state management solutions. But my heart is truly with the front end as it allows me to express my creative side and build beautiful, articulate software.",
   ],
 };
 
