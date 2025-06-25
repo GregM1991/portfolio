@@ -4,12 +4,12 @@
 }
 
 .iconsWrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   color: var(--palette-secondary);
-  margin: var(--space-l) 0;
-}
+  gap: var(--space-m);
 
-.iconsWrapper > span {
-  font-size: var(--step-4);
+  > span {
+    font-size: var(--step-5);
+  }
 }
